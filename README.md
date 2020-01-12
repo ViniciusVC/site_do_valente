@@ -35,12 +35,45 @@ npm run start
 * Rotas configuradas no server.js
 ```
 /
-/Apresentacao/
-/captcha/
+/eu/
+/codigo/
+/codigo/html5/
+/codigo/css/
+/codigo/javascript/
+/codigo/knockout/
+/codigo/apache/
+/codigo/php/
+/codigo/ruby_on_rails/
+/codigo/coldfusion/
+/codigo/asp/
+/codigo/dotnet/
+/codigo/Java/
+/codigo/cgi_perl/
+/codigo/eu/
+/codigo/captcha/
+/componentes/
 
 /amp/
-/amp/Apresentacao/
-/api/captcha/
+/amp/eu/
+/amp/codigo/
+/amp/codigo/html5/
+/amp/codigo/css/
+/amp/codigo/javascript/
+/amp/codigo/knockout/
+/amp/codigo/apache/
+/amp/codigo/php/
+/amp/codigo/ruby_on_rails/
+/amp/codigo/coldfusion/
+/amp/codigo/asp/
+/amp/codigo/dotnet/
+/amp/codigo/Java/
+/amp/codigo/cgi_perl/
+/amp/codigo/eu/
+/amp/codigo/captcha/
+/amp/componentes/
+
+
+
 
 
 ```
