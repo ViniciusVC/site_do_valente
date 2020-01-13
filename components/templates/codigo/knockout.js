@@ -9,7 +9,7 @@ import * as Util from '../../../controller/util.js';
 const atendimentoOi = function (props) {
 
   console.log('╔════════════════════════════════╗');
-  console.log('║        codigo   HTML5         ║');
+  console.log('║        codigo   Knockout       ║');
   console.log('╚════════════════════════════════╝');
 
   var cidade = Util.validaProps(props.cidade, "Rio de Janeiro");
@@ -21,9 +21,9 @@ const atendimentoOi = function (props) {
       <Head>
         <title>codigo Index</title>
         <FaviIcon />
-        <meta name="description" content="HTML5" />
-        <link rel="canonical" href="/codigo/html5" />
-        <link rel="amphtml" href="/amp/codigo/html5" />
+        <meta name="description" content="Knockout JS" />
+        <link rel="canonical" href="/codigo/knockout" />
+        <link rel="amphtml" href="/amp/codigo/knockout" />
         <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
         <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
       </Head>
@@ -33,8 +33,8 @@ const atendimentoOi = function (props) {
           <ListadeRotas/>
         </div>
         <div className="codigoIndex">
-          <h1>HTML5</h1>
-          <p>Linguagens de programação podem ser usadas para expressar algoritmos com precisão. O conjunto de palavras (lexemas classificados em tokens), compostos de acordo com essas regras, constituem o código fonte de um software. Esse código fonte é depois traduzido para código de máquina, que é executado pelo microprocessador.</p>
+          <h1>Knockout JS</h1>
+          <p>Aqui entrara a descrição...</p>
         </div>
       </Div>
       <style jsx>{`

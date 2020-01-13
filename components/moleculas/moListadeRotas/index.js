@@ -161,75 +161,80 @@ const ListadeRotas = function () {
         <details>
           <summary>Knockout JS</summary>
           <ol type="1">
-            <li><Link href="/codigo/">knockout JS exemplo 01</Link></li>
-            <li><Link href="/codigo/">knockout JS exemplo 02</Link></li>
-            <li><Link href="/codigo/">knockout JS exemplo 03</Link></li>
-            <li><Link href="/codigo/">knockout JS exemplo 04</Link></li>
-            <li><Link href="/codigo/">knockout JS exemplo 05</Link></li>
-            <li><Link href="/codigo/">knockout JS exemplo 06</Link></li>
+            <li><Link href="/codigo/knockout/">knockout JS exemplo 01</Link></li>
+            <li><Link href="/codigo/knockout/">knockout JS exemplo 02</Link></li>
+            <li><Link href="/codigo/knockout/">knockout JS exemplo 03</Link></li>
+            <li><Link href="/codigo/knockout/">knockout JS exemplo 04</Link></li>
+            <li><Link href="/codigo/knockout/">knockout JS exemplo 05</Link></li>
+            <li><Link href="/codigo/knockout/">knockout JS exemplo 06</Link></li>
           </ol>
         </details>
 
         <details>
           <summary>Apache</summary>
           <ol type="1">
-            <li><Link href="/codigo/">Instalar Apache no Ubuntu</Link></li>
-            <li><Link href="/codigo/">Alias em Apache</Link></li>
-            <li><Link href="/codigo/">redirect 301 em Apache</Link></li>
+            <li><Link href="/codigo/apache/">Instalar Apache no Ubuntu</Link></li>
+            <li><Link href="/codigo/apache/">Alias em Apache</Link></li>
+            <li><Link href="/codigo/apache/">redirect 301 em Apache</Link></li>
           </ol>
         </details>
 
         <details>
           <summary>PHP</summary>
           <ol type="1">
-            <li><Link href="/codigo/" >redirect 301 no PHP</Link></li>
-            <li><Link href="/codigo/">encontrar arquivio no PHP</Link></li>
-            <li><Link href="/codigo/">encontrar diretorio no PHP</Link></li>
+            <li><Link href="/codigo/php/" >redirect 301 no PHP</Link></li>
+            <li><Link href="/codigo/php/">encontrar arquivio no PHP</Link></li>
+            <li><Link href="/codigo/php/">encontrar diretorio no PHP</Link></li>
           </ol>
         </details>
 
         <details>
           <summary>Ruby on Rails</summary>
           <ol type="1">
-            <li><Link href="/codigo/">redirect 301 em Ruby on Rails</Link></li>
+            <li><Link href="/codigo/rubyonrails/">redirect 301 em Ruby on Rails</Link></li>
           </ol>
         </details>
 
         <details>
           <summary>ColdFusion</summary>
           <ol type="1">
-            <li><Link href="/codigo/">redirect 301 em ColdFusion</Link></li>
+            <li><Link href="/codigo/coldfusion/">redirect 301 em ColdFusion</Link></li>
           </ol>
         </details>
 
         <details>
           <summary>ASP</summary>
           <ol type="1">
-            <li><Link href="/codigo/">redirect 301 em ASP</Link></li>
+            <li><Link href="/codigo/asp/">redirect 301 em ASP</Link></li>
           </ol>
         </details>
 
         <details>
           <summary>.NET</summary>
           <ol type="1">
-            <li><Link href="/codigo/">redirect 301 em ASP.NET</Link></li>
+            <li><Link href="/codigo/.net/">redirect 301 em ASP.NET</Link></li>
           </ol>
         </details>
 
         <details>
           <summary>Java</summary>
           <ol type="1">
-            <li><Link href="/codigo/">redirect 301 em JSP</Link></li>
+            <li><Link href="/codigo/java/">redirect 301 em JSP</Link></li>
           </ol>
         </details>
 
         <details>
           <summary>CGI PERL</summary>
           <ol type="1">
-            <li><Link href="/codigo/">redirect 301 em CGI</Link></li>
+            <li><Link href="/codigo/cgi/">redirect 301 em CGI</Link></li>
           </ol>
         </details>
-        
+        <details>
+          <summary>Hub de Contato</summary>
+          <ol type="1">
+            <li><Link href="/hub/">Teste API Hub de Contato</Link></li>
+          </ol>
+        </details>
         <details>
           <summary>EU</summary>
           <ol type="1">
@@ -239,9 +244,6 @@ const ListadeRotas = function () {
             <li><Link href="/amp/eu/">Quem Sou Eu (Pagina AMP)</Link></li>
           </ol>
         </details>
-
-
-
       </div>
       <style jsx>{`
       .CssRotasProjeto {

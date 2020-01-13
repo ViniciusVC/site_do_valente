@@ -87,37 +87,37 @@ app.prepare()
     server.get('/amp/codigo/javascript/', (req, res) => { app.render(req, res, '/routes/amp/codigo/javascript', req.query);})
 
 
-    server.get('/codigo/knockout/', (req, res) => { app.render(req, res, '/routes/codigo/html5', req.query);})
-    server.get('/amp/codigo/knockout/', (req, res) => { app.render(req, res, '/routes/amp/codigo/html5', req.query);})
+    server.get('/codigo/knockout/', (req, res) => { app.render(req, res, '/routes/codigo/knockout', req.query);})
+    server.get('/amp/codigo/knockout/', (req, res) => { app.render(req, res, '/routes/amp/codigo/knockout', req.query);})
 
 
     server.get('/codigo/apache/', (req, res) => { app.render(req, res, '/routes/codigo/html5', req.query);})
     server.get('/amp/codigo/apache/', (req, res) => { app.render(req, res, '/routes/amp/codigo/html5', req.query);})
 
 
-    server.get('/codigo/php/', (req, res) => { app.render(req, res, '/routes/codigo', req.query);})
-    server.get('/amp/codigo/php/', (req, res) => { app.render(req, res, '/routes/amp/codigo', req.query);})
+    server.get('/codigo/php/', (req, res) => { app.render(req, res, '/routes/codigo/php', req.query);})
+    server.get('/amp/codigo/php/', (req, res) => { app.render(req, res, '/routes/amp/codigo/php', req.query);})
 
-    server.get('/codigo/ruby_on_rails/', (req, res) => { app.render(req, res, '/routes/codigo', req.query);})
-    server.get('/amp/codigo/ruby_on_rails/', (req, res) => { app.render(req, res, '/routes/amp/codigo', req.query);})
+    server.get('/codigo/rubyonrails/', (req, res) => { app.render(req, res, '/routes/codigo/rubyonrails', req.query);})
+    server.get('/amp/codigo/rubyonrails/', (req, res) => { app.render(req, res, '/routes/amp/codigo/rubyonrails', req.query);})
 
-    server.get('/codigo/coldfusion/', (req, res) => { app.render(req, res, '/routes/codigo', req.query);})
-    server.get('/amp/codigo/coldfusion/', (req, res) => { app.render(req, res, '/routes/amp/codigo', req.query);})
+    server.get('/codigo/coldfusion/', (req, res) => { app.render(req, res, '/routes/codigo/coldfusion', req.query);})
+    server.get('/amp/codigo/coldfusion/', (req, res) => { app.render(req, res, '/routes/amp/codigo/coldfusion', req.query);})
 
-    server.get('/codigo/asp/', (req, res) => { app.render(req, res, '/routes/codigo', req.query);})
-    server.get('/amp/codigo/asp/', (req, res) => { app.render(req, res, '/routes/amp/codigo', req.query);})
+    server.get('/codigo/asp/', (req, res) => { app.render(req, res, '/routes/codigo/asp', req.query);})
+    server.get('/amp/codigo/asp/', (req, res) => { app.render(req, res, '/routes/amp/codigo/asp', req.query);})
 
-    server.get('/codigo/dotnet/', (req, res) => { app.render(req, res, '/routes/codigo', req.query);})
-    server.get('/amp/codigo/dotnet/', (req, res) => { app.render(req, res, '/routes/amp/codigo', req.query);})
+    server.get('/codigo/dotnet/', (req, res) => { app.render(req, res, '/routes/codigo/dotnet', req.query);})
+    server.get('/amp/codigo/dotnet/', (req, res) => { app.render(req, res, '/routes/amp/codigo/dotnet', req.query);})
 
-    server.get('/codigo/Java/', (req, res) => { app.render(req, res, '/routes/codigo', req.query);})
-    server.get('/amp/codigo/Java/', (req, res) => { app.render(req, res, '/routes/amp/codigo', req.query);})
+    server.get('/codigo/Java/', (req, res) => { app.render(req, res, '/routes/codigo/Java', req.query);})
+    server.get('/amp/codigo/Java/', (req, res) => { app.render(req, res, '/routes/amp/codigo/Java', req.query);})
 
-    server.get('/codigo/cgi_perl/', (req, res) => { app.render(req, res, '/routes/codigo', req.query);})
-    server.get('/amp/codigo/cgi_perl/', (req, res) => { app.render(req, res, '/routes/amp/codigo', req.query);})
+    server.get('/codigo/cgi/', (req, res) => { app.render(req, res, '/routes/codigo/cgi', req.query);})
+    server.get('/amp/codigo/cgi/', (req, res) => { app.render(req, res, '/routes/amp/codigo/cgi', req.query);})
 
-    server.get('/codigo/eu/', (req, res) => { app.render(req, res, '/routes/codigo', req.query);})
-    server.get('/amp/codigo/eu/', (req, res) => { app.render(req, res, '/routes/amp/codigo', req.query);})
+    server.get('/codigo/eu/', (req, res) => { app.render(req, res, '/routes/eu/', req.query);})
+    server.get('/amp/codigo/eu/', (req, res) => { app.render(req, res, '/routes/amp/eu/', req.query);})
     
     //======================================================================
 
