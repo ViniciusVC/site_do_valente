@@ -6671,7 +6671,7 @@ function connect(options) {
       error.name = err.name;
       error.stack = err.stack; // __NEXT_DIST_DIR is provided by webpack
 
-      source_map_support_1.rewriteStacktrace(error, "/home/vinicius/Documents/Projetos/site_do_valente/.next");
+      source_map_support_1.rewriteStacktrace(error, "/home/oi402825/Documentos/Projetos/site_do_valente/.next");
       return error;
     }
   };

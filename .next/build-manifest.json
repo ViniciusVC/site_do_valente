@@ -11,7 +11,11 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/routes/codigo": [
+    "/routes/componentes/componentes": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/routes/hub": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]

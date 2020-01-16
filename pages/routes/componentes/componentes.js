@@ -1,6 +1,6 @@
 import React from 'react';
-import * as Util from '../../../controller/util.js';
 import TemplaComponentes from '../../../components/templates/componentes.js';
+import * as Util from '../../../controller/util.js';
 
 const RotaComponentes = function(props){
   return(

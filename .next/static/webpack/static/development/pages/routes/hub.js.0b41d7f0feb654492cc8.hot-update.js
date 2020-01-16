@@ -1,0 +1,88 @@
+webpackHotUpdate("static/development/pages/routes/hub.js",{
+
+/***/ "./components/templates/hub.js":
+/*!*************************************!*\
+  !*** ./components/templates/hub.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-jsx/style */ "./node_modules/styled-jsx/style.js");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/head */ "./node_modules/next-server/dist/lib/head.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _atoms_atFavIcon__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../atoms/atFavIcon */ "./components/atoms/atFavIcon/index.js");
+/* harmony import */ var _atoms_atDiv__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../atoms/atDiv */ "./components/atoms/atDiv/index.js");
+/* harmony import */ var _moleculas_moListadeRotas_index_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../moleculas/moListadeRotas/index.js */ "./components/moleculas/moListadeRotas/index.js");
+/* harmony import */ var _moleculas_moHeaderSideDoValente_index_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../moleculas/moHeaderSideDoValente/index.js */ "./components/moleculas/moHeaderSideDoValente/index.js");
+/* harmony import */ var _controller_util_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../controller/util.js */ "./controller/util.js");
+/* harmony import */ var _atoms_atCampoTexto__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../atoms/atCampoTexto */ "./components/atoms/atCampoTexto/index.js");
+/* harmony import */ var _atoms_atBtLink__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../atoms/atBtLink */ "./components/atoms/atBtLink/index.js");
+
+
+
+
+
+
+
+
+
+
+
+var templateHome = function templateHome(props) {
+  console.log('╔════════════════════════════════════════╗');
+  console.log('║      Eu                                ║');
+  console.log('╚════════════════════════════════════════╝');
+  var cidade = _controller_util_js__WEBPACK_IMPORTED_MODULE_7__["validaProps"](props.cidade, "Rio de Janeiro");
+  var modo = _controller_util_js__WEBPACK_IMPORTED_MODULE_7__["validaProps"](props.modo, "html");
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "jsx-143278592 " + styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a.dynamic([["1947935290", [_controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS1"](), _controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS2"](), _controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS3"](), _controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS4"](), _controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS5"]()]]])
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("title", {
+    className: "jsx-143278592 " + styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a.dynamic([["1947935290", [_controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS1"](), _controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS2"](), _controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS3"](), _controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS4"](), _controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS5"]()]]])
+  }, "Hub de Contato"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_atoms_atFavIcon__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
+    name: "description",
+    content: "Hub de Contato",
+    className: "jsx-143278592 " + styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a.dynamic([["1947935290", [_controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS1"](), _controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS2"](), _controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS3"](), _controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS4"](), _controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS5"]()]]])
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("link", {
+    rel: "canonical",
+    href: "/hub/",
+    className: "jsx-143278592 " + styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a.dynamic([["1947935290", [_controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS1"](), _controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS2"](), _controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS3"](), _controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS4"](), _controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS5"]()]]])
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_moleculas_moHeaderSideDoValente_index_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    cidade: cidade,
+    modo: modo
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_atoms_atDiv__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    display: "justificado"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "jsx-143278592 " + styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a.dynamic([["1947935290", [_controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS1"](), _controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS2"](), _controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS3"](), _controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS4"](), _controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS5"]()]]]) + " " + "HubListadeRotas"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_moleculas_moListadeRotas_index_js__WEBPACK_IMPORTED_MODULE_5__["default"], null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "jsx-143278592 " + styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a.dynamic([["1947935290", [_controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS1"](), _controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS2"](), _controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS3"](), _controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS4"](), _controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS5"]()]]]) + " " + "DivHub"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", {
+    className: "jsx-143278592 " + styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a.dynamic([["1947935290", [_controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS1"](), _controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS2"](), _controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS3"](), _controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS4"](), _controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS5"]()]]])
+  }, "Hub de Contato"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    className: "jsx-143278592 " + styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a.dynamic([["1947935290", [_controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS1"](), _controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS2"](), _controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS3"](), _controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS4"](), _controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS5"]()]]])
+  }, "Est\xE1 \xE9 uma aplica\xE7\xE3o, para testar a API do Hub de Contatos."), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    className: "jsx-143278592 " + styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a.dynamic([["1947935290", [_controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS1"](), _controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS2"](), _controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS3"](), _controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS4"](), _controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS5"]()]]])
+  }, "Entre com um CPF no campo a baixo."), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_atoms_atCampoTexto__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    color: "#ffffff"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_atoms_atBtLink__WEBPACK_IMPORTED_MODULE_9__["default"], {
+    href: "https://www.oi.com.br",
+    value: "Buscar contatos",
+    estilo: "laranja"
+  }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    id: "143278592"
+  }, ".HubListadeRotas.jsx-143278592{width:25%;}.DivHub.jsx-143278592{width:75%;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL29pNDAyODI1L0RvY3VtZW50b3MvUHJvamV0b3Mvc2l0ZV9kb192YWxlbnRlL2NvbXBvbmVudHMvdGVtcGxhdGVzL2h1Yi5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFxQ2tCLEFBR21CLEFBR0MsVUFGWCxBQUdBIiwiZmlsZSI6Ii9ob21lL29pNDAyODI1L0RvY3VtZW50b3MvUHJvamV0b3Mvc2l0ZV9kb192YWxlbnRlL2NvbXBvbmVudHMvdGVtcGxhdGVzL2h1Yi5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCdcbmltcG9ydCBIZWFkIGZyb20gJ25leHQvaGVhZCdcbmltcG9ydCBGYXZJY29uIGZyb20gJy4uL2F0b21zL2F0RmF2SWNvbidcbmltcG9ydCBEaXYgZnJvbSAnLi4vYXRvbXMvYXREaXYnXG5pbXBvcnQgTGlzdGFkZVJvdGFzIGZyb20gJy4uL21vbGVjdWxhcy9tb0xpc3RhZGVSb3Rhcy9pbmRleC5qcydcbmltcG9ydCBIZWFkZXJTaWRlRG9WYWxlbnRlIGZyb20gJy4uL21vbGVjdWxhcy9tb0hlYWRlclNpZGVEb1ZhbGVudGUvaW5kZXguanMnXG5pbXBvcnQgKiBhcyBVdGlsIGZyb20gJy4uLy4uL2NvbnRyb2xsZXIvdXRpbC5qcyc7XG5pbXBvcnQgQXJyb3cgZnJvbSAnLi4vYXRvbXMvYXRDYW1wb1RleHRvJztcbmltcG9ydCBCdExpbmsgZnJvbSAnLi4vYXRvbXMvYXRCdExpbmsnO1xuXG5jb25zdCB0ZW1wbGF0ZUhvbWUgPSBmdW5jdGlvbiAocHJvcHMpIHtcbiAgY29uc29sZS5sb2coJ+KVlOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVlycpO1xuICBjb25zb2xlLmxvZygn4pWRICAgICAgRXUgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIOKVkScpO1xuICBjb25zb2xlLmxvZygn4pWa4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWdJyk7XG4gIHZhciBjaWRhZGUgPSBVdGlsLnZhbGlkYVByb3BzKHByb3BzLmNpZGFkZSwgXCJSaW8gZGUgSmFuZWlyb1wiKTtcbiAgdmFyIG1vZG8gPSBVdGlsLnZhbGlkYVByb3BzKHByb3BzLm1vZG8sIFwiaHRtbFwiKTtcbiAgcmV0dXJuIChcbiAgICA8ZGl2PlxuICAgICAgPEhlYWQ+XG4gICAgICAgIDx0aXRsZT5IdWIgZGUgQ29udGF0bzwvdGl0bGU+XG4gICAgICAgIDxGYXZJY29uIC8+XG4gICAgICAgIDxtZXRhIG5hbWU9XCJkZXNjcmlwdGlvblwiIGNvbnRlbnQ9XCJIdWIgZGUgQ29udGF0b1wiIC8+XG4gICAgICAgIDxsaW5rIHJlbD1cImNhbm9uaWNhbFwiIGhyZWY9XCIvaHViL1wiIC8+XG4gICAgICA8L0hlYWQ+XG4gICAgICA8SGVhZGVyU2lkZURvVmFsZW50ZSBjaWRhZGU9e2NpZGFkZX0gbW9kbz17bW9kb30gLz5cbiAgICAgIDxEaXYgZGlzcGxheT1cImp1c3RpZmljYWRvXCI+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiSHViTGlzdGFkZVJvdGFzXCI+XG4gICAgICAgICAgPExpc3RhZGVSb3RhcyAvPlxuICAgICAgICA8L2Rpdj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJEaXZIdWJcIj5cbiAgICAgICAgICA8aDE+SHViIGRlIENvbnRhdG88L2gxPlxuICAgICAgICAgIDxwPkVzdMOhIMOpIHVtYSBhcGxpY2HDp8OjbywgcGFyYSB0ZXN0YXIgYSBBUEkgZG8gSHViIGRlIENvbnRhdG9zLjwvcD5cbiAgICAgICAgICA8cD5FbnRyZSBjb20gdW0gQ1BGIG5vIGNhbXBvIGEgYmFpeG8uPC9wPlxuICAgICAgICAgIDxBcnJvdyBjb2xvcj1cIiNmZmZmZmZcIi8+IFxuICAgICAgICAgIDxCdExpbmsgaHJlZj1cImh0dHBzOi8vd3d3Lm9pLmNvbS5iclwiIHZhbHVlPVwiQnVzY2FyIGNvbnRhdG9zXCIgZXN0aWxvPVwibGFyYW5qYVwiLz5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L0Rpdj5cbiAgICAgIDxzdHlsZSBqc3g+e2BcbiAgICAgICAgLkh1Ykxpc3RhZGVSb3Rhc3tcbiAgICAgICAgIHdpZHRoOjI1JTtcbiAgICAgICAgfVxuICAgICAgICAuRGl2SHVie1xuICAgICAgICAgIHdpZHRoOjc1JTtcbiAgICAgICAgfVxuICAgICAgYH08L3N0eWxlPlxuICAgICAgPHN0eWxlIGpzeCBnbG9iYWw+e2BcbiAgICAgICAgJHtVdGlsLmZvbnRlc0NTUzEoKX1cbiAgICAgICAgJHtVdGlsLmZvbnRlc0NTUzIoKX1cbiAgICAgICAgJHtVdGlsLmZvbnRlc0NTUzMoKX1cbiAgICAgICAgJHtVdGlsLmZvbnRlc0NTUzQoKX1cbiAgICAgICAgJHtVdGlsLmZvbnRlc0NTUzUoKX1cbiAgICAgICAgYm9keXtcbiAgICAgICAgICBtYXJnaW46IDBweDtcbiAgICAgICAgICBwYWRkaW5nOiAwcHg7XG4gICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZmZmZjtcbiAgICAgICAgICBmb250LWZhbWlseTogU2ltcGxvbkJQLVJlZ3VsYXIsIHNhbnMtc2VyaWY7ICAgICAgICBcbiAgICAgICAgfVxuICAgICAgYH08L3N0eWxlPlxuICAgIDwvZGl2PlxuICApXG59XG5cbmV4cG9ydCBkZWZhdWx0IHRlbXBsYXRlSG9tZVxuIl19 */\n/*@ sourceURL=/home/oi402825/Documentos/Projetos/site_do_valente/components/templates/hub.js */"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    id: "1947935290",
+    dynamic: [_controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS1"](), _controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS2"](), _controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS3"](), _controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS4"](), _controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS5"]()]
+  }, "".concat(_controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS1"](), " ").concat(_controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS2"](), " ").concat(_controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS3"](), " ").concat(_controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS4"](), " ").concat(_controller_util_js__WEBPACK_IMPORTED_MODULE_7__["fontesCSS5"](), " body{margin:0px;padding:0px;background-color:#ffffff;font-family:SimplonBP-Regular,sans-serif;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL29pNDAyODI1L0RvY3VtZW50b3MvUHJvamV0b3Mvc2l0ZV9kb192YWxlbnRlL2NvbXBvbmVudHMvdGVtcGxhdGVzL2h1Yi5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUE2Q3lCLEFBUXNCLFdBQ0MsWUFDYSx5QkFDaUIseUNBQzVDIiwiZmlsZSI6Ii9ob21lL29pNDAyODI1L0RvY3VtZW50b3MvUHJvamV0b3Mvc2l0ZV9kb192YWxlbnRlL2NvbXBvbmVudHMvdGVtcGxhdGVzL2h1Yi5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCdcbmltcG9ydCBIZWFkIGZyb20gJ25leHQvaGVhZCdcbmltcG9ydCBGYXZJY29uIGZyb20gJy4uL2F0b21zL2F0RmF2SWNvbidcbmltcG9ydCBEaXYgZnJvbSAnLi4vYXRvbXMvYXREaXYnXG5pbXBvcnQgTGlzdGFkZVJvdGFzIGZyb20gJy4uL21vbGVjdWxhcy9tb0xpc3RhZGVSb3Rhcy9pbmRleC5qcydcbmltcG9ydCBIZWFkZXJTaWRlRG9WYWxlbnRlIGZyb20gJy4uL21vbGVjdWxhcy9tb0hlYWRlclNpZGVEb1ZhbGVudGUvaW5kZXguanMnXG5pbXBvcnQgKiBhcyBVdGlsIGZyb20gJy4uLy4uL2NvbnRyb2xsZXIvdXRpbC5qcyc7XG5pbXBvcnQgQXJyb3cgZnJvbSAnLi4vYXRvbXMvYXRDYW1wb1RleHRvJztcbmltcG9ydCBCdExpbmsgZnJvbSAnLi4vYXRvbXMvYXRCdExpbmsnO1xuXG5jb25zdCB0ZW1wbGF0ZUhvbWUgPSBmdW5jdGlvbiAocHJvcHMpIHtcbiAgY29uc29sZS5sb2coJ+KVlOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVlycpO1xuICBjb25zb2xlLmxvZygn4pWRICAgICAgRXUgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIOKVkScpO1xuICBjb25zb2xlLmxvZygn4pWa4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWdJyk7XG4gIHZhciBjaWRhZGUgPSBVdGlsLnZhbGlkYVByb3BzKHByb3BzLmNpZGFkZSwgXCJSaW8gZGUgSmFuZWlyb1wiKTtcbiAgdmFyIG1vZG8gPSBVdGlsLnZhbGlkYVByb3BzKHByb3BzLm1vZG8sIFwiaHRtbFwiKTtcbiAgcmV0dXJuIChcbiAgICA8ZGl2PlxuICAgICAgPEhlYWQ+XG4gICAgICAgIDx0aXRsZT5IdWIgZGUgQ29udGF0bzwvdGl0bGU+XG4gICAgICAgIDxGYXZJY29uIC8+XG4gICAgICAgIDxtZXRhIG5hbWU9XCJkZXNjcmlwdGlvblwiIGNvbnRlbnQ9XCJIdWIgZGUgQ29udGF0b1wiIC8+XG4gICAgICAgIDxsaW5rIHJlbD1cImNhbm9uaWNhbFwiIGhyZWY9XCIvaHViL1wiIC8+XG4gICAgICA8L0hlYWQ+XG4gICAgICA8SGVhZGVyU2lkZURvVmFsZW50ZSBjaWRhZGU9e2NpZGFkZX0gbW9kbz17bW9kb30gLz5cbiAgICAgIDxEaXYgZGlzcGxheT1cImp1c3RpZmljYWRvXCI+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiSHViTGlzdGFkZVJvdGFzXCI+XG4gICAgICAgICAgPExpc3RhZGVSb3RhcyAvPlxuICAgICAgICA8L2Rpdj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJEaXZIdWJcIj5cbiAgICAgICAgICA8aDE+SHViIGRlIENvbnRhdG88L2gxPlxuICAgICAgICAgIDxwPkVzdMOhIMOpIHVtYSBhcGxpY2HDp8OjbywgcGFyYSB0ZXN0YXIgYSBBUEkgZG8gSHViIGRlIENvbnRhdG9zLjwvcD5cbiAgICAgICAgICA8cD5FbnRyZSBjb20gdW0gQ1BGIG5vIGNhbXBvIGEgYmFpeG8uPC9wPlxuICAgICAgICAgIDxBcnJvdyBjb2xvcj1cIiNmZmZmZmZcIi8+IFxuICAgICAgICAgIDxCdExpbmsgaHJlZj1cImh0dHBzOi8vd3d3Lm9pLmNvbS5iclwiIHZhbHVlPVwiQnVzY2FyIGNvbnRhdG9zXCIgZXN0aWxvPVwibGFyYW5qYVwiLz5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L0Rpdj5cbiAgICAgIDxzdHlsZSBqc3g+e2BcbiAgICAgICAgLkh1Ykxpc3RhZGVSb3Rhc3tcbiAgICAgICAgIHdpZHRoOjI1JTtcbiAgICAgICAgfVxuICAgICAgICAuRGl2SHVie1xuICAgICAgICAgIHdpZHRoOjc1JTtcbiAgICAgICAgfVxuICAgICAgYH08L3N0eWxlPlxuICAgICAgPHN0eWxlIGpzeCBnbG9iYWw+e2BcbiAgICAgICAgJHtVdGlsLmZvbnRlc0NTUzEoKX1cbiAgICAgICAgJHtVdGlsLmZvbnRlc0NTUzIoKX1cbiAgICAgICAgJHtVdGlsLmZvbnRlc0NTUzMoKX1cbiAgICAgICAgJHtVdGlsLmZvbnRlc0NTUzQoKX1cbiAgICAgICAgJHtVdGlsLmZvbnRlc0NTUzUoKX1cbiAgICAgICAgYm9keXtcbiAgICAgICAgICBtYXJnaW46IDBweDtcbiAgICAgICAgICBwYWRkaW5nOiAwcHg7XG4gICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZmZmZjtcbiAgICAgICAgICBmb250LWZhbWlseTogU2ltcGxvbkJQLVJlZ3VsYXIsIHNhbnMtc2VyaWY7ICAgICAgICBcbiAgICAgICAgfVxuICAgICAgYH08L3N0eWxlPlxuICAgIDwvZGl2PlxuICApXG59XG5cbmV4cG9ydCBkZWZhdWx0IHRlbXBsYXRlSG9tZVxuIl19 */\n/*@ sourceURL=/home/oi402825/Documentos/Projetos/site_do_valente/components/templates/hub.js */")));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (templateHome);
+
+/***/ })
+
+})
+//# sourceMappingURL=hub.js.0b41d7f0feb654492cc8.hot-update.js.map

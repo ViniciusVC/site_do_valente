@@ -33,6 +33,7 @@ console.log('\x1b[33m Carregou as dependencias \u001b[34m');
 /codigo/eu/
 /codigo/captcha/
 /componentes/
+/hub/
 /amp/
 /amp/eu/
 /amp/codigo/
@@ -119,6 +120,10 @@ app.prepare()
     server.get('/codigo/eu/', (req, res) => { app.render(req, res, '/routes/eu/', req.query);})
     server.get('/amp/codigo/eu/', (req, res) => { app.render(req, res, '/routes/amp/eu/', req.query);})
     
+    //======================================================================
+
+    server.get('/hub/', (req, res) => {app.render(req, res, '/routes/hub', req.query);}) 
+
     //======================================================================
 
     server.get('/componentes/', (req, res) => {app.render(req, res, '/routes/componentes/componentes', req.query);}) 

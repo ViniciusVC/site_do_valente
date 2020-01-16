@@ -1,6 +1,6 @@
 import React from 'react';
-import TemplateEu from '../../components/templates/eu/index.js';
-import * as Util from '../../controller/util.js';
+import TemplateEu from '../../../components/templates/eu.js';
+import * as Util from '../../../controller/util.js';
 //import { withAmp } from 'next/amp';
 
 const RotaEuHtml = function(props){

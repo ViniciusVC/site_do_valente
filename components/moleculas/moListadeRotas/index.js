@@ -236,6 +236,12 @@ const ListadeRotas = function () {
           </ol>
         </details>
         <details>
+          <summary>Componentes</summary>
+          <ol type="1">
+            <li><Link href="/componentes/">Componentes</Link></li>
+          </ol>
+        </details>
+        <details>
           <summary>EU</summary>
           <ol type="1">
             <li><Link href="/eu/">Curriculo</Link></li>
