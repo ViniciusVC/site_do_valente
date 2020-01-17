@@ -10,6 +10,7 @@ const multer = require('multer');
 
 //API do captcha Meus Documentos
 var apicaptcha = require('./api1/captcha.js');
+var hubResposta = require('./api1/hubResposta.js');
 
 console.log('\x1b[33m Carregou as dependencias \u001b[34m');
 
@@ -80,21 +81,17 @@ app.prepare()
     server.get('/codigo/html5/', (req, res) => { app.render(req, res, '/routes/codigo/html5', req.query);})
     server.get('/amp/codigo/html5/', (req, res) => { app.render(req, res, '/routes/amp/html5', req.query);})
 
-
     server.get('/codigo/css/', (req, res) => { app.render(req, res, '/routes/codigo/css', req.query);})
     server.get('/amp/codigo/css/', (req, res) => { app.render(req, res, '/routes/amp/codigo/css', req.query);})
 
     server.get('/codigo/javascript/', (req, res) => { app.render(req, res, '/routes/codigo/javascript', req.query);})
     server.get('/amp/codigo/javascript/', (req, res) => { app.render(req, res, '/routes/amp/codigo/javascript', req.query);})
 
-
     server.get('/codigo/knockout/', (req, res) => { app.render(req, res, '/routes/codigo/knockout', req.query);})
     server.get('/amp/codigo/knockout/', (req, res) => { app.render(req, res, '/routes/amp/codigo/knockout', req.query);})
 
-
     server.get('/codigo/apache/', (req, res) => { app.render(req, res, '/routes/codigo/html5', req.query);})
     server.get('/amp/codigo/apache/', (req, res) => { app.render(req, res, '/routes/amp/codigo/html5', req.query);})
-
 
     server.get('/codigo/php/', (req, res) => { app.render(req, res, '/routes/codigo/php', req.query);})
     server.get('/amp/codigo/php/', (req, res) => { app.render(req, res, '/routes/amp/codigo/php', req.query);})
@@ -123,13 +120,19 @@ app.prepare()
     //======================================================================
 
     server.get('/hub/', (req, res) => {app.render(req, res, '/routes/hub', req.query);}) 
-
+    server.get('/hubbusca/', (req, res) => {app.render(req, res, '/routes/hub/busca', req.query);}) 
+  
     //======================================================================
 
     server.get('/componentes/', (req, res) => {app.render(req, res, '/routes/componentes/componentes', req.query);}) 
     server.get('/amp/componentes/', (req, res) => {app.render(req, res, '/routes/amp/componentes/componentes', req.query);}) 
 
     //======================================================================
+
+    //Rotas das APIs
+    //server.post('/meusdocumentos/api1/', upload.any(), meusdocumentos.api);
+    server.post('/api1/hubResposta/', hubResposta.api);
+    server.get('/api1/hubResposta/', hubResposta.api);
 
     server.get('/api1/captcha/', apicaptcha.api);
     server.get('/captcha/api1/', apicaptcha.api);

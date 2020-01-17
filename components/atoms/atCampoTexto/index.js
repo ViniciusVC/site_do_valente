@@ -8,7 +8,7 @@ const AtCampoTexto = props => {
   var varPlaceholder=Util.validaProps(props.placeholder,"--");
   var varType=Util.validaProps(props.type,"text");
   var varAutocomplete=Util.validaProps(props.autocomplete,"on");
-  var varSize=Util.validaProps(props.size,"6");
+  var varSize=Util.validaProps(props.size,"15");
   if( props.maxlength!=undefined){varSize=props.maxlength};
   
   return(
