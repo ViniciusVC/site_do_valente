@@ -12639,7 +12639,7 @@ var RotaHub = function RotaHub(props) {
 
 /***/ }),
 
-/***/ 5:
+/***/ 0:
 /*!***************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Froutes%2Fhub&absolutePagePath=%2Fhome%2Foi402825%2FDocumentos%2FProjetos%2Fsite_do_valente%2Fpages%2Froutes%2Fhub%2Findex.js ***!
   \***************************************************************************************************************************************************************************/
@@ -12662,5 +12662,5 @@ module.exports = dll_0b4d667fc966dc93bf48;
 
 /***/ })
 
-},[[5,"static/runtime/webpack.js"]]]);
+},[[0,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=hub.js.map

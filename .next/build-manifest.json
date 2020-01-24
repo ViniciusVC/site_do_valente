@@ -11,22 +11,6 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/routes/codigo/apache": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/routes/codigo/apache/alias": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/routes/codigo/apache/instalubuntu": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/routes/codigo/apache/redirect": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
     "/routes/hub": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"

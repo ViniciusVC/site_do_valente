@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 9);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1281,7 +1281,7 @@ var RotaHub = function RotaHub(props) {
 
 /***/ }),
 
-/***/ 9:
+/***/ 4:
 /*!*****************************************!*\
   !*** multi ./pages/routes/hub/busca.js ***!
   \*****************************************/

@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 8);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2525,7 +2525,7 @@ var RotaHub = function RotaHub(props) {
 
 /***/ }),
 
-/***/ 8:
+/***/ 3:
 /*!*****************************************!*\
   !*** multi ./pages/routes/hub/index.js ***!
   \*****************************************/
