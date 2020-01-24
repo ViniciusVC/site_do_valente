@@ -10,7 +10,7 @@ import * as Util from '../../controller/util.js';
 
 // ====== copiado de Documentoscopia - Projeto Piloto ======
 import Alerta from '../moleculas/moAlerta.js'
-import AtCampotexto from '../atoms/atCampoTexto';
+//import AtCampotexto from '../atoms/atCampoTexto';
 //import EnviaArquivo from '../../moleculas/moBtEnviaArquivo.js';
 // import BtSubmit from '../../atoms/atBtSubmit/index.js';
 // import AtCampoInvisivel from '../../atoms/atCampoInvisivel/index.js';
@@ -56,10 +56,11 @@ const templateHub = function (props) {
         <form action="/api1/hubResposta" method="get" id="formHubContato" name="formHubContato" encType="multipart/form-data">
             <div className="grupodecampos">
               <p>Entre com um CPF ou Conta Fatura no campo a baixo.</p>
-              <AtCampotexto type="text" id="contato" name="contato" autocomplete="contato" placeholder="CPF ou Conta Fatura"/>
+              <input type="text" id="contato" name="contato" accept="image/*" placeholder="CPF ou Conta Fatura" size="40" required=""></input>
             </div>
             <span id="erro"></span>
             <a onClick={() => {enviar()}} className="btLinklaranja">Buscar contatos</a>
+            <p>Use a (,) virgula como separador, para incluir uma lista.</p>
             <input type="radio" name="tipobusca" value="cpf" checked/>Buscar por cpf<br/>
             <input type="radio" name="tipobusca" value="fatura"/>Buscar por conta fatura<br/>
           </form>

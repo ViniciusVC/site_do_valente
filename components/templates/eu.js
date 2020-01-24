@@ -18,16 +18,19 @@ const templateHome = function (props) {
         <title>Vinícius Valente Coutinho</title>
         <FavIcon />
         <meta name="description" content="Vinícius Valente Coutinho" />
-        <link rel="canonical" href="/Eu/" />
+        <link rel="canonical" href="/eu/" />
       </Head>
       <HeaderSideDoValente cidade={cidade} modo={modo} />
+
       <Div display="justificado">
         <div className="HomeListadeRotas">
           <ListadeRotas />
         </div>
         <div className="HomeIndex">
-          <h1>Vinícius Valente Coutinho</h1>
-          <p>Aqui entrará uma carta de apresentação.</p>
+          <p>Meu nome é Vinícius Valente Coutinho, Analista de Sistemas,<br/> 
+          com experiencia em configuração de CDN, Apache, AMP, SEO, NodeJS, PHP, Hadoop.<br/> 
+          Atualmente liderando equipe de desenvolvimento de projeto de BigData.<br/> 
+          Atuei como lider de equipe em projeto AMP com foco em melhoria do SEO.</p>
         </div>
       </Div>
       <style jsx>{`

@@ -70,8 +70,13 @@ app.prepare()
     
     //index
     server.get('/amp/',(req, res) => {app.render(req, res, '/routes/amp', req.query); })
+    
     server.get('/eu/', (req, res) => {app.render(req, res, '/routes/eu', req.query); }) 
     server.get('/amp/eu/', (req, res) => {app.render(req, res, '/routes/amp/eu', req.query); }) 
+     
+    server.get('/eu/curriculo/', (req, res) => {app.render(req, res, '/routes/eu/curriculo', req.query); }) 
+    server.get('/curriculo/', (req, res) => {app.render(req, res, '/routes/eu/curriculo', req.query); }) 
+    server.get('/amp/curriculo/', (req, res) => {app.render(req, res, '/routes/amp/eu/curriculo', req.query); }) 
 
     //======================================================================
 
@@ -90,8 +95,15 @@ app.prepare()
     server.get('/codigo/knockout/', (req, res) => { app.render(req, res, '/routes/codigo/knockout', req.query);})
     server.get('/amp/codigo/knockout/', (req, res) => { app.render(req, res, '/routes/amp/codigo/knockout', req.query);})
 
-    server.get('/codigo/apache/', (req, res) => { app.render(req, res, '/routes/codigo/html5', req.query);})
-    server.get('/amp/codigo/apache/', (req, res) => { app.render(req, res, '/routes/amp/codigo/html5', req.query);})
+    server.get('/codigo/apache/', (req, res) => { app.render(req, res, '/routes/codigo/apache', req.query);})
+    server.get('/amp/codigo/apache/', (req, res) => { app.render(req, res, '/routes/amp/codigo/apache', req.query);})
+
+    server.get('/codigo/apache/instalubuntu', (req, res) => { app.render(req, res, '/routes/codigo/apache/instalubuntu', req.query);})
+    server.get('/amp/codigo/apache/instalubuntu', (req, res) => { app.render(req, res, '/routes/amp/codigo/apache/instalubuntu', req.query);})
+    server.get('/codigo/apache/alias', (req, res) => { app.render(req, res, '/routes/codigo/apache/alias', req.query);})
+    server.get('/amp/codigo/apache/alias', (req, res) => { app.render(req, res, '/routes/amp/codigo/apache/alias', req.query);})
+    server.get('/codigo/apache/redirect', (req, res) => { app.render(req, res, '/routes/codigo/apache/redirect', req.query);})
+    server.get('/amp/codigo/apache/redirect', (req, res) => { app.render(req, res, '/routes/amp/codigo/apache/redirect', req.query);})
 
     server.get('/codigo/php/', (req, res) => { app.render(req, res, '/routes/codigo/php', req.query);})
     server.get('/amp/codigo/php/', (req, res) => { app.render(req, res, '/routes/amp/codigo/php', req.query);})

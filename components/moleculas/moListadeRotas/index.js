@@ -173,9 +173,10 @@ const ListadeRotas = function () {
         <details>
           <summary>Apache</summary>
           <ol type="1">
-            <li><Link href="/codigo/apache/">Instalar Apache no Ubuntu</Link></li>
-            <li><Link href="/codigo/apache/">Alias em Apache</Link></li>
-            <li><Link href="/codigo/apache/">redirect 301 em Apache</Link></li>
+          <li><Link href="/codigo/apache/">Apache</Link></li>
+            <li><Link href="/codigo/apache/instalubuntu">Instalar Apache no Ubuntu</Link></li>
+            <li><Link href="/codigo/apache/alias">Alias em Apache</Link></li>
+            <li><Link href="/codigo/apache/redirect">redirect 301 em Apache</Link></li>
           </ol>
         </details>
 
@@ -205,7 +206,8 @@ const ListadeRotas = function () {
         <details>
           <summary>ASP</summary>
           <ol type="1">
-            <li><Link href="/codigo/asp/">redirect 301 em ASP</Link></li>
+            <li><Link href="/codigo/asp/">ASP</Link></li>
+            <li><Link href="/codigo/asp/redirect">redirect 301 em ASP</Link></li>
           </ol>
         </details>
 
@@ -244,8 +246,8 @@ const ListadeRotas = function () {
         <details>
           <summary>EU</summary>
           <ol type="1">
-            <li><Link href="/eu/">Curriculo</Link></li>
-            <li><Link href="/amp/eu/">Curriculo (Pagina AMP)</Link></li>
+            <li><Link href="/eu/curriculo/">Curriculo</Link></li>
+            <li><Link href="/amp/eu/curriculo/">Curriculo (Pagina AMP)</Link></li>
             <li><Link href="/eu/">Quem Sou Eu</Link></li>
             <li><Link href="/amp/eu/">Quem Sou Eu (Pagina AMP)</Link></li>
           </ol>

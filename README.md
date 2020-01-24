@@ -34,8 +34,10 @@ npm run start
 ### Rotas
 * Rotas configuradas no server.js
 ```
+
 /
 /eu/
+/curriculo/
 /codigo/
 /codigo/html5/
 /codigo/css/
@@ -50,11 +52,11 @@ npm run start
 /codigo/Java/
 /codigo/cgi_perl/
 /codigo/eu/
-/codigo/captcha/
-/componentes/
+/codigo/eu/curriculo/
 
 /amp/
 /amp/eu/
+/amp/curriculo/
 /amp/codigo/
 /amp/codigo/html5/
 /amp/codigo/css/
@@ -68,12 +70,12 @@ npm run start
 /amp/codigo/dotnet/
 /amp/codigo/Java/
 /amp/codigo/cgi_perl/
-/amp/codigo/eu/
-/amp/codigo/captcha/
+/amp/codigo/eu/curriculo/
 /amp/componentes/
 
+/api1/captcha/
 
-
+/componentes/
 
 
 ```

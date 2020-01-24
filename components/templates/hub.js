@@ -28,25 +28,6 @@ const templateHub = function (props) {
   var cidade = Util.validaProps(props.cidade, "Rio de Janeiro");
   var modo = Util.validaProps(props.modo, "html");
 
-
-
-  function enviar(){
-    //const compress = new Compress()
-    document.getElementById("divAlertaErro").style.display = "block";
-    document.getElementById("AlertaErroInf").innerHTML = "Preparando para enviar...";
-
-    var mensagemFinal = "";
-    if(document.getElementById("cpf").value==""){
-      mensagemFinal = "CPF não foi preenchido";
-    }
-    
-    if (mensagemFinal==""){
-      document.getElementById('formHubContato').submit()
-    }else{
-      document.getElementById("AlertaErroInf").innerHTML = mensagemFinal;
-    }
-  }
-
   return (
     <div className="DivHubIndex">
       <Head>
