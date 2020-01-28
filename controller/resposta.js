@@ -28,6 +28,7 @@ exports.hub = function(res,req) {
     
     var varURL = "http://stage.apisdigitais.interno:8765/api/customermanagement/v3/customer/hub";
 
+    
     var a=0;    
     function buscaUnitariaAPIhub(){
         if(a < arraydecpfs.length){

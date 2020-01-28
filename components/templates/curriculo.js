@@ -31,37 +31,40 @@ const templateHome = function (props) {
           <h1>CURR&Iacute;CULO</h1>
           Vinicius Valente Coutinho
           <h2>CONTATO:</h2>
-          Endere&ccedil;o em RJ: Av tenentecoronel Muniz de Aragão. bairro Anil-Jacarepagua, Rio de janeiro, RJ - CEP.<br/>
-          Endere&ccedil;o em MG: Rua Jo&atilde;o Marques de Oliveira, 97, bairro Parte Alta, Bicas, MG - CEP 36600-000.<br/>
+          Residencia em RJ, bairro Anil-Jacarepagua na cidade do Rio de janeiro.<br/>
+          Residencia em MG, bairro Parte Alta na cidade de Bicas.<br/>
           E-mail : vinivalent@gmail.com<br/>
-          
+          Linkedin : https://www.linkedin.com/in/vin%C3%ADcius-valente-51989523/<br/>
+          Google Sites : https://sites.google.com/view/viniciusvalente/
+          GitHub : https://github.com/ViniciusVC/
           <h2>OBJETIVOS:</h2>
-          Lider de equipe<br/>
+          Gerente de Desenvolvimento de Sistemas<br/>
 
           <h2>HIST&Oacute;RICO PROFISSIONAL:</h2>
           
-          <h3>Oi. Atualmente des de 2018</h3><br/>
-          <h3>Especialista em Relacionamento Digital</h3>
-          Equipe Insigths:
+          <h3>Oi - Atualmente des de 04/09/2017</h3>          
+
+          <h3>11/11/2019 - Especialista - Equipe Insights:</h3>
           <ul>
           <li>Lider técnico de projeto Big Data.</li>
           </ul>
-          Equipe e-commerce e SEO: 
+
+          <h3>12/06/2018 - Especialista - Equipes e-commerce e SEO:</h3>
           <ul>
-          <li>Lider técnico do projeto AMP</li>
-          <li>Configuração dos Apaches do site da Oi</li>
+          <li>Lider técnico do projeto AMP, gerado em servidor NodeJS.</li>
+          <li>Configuração dos Apaches do site da Oi.</li>
           <li>Configuração da CDN-AWS.</li>
           </ul>
 
-          <h3>Analista de Relacionamento Digital.</h3>
+          <h3>04/09/2017 - Analista Sênior de Relacionamento Digital.</h3>  
           <ul>
-          <li>Squad Portal Oi - Desenvolvimento frontand ReactJS</li>
-          <li>Squad ___OP - Criação de padrões e melhoria de código frontend.</li>
+          <li>Squad Portal Oi - Manutenção da Home do Portal da Oi.</li>
+          <li>Squad WebOps - Criação de padrões e melhoria de código frontend.</li>
           </ul>
 
-          <h3>Consultor</h3>
+          <h3>Consultor. De 2015 a 2016</h3>
           <ul>
-          <li>.</li>
+          <li>Consorcior de solução web para Consorcio Intermunicipal de Especialidades</li>
           </ul>
           
           <h3>DBA (alocado na TV Globo) - Consultor. De 16/11/2010 a 31/2/2014</h3>
@@ -78,13 +81,13 @@ const templateHome = function (props) {
           <ul>
           <li>Levantamento de requisitos de qualidade dos servi&ccedil;os e Elabora&ccedil;&atilde;o de plano de testes junto aos analistas de neg&oacute;cio;</li>
           <li>Assegurar que o sistema ou aplica&ccedil;&atilde;o entregue, esteja consistente com a arquitetura concordada, garantindo a qualidade e exig&ecirc;ncias definidas com o cliente;</li>
-          <li>Realiza&ccedil;&atilde;o de testes de sistemas e passagem para produ��o ou apontamento de erro; </li>
+          <li>Realiza&ccedil;&atilde;o de testes de sistemas e passagem para produ&ccedil;ão ou apontamento de erro; </li>
           <li>Desenvolvimento de ferramentas de aux&iacute;lio, automatizando os testes de sistemas.</li>
           </ul>
 
           <h3>Canvas Webhouse - Analista de Sistemas S&ecirc;nior. De 5/2009 a 10/2009</h3>
           <ul>
-          <li>L&iacute;der de equipe de seis profissionais de programa&ccedil;&atilde;o</li>
+          <li>L&iacute;der de equipe de programa&ccedil;&atilde;o</li>
           <li>Defini&ccedil;&atilde;o da arquitetura do sistema, coordena&ccedil;&atilde;o de atividades, distribui&ccedil;&atilde;o de tarefas.</li>
           <li>Utiliza&ccedil;&atilde;o de tecnologias de Web2.0, Gest&atilde;o de Conte&uacute;do, Servidor de Portais;</li>
           <li>Desenvolvimento, administra&ccedil;&atilde;o, manuten&ccedil;&atilde;o e suporte de Portais, com tecnologia .Net e J2EE, para clientes de grande porte como Petrobr&aacute;s, Vale e Globo. </li>
@@ -112,18 +115,18 @@ const templateHome = function (props) {
           <li>Negocia&ccedil;&atilde;o com clientes e confec&ccedil;&atilde;o de propostas;</li>
           <li>Levantamento de requisitos;</li>
           <li>Modelagem de sistemas para clientes de pequeno e m&eacute;dio porte;</li>
-          <li>Desenvolvimento de sistemas.</li>
+          <li>Desenvolvimento de sites utilisando as tecnologias .net e ActionScript.</li>
           </ul>
 
-          <h3>Zion NetWork (produtora de sites) - Programador. De 7/2000 a 12/2000</h3>
+          <h3>Zion NetWork (produtora de sites) - Programador e Webdesogn. De 7/2000 a 12/2000</h3>
           <ul>
-          <li>Desenvolvimento de Portais para empresas utilizando ASP;</li>
+          <li>Desenvolvimento de Portais para empresas utilizando ASP, PHP e ActionScript;</li>
           <li>Design gr&aacute;fico;</li>
           </ul>
 
           <h3>Propag Camp. - Est&aacute;gio. De 9/1999 a 3/2000.</h3>
           <ul>
-          <li>Desenvolvimento de websites para clientes de pequeno porte, com PHP.</li>
+          <li>Desenvolvimento de websites para clientes de pequeno porte.</li>
           </ul>
 
           <h2>FORMA&Ccedil;&Atilde;O:</h2>
@@ -144,9 +147,12 @@ const templateHome = function (props) {
 
           <h2>CURSOS:</h2>
           <ul>
-          <li> Treinamento Oi</li>
-          <li> Treinamento Oi</li>  
-          <li> Treinamento Oi</li>  
+          <li> ARCHTALKS - Treinamento BigData Hadoop Cloudera/Oi- 27/11/2019 e 04/12/2019 - 8h</li>  
+          <li>Treinamento Centro de Treinamento da Cidade Nova - Circuito de Segurança da Informação - 21/02/2019 - 4h</li>  
+          <li>SEO - Workshop SEO Oi - 21/12/2018 - 2h</li>  
+          <li>WORAG - Workshop Ágil - Oi - 09/11/2018 - 4h</li>  
+          <li>Security Day - Treinamento Segurança da Informação - Certificado Digital - Serasa Experian - 19/09/2018 - 2h</li>  
+          <li>SEGINFO - Treinamento principais conceitos e aspectos de segurança da informação. Oi - 18/01/2019 -2h</li>  
           <li> Palestras Arquitetura de Software Mercado e Pr&aacute;ticas no Instituto Infnet em 10/02/2011 - 2 horas</li>
           <li> Desenvolvimento Web com ASP.net: DBI  - 9/03/2009 17/04/2009 - 60 horas</li>
           <li> T&eacute;cnicas B&aacute;sicas de Desenvolvimento de Sistemas: PUC-RJ - de 10/09/2007 a 13/12/2007 - 114 horas.</li>
