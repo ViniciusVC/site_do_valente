@@ -1,18 +1,17 @@
 import React from 'react';
-import Templateredirect from '../../../../components/templates/codigo/apache/redirect.js';
+import TemplateCSS from '../../../../components/templates/codigo/css/css12.js';
 import * as Util from '../../../../controller/util.js';
-
 //import { withAmp } from 'next/amp';
 
-const Retaredirect = function(props){
-  // var cidade = Util.validaProps(props.url.query.cidade,"Rio de Janeiro")
+const RotaCSS = function(props){
+  //var cidade = Util.validaProps(props.url.query.cidade,"Rio de Janeiro")
   return(
-    <Templateredirect 
+    <TemplateCSS 
       modo="html" 
-      cidade={Util.validaProps(props.url.query.cidade,"Rio de Janeiro")} />
+      cidade={Util.validaProps(props.url.query.cidade,"Rio de Janeiro")}/>
   )
 }
 
-//export default withAmp(Retaredirect, { hybrid: true });
-//export default withAmp(Retaredirect);
-export default Retaredirect
+//export default withAmp(RotaHome, { hybrid: true });
+//export default withAmp(RotaHome);
+export default RotaCSS

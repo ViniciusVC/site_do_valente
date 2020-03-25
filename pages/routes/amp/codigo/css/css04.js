@@ -1,17 +1,21 @@
 import React from 'react';
-import TemplateHtml5 from '../../../../../components/templates/codigo/apache/redirect.js';
-import * as Util from '../../../../controller/util.js';
-//import { withAmp } from 'next/amp';
+import { withAmp } from 'next/amp';
+import * as Util from '../../../../../controller/util.js';
+import TemplateCSS02 from '../../../../../components/templates/codigo/css/css.js';
 
-const RotaHome = function(props){
-  // var cidade = Util.validaProps(props.url.query.cidade,"Rio de Janeiro")
+const RotaCSS02 = function(props){
   return(
-    <TemplateHtml5 
-      modo="html" 
-      cidade={Util.validaProps(props.url.query.cidade,"Rio de Janeiro")} />
+    <TemplateCSS02
+      modo="amp"
+      cidade={Util.validaProps(props.cidade,"Rio de Janeiro")}/>
   )
 }
 
-//export default withAmp(RotaHome, { hybrid: true });
-//export default withAmp(RotaHome);
-export default RotaHome
+// //Usado para páginas hibridas (Gerou problemas com canonical)
+// export const config = {
+//   amp: true
+// }
+
+export default withAmp(RotaCSS02); // Usado para páginas AMP
+//export default withAmp(RotaCSS02, { hybrid: true }); // Usado para páginas hibridas
+//export default RotaCSS02 // Usado para páginas HTMP

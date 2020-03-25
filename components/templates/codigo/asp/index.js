@@ -1,6 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
-import FaviIcon from '../../atoms/atFavIcon'
+import FaviIcon from '../../../atoms/atFavIcon'
+import Layout from '../../../moleculas/layout'
+
 import Div from '../../atoms/atDiv'
 import ListadeRotas from '../../moleculas/moListadeRotas/ASP.js'
 import HeaderSideDoValente from '../../moleculas/moHeaderSideDoValente/ASP.js'

@@ -1,9 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
 import FavIcon from '../atoms/atFavIcon'
-import Div from '../atoms/atDiv'
-import ListadeRotas from '../moleculas/moListadeRotas/index.js'
-import HeaderSideDoValente from '../moleculas/moHeaderSideDoValente/index.js'
 import * as Util from '../../controller/util.js';
 // import Arrow from '../atoms/atCampoTexto';
 // import BtLink from '../atoms/atBtLink';

@@ -30,7 +30,7 @@ const atDiv = props => {
           .atDivJustificado {
             display: flex;
             justify-content: space-between;
-            width: 80%;
+            width: 100%;
           }
         `}</style>
       </div>
@@ -50,18 +50,14 @@ const atDiv = props => {
     )
   }else if(display == "DivLinhaResponsivo"){
      return(
-      
           <div className="Divlinha">
                         <style jsx>{`
-
                         .Divlinha{
                             display:flex;
                             justify-content: space-between;
                             margin:0 20px;
                         }
-
                         @media (max-width: 1169px) {
-
                               .Divlinha {
                                 display:flex;
                                 flex-direction:column ;
@@ -70,24 +66,18 @@ const atDiv = props => {
                                 margin-right: auto;
                                 margin-left: auto;
                                 max-width: 768px;
-
                               }
-                      
-                            @media(max-width:600px){
+                        @media(max-width:600px){
                               .Divlinha {
                                 margin-right: 20px;
                               }
                             }
                         }
 
-
               `}
-
               </style>
           </div>
-       
      )
-
   }else{
     //display=="responsivo"
     return (

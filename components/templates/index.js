@@ -1,6 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
 import FavIcon from '../atoms/atFavIcon'
+import Layout from '../moleculas/layout'
+
 import Div from '../atoms/atDiv'
 import ListadeRotas from '../moleculas/moListadeRotas/index.js'
 import HeaderSideDoValente from '../moleculas/moHeaderSideDoValente/index.js'
@@ -20,12 +22,7 @@ const templateHome = function (props) {
         <meta name="description" content="Portal da Oi." />
         <link rel="canonical" href="https://www.oi.com.br/" />
       </Head>
-      <HeaderSideDoValente cidade={cidade} modo={modo} />
-      <Div display="justificado">
-        <div className="HomeListadeRotas">
-          <ListadeRotas />
-        </div>
-        <div className="HomeIndex">
+      <Layout cidade={cidade} modo={modo}>
           <h1>Bem vindo ao Projeto SITE_DO_VALENTE</h1>
           <p>Renderização server-side de HTML e AMP (isomorfica ReactJS e NextJS)<br />
             0 - Site pessoal<br />
@@ -34,27 +31,13 @@ const templateHome = function (props) {
             2 - Páginas AMP (Next + React + AMP)<br />
             4 - Gerador de captcha interno (Não funciona com balance).<br />
             Repositorio : https://github.com/ViniciusVC/site_do_valente</p>
-        </div>
-      </Div>
+        </Layout>
       <style jsx>{`
         .HomeListadeRotas{
          width:25%;
         }
         .HomeIndex{
           width:75%;
-        }
-      `}</style>
-      <style jsx global>{`
-        ${Util.fontesCSS1()}
-        ${Util.fontesCSS2()}
-        ${Util.fontesCSS3()}
-        ${Util.fontesCSS4()}
-        ${Util.fontesCSS5()}
-        body{
-          margin: 0px;
-          padding: 0px;
-          background-color: #ffffff;
-          font-family: SimplonBP-Regular, sans-serif;        
         }
       `}</style>
     </div>

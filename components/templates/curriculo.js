@@ -1,9 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import FavIcon from '../atoms/atFavIcon'
-import Div from '../atoms/atDiv'
-import ListadeRotas from '../moleculas/moListadeRotas/index.js'
-import HeaderSideDoValente from '../moleculas/moHeaderSideDoValente/index.js'
+import Layout from '../moleculas/layout'
 import * as Util from '../../controller/util.js';
 
 const templateHome = function (props) {
@@ -20,25 +18,18 @@ const templateHome = function (props) {
         <meta name="description" content="Curriculo Vinícius Valente Coutinho" />
         <link rel="canonical" href="/curriculo/" />
       </Head>
-      <HeaderSideDoValente cidade={cidade} modo={modo} />
-
-      <Div display="justificado">
-        <div className="HomeListadeRotas">
-          <ListadeRotas />
-        </div>
-        
-        <div className="HomeIndex">
+      <Layout cidade={cidade} modo={modo}>
           <h1>CURR&Iacute;CULO</h1>
           Vinicius Valente Coutinho
           <h2>CONTATO:</h2>
-          Residencia em RJ, bairro Anil-Jacarepagua na cidade do Rio de janeiro.<br/>
+          Residencia em RJ, bairro Jacarepagua na cidade do Rio de janeiro.<br/>
           Residencia em MG, bairro Parte Alta na cidade de Bicas.<br/>
           E-mail : vinivalent@gmail.com<br/>
           Linkedin : https://www.linkedin.com/in/vin%C3%ADcius-valente-51989523/<br/>
           Google Sites : https://sites.google.com/view/viniciusvalente/
           GitHub : https://github.com/ViniciusVC/
           <h2>OBJETIVOS:</h2>
-          Gerente de Desenvolvimento de Sistemas<br/>
+          Lider técnico; Fullstack; Gerente de Desenvolvimento de Sistemas<br/>
 
           <h2>HIST&Oacute;RICO PROFISSIONAL:</h2>
           
@@ -65,6 +56,7 @@ const templateHome = function (props) {
           <h3>Consultor. De 2015 a 2016</h3>
           <ul>
           <li>Consorcior de solução web para Consorcio Intermunicipal de Especialidades</li>
+          <li>Trabalhos como designer e Ilustrador</li>
           </ul>
           
           <h3>DBA (alocado na TV Globo) - Consultor. De 16/11/2010 a 31/2/2014</h3>
@@ -143,7 +135,7 @@ const templateHome = function (props) {
           </ul>
 
           <h2>HABILIDADES:</h2>
-          Planejamento e condu&ccedil;&atilde;o de projeto, Lideran&ccedil;a; Reuni&otilde;es t&eacute;cnicas; N&atilde;o tenho problema em trabalhar sob press&atilde;o; Desenvolvimento e manuten&ccedil;&atilde;o de sistemas, levantamento de requisitos, modelagem de dados e requisitos; UML, XP, Web Services, C#, VB.NET, ASP, PHP, ColdFusion, JAVA, JS, ActionScript, HTML, XML, DHTML, CSS, PL/SQL.
+          Planejamento e condu&ccedil;&atilde;o de projeto, Lideran&ccedil;a; Reuni&otilde;es t&eacute;cnicas; N&atilde;o tenho problema em trabalhar sob press&atilde;o; Desenvolvimento e manuten&ccedil;&atilde;o de sistemas, levantamento de requisitos, modelagem de dados e requisitos; UML, XP, Web Services, NodeJS, ReactJS, C#, VB.NET, ASP, PHP, ColdFusion, JAVA, JS, ActionScript, HTML, XML, DHTML, CSS, PL/SQL.
 
           <h2>CURSOS:</h2>
           <ul>
@@ -169,32 +161,19 @@ const templateHome = function (props) {
           </ul>
 
           <h2>PRETEN&Ccedil;&Atilde;O SALARIAL:</h2>
-          R$ 9.000,00
+          R$ 9.500,00 (CLT)
           <br/><br/>
 
-        </div>
-      </Div>
+        </Layout>
       <style jsx>{`
-        .HomeListadeRotas{
-         width:25%;
+        .h2{
+         width:100%;
         }
-        .HomeIndex{
-          width:75%;
-        }
-      `}</style>
-      <style jsx global>{`
-        ${Util.fontesCSS1()}
-        ${Util.fontesCSS2()}
-        ${Util.fontesCSS3()}
-        ${Util.fontesCSS4()}
-        ${Util.fontesCSS5()}
-        body{
-          margin: 0px;
-          padding: 0px;
-          background-color: #ffffff;
-          font-family: SimplonBP-Regular, sans-serif;        
+        .li{
+          width:100%;
         }
       `}</style>
+
     </div>
   )
 }

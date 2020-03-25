@@ -1,6 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
 import FaviIcon from '../../../atoms/atFavIcon'
+import Layout from '../../../moleculas/layout'
+
 import Div from '../../../atoms/atDiv'
 import ListadeRotas from '../../../moleculas/moListadeRotas/index.js'
 import HeaderSideDoValente from '../../../moleculas/moHeaderSideDoValente/index.js'
@@ -27,12 +29,7 @@ const atendimentoOi = function (props) {
         <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
         <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
       </Head>
-      <HeaderSideDoValente cidade={cidade} modo={modo}/>
-      <Div display="justificado">
-        <div className="codigoApacheListadeRotas">
-          <ListadeRotas/>
-        </div>
-        <div className="codigoApache">
+      <Layout cidade={cidade} modo={modo}>
         <h1>REDIRECT</h1>
           <p>
           <br/>Outra diretiva bem interessante é a Redirect.
@@ -64,8 +61,7 @@ const atendimentoOi = function (props) {
           <br/>Redirect 301 /oldfile.htm http://example.net/newfile.htm
           <br/>
           </p>
-        </div>
-      </Div>
+        </Layout>
       <style jsx>{`
       .codigoApacheListadeRotas{
         width:25%;
@@ -80,19 +76,7 @@ const atendimentoOi = function (props) {
         flex-wrap: wrap; */
       }
     `}</style>
-      <style jsx global>{`
-        ${Util.fontesCSS1()}
-        ${Util.fontesCSS2()}
-        ${Util.fontesCSS3()}
-        ${Util.fontesCSS4()}
-        ${Util.fontesCSS5()}
-        body{
-          margin: 0px;
-          padding: 0px;
-          background-color: #ffffff;
-          font-family: SimplonBP-Regular, sans-serif;        
-        }
-    `}</style>
+
     </div>
   )
 }

@@ -9,8 +9,61 @@ const ListadeRotas = function () {
     <div>
       <h4 className='CssTitleRotasProjeto'>Rotas do Site do Valente</h4>
       <div className='CssRotasProjeto'>
+      
         <details>
-          <summary>HTML5</summary>
+          <summary>Apache</summary>
+          <ol type="1">
+          <li><Link href="/codigo/apache/">Apache</Link></li>
+            <li><Link href="/codigo/apache/instalubuntu">Instalar Apache no Ubuntu</Link></li>
+            <li><Link href="/codigo/apache/alias">Alias em Apache</Link></li>
+            <li><Link href="/codigo/apache/redirect">redirect 301 em Apache</Link></li>
+          </ol>
+        </details>
+
+        <details>
+          <summary>ASP</summary>
+          <ol type="1">
+            <li><Link href="/codigo/asp/">ASP</Link></li>
+            <li><Link href="/codigo/asp/redirect">redirect 301 em ASP</Link></li>
+          </ol>
+        </details>
+
+        <details>
+          <summary>CGI PERL</summary>
+          <ol type="1">
+            <li><Link href="/codigo/cgi/">redirect 301 em CGI</Link></li>
+          </ol>
+        </details>
+
+        <details>
+          <summary>ColdFusion</summary>
+          <ol type="1">
+            <li><Link href="/codigo/coldfusion/">redirect 301 em ColdFusion</Link></li>
+          </ol>
+        </details>
+        
+        <details>
+          <summary>CSS</summary>
+          <ol type="1">
+            <li><Link href="/codigo/css/">Introdução ao CSS</Link></li>
+            <li><Link href="/codigo/css/css02/">Estilizando textos</Link></li>
+            <li><Link href="/codigo/css/css03/">Imagens de fundo e atributo text</Link></li>
+            <li><Link href="/codigo/css/css04/">Links e Divs</Link></li>
+            <li><Link href="/codigo/css/css05/">Classe, ID e Span</Link></li>
+            <li><Link href="/codigo/css/css06/">Margin, padding e floatAula</Link></li>
+            <li><Link href="/codigo/css/css07/">Posicionamento de elementos, bordas e z-index</Link></li>
+            <li><Link href="/codigo/css/css08/">Efeitos com o atributo hover</Link></li>
+            <li><Link href="/codigo/css/css09/">Herança</Link></li>
+            <li><Link href="/codigo/css/css10/">Criando um menu com listas</Link></li>
+            <li><Link href="/codigo/css/css11/">Menu drop-down</Link></li>
+            <li><Link href="/codigo/css/css12/">Validação e Web Standards</Link></li>
+            <li><Link href="/codigo/css/css13/">Tabelas Style</Link></li>
+            <li><Link href="/codigo/css/anima_but/">Exemplos Anima But</Link></li>
+          </ol>
+        </details>
+
+        <details>
+          <summary>HTML</summary>
           <ol type="1">
             <li>
               <Link href="/codigo/html5/">HTML5 Introdução</Link><br />
@@ -133,31 +186,23 @@ const ListadeRotas = function () {
           </ol>
         </details>
 
+        <details>
+          <summary>Java</summary>
+          <ol type="1">
+            <li><Link href="/codigo/java/">Java</Link></li>
+            <li><Link href="/codigo/java/">redirect 301 em JSP</Link></li>
+          </ol>
+        </details>
 
         <details>
-          <summary>CSS</summary>
+          <summary>JS JavaScript</summary>
           <ol type="1">
-            <li><Link href="/codigo/css/">Introdução ao CSS</Link></li>
-            <li><Link href="/codigo/css/">Estilizando textos</Link></li>
-            <li><Link href="/codigo/css/">Imagens de fundo e atributo text</Link></li>
-            <li><Link href="/codigo/css/">Links e Divs</Link></li>
-            <li><Link href="/codigo/css/">Classe, ID e Span</Link></li>
-            <li><Link href="/codigo/css/">Margin, padding e floatAula 07 - Posicionamento de elementos, bordas e z-index</Link></li>
-            <li><Link href="/codigo/css/">- - - -</Link></li>
-            <li><Link href="/codigo/css/">Efeitos com o atributo hover</Link></li>
-            <li><Link href="/codigo/css/">Herança</Link></li>
-            <li><Link href="/codigo/css/">Criando um menu com listas</Link></li>
-            <li><Link href="/codigo/css/" >Menu drop-down</Link></li>
-            <li><Link href="/codigo/css/" >Validação e Web Standards</Link></li>
-            <li><Link href="/codigo/css/" >Tabelas Style</Link></li>
+          <li><Link href="/codigo/javascript">JS JavaScript</Link></li>
+            <li><Link href="/codigo/javascript">JS JavaScript</Link></li>
+            <li><Link href="/codigo/javascript">JS JavaScript</Link></li>
           </ol>
         </details>
-        <details>
-          <summary>JavaScript</summary>
-          <ol type="1">
-            <li><Link href="/codigo/javascript">Script</Link></li>
-          </ol>
-        </details>
+
         <details>
           <summary>Knockout JS</summary>
           <ol type="1">
@@ -171,12 +216,9 @@ const ListadeRotas = function () {
         </details>
 
         <details>
-          <summary>Apache</summary>
+          <summary>.NET</summary>
           <ol type="1">
-          <li><Link href="/codigo/apache/">Apache</Link></li>
-            <li><Link href="/codigo/apache/instalubuntu">Instalar Apache no Ubuntu</Link></li>
-            <li><Link href="/codigo/apache/alias">Alias em Apache</Link></li>
-            <li><Link href="/codigo/apache/redirect">redirect 301 em Apache</Link></li>
+            <li><Link href="/codigo/.net/">redirect 301 em ASP.NET</Link></li>
           </ol>
         </details>
 
@@ -197,46 +239,12 @@ const ListadeRotas = function () {
         </details>
 
         <details>
-          <summary>ColdFusion</summary>
-          <ol type="1">
-            <li><Link href="/codigo/coldfusion/">redirect 301 em ColdFusion</Link></li>
-          </ol>
-        </details>
-
-        <details>
-          <summary>ASP</summary>
-          <ol type="1">
-            <li><Link href="/codigo/asp/">ASP</Link></li>
-            <li><Link href="/codigo/asp/redirect">redirect 301 em ASP</Link></li>
-          </ol>
-        </details>
-
-        <details>
-          <summary>.NET</summary>
-          <ol type="1">
-            <li><Link href="/codigo/.net/">redirect 301 em ASP.NET</Link></li>
-          </ol>
-        </details>
-
-        <details>
-          <summary>Java</summary>
-          <ol type="1">
-            <li><Link href="/codigo/java/">redirect 301 em JSP</Link></li>
-          </ol>
-        </details>
-
-        <details>
-          <summary>CGI PERL</summary>
-          <ol type="1">
-            <li><Link href="/codigo/cgi/">redirect 301 em CGI</Link></li>
-          </ol>
-        </details>
-        <details>
           <summary>Hub de Contato</summary>
           <ol type="1">
             <li><Link href="/hub/">Teste API Hub de Contato</Link></li>
           </ol>
         </details>
+
         <details>
           <summary>Componentes</summary>
           <ol type="1">

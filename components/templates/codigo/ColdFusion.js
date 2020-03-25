@@ -1,6 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
 import FaviIcon from '../../atoms/atFavIcon'
+import Layout from '../../moleculas/layout'
+
 import Div from '../../atoms/atDiv'
 import ListadeRotas from '../../moleculas/moListadeRotas/ColdFusion.js'
 import HeaderSideDoValente from '../../moleculas/moHeaderSideDoValente/ColdFusion.js'
@@ -51,19 +53,7 @@ const atendimentoOi = function (props) {
         flex-wrap: wrap; */
       }
     `}</style>
-      <style jsx global>{`
-        ${Util.fontesCSS1()}
-        ${Util.fontesCSS2()}
-        ${Util.fontesCSS3()}
-        ${Util.fontesCSS4()}
-        ${Util.fontesCSS5()}
-        body{
-          margin: 0px;
-          padding: 0px;
-          background-color: #ffffff;
-          font-family: SimplonBP-Regular, sans-serif;        
-        }
-    `}</style>
+
     </div>
   )
 }
