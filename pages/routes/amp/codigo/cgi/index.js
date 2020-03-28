@@ -1,17 +1,16 @@
 import React from 'react';
-import TemplateASP from '../../../../../components/templates/codigo/apache';
+import TemplateCGIamp from '../../../../../components/templates/codigo/apache';
 import * as Util from '../../../../../controller/util.js';
-//import { withAmp } from 'next/amp';
+import { withAmp } from 'next/amp';
 
-const RotaASP = function(props){
-  // var cidade = Util.validaProps(props.url.query.cidade,"Rio de Janeiro")
+const RotaCGIamp = function(props){
   return(
-    <TemplateASP
-      modo="html" 
-      cidade={Util.validaProps(props.url.query.cidade,"Rio de Janeiro")} />
+    <TemplateCGIamp
+      modo="amp" 
+      regiao={Util.validaProps(props.url.query.regiao,"RJ")} />
   )
 }
 
-//export default withAmp(RotaASP, { hybrid: true });
-//export default withAmp(RotaASP);
-export default RotaASP
+//export default withAmp(RotaCGIamp, { hybrid: true });
+export default withAmp(RotaCGIamp);
+//export default RotaCGIamp

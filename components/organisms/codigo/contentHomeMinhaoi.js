@@ -8,7 +8,7 @@ import HomeSession3 from '../../moleculas/codigo/moHomeSession3.js';
 
 const contentHomeMinhaOi = props => {
   var modo = Util.validaProps(props.modo,"html");
-  //var cidade = Util.validaProps(props.cidade,"RJ");
+  //var regiao = Util.validaProps(props.regiao,"RJ");
   return(
       <div className="contentHomeMinhaOi">
         <HomeSession1 modo={modo}/>

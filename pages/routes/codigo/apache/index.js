@@ -3,15 +3,15 @@ import TemplateApache from '../../../../components/templates/codigo/apache/index
 import * as Util from '../../../../controller/util.js';
 //import { withAmp } from 'next/amp';
 
-const RotaApache = function(props){
-  // var cidade = Util.validaProps(props.url.query.cidade,"Rio de Janeiro")
+const RotaApacheHtml = function(props){
+  var regiao = Util.validaProps(props.url.query.regiao,"SP")
   return(
     <TemplateApache 
       modo="html" 
-      cidade={Util.validaProps(props.url.query.cidade,"Rio de Janeiro")} />
+      regiao={Util.validaProps(props.url.query.regiao,regiao)} />
   )
 }
 
-//export default withAmp(RotaApache, { hybrid: true });
-//export default withAmp(RotaApache);
-export default RotaApache
+//export default withAmp(RotaApacheHtml, { hybrid: true });
+//export default withAmp(RotaApacheHtml);
+export default RotaApacheHtml

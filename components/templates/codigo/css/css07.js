@@ -1,19 +1,7 @@
 import React from 'react'
-//import Link from 'next/link'
 import Head from 'next/head'
 import FaviIcon from '../../../atoms/atFavIcon'
 import Layout from '../../../moleculas/layout'
-
-import Div from '../../../atoms/atDiv'
-
-import ListadeRotas from '../../../moleculas/moListadeRotas/index.js'
-import HeaderSideDoValente from '../../../moleculas/moHeaderSideDoValente/index.js'
-
-//import HeaderMinhaOi from '../../organisms/codigo/headerCodigo.js/index.js.js'
-//import FooterMinhaOi from '../../organisms/codigo/footerCodigo.js/index.js'
-//import ContentAtendimento from '../../organisms/codigo/contentAtendimento.js'
-//import Line from '../../atoms/atLine';
-//import HeaderMenu from "../../moleculas/codigo/headerMenu";
 import * as Util from '../../../../controller/util.js';
 
 const atendimentoOi = function (props) {
@@ -22,7 +10,7 @@ const atendimentoOi = function (props) {
   console.log('║        codigo   - css                  ║');
   console.log('╚════════════════════════════════════════╝');
 
-  var cidade = Util.validaProps(props.cidade, "Rio de Janeiro");
+  var regiao = Util.validaProps(props.regiao , "RJ");
   var modo = Util.validaProps(props.modo, "html");
 
 
@@ -37,12 +25,7 @@ const atendimentoOi = function (props) {
         <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
         <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
       </Head>
-      <HeaderSideDoValente cidade={cidade} modo={modo}/>
-      <Div display="justificado">
-        <div className="codigoIndexListadeRotas">
-          <ListadeRotas/>
-        </div>
-        <div className="divCss">
+      <Layout regiao={regiao} modo={modo}>
           <h1>CSS 7 - Posicionamento de elementos, bordas e z-index</h1>
           <div id="div1">
                 {' #div1{ '}
@@ -72,15 +55,8 @@ const atendimentoOi = function (props) {
                   z-index: 1;
                   {' } '}
           </div>
-        </div>
-      </Div>
+      </Layout>
       <style jsx>{`
-      .codigoIndexListadeRotas{
-        width:25%;
-      }
-      .divCss{
-        width:75%;
-      }
       /* Posicionamento de elementos, bordas e z-index */
       *{
           margin: 0;

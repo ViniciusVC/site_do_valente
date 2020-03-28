@@ -8,7 +8,7 @@ const RotaComponentesAMP = function(props){
   return(
     <Componentes
       modo="amp"
-      cidade={Util.validaProps(props.url.query.cidade,"Rio de Janeiro")}
+      regiao={Util.validaProps(props.url.query.regiao,"RJ")}
       id={Util.validaProps(props.url.query.id,"atArrow")}
     />
   )

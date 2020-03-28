@@ -1,17 +1,17 @@
 import React from 'react';
-import TemplateASP from '../../../../../components/templates/codigo/apache';
+import TemplateColdfusion from '../../../../../components/templates/codigo/apache/redirect.js';
 import * as Util from '../../../../../controller/util.js';
-//import { withAmp } from 'next/amp';
+import { withAmp } from 'next/amp';
 
-const RotaASP = function(props){
-  // var cidade = Util.validaProps(props.url.query.cidade,"Rio de Janeiro")
+const RotaColdfusion = function(props){
+  // var regiao = Util.validaProps(props.url.query.regiao,"SP")
   return(
-    <TemplateASP
-      modo="html" 
-      cidade={Util.validaProps(props.url.query.cidade,"Rio de Janeiro")} />
+    <TemplateColdfusion 
+      modo="amp" 
+      regiao={Util.validaProps(props.url.query.regiao,"RJ")} />
   )
 }
 
-//export default withAmp(RotaASP, { hybrid: true });
-//export default withAmp(RotaASP);
-export default RotaASP
+//export default withAmp(RotaColdfusion, { hybrid: true });
+export default withAmp(RotaColdfusion);
+//export default RotaColdfusion

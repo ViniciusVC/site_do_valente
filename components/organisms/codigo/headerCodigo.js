@@ -9,7 +9,7 @@ import * as Util from '../../../controller/util.js';
 import Head from 'next/head';
 
 const headerCodigo = props => {
-    // var cidade = Util.validaProps(props.cidade,"Rio de Janeiro");
+    // var regiao = Util.validaProps(props.regiao"Rio de Janeiro");
     var modo = Util.validaProps(props.modo,"html");
     
     return (

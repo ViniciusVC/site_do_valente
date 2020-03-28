@@ -1,18 +1,17 @@
 import React from 'react';
-import Templateredirect from '../../../../components/templates/codigo/apache/redirect.js';
+import TemplateASPredirect from '../../../../components/templates/codigo/asp/redirect.js';
 import * as Util from '../../../../controller/util.js';
-
 //import { withAmp } from 'next/amp';
 
-const Retaredirect = function(props){
-  // var cidade = Util.validaProps(props.url.query.cidade,"Rio de Janeiro")
+const RotaASPredirect = function(props){
+
   return(
-    <Templateredirect 
+    <TemplateASPredirect 
       modo="html" 
-      cidade={Util.validaProps(props.url.query.cidade,"Rio de Janeiro")} />
+      regiao={Util.validaProps(props.url.query.regiao,"RJ")} />
   )
 }
 
-//export default withAmp(Retaredirect, { hybrid: true });
-//export default withAmp(Retaredirect);
-export default Retaredirect
+//export default withAmp(RotaASPredirect, { hybrid: true });
+//export default withAmp(RotaASPredirect);
+export default RotaASPredirect

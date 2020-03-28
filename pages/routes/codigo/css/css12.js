@@ -8,7 +8,7 @@ const RotaCSS = function(props){
   return(
     <TemplateCSS 
       modo="html" 
-      cidade={Util.validaProps(props.url.query.cidade,"Rio de Janeiro")}/>
+      regiao={Util.validaProps(props.url.query.regiao,"RJ")}/>
   )
 }
 

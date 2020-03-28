@@ -5,12 +5,14 @@ import * as Util from '../controller/util.js';
 
 const RotaIndex = function(props){
   console.log('Rota index');
-  var cidade = Util.validaProps(props.cidade,"Rio de Janeiro")
+  //var regiao = req.query.regiao
+  //var regiao = Util.validaProps(props.regiao, "SP")
+  var regiao = Util.validaProps(props.url.query.regiao,"RJ")
   //var modo = Util.validaProps(props.modo,"html")
   return(
     <TemplaIndex 
       modo="html" 
-      cidade={cidade}/>
+      regiao={regiao}/>
   )
 }
 

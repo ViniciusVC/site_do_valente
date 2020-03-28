@@ -7,7 +7,7 @@ const RotaCodigo = function(props){
   return(
     <TableteCodigo
       modo="amp"
-      cidade={Util.validaProps(props.cidade,"Rio de Janeiro")}/>
+      regiao={Util.validaProps(props.regiao,"RJ")}/>
   )
 }
 

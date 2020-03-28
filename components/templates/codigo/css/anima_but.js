@@ -1,17 +1,7 @@
 import React from 'react'
-//import Link from 'next/link'
 import Head from 'next/head'
 import FaviIcon from '../../../atoms/atFavIcon'
-import Div from '../../../atoms/atDiv'
-
-import ListadeRotas from '../../../moleculas/moListadeRotas/index.js'
-import HeaderSideDoValente from '../../../moleculas/moHeaderSideDoValente/index.js'
-
-//import HeaderMinhaOi from '../../organisms/codigo/headerCodigo.js/index.js.js'
-//import FooterMinhaOi from '../../organisms/codigo/footerCodigo.js/index.js'
-//import ContentAtendimento from '../../organisms/codigo/contentAtendimento.js'
-//import Line from '../../atoms/atLine';
-//import HeaderMenu from "../../moleculas/codigo/headerMenu";
+import Layout from '../../../moleculas/layout'
 import * as Util from '../../../../controller/util.js';
 
 const animaBut = function (props) {
@@ -20,8 +10,10 @@ const animaBut = function (props) {
   console.log('║      codigo - css - anima_but          ║');
   console.log('╚════════════════════════════════════════╝');
 
-  var cidade = Util.validaProps(props.cidade, "Rio de Janeiro");
-  var modo = Util.validaProps(props.modo, "html");
+  const regiao = Util.validaProps(props.regiao , "RJ");
+  const modo = Util.validaProps(props.modo, "html");
+  const JsonRegiao = Util.regiao(regiao);
+
 
   return (
     <div>
@@ -34,12 +26,7 @@ const animaBut = function (props) {
         <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
         <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
       </Head>
-      <HeaderSideDoValente cidade={cidade} modo={modo} />
-      <Div display="justificado">
-        <div className="codigoIndexListadeRotas">
-          <ListadeRotas />
-        </div>
-        <div className="divCss">
+      <Layout regiao={regiao} modo={modo}>
           <h1>Exemplos de CSS animação de butão</h1>
           <div id="wrapper">
 
@@ -50,17 +37,17 @@ const animaBut = function (props) {
                 <div className="wrapperInnerTab-backgrounds">
                   <div className="wrapperInnerTab-backgrounds-first">
                     <div className="sim-button button1">
-                      <span>Logar</span>
+                      <span>{JsonRegiao.timea}</span>
                     </div>
                   </div>
                   <div className="wrapperInnerTab-backgrounds-second">
                     <div className="sim-button button1">
-                      <span>Registrar</span>
+                      <span>{JsonRegiao.timeb}</span>
                     </div>
                   </div>
                   <div className="wrapperInnerTab-backgrounds-third">
                     <div className="sim-button button1">
-                      <span>Reciperar Senha</span>
+                      <span>{JsonRegiao.capital}</span>
                     </div>
                   </div>
                 </div>
@@ -69,276 +56,271 @@ const animaBut = function (props) {
               <div className="wrapperInnerTab">
                 <div className="wrapperInnerTab-title">Exemplo 2</div>
                 <div className="wrapperInnerTab-backgrounds">
-                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button2" data-text="Login"><span>Logar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button2" data-text="Register"><span>Registrar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button2" data-text="Recover Password"><span>Reciperar Senha</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-first">
+                    <div className="sim-button button2" data-text={JsonRegiao.timea}><span>{JsonRegiao.timea}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-second">
+                    <div className="sim-button button2" data-text={JsonRegiao.timeb}><span>{JsonRegiao.timeb}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-third">
+                    <div className="sim-button button2" data-text={JsonRegiao.capital}><span>{JsonRegiao.capital}</span></div></div>
                 </div>
               </div>
 
               <div className="wrapperInnerTab">
                 <div className="wrapperInnerTab-title">Exemplo 3</div>
                 <div className="wrapperInnerTab-backgrounds">
-                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button3" data-text="Login"><span>Logar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button3" data-text="Register"><span>Registrar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button3" data-text="Recover Password"><span>Reciperar Senha</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button3" data-text={JsonRegiao.timea}><span>{JsonRegiao.timea}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button3" data-text={JsonRegiao.timeb}><span>{JsonRegiao.timeb}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button3" data-text={JsonRegiao.capital}><span>{JsonRegiao.capital}</span></div></div>
                 </div>
               </div>
 
               <div className="wrapperInnerTab">
                 <div className="wrapperInnerTab-title">Exemplo 4</div>
                 <div className="wrapperInnerTab-backgrounds">
-                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button4" data-text="Login"><span>Logar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button4" data-text="Register"><span>Registrar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button4" data-text="Recover Password"><span>Reciperar Senha</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button4" data-text={JsonRegiao.timea}><span>{JsonRegiao.timea}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button4" data-text={JsonRegiao.timeb}><span>{JsonRegiao.timeb}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button4" data-text={JsonRegiao.capital}><span>{JsonRegiao.capital}</span></div></div>
                 </div>
               </div>
 
               <div className="wrapperInnerTab">
                 <div className="wrapperInnerTab-title">Exemplo 5</div>
                 <div className="wrapperInnerTab-backgrounds">
-                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button5"><span>Logar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button5"><span>Registrar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button5"><span>Reciperar Senha</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button5"><span>{JsonRegiao.timea}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button5"><span>{JsonRegiao.timeb}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button5"><span>{JsonRegiao.capital}</span></div></div>
                 </div>
               </div>
 
               <div className="wrapperInnerTab">
                 <div className="wrapperInnerTab-title">Exemplo 6</div>
                 <div className="wrapperInnerTab-backgrounds">
-                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button6"><span>Logar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button6"><span>Registrar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button6"><span>Reciperar Senha</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button6"><span>{JsonRegiao.timea}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button6"><span>{JsonRegiao.timeb}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button6"><span>{JsonRegiao.capital}</span></div></div>
                 </div>
               </div>
 
               <div className="wrapperInnerTab">
                 <div className="wrapperInnerTab-title">Exemplo 7</div>
                 <div className="wrapperInnerTab-backgrounds">
-                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button7"><span>Logar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button7"><span>Registrar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button7"><span>Reciperar Senha</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button7"><span>{JsonRegiao.timea}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button7"><span>{JsonRegiao.timeb}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button7"><span>{JsonRegiao.capital}</span></div></div>
                 </div>
               </div>
 
               <div className="wrapperInnerTab">
                 <div className="wrapperInnerTab-title">Exemplo 8</div>
                 <div className="wrapperInnerTab-backgrounds">
-                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button8"><span>Logar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button8"><span>Registrar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button8"><span>Reciperar Senha</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button8"><span>{JsonRegiao.timea}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button8"><span>{JsonRegiao.timeb}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button8"><span>{JsonRegiao.capital}</span></div></div>
                 </div>
               </div>
 
               <div className="wrapperInnerTab">
                 <div className="wrapperInnerTab-title">Exemplo 9</div>
                 <div className="wrapperInnerTab-backgrounds">
-                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button9"><span>Logar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button9"><span>Registrar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button9"><span>Reciperar Senha</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button9"><span>{JsonRegiao.timea}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button9"><span>{JsonRegiao.timeb}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button9"><span>{JsonRegiao.capital}</span></div></div>
                 </div>
               </div>
 
               <div className="wrapperInnerTab">
                 <div className="wrapperInnerTab-title">Exemplo 10</div>
                 <div className="wrapperInnerTab-backgrounds">
-                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button10"><span>Logar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button10"><span>Registrar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button10"><span>Reciperar Senha</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button10"><span>{JsonRegiao.timea}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button10"><span>{JsonRegiao.timeb}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button10"><span>{JsonRegiao.capital}</span></div></div>
                 </div>
               </div>
 
               <div className="wrapperInnerTab">
                 <div className="wrapperInnerTab-title">Exemplo 11</div>
                 <div className="wrapperInnerTab-backgrounds">
-                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button11"><span>Logar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button11"><span>Registrar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button11"><span>Reciperar Senha</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button11"><span>{JsonRegiao.timea}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button11"><span>{JsonRegiao.timeb}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button11"><span>{JsonRegiao.capital}</span></div></div>
                 </div>
               </div>
 
               <div className="wrapperInnerTab">
                 <div className="wrapperInnerTab-title">Exemplo 12</div>
                 <div className="wrapperInnerTab-backgrounds">
-                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button12"><span>Logar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button12"><span>Registrar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button12"><span>Reciperar Senha</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button12"><span>{JsonRegiao.timea}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button12"><span>{JsonRegiao.timeb}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button12"><span>{JsonRegiao.capital}</span></div></div>
                 </div>
               </div>
 
               <div className="wrapperInnerTab">
                 <div className="wrapperInnerTab-title">Exemplo 13</div>
                 <div className="wrapperInnerTab-backgrounds">
-                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button13"><span>Logar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button13"><span>Registrar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button13"><span>Reciperar Senha</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button13"><span>{JsonRegiao.timea}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button13"><span>{JsonRegiao.timeb}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button13"><span>{JsonRegiao.capital}</span></div></div>
                 </div>
               </div>
 
               <div className="wrapperInnerTab">
                 <div className="wrapperInnerTab-title">Exemplo 14</div>
                 <div className="wrapperInnerTab-backgrounds">
-                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button14"><span>Logar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button14"><span>Registrar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button14"><span>Reciperar Senha</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button14"><span>{JsonRegiao.timea}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button14"><span>{JsonRegiao.timeb}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button14"><span>{JsonRegiao.capital}</span></div></div>
                 </div>
               </div>
 
               <div className="wrapperInnerTab">
                 <div className="wrapperInnerTab-title">Exemplo 15</div>
                 <div className="wrapperInnerTab-backgrounds">
-                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button15"><span>Logar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button15"><span>Registrar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button15"><span>Reciperar Senha</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button15"><span>{JsonRegiao.timea}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button15"><span>{JsonRegiao.timeb}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button15"><span>{JsonRegiao.capital}</span></div></div>
                 </div>
               </div>
 
               <div className="wrapperInnerTab">
                 <div className="wrapperInnerTab-title">Exemplo 16</div>
                 <div className="wrapperInnerTab-backgrounds">
-                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button16"><span>Logar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button16"><span>Registrar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button16"><span>Reciperar Senha</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button16"><span>{JsonRegiao.timea}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button16"><span>{JsonRegiao.timeb}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button16"><span>{JsonRegiao.capital}</span></div></div>
                 </div>
               </div>
 
               <div className="wrapperInnerTab">
                 <div className="wrapperInnerTab-title">Exemplo 17</div>
                 <div className="wrapperInnerTab-backgrounds">
-                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button17"><span>Logar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button17"><span>Registrar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button17"><span>Reciperar Senha</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button17"><span>{JsonRegiao.timea}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button17"><span>{JsonRegiao.timeb}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button17"><span>{JsonRegiao.capital}</span></div></div>
                 </div>
               </div>
 
               <div className="wrapperInnerTab">
                 <div className="wrapperInnerTab-title">Exemplo 18</div>
                 <div className="wrapperInnerTab-backgrounds">
-                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button18"><span>Logar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button18"><span>Registrar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button18"><span>Reciperar Senha</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button18"><span>{JsonRegiao.timea}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button18"><span>{JsonRegiao.timeb}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button18"><span>{JsonRegiao.capital}</span></div></div>
                 </div>
               </div>
 
               <div className="wrapperInnerTab">
                 <div className="wrapperInnerTab-title">Exemplo 19</div>
                 <div className="wrapperInnerTab-backgrounds">
-                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button19"><span>Logar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button19"><span>Registrar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button19"><span>Reciperar Senha</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button19"><span>{JsonRegiao.timea}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button19"><span>{JsonRegiao.timeb}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button19"><span>{JsonRegiao.capital}</span></div></div>
                 </div>
               </div>
 
               <div className="wrapperInnerTab">
                 <div className="wrapperInnerTab-title">Exemplo 20</div>
                 <div className="wrapperInnerTab-backgrounds">
-                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button20"><span>Logar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button20"><span>Registrar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button20"><span>Reciperar Senha</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button20"><span>{JsonRegiao.timea}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button20"><span>{JsonRegiao.timeb}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button20"><span>{JsonRegiao.capital}</span></div></div>
                 </div>
               </div>
 
               <div className="wrapperInnerTab">
                 <div className="wrapperInnerTab-title">Exemplo 21</div>
                 <div className="wrapperInnerTab-backgrounds">
-                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button21"><span>Logar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button21"><span>Registrar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button21"><span>Reciperar Senha</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button21"><span>{JsonRegiao.timea}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button21"><span>{JsonRegiao.timeb}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button21"><span>{JsonRegiao.capital}</span></div></div>
                 </div>
               </div>
 
               <div className="wrapperInnerTab">
                 <div className="wrapperInnerTab-title">Exemplo 22</div>
                 <div className="wrapperInnerTab-backgrounds">
-                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button22"><span>Logar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button22"><span>Registrar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button22"><span>Reciperar Senha</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button22"><span>{JsonRegiao.timea}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button22"><span>{JsonRegiao.timeb}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button22"><span>{JsonRegiao.capital}</span></div></div>
                 </div>
               </div>
 
               <div className="wrapperInnerTab">
                 <div className="wrapperInnerTab-title">Exemplo 23</div>
                 <div className="wrapperInnerTab-backgrounds">
-                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button23"><span>Logar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button23"><span>Registrar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button23"><span>Reciperar Senha</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button23"><span>{JsonRegiao.timea}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button23"><span>{JsonRegiao.timeb}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button23"><span>{JsonRegiao.capital}</span></div></div>
                 </div>
               </div>
 
               <div className="wrapperInnerTab">
                 <div className="wrapperInnerTab-title">Exemplo 24</div>
                 <div className="wrapperInnerTab-backgrounds">
-                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button24"><span>Logar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button24"><span>Registrar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button24"><span>Reciperar Senha</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button24"><span>{JsonRegiao.timea}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button24"><span>{JsonRegiao.timeb}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button24"><span>{JsonRegiao.capital}</span></div></div>
                 </div>
               </div>
 
               <div className="wrapperInnerTab">
                 <div className="wrapperInnerTab-title">Exemplo 25</div>
                 <div className="wrapperInnerTab-backgrounds">
-                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button25"><span>Logar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button25"><span>Registrar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button25"><span>Reciperar Senha</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button25"><span>{JsonRegiao.timea}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button25"><span>{JsonRegiao.timeb}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button25"><span>{JsonRegiao.capital}</span></div></div>
                 </div>
               </div>
 
               <div className="wrapperInnerTab">
                 <div className="wrapperInnerTab-title">Exemplo 26</div>
                 <div className="wrapperInnerTab-backgrounds">
-                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button26"><span>Logar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button26"><span>Registrar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button26"><span>Reciperar Senha</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button26"><span>{JsonRegiao.timea}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button26"><span>{JsonRegiao.timeb}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button26"><span>{JsonRegiao.capital}</span></div></div>
                 </div>
               </div>
 
               <div className="wrapperInnerTab">
                 <div className="wrapperInnerTab-title">Exemplo 27</div>
                 <div className="wrapperInnerTab-backgrounds">
-                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button27"><span>Logar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button27"><span>Registrar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button27"><span>Reciperar Senha</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button27"><span>{JsonRegiao.timea}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button27"><span>{JsonRegiao.timeb}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button27"><span>{JsonRegiao.capital}</span></div></div>
                 </div>
               </div>
 
               <div className="wrapperInnerTab">
                 <div className="wrapperInnerTab-title">Exemplo 28</div>
                 <div className="wrapperInnerTab-backgrounds">
-                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button28"><span>Logar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button28"><span>Registrar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button28"><span>Reciperar Senha</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button28"><span>{JsonRegiao.timea}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button28"><span>{JsonRegiao.timeb}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button28"><span>{JsonRegiao.capital}</span></div></div>
                 </div>
               </div>
 
               <div className="wrapperInnerTab">
                 <div className="wrapperInnerTab-title">Exemplo 29</div>
                 <div className="wrapperInnerTab-backgrounds">
-                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button29"><span>Logar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button29"><span>Registrar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button29"><span>Reciperar Senha</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button29"><span>{JsonRegiao.timea}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button29"><span>{JsonRegiao.timeb}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button29"><span>{JsonRegiao.capital}</span></div></div>
                 </div>
               </div>
 
               <div className="wrapperInnerTab">
                 <div className="wrapperInnerTab-title">Exemplo 30</div>
                 <div className="wrapperInnerTab-backgrounds">
-                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button30"><span>Logar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button30"><span>Registrar</span></div></div>
-                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button30"><span>Reciperar Senha</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button30"><span>{JsonRegiao.timea}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button30"><span>{JsonRegiao.timeb}</span></div></div>
+                  <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button30"><span>{JsonRegiao.capital}</span></div></div>
                 </div>
               </div>
 
             </div>
           </div>
-        </div>
-      </Div>
+      </Layout>
       <style jsx>{`
-      .codigoIndexListadeRotas{
-        width:25%;
-      }
-      .divCss{
-        width:75%;
-      }
-
         #header{
           background-color: #3f8dbf;
           float: left;

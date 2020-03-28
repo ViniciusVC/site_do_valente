@@ -17,6 +17,7 @@ exports.formatTipoDocumento = function(tipoDocumento){
     }    
 }
 
+
 exports.formatarDados = function(tipoDocumento,arquivos){
     if(tipoDocumento=="RG"){
         return [

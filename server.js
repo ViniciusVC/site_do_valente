@@ -70,6 +70,7 @@ app.prepare()
     server.use(express.static('/static'));
     
     //index
+    //server.get('/', (req, res) => {app.render(req, res, '/', req.query);})
     server.get('/amp/',(req, res) => {app.render(req, res, '/routes/amp', req.query); })
     
     server.get('/eu/', (req, res) => {app.render(req, res, '/routes/eu', req.query); }) 
@@ -95,8 +96,8 @@ app.prepare()
 
     server.get('/codigo/asp/', (req, res) => { app.render(req, res, '/routes/codigo/asp', req.query);})
     server.get('/amp/codigo/asp/', (req, res) => { app.render(req, res, '/routes/amp/codigo/asp', req.query);})
-    server.get('/codigo/asp/redirect/', (req, res) => { app.render(req, res, '/routes/codigo/asp', req.query);})
-    server.get('/amp/codigo/asp/redirect/', (req, res) => { app.render(req, res, '/routes/amp/codigo/asp', req.query);})
+    server.get('/codigo/asp/redirect/', (req, res) => { app.render(req, res, '/routes/codigo/asp/redirect', req.query);})
+    server.get('/amp/codigo/asp/redirect/', (req, res) => { app.render(req, res, '/routes/amp/codigo/asp/redirect', req.query);})
 
     server.get('/codigo/cgi/', (req, res) => { app.render(req, res, '/routes/codigo/cgi', req.query);})
     server.get('/amp/codigo/cgi/', (req, res) => { app.render(req, res, '/routes/amp/codigo/cgi', req.query);})
@@ -157,10 +158,20 @@ app.prepare()
 
     server.get('/codigo/php/', (req, res) => { app.render(req, res, '/routes/codigo/php', req.query);})
     server.get('/amp/codigo/php/', (req, res) => { app.render(req, res, '/routes/amp/codigo/php', req.query);})
+    server.get('/codigo/php/redirect/', (req, res) => { app.render(req, res, '/routes/codigo/php/redirect', req.query);})
+    server.get('/amp/codigo/php/redirect/', (req, res) => { app.render(req, res, '/routes/amp/codigo/php/redirect', req.query);})
+    server.get('/codigo/php/procuraarquivo/', (req, res) => { app.render(req, res, '/routes/codigo/php/procuraarquivo', req.query);})
+    server.get('/amp/codigo/php/procuraarquivo/', (req, res) => { app.render(req, res, '/routes/amp/codigo/php/procuraarquivo', req.query);})
+    server.get('/codigo/php/procuradiretorio/', (req, res) => { app.render(req, res, '/routes/codigo/php/procuradiretorio', req.query);})
+    server.get('/amp/codigo/php/procuradiretorio/', (req, res) => { app.render(req, res, '/routes/amp/codigo/php/procuradiretorio', req.query);})
 
     server.get('/codigo/rubyonrails/', (req, res) => { app.render(req, res, '/routes/codigo/rubyonrails', req.query);})
     server.get('/amp/codigo/rubyonrails/', (req, res) => { app.render(req, res, '/routes/amp/codigo/rubyonrails', req.query);})
 
+    //======================================================================
+
+    server.get('/game/', (req, res) => {app.render(req, res, '/routes/game', req.query);}) 
+    server.get('/game/controleogodzilla/', (req, res) => {app.render(req, res, '/routes/game/controleogodzilla', req.query);})
     
     //======================================================================
 
@@ -194,10 +205,10 @@ app.prepare()
 
     //======================================================================
 
-
+    
     server.get('*', (req, res) => {
          //console.log('\u001b[34mRodando a rota *');
-         console.log('procurando : ' + req.url);
+         //console.log('procurando : ' + req.url);
          //console.log('pagina atual : ' + req.headers.referer +'\u001b[0m');
          return handle(req, res)
     })

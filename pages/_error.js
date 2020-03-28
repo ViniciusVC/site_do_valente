@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Header04 from '../components/organisms/Eu/header04'
 import Img from '../components/atoms/atImg/index.js'
 import Div from '../components/atoms/atDiv/index.js'
+import Layout from '../components/moleculas/layout'
 
 const Error = function(props){
 console.log('\u001b[31m╔════════════════════════════════════════╗');
@@ -17,8 +18,8 @@ return(
         <meta name="robots" content="noindex" />
         <link rel="canonical" href="/"/>
     </Head>
-    <Header04 modo="html"></Header04>
-    <Div display="horizontal">
+    <Layout regiao="RJ" modo="html">
+    <Div display="justificado">
         <div className="coluna404">
           <h1 className='title'>Ih, essa página não foi encontrada</h1>
           <p>
@@ -35,13 +36,14 @@ return(
               src="/static/assetsv5/img/hero-large-404.png"
               width="323px"
               height="436px"
-              alt="Componente Img exemplo next"
-              title="Componente Img exemplo next"
-              class="ClassImgNext"
+              alt="Pagina não encontrada"
+              title="Pagina não encontrada"
+              class="ClassImg404"
               modo="html">
             </Img>
         </div>
     </Div>
+    </Layout>
     <style jsx>{`
       .title {
         margin: 0;

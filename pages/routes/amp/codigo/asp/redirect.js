@@ -1,17 +1,19 @@
 import React from 'react';
+import { withAmp } from 'next/amp'; // Usado para páginas AMP
+//import { useAmp } from 'next/amp' //(Não neste projeto)
 import TemplateASPredirect from '../../../../../components/templates/codigo/apache/redirect.js';
-import * as Util from '../../../../controller/util.js';
-//import { withAmp } from 'next/amp';
+import * as Util from '../../../../../controller/util.js';
+
 
 const RotaASP = function(props){
-  // var cidade = Util.validaProps(props.url.query.cidade,"Rio de Janeiro")
+  // var regiao = Util.validaProps(props.url.query.regiao,"SP")
   return(
     <TemplateASPredirect 
-      modo="html" 
-      cidade={Util.validaProps(props.url.query.cidade,"Rio de Janeiro")} />
+      modo="amp" 
+      regiao={Util.validaProps(props.url.query.regiao,"RJ")} />
   )
 }
 
 //export default withAmp(RotaASP, { hybrid: true });
-//export default withAmp(RotaASP);
-export default RotaASP
+export default withAmp(RotaASP);
+//export default RotaASP

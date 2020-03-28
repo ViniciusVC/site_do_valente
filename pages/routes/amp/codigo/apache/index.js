@@ -1,17 +1,23 @@
 import React from 'react';
-import TemplateHtml5 from '../../../../../components/templates/codigo/apache';
+import { withAmp } from 'next/amp'; // Usado para páginas AMP
+//import { useAmp } from 'next/amp' //(Não neste projeto)
+import TemplateApache from '../../../../../components/templates/codigo/apache';
 import * as Util from '../../../../../controller/util.js';
-//import { withAmp } from 'next/amp';
 
-const RotaHome = function(props){
-  // var cidade = Util.validaProps(props.url.query.cidade,"Rio de Janeiro")
+
+const RotaHomeAMP = function(props){
   return(
-    <TemplateHtml5 
-      modo="html" 
-      cidade={Util.validaProps(props.url.query.cidade,"Rio de Janeiro")} />
+    <TemplateApache 
+      modo="amp" 
+      regiao={Util.validaProps(props.url.query.regiao,"RJ")} />
   )
 }
 
-//export default withAmp(RotaHome, { hybrid: true });
-//export default withAmp(RotaHome);
-export default RotaHome
+// //Usado para páginas hibridas (Não neste projeto)
+// export const config = {
+//   amp: true
+// }
+
+//export default withAmp(RotaHomeAMP, { hybrid: true }); // Usado para páginas hibridas (Não neste projeto)
+export default withAmp(RotaHomeAMP); // Usado para páginas AMP
+//export default RotaHomeAMP // Usado para páginas HTMP

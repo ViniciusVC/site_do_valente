@@ -1,15 +1,14 @@
-
 import React from 'react';
-import * as Util from '../../../../controller/util.js';
 import { withAmp } from 'next/amp';
-
-import TemplateCurriculo from '../../../../components/templates/curriculo.js';
+//import { useAmp } from 'next/amp' //(Não neste projeto)
+import * as Util from '../../../../controller/util.js';
+import TemplateCurriculo from '../../../../components/templates/eu/curriculo.js';
 
 const RotaCurriculoAMP = function(props){
   return(
     <TemplateCurriculo
       modo="amp"
-      cidade={Util.validaProps(props.url.query.cidade,"Rio de Janeiro")}/>
+      regiao={Util.validaProps(props.url.query.regiao,"RJ")}/>
   )
 }
 

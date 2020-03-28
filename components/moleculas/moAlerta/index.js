@@ -11,6 +11,7 @@ const moAlerta = props => {
     document.getElementById("divAlertaErro").style.display = "none";
   }
 
+  
   return(
     <div>
       <a onClick={() => {fechaAlertaErro()}}>

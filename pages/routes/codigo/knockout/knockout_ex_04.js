@@ -1,6 +1,6 @@
 import React from 'react';
-import TemplaKnockout from '../../../components/templates/codigo/knockout.js';
-import * as Util from '../../../controller/util.js';
+import TemplaKnockout from '../../../../components/templates/codigo/knockout/index.js';
+import * as Util from '../../../../controller/util.js';
 //import { withAmp } from 'next/amp';
 
 const RotaKnockout = function(props){
@@ -8,7 +8,7 @@ const RotaKnockout = function(props){
   return(
     <TemplaKnockout
       modo="html" 
-      cidade={Util.validaProps(props.url.query.cidade,"Rio de Janeiro")}/>
+      regiao={Util.validaProps(props.url.query.regiao,"RJ")}/>
   )
 }
 

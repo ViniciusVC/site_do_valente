@@ -7,7 +7,7 @@ const RotaJavasCript = function(props){
   return(
     <TableteJavasCript
       modo="amp"
-      cidade={Util.validaProps(props.cidade,"Rio de Janeiro")}/>
+      regiao={Util.validaProps(props.regiao,"RJ")}/>
   )
 }
 

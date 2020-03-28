@@ -1,17 +1,23 @@
 import React from 'react';
-import TemplateHtml5 from '../../../../../components/templates/codigo/apache/instalaUbuntu.js';
-import * as Util from '../../../../controller/util.js';
-//import { withAmp } from 'next/amp';
+import { withAmp } from 'next/amp'; // Usado para páginas AMP
+//import { useAmp } from 'next/amp' //(Não neste projeto)
+import TemplateInstalUbuntu from '../../../../../components/templates/codigo/apache/instalaUbuntu.js';
+import * as Util from '../../../../../controller/util.js';
 
-const Rotainstalubuntu = function(props){
-  // var cidade = Util.validaProps(props.url.query.cidade,"Rio de Janeiro")
+
+const RotaInstalUbuntuAMP = function(props){
   return(
-    <TemplateHtml5 
-      modo="html" 
-      cidade={Util.validaProps(props.url.query.cidade,"Rio de Janeiro")} />
+    <TemplateInstalUbuntu
+      modo="amp" 
+      regiao={Util.validaProps(props.url.query.regiao,"RJ")} />
   )
 }
 
-//export default withAmp(Rotainstalubuntu, { hybrid: true });
-//export default withAmp(Rotainstalubuntu);
-export default Rotainstalubuntu
+// //Usado para páginas hibridas (Não neste projeto)
+// export const config = {
+//   amp: true
+// }
+
+//export default withAmp(RotaInstalUbuntuAMP, { hybrid: true }); // Usado para páginas hibridas (Não neste projeto)
+export default withAmp(RotaInstalUbuntuAMP); // Usado para páginas AMP
+//export default RotaInstalUbuntuAMP // Usado para páginas HTMP

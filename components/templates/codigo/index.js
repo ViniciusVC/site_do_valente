@@ -6,13 +6,13 @@ import Layout from '../../moleculas/layout'
 
 import * as Util from '../../../controller/util.js';
 
-const atendimentoOi = function (props) {
+const codigo = function (props) {
 
-  console.log('╔════════════════════════════════════════╗');
-  console.log('║        codigo   atendimento-oi         ║');
-  console.log('╚════════════════════════════════════════╝');
+  console.log('╔══════════════════════════════╗');
+  console.log('║        codigo   index        ║');
+  console.log('╚══════════════════════════════╝');
 
-  var cidade = Util.validaProps(props.cidade, "Rio de Janeiro");
+  var regiao = Util.validaProps(props.regiao , "RJ");
   var modo = Util.validaProps(props.modo, "html");
 
 
@@ -27,27 +27,21 @@ const atendimentoOi = function (props) {
         <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
         <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
       </Head>
-      <Layout cidade={cidade} modo={modo}>
+      <Layout regiao={regiao} modo={modo}>
           <h1>Código</h1>
           <p>Linguagens de programação podem ser usadas para expressar algoritmos com precisão. O conjunto de palavras (lexemas classificados em tokens), compostos de acordo com essas regras, constituem o código fonte de um software. Esse código fonte é depois traduzido para código de máquina, que é executado pelo microprocessador.</p>
       </Layout>
       <style jsx>{`
-      .codigoIndexListadeRotas{
-        width:25%;
-      }
-      .codigoIndex{
-        width:75%;
-        /* 
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap; */
-      }
-    `}</style>
+        .h1{
+          color : #000000;
+        }
+        .p{
+          color : #000000;
+        }
+      `}</style>
 
     </div>
   )
 }
 
-export default atendimentoOi
+export default codigo

@@ -7,7 +7,7 @@ import * as Util from '../../../controller/util.js';
 
 const layout = props => {
   console.log('Rodando /layout.js');
-  var cidade = Util.validaProps(props.cidade, "Rio de Janeiro");
+  var regiao = Util.validaProps(props.regiao , "RJ");
   var modo = Util.validaProps(props.modo, "html");
   return (
     <div className="Body">
@@ -15,18 +15,23 @@ const layout = props => {
         <div className="borda"></div>
         <Div display="vertical">
           <div className="borda"></div>
-          <HeaderSideDoValente cidade={cidade} modo={modo}/>
+          <div className="DivSombra">
+            <HeaderSideDoValente regiao={regiao} modo={modo}/>
+          </div>
           <div className="borda"></div>
           <Div display="justificado">
             <div className="codigoIndexListadeRotas DivSombra">
-              <ListadeRotas/>
+              <ListadeRotas regiao={regiao} modo={modo} />
             </div>
             <div className="borda"></div>
             <div className="divCss DivSombra">
               {props.children}
             </div>  
           </Div>
-          <div className="borda"></div><HeaderSideDoValente cidade={cidade} modo={modo}/>
+          <div className="borda"></div>
+          <div className="DivSombra">
+            <HeaderSideDoValente regiao={regiao} modo={modo}/>
+          </div>
         </Div>  
         <div className="borda"></div>
         
@@ -48,6 +53,7 @@ const layout = props => {
         font-size: 17px;
         font-family: sans-serif;
         background-color: #ffffff;
+        background-image: linear-gradient(180deg, #ffffff, #ffffff, #bdb8a7 );
         border-radius: 8px;
         color: #222222;
         display: block;
@@ -55,10 +61,11 @@ const layout = props => {
         border: solid 1px #dbdbdb;
         padding: 10px;
         box-sizing: border-box;
-        -webkit-box-shadow: 2px 2px 20px rgba(1, 1, 1, 0.17);
-        -moz-box-shadow: 2px 2px 20px rgba(1, 1, 1, 0.17);
-        box-shadow: 2px 2px 20px rgba(1, 1, 1, 0.17);        
+        -webkit-box-shadow: 2px 2px 10px rgba(1, 1, 1, 0.57);
+        -moz-box-shadow: 2px 2px 10px rgba(1, 1, 1, 0.57);
+        box-shadow: 2px 2px 10px rgba(1, 1, 1, 0.57);        
       }
+
       .codigoIndexListadeRotas{
         width:25%;
       }
@@ -77,7 +84,7 @@ const layout = props => {
           margin: 0px;
           padding: 0px;
           background-color: #D3D3D3;
-          background-image: linear-gradient(to right, #FFFFFF , #D3D3D3);
+          background-image: linear-gradient(45deg, #05005d, #bdb8a7, #aaf1ff );
           font-family: SimplonBP-Regular, sans-serif;        
         }
     `}</style>

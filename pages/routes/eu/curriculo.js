@@ -1,14 +1,14 @@
 import React from 'react';
-import TemplateCurriculo from '../../../components/templates/curriculo.js';
+import TemplateCurriculo from '../../../components/templates/eu/curriculo.js';
 import * as Util from '../../../controller/util.js';
 //import { withAmp } from 'next/amp';
 
 const RotaCurriculoHtml = function(props){
-  var cidade = Util.validaProps(props.url.query.cidade,"Rio de Janeiro")
+  var regiao = Util.validaProps(props.url.query.regiao,"RJ")
   return(
     <TemplateCurriculo
       modo="html"
-      cidade={cidade}/>
+      regiao={regiao}/>
   )
 }
 //query={props.url.query}

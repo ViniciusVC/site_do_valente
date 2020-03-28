@@ -2,6 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import ListadeRotas from '../moleculas/moListadeRotas/index.js';
 import FavIcon from '../atoms/atFavIcon/'
+
 import Div from '../atoms/atDiv/index.js';
 import * as Atoms from '../index.js';
 import * as Util from '../../controller/util.js';
@@ -14,7 +15,7 @@ const componentes = function(props){
     console.log('╔════════════════════════════════════════╗');
     console.log('║      componentes                       ║');
     console.log('╚════════════════════════════════════════╝');
-    var cidade = Util.validaProps(props.cidade,"Rio de Janeiro");
+    var regiao = Util.validaProps(props.regiao,"RJ");
     var modo = Util.validaProps(props.modo,"html");
     var id = Util.validaProps(props.id,"atArrow");
     return(

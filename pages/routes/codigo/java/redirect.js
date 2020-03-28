@@ -1,6 +1,6 @@
 import React from 'react';
-import TemplaJava from '../../../components/templates/codigo/javascript.js';
-import * as Util from '../../../controller/util.js';
+import TemplaJava from '../../../../components/templates/codigo/java/redirect.js';
+import * as Util from '../../../../controller/util.js';
 //import { withAmp } from 'next/amp';
 
 const RotaJava = function(props){
@@ -8,7 +8,7 @@ const RotaJava = function(props){
   return(
     <TemplaJava
       modo="html" 
-      cidade={Util.validaProps(props.url.query.cidade,"Rio de Janeiro")}/>
+      regiao={Util.validaProps(props.url.query.regiao,"RJ")}/>
   )
 }
 

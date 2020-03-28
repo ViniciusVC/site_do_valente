@@ -1,17 +1,17 @@
 import React from 'react';
-import TemplateHtml5 from '../../../../../components/templates/codigo/apache/redirect.js';
-import * as Util from '../../../../controller/util.js';
-//import { withAmp } from 'next/amp';
+import { withAmp } from 'next/amp'; // Usado para páginas AMP
+//import { useAmp } from 'next/amp' //(Não neste projeto)
+import Templateredirect from '../../../../../components/templates/codigo/apache/redirect.js';
+import * as Util from '../../../../../controller/util.js';
 
-const RotaHome = function(props){
-  // var cidade = Util.validaProps(props.url.query.cidade,"Rio de Janeiro")
+const Rotaredirect = function(props){
   return(
-    <TemplateHtml5 
-      modo="html" 
-      cidade={Util.validaProps(props.url.query.cidade,"Rio de Janeiro")} />
+    <Templateredirect 
+      modo="amp" 
+      regiao={Util.validaProps(props.url.query.regiao,"RJ")} />
   )
 }
 
-//export default withAmp(RotaHome, { hybrid: true });
-//export default withAmp(RotaHome);
-export default RotaHome
+//export default withAmp(Rotaredirect, { hybrid: true });
+export default withAmp(Rotaredirect);
+//export default Rotaredirect

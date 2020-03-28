@@ -25,7 +25,7 @@ const templateHub = function (props) {
   console.log('╔════════════════════════════════════════╗');
   console.log('║      Hub de Contatos Busca             ║');
   console.log('╚════════════════════════════════════════╝');
-  var cidade = Util.validaProps(props.cidade, "Rio de Janeiro");
+  var regiao = Util.validaProps(props.regiao , "RJ");
   var modo = Util.validaProps(props.modo, "html");
 
   function enviar(){

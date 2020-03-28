@@ -27,7 +27,7 @@ const footer01 = function(props){
         <div class="footer-nav">
           <h3 class="hidden">Footer Categories</h3>
           
-          <FotterCategory cidade={cidade}/>
+          <FotterCategory regiao={regiao}/>
         
         </div>
       </div>
@@ -36,7 +36,7 @@ const footer01 = function(props){
 
     <section class="supportFooterMenu">
       <div class="footer-region container">
-        <RegionFooter01 cidade={cidade}/>
+        <RegionFooter01 regiao={regiao}/>
         <SocialFooter01/>
           </div><div class="footer-institutional-block">
         <div class="footercontainer01">
