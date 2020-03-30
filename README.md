@@ -30,7 +30,10 @@ npm run build
 npm start
 npm run start
 ```
-
+* Gera arquivos para servidor estatico no diretorio /out (Não foi totalmene testado).
+```
+npm run export
+```
 ### Rotas
 * Rotas configuradas no server.js
 ```
