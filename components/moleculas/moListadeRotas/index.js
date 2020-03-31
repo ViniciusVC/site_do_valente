@@ -260,13 +260,15 @@ const ListadeRotas = function (props) {
         </details>
 
         <details>
-          <summary ><Link href={StringModo+"/componentes/?regiao="+regiao}>Componentes</Link></summary>
+          <summary ><Link href={"/componentes/"}>Componentes</Link></summary>
+          <ol type="1">
+            <li><Link href={StringModo+"/componentes/?regiao="+regiao}>Componentes</Link></li>
+          </ol>
         </details>
         <details>
           <summary><Link href={StringModo+"/eu/?regiao="+regiao}>Quem Sou Eu</Link></summary>
           <ol type="1">
             <li><Link href={StringModo+"/eu/curriculo/?regiao="+regiao}>Curriculo</Link></li>
-            <li><Link href={"/amp/eu/curriculo/?regiao="+regiao}>Curriculo (Pagina em AMP)</Link></li>
           </ol>
         </details>
       </div>

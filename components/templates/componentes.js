@@ -49,7 +49,7 @@ const componentes = function(props){
         </div>
       </Div>
       <div>
-            Cidade:{cidade}<br/>
+            Cidade:{regiao}<br/>
             Modo:{modo}<br/>
             teste function apenasNumros({Util.apenasNumeros('A1B2C3')})
       </div>

@@ -11,13 +11,15 @@ const templateHome = function (props) {
   var regiao = props.regiao;
   var modo = props.modo;
   const JsonRegiao = Util.regiao(regiao);
+  console.log('regiao='+regiao);
+  console.log('modo='+modo);
   return (
     <div>
       <Head>
         <title>Home SITE DO VALENTE</title>
         <FavIcon />
         <meta name="description" content="Bem vindo ao SITE DO VALENTE" />
-        <link rel="canonical" href="https://www.oi.com.br/" />
+        <link rel="canonical" href="/" />
       </Head>
       <Layout regiao={regiao} modo={modo}>
           <h1>Bem vindo ao Projeto SITE_DO_VALENTE</h1>

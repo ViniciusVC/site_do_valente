@@ -15,10 +15,13 @@ export {atLink} from './atoms/atLink/exemplos.js';
 export {atLogo} from './atoms/atLogo/exemplos.js';
 export {atPrice} from './atoms/atPrice/exemplos.js';
 export {moLoginMinhaOi} from './moleculas/codigo/moLoginMinhaOi/exemplos.js';
-//export {moMenuMobileMinhaOi} from './moleculas/codigo/moMenuMobileMinhaOi/exemplos.js';
 export {moAlerta} from './moleculas/moAlerta/exemplos.js';
 export {moBtEnviaArquivo} from './moleculas/moBtEnviaArquivo/exemplos.js';
 export {moCaptcha} from './moleculas/moCaptcha/exemplos.js';
 export {moEscolhaDoc} from './moleculas/moEscolhaDoc/exemplos.js';
+export {moHeaderSideDoValente} from './moleculas/moHeaderSideDoValente/exemplos.js';
 export {moListadeRotas} from './moleculas/moListadeRotas/exemplos.js';
+export {moRegiao} from './moleculas/moRegiao/exemplos.js';
+
+
 

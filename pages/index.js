@@ -4,7 +4,9 @@ import * as Util from '../controller/util.js';
 //import { withAmp } from 'next/amp';
 
 const RotaIndex = function(props){
+  console.log('+++++++++++++++++++++++++++++');
   console.log('Rota index');
+  console.log(props.url.query.regiao);
   //var regiao = req.query.regiao
   //var regiao = Util.validaProps(props.regiao, "SP")
   var regiao = Util.validaProps(props.url.query.regiao,"RJ")

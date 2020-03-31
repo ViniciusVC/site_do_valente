@@ -17,7 +17,7 @@ module.exports = {
       //   fs: 'empty'
       // }
       return config
-  },
+    },
   exportPathMap: function () {
       // Esta lista de paginas só é gerada quando exportamos arquivos estáticos.
       return {
@@ -150,12 +150,12 @@ module.exports = {
         // Example using webpack option
         //config.plugins.push(new webpack.IgnorePlugin(/\/__tests__\//))
         return config
-    },
+    query: { regiao: "RJ" }},
     webpackDevMiddleware: config => {
         // Perform customizations to webpack dev middleware config
         // Important: return the modified config
         return config
-    },
+    query: { regiao: "RJ" }},
   }
 */
 

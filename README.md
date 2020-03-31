@@ -16,7 +16,6 @@ npm install
 ```
 npm run dev
 ```
-
 * inicia servidor local na porta 9000
 ```
 npm run dev -- -p 9000
