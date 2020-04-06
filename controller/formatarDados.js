@@ -1,5 +1,6 @@
 
 //Função CONTROLLER que roda apois receber todos os dados do formulário.
+//Para projeto piloto Documentoscopia
 
 exports.apenasNumeros = function(varBodySend){
     var numsStr = varBodySend.replace(/[^0-9]/g,'');

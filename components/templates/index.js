@@ -11,6 +11,7 @@ const templateHome = function (props) {
   var regiao = props.regiao;
   var modo = props.modo;
   const JsonRegiao = Util.regiao(regiao);
+  //{JsonRegiao.timea}
   console.log('regiao='+regiao);
   console.log('modo='+modo);
   return (

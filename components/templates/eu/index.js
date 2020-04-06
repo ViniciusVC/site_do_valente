@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-import FavIcon from '../../atoms/atFavIcon'
+import FaviIcon from '../../atoms/atFavIcon'
 import Layout from '../../moleculas/layout'
 import * as Util from '../../../controller/util.js';
 
@@ -14,9 +14,12 @@ const templateHome = function (props) {
     <div>
       <Head>
         <title>Vinícius Valente Coutinho</title>
-        <FavIcon />
+        <FaviIcon />
         <meta name="description" content="Vinícius Valente Coutinho" />
         <link rel="canonical" href="/eu/" />
+        <link rel="amphtml" href="/amp/eu/" />
+        <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
+        <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
       </Head>
       <Layout regiao={regiao} modo={modo}>
           <p>Meu nome é Vinícius Valente Coutinho, Analista de Sistemas,<br/> 

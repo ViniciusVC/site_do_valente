@@ -29,17 +29,17 @@ const atendimentoOi = function (props) {
   return (
     <div>
       <Head>
-        <title>CSS 14 - Exemplos Anima But</title>
+        <title>CSS - Exemplos Anima But</title>
         <FaviIcon />
-        <meta name="description" content="CSS" />
-        <link rel="canonical" href="/codigo/css" />
-        <link rel="amphtml" href="/amp/codigo/css" />
+        <meta name="description" content="CSS - Exemplos Anima But" />
+        <link rel="canonical" href="/codigo/css/css14" />
+        <link rel="amphtml" href="/amp/codigo/css/css14" />
         <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
         <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
       </Head>
       <Layout regiao={regiao} modo={modo}>
-          <h1>CSS 14 - Exemplos Anima But</h1>
-          <p>Cascading Style Sheets é um mecanismo para adicionar estilo a um documento web. O código CSS pode ser aplicado diretamente nas tags ou ficar contido dentro das tags style. Também é possível, em vez de colocar a formatação dentro do documento, criar um link para um arquivo CSS que contém os estilos.</p>
+          <h1>CSS - Exemplos Anima But</h1>
+          <p>Veja o conteudo em /css/anima_but/.</p>
       </Layout>
       <style jsx>{`
         .h1{

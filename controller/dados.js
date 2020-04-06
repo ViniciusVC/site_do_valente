@@ -1,3 +1,6 @@
+//Conteudo primeiros testes com AMP
+
+
 //Importar Modulos e dependencias.
 var Util = require('./util.js');
 //import * as Util from './util.js';

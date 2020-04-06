@@ -1,5 +1,5 @@
 import React from 'react';
-import TemplateHtml5 from '../../../../../components/templates/codigo/html5.js';
+import TemplateHtml5 from '../../../../../components/templates/codigo/html/tabela.js';
 import * as Util from '../../../../../controller/util.js';
 //import { withAmp } from 'next/amp';
 

@@ -2,13 +2,14 @@ import React from 'react';
 import { withAmp } from 'next/amp';
 //import { useAmp } from 'next/amp' //(Não neste projeto)
 import * as Util from '../../../../controller/util.js';
-import Eu from '../../../../components/templates/eu/index.js';
+import TemplatePagina from '../../../../components/templates/eu/index.js';
 
 const RotaEuAMP = function(props){
   return(
-    <Eu
+    <TemplatePagina
       modo="amp"
-      regiao={Util.validaProps(props.url.query.regiao,"RJ")}/>
+      regiao={Util.validaProps(props.url.query.regiao,"RJ")
+    }/>
   )
 }
 

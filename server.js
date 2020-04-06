@@ -172,6 +172,7 @@ app.prepare()
 
     server.get('/game/', (req, res) => {app.render(req, res, '/routes/game', req.query);}) 
     server.get('/game/controleogodzilla/', (req, res) => {app.render(req, res, '/routes/game/controleogodzilla', req.query);})
+    server.get('/game/tanque/', (req, res) => {app.render(req, res, '/routes/game/tanque', req.query);})
     
     //======================================================================
 

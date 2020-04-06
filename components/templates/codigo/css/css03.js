@@ -17,43 +17,44 @@ const atendimentoOi = function (props) {
   return (
     <div>
       <Head>
-        <title>CSS 3 - Imagens de fundo e atributo text</title>
+        <title>CSS - Imagens de fundo e atributo text</title>
         <FaviIcon />
-        <meta name="description" content="CSS" />
-        <link rel="canonical" href="/codigo/css" />
-        <link rel="amphtml" href="/amp/codigo/css" />
+        <meta name="description" content="CSS - Imagens de fundo e atributo text" />
+        <link rel="canonical" href="/codigo/css/css03/" />
+        <link rel="amphtml" href="/amp/codigo/css/css03/" />
         <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
         <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
       </Head>
       <Layout regiao={regiao} modo={modo}>
-          <h1>CSS 3 - Imagens de fundo e atributo text</h1>
+          <h1>CSS - Imagens de fundo e atributo text</h1><br/>
+          A seguir alguns exemploes de estilisação de HTML: 
           <p>
-            {' /*Istó é um comentario no css*/ '}
-            {'    body { '}
-            {'          background-image: URL("https://mundoeducacao.bol.uol.com.br/upload/conteudo_legenda/39e4bf80c3864fdb71f236f79ee8fc10.jpg"); '}
-            {'      } '}
-            {'      p { '}
-            {'          text-align: right; '}
-            {'          text-decoration: line-through; '}
-            {'          text-indent: 4px; '}
-            {'          font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; '}
-            {'          font-size:12; '}
-            {'          color:#FF0000; '}
-            {'      } '}
+            {' /*Istó é um comentario no css*/ '}<br/>
+            {'    body { '}<br/>
+            {'          background-image: URL("https://mundoeducacao.bol.uol.com.br/upload/conteudo_legenda/39e4bf80c3864fdb71f236f79ee8fc10.jpg"); '}<br/>
+            {'      } '}<br/>
+            {'      p { '}<br/>
+            {'          text-align: right; '}<br/>
+            {'          text-decoration: line-through; '}<br/>
+            {'          text-indent: 4px; '}<br/>
+            {'          font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; '}<br/>
+            {'          font-size:12; '}<br/>
+            {'          color:#FF0000; '}<br/>
+            {'      } '}<br/>
           </p>
           <p id="paragrafo2">        
-                  /* ID */
-                  {' #paragrafo2 { '}
-                      text-align: center;
-                      text-decoration: blink;
-                      color: green;
-                  {' } '}
+          * Aplicando CSS com ID */<br/>
+                  {' #paragrafo2 { '}<br/>
+                      text-align: center;<br/>
+                      text-decoration: blink;<br/>
+                      color: green;<br/>
+                  {' } '}<br/>
           </p>
           <p className="paragrafo3">
-                  /* CLASS */
-                  {' .paragrafo3 { '}
-                      color: #FFFFFF; '}
-                  {' } '}
+          /* Aplicando CSS com CLASS */<br/>
+                  {' .paragrafo3 { '}<br/>
+                  {' color: #FFFFFF; '}<br/>
+                  {' } '}<br/>
           </p>
       </Layout>
       <style jsx>{`

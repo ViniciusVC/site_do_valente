@@ -29,16 +29,16 @@ const atendimentoOi = function (props) {
   return (
     <div>
       <Head>
-        <title>CSS 12 - Validação e Web Standards</title>
+        <title>CSS Validação e Web Standards</title>
         <FaviIcon />
-        <meta name="description" content="CSS" />
-        <link rel="canonical" href="/codigo/css" />
-        <link rel="amphtml" href="/amp/codigo/css" />
+        <meta name="description" content="CSS Validação e Web Standards" />
+        <link rel="canonical" href="/codigo/css/css12/" />
+        <link rel="amphtml" href="/amp/codigo/css/css12/" />
         <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
         <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
       </Head>
       <Layout regiao={regiao} modo={modo}>
-          <h1>CSS 12 - Validação e Web Standards</h1>
+          <h1>CSS Validação e Web Standards</h1>
           <p>Cascading Style Sheets é um mecanismo para adicionar estilo a um documento web. O código CSS pode ser aplicado diretamente nas tags ou ficar contido dentro das tags style. Também é possível, em vez de colocar a formatação dentro do documento, criar um link para um arquivo CSS que contém os estilos.</p>
       </Layout>
       <style jsx>{`

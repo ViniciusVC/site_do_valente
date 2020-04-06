@@ -17,20 +17,37 @@ const atendimentoOi = function (props) {
   return (
     <div>
       <Head>
-        <title>CSS 4 - Links e Divs</title>
+        <title>CSS - Links e Divs</title>
         <FaviIcon />
-        <meta name="description" content="CSS" />
-        <link rel="canonical" href="/codigo/css" />
-        <link rel="amphtml" href="/amp/codigo/css" />
+        <meta name="description" content="CSS - Links e Divs" />
+        <link rel="canonical" href="/codigo/css/css04/" />
+        <link rel="amphtml" href="/amp/codigo/css/css04/" />
         <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
         <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
       </Head>
       <Layout regiao={regiao} modo={modo}>
-          <h1>CSS 4 - Links e Divs</h1>
+          <h1>CSS - Links e Divs</h1>
+          A seguir alguns exemploes de estilisação de HTML: 
           <div className="top_div">
-          Div   
+          {' *{ '}<br/>
+          {'     margin: 0; '}<br/>
+          {'     padding: 0; '}<br/>
+          {'   } '}<br/>
+          {'   .top_div { '}<br/>
+          {'       position: relative; '}<br/>
+          {'       width: 100%; '}<br/>
+          {'       height: 80px; '}<br/>
+          {'       background-color: #FF0000; '}<br/>
+          {' } '}<br/>     
           </div>
-          <a href="css_04.html">CSS 04 Links</a><br />
+          <a href="css_04.html">
+            {' a { '}<br/>
+            {'   font-family: Arial, Helvetica, sans-serif; '}<br/>
+            {'   color: #FF0000; '}<br/>
+            {'   /*Para retirar o sublinhado*/ '}<br/>
+            {'   text-decoration: none; '}<br/>
+            {' } '}<br/>  
+          </a><br />
       </Layout>
       <style jsx>{`
         /*Divis e Links*/
