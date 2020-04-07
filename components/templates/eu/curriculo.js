@@ -1,5 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
+import Link from 'next/link'
 import FavIcon from '../../atoms/atFavIcon'
 import Layout from '../../moleculas/layout'
 import * as Util from '../../../controller/util.js';
@@ -25,9 +26,9 @@ const templateHome = function (props) {
           Residencia em RJ, bairro Jacarepagua na cidade do Rio de janeiro.<br/>
           Residencia em MG, bairro Parte Alta na cidade de Bicas.<br/>
           E-mail : vinivalent@gmail.com<br/>
-          Linkedin : https://www.linkedin.com/in/vin%C3%ADcius-valente-51989523/<br/>
-          Google Sites : https://sites.google.com/view/viniciusvalente/
-          GitHub : https://github.com/ViniciusVC/
+          Linkedin : <Link href="https://www.linkedin.com/in/vin%C3%ADcius-valente-51989523/">https://www.linkedin.com/in/vin%C3%ADcius-valente-51989523/</Link><br/>
+          Google Sites : <Link href="https://sites.google.com/view/viniciusvalente/">https://sites.google.com/view/viniciusvalente/</Link><br/>
+          GitHub : <Link href="https://github.com/ViniciusVC/">https://github.com/ViniciusVC/</Link><br/>
           <h2>OBJETIVOS:</h2>
           Lider técnico; Fullstack; Gerente de Desenvolvimento de Sistemas<br/>
 

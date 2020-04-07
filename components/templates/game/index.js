@@ -1,5 +1,5 @@
 import React from 'react'
-//import Link from 'next/link'
+import Link from 'next/link'
 import Head from 'next/head'
 import FaviIcon from '../../atoms/atFavIcon'
 import Layout from '../../moleculas/layout'
@@ -29,6 +29,10 @@ const atendimentoOi = function (props) {
       <Layout regiao={regiao} modo={modo}>
           <h1>Game</h1>
           <p>Vou disponibilisar alguns games de teste aqui. :)</p>
+          <ol type="1">
+            <li><Link href={"/game/controleogodzilla?regiao="+regiao}>GAME - Controle O Godzilla</Link></li>
+            <li><Link href={"/game/tanque?regiao="+regiao}>GAME - Tanque</Link></li>
+          </ol>
       </Layout>
       <style jsx>{`
         .h1{

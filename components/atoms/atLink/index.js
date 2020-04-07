@@ -7,15 +7,15 @@ const btSubmit = props => {
   var varEstilo = Util.validaProps(props.estilo, "");
   var varCor = Util.validaProps(props.cor, "#000000");
 
-  if (varEstilo == "LinkHeaderMinhaOi") {
+  if (varEstilo == "LinkHeader") {
     return (
       // Botão do formulário Meus Documentos.
       <span>
-        <a className="LinkHeaderMinhaOi" href={varHref}>
+        <a className="LinkHeader" href={varHref}>
           {varValue}
         </a>
         <style jsx>{`
-          .LinkHeaderMinhaOi {
+          .LinkHeader {
             color: #d82482;
             background: transparent;
             -webkit-text-decoration: none;
@@ -32,22 +32,22 @@ const btSubmit = props => {
             transition: 0.3s ease;
             white-space: nowrap;
           }
-          .LinkHeaderMinhaOi:hover {
+          .LinkHeader:hover {
             -webkit-text-decoration: underline;
             text-decoration: underline;
           }
-          .LinkHeaderMinhaOi:disabled,
-          .LinkHeaderMinhaOi.disabled {
+          .LinkHeader:disabled,
+          .LinkHeader.disabled {
             color: #909090;
           }
-          .LinkHeaderMinhaOi:hover {
+          .LinkHeader:hover {
             cursor: pointer;
           }
-          .LinkHeaderMinhaOi:focus {
+          .LinkHeader:focus {
             outline: none;
           }
-          .LinkHeaderMinhaOi:disabled,
-          .LinkHeaderMinhaOi.disabled {
+          .LinkHeader:disabled,
+          .LinkHeader.disabled {
             cursor: not-allowed;
             pointer-events: none;
           }
@@ -104,15 +104,15 @@ const btSubmit = props => {
     </span>
     )
 
-  }else if(varEstilo=="LinkFooterNavMinhaOi"){
+  }else if(varEstilo=="LinkFooterNav"){
     return(
       // Botão do formulário Meus Documentos.
       <span>
-        <a className="LinkFooterNavMinhaOi" href={varHref}>
+        <a className="LinkFooterNav" href={varHref}>
           {varValue}
         </a>
         <style jsx>{`
-          .LinkFooterNavMinhaOi {
+          .LinkFooterNav {
             color: ${varCor};
             background: transparent;
             -webkit-text-decoration: none;
@@ -130,19 +130,19 @@ const btSubmit = props => {
             white-space: nowrap;
             font-family: Simplon-light;
           }
-          .LinkFooterNavMinhaOi:hover {
+          .LinkFooterNav:hover {
             -webkit-text-decoration: underline;
             text-decoration: none;
             color: #d82482;
           }
-          .LinkFooterNavMinhaOi:hover {
+          .LinkFooterNav:hover {
             cursor: pointer;
           }
-          .LinkFooterNavMinhaOi:focus {
+          .LinkFooterNav:focus {
             outline: none;
           }
-          .LinkFooterNavMinhaOi:disabled,
-          .LinkFooterNavMinhaOi.disabled {
+          .LinkFooterNav:disabled,
+          .LinkFooterNav.disabled {
             cursor: not-allowed;
             pointer-events: none;
           }

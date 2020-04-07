@@ -101,8 +101,8 @@ app.prepare()
 
     server.get('/codigo/cgi/', (req, res) => { app.render(req, res, '/routes/codigo/cgi', req.query);})
     server.get('/amp/codigo/cgi/', (req, res) => { app.render(req, res, '/routes/amp/codigo/cgi', req.query);})
-    server.get('/codigo/cgi/redirect/', (req, res) => { app.render(req, res, '/routes/codigo/cgi', req.query);})
-    server.get('/amp/codigo/cgi/redirect/', (req, res) => { app.render(req, res, '/routes/amp/codigo/cgi', req.query);})
+    server.get('/codigo/cgi/redirect/', (req, res) => { app.render(req, res, '/routes/codigo/cgi/redirect', req.query);})
+    server.get('/amp/codigo/cgi/redirect/', (req, res) => { app.render(req, res, '/routes/amp/codigo/cgi/redirect', req.query);})
 
     server.get('/codigo/coldfusion/', (req, res) => { app.render(req, res, '/routes/codigo/coldfusion', req.query);})
     server.get('/amp/codigo/coldfusion/', (req, res) => { app.render(req, res, '/routes/amp/codigo/coldfusion', req.query);})
@@ -168,6 +168,12 @@ app.prepare()
     server.get('/codigo/rubyonrails/', (req, res) => { app.render(req, res, '/routes/codigo/rubyonrails', req.query);})
     server.get('/amp/codigo/rubyonrails/', (req, res) => { app.render(req, res, '/routes/amp/codigo/rubyonrails', req.query);})
 
+    //======================================================================
+
+    server.get('/utilitarios/', (req, res) => {app.render(req, res, '/routes/utilitarios', req.query);}) 
+    server.get('/utilitarios/conversordetexto/', (req, res) => {app.render(req, res, '/routes/utilitarios/conversordetexto', req.query);})
+    server.get('/utilitarios/conversordeunidade/', (req, res) => {app.render(req, res, '/routes/utilitarios/conversordeunidade', req.query);})
+        
     //======================================================================
 
     server.get('/game/', (req, res) => {app.render(req, res, '/routes/game', req.query);}) 

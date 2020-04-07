@@ -1,5 +1,5 @@
 import React from 'react';
-import TemplateApache from '../../../../components/templates/codigo/apache/index.js';
+import TemplateApache from '../../../../components/templates/codigo/cgi/index.js';
 import * as Util from '../../../../controller/util.js';
 //import { withAmp } from 'next/amp';
 

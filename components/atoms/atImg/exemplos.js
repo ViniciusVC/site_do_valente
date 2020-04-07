@@ -8,7 +8,7 @@ export const atImg = (modo) => (
       <div>
         Componente Img com parametro:
           <Img 
-            src="https://seeklogo.com/images/O/Oi-logo-97A308AE93-seeklogo.com.png"
+            src="/static/assetsv5/img/logo-cinza.png"
             width="50px"
             height="50px"
             alt="Componente Img exemplo next"
@@ -16,6 +16,7 @@ export const atImg = (modo) => (
             class="ClassImgNext"
             modo={modo} />
             codigo : {'<Img src="img.png" width="50px" height="50px" alt="Componente Img exemplo next" title="Componente Img exemplo next" class="ClassImgNext" modo="html" />'}
+            <br/><br/>
       </div>
       <div>
         Componente Img sem parametro:

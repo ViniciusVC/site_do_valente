@@ -16,7 +16,6 @@ const atendimentoOi = function (props) {
 
   function iniciarGame(){
 
-    alert("iniciando script");
     document.querySelector('body').style.cursor = 'crosshair';
      
     var game = new Phaser.Game(800,600,Phaser.CANVAS,'divgametanque',{preload:preload,create:create,update:update});
@@ -112,23 +111,9 @@ const atendimentoOi = function (props) {
           nextFire = game.time.now + fireRate;
       }
     }
-    alert("teste");
+
+    document.getElementById('btLinkIniciar').style.display= "none"; 
   }
-
-  // function AlteraPersonagem(){
-  //   //document.getElementById("mostro").innerHTML = "";  
-	//   //document.getElementById('mostro').style.display= "none"; 
-  //   //mouse(document.mouse);
-  //   document.onmousemove=mouse;
-  //   if(document.getElementById('mostro').alert=="godzilla2"){
-  //     document.getElementById('mostro').src = '/static/assetsv5/img/game/godzilla1.gif'; 
-  //     document.getElementById('mostro').alert="godzilla1"
-	// 	}else{
-  //     document.getElementById('mostro').src = '/static/assetsv5/img/game/godzilla2.gif'; 
-  //     document.getElementById('mostro').alert="godzilla2"
-	// 	}
-  // }
-
 
   return (
     <div>
@@ -144,16 +129,44 @@ const atendimentoOi = function (props) {
           <h1>Teste Game Tanque PhaserJS</h1>
           <p>Estudo de desenvolvimento de game com PhaserJS.</p>
           <div id="divgametanque"></div>
-          S=Anmdar para traz<br/>
+          S=Andar para traz<br/>
           W=Andar para frente<br/>
           A=Virar para a esquerda<br/>
           D=Virar para a direita<br/>
-          <a onClick={() => {iniciarGame()}}>Iniciar Game</a>
+          <a id="btLinkIniciar" className="btLinkBranco" onClick={() => {iniciarGame()}}>Iniciar Game</a>
       </Layout>
       <style jsx>{`
         .divgametanque {
           position: absolute;
         }
+        .btLinkBranco {
+            font-family: oiTextRegular, sans-serif;
+            background-color: #ffffff;
+            border-radius: 8px;
+            color: #222222;
+            display: block;
+            font-size: 1rem; /*16px*/
+            height: 3.42857143rem;
+            text-align: center;
+            width: 300px;
+            text-decoration: none;
+            border: solid 1px #dbdbdb;
+            cursor: pointer;
+            outline: 0;
+            margin: 0;
+            padding: 1.2rem;
+            box-sizing: border-box;
+            font-style: normal;
+            transition: 0.5s;
+            -webkit-box-shadow: 2px 2px 20px rgba(1, 1, 1, 0.17);
+            -moz-box-shadow: 2px 2px 20px rgba(1, 1, 1, 0.17);
+            box-shadow: 2px 2px 20px rgba(1, 1, 1, 0.17);
+          }
+          .btLinkBranco:hover {
+            -webkit-box-shadow: 1px 1px 10px rgba(1, 1, 1, 0.47);
+            -moz-box-shadow: 1px 1px 10px rgba(1, 1, 1, 0.47);
+            box-shadow: 1px 1px 10px rgba(1, 1, 1, 0.47);
+          }
       `}</style>
 
     </div>

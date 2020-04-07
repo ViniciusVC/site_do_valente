@@ -2,7 +2,7 @@ import React from 'react'
 import * as Util from '../../../controller/util.js';
 
 const Img = props => {
-	var varSrc = Util.validaProps(props.src,"/static/assetsv5/img/oi-logo-cinza.jpg");
+	var varSrc = Util.validaProps(props.src,"/static/assetsv5/img/oi-logo-verde.png");
 	//if(props.src!=undefined){varSrc=props.src};
 
   var varWidth = Util.validaProps(props.width,varWidth);
@@ -13,7 +13,7 @@ const Img = props => {
 	var varHeight = Util.validaProps(props.height, varWidth);
 	//if( props.height!=undefined){varHeight=props.height};
 
-	var varAlt = Util.validaProps(props.alt,"Imagem Portal Oi");
+	var varAlt = Util.validaProps(props.alt,"Imagem Site do Valente");
 	//if( props.alt!=undefined){varAlt=props.alt};
 	var varTitle = Util.validaProps(props.title,varAlt);
 	//if( props.title!=undefined){varTitle=props.title};

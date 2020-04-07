@@ -1,5 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
+import Link from 'next/link'
 import FavIcon from '../atoms/atFavIcon'
 import Layout from '../moleculas/layout'
 import * as Util from '../../controller/util.js';
@@ -32,6 +33,7 @@ const templateHome = function (props) {
             2 - Páginas AMP (Next + React + AMP)<br />
             4 - Gerador de captcha interno (Não funciona com balance).<br />
             Repositorio : https://github.com/ViniciusVC/site_do_valente</p>
+            <p><Link href={"/eu/?regiao="+regiao}>Quem sou eu.</Link></p>
             <br />
         </Layout>
       <style jsx>{`

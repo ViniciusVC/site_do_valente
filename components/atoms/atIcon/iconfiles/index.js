@@ -54,14 +54,12 @@ export { loading } from "./loading";
 export { localization_pin } from "./localization_pin"; // eslint-disable-line
 export { lupa } from "./lupa";
 export { lupa_thin } from "./lupa-thin"; // eslint-disable-line
-export { minhaoi } from "./minhaoi";
 export { menu } from "./menu";
 export { mobile } from "./mobile";
 export { mobileB } from "./mobileB";
 export { mobileC } from "./mobileC";
 export { money } from "./money";
-export { oi } from "./oi";
-export { oiPlay } from "./oiPlay";
+export { play } from "./play";
 export { paper } from "./paper";
 export { people } from "./people";
 export { plus } from "./plus";

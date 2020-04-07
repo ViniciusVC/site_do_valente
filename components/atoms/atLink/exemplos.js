@@ -8,16 +8,16 @@ export const atLink = (modo) => {
       <h2>BtLink</h2>
       <div>
         (Portal Oi Home):
-        <div><Link href="https://www.oi.com.br" value="Minha Oi" estilo="LinkHeaderMinhaOi"/></div>
-        <p className="p">Codigo:{'<Link href="https://www.oi.com.br" value="Minha Oi" estilo="LinkHeaderMinhaOi"/>'}</p>
+        <div><Link href="https://github.com/ViniciusVC/" value="Git Valente" estilo="LinkHeader"/></div>
+        <p className="p">Codigo:{'<Link href="https://github.com/ViniciusVC/" value="Git Valente" estilo="LinkHeader"/>'}</p>
       </div>
       <div>
-        <div><Link href="https://www.oi.com.br" value="Minha Oi" estilo="LinkFooterNavMinhaOi"/></div>
-        <p className="p">Codigo:{'<Link href="https://www.oi.com.br" value="Minha Oi" estilo="LinkFooterNavMinhaOi"/>'}</p>
+        <div><Link href="https://github.com/ViniciusVC/" value="Git Valente" estilo="LinkFooterNav"/></div>
+        <p className="p">Codigo:{'<Link href="https://github.com/ViniciusVC/" value="Git Valente" estilo="LinkFooterNav"/>'}</p>
       </div>
       <div>
-        <div><Link href="https://www.oi.com.br" value="Acessar"/></div>
-        <p className="p">Codigo:{'<Link href="https://www.oi.com.br" value="Acessar"/>'}</p>
+        <div><Link href="https://github.com/ViniciusVC/" value="Git Valente"/></div>
+        <p className="p">Codigo:{'<Link href="https://github.com/ViniciusVC/" value="Git Valente"/>'}</p>
       </div>
       <style jsx>{`
       .p{ 

@@ -26,6 +26,7 @@ const atendimentoOi = function (props) {
       </Head>
       <Layout regiao={regiao} modo={modo}>
         <h1>HTML Comentario</h1>
+        <p>Todo o texto que colocar dentro está comentado, ou seja, não aparecerá na página. Dentro de um comentário pode colocar o texto ou código HTML, como etiquetas. O comentário começa por <! -- e finaliza por --> Tudo o que colocar entre essas etiquetas está comentado.</p>
         <p>Segue um exemplo de comentario em HTML.</p>
         <p>{'<!-- Tudo aqui dentro é um comentário -->'}</p>
         <p>Comentários ajudão a organizar o código.</p>

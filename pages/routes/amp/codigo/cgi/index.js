@@ -1,5 +1,5 @@
 import React from 'react';
-import TemplateCGIamp from '../../../../../components/templates/codigo/apache';
+import TemplateCGIamp from '../../../../../components/templates/codigo/cgi';
 import * as Util from '../../../../../controller/util.js';
 import { withAmp } from 'next/amp';
 
