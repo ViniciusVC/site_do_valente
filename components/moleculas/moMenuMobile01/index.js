@@ -22,13 +22,11 @@ const MenuMobile01 = props => {
       <div>
         <div className="contMenuMobile" id="contMenuMobiles">
               <div id="lightboxMenu" className="lightboxMenu" >
-                <span className="close"  role="button" tabindex="0">
+                <div className="close"  role="button" tabindex="0">
                   <a onClick={() => {fechalightboxMenu()}}>
-                    <svg width="30" height="30" viewBox="0 0 30 30">
-                      <path fill="#000000" fill-rule="evenodd" d="M13.106 15.09L8.227 19.85l1.625 2.035 5.119-4.976 5.099 4.976 1.882-1.83-5.109-4.966 5.109-4.967-1.882-1.83-5.1 4.976-5.118-4.976-1.625 2.035 4.879 4.762zM15 30C6.716 30 0 23.284 0 15 0 6.716 6.716 0 15 0c8.284 0 15 6.716 15 15 0 8.284-6.716 15-15 15z"></path>
-                    </svg>
+                    <Icon type="close" color="#000000" />
                   </a>
-                </span>
+                </div>
                 <ListadeRotas/>
               </div>
           </div>
@@ -64,7 +62,7 @@ const MenuMobile01 = props => {
               height: 100vh;
               width: 86vw;
               border-radius: 8px;
-              position:relative;
+           
               box-shadow: rgba(0, 0, 0, 1.3) 0px 0px 15px;
               background: white;
               transition: all 0.3s ease 0s;
@@ -75,16 +73,14 @@ const MenuMobile01 = props => {
             }
 
             .closeMenu {
-              position:absolute;
-              right:5px;
+              margin-bottom : 20px;
+              border-left:100px;
               top:5px;
               font-family: arial;    
-              font-size: 25px;
-              justify-content: space-between;
               position: relative;
-              flex-direction: row;
+              flex-direction: row-reverse;
               display: flex;
-              padding: 0px 15px;
+              padding: 0px;
             }
         `}</style>
       </div>
@@ -96,14 +92,14 @@ const MenuMobile01 = props => {
           <amp-lightbox id="PopupMenu" layout="nodisplay">
             <div className="lightboxMenu" >
               <span className="closeMenu" on="tap:PopupMenu.close" role="button" tabindex="0">
-                <Icon type="close" color="#D82482" />
+                <Icon type="close" color="#000000" />
               </span>
-              <MenuMobileItens2 modo={modo}/>
+              <ListadeRotas/>
             </div>
           </amp-lightbox>
           <div className="ampstart-btn caps m2" on="tap:PopupMenu" role="button" tabindex="0">
             <div>
-              <Icon type="menu" color="#D82482" width="25px"/>
+              <Icon type="menu" color="#000000" width="25px"/>
             </div>
           </div>
         <style jsx>{`
@@ -112,26 +108,31 @@ const MenuMobile01 = props => {
               background: rgba(0, 0, 0, 0.6) none repeat scroll 0% 0%;
             }
             .lightboxMenu {
+              margin : 10px;
+              
               height: 100vh;
               width: 86vw;
-              position:relative;
+              border-radius: 8px;
+           
               box-shadow: rgba(0, 0, 0, 1.3) 0px 0px 15px;
               background: white;
               transition: all 0.3s ease 0s;
               overflow-y: scroll;
+              background-color: #ffffff;
+              background-image: linear-gradient(180deg, #ffffff, #ffffff, #bdb8a7 );
+              padding: 10px;
              
             }
             .closeMenu {
-              position:absolute;
-              right:5px;
+              margin-bottom : 20px;
+              left:5px;
               top:5px;
               font-family: arial;    
-              font-size: 25px;
               justify-content: space-between;
               position: relative;
-              flex-direction: row;
+              flex-direction: row-reverse;
               display: flex;
-              padding: 0px 15px;
+              padding: 0px;
             }
         `}</style>
       </div>

@@ -254,8 +254,10 @@ const ListadeRotas = function (props) {
         <details>
           <summary><Link href={StringModo+"/utilitarios/?regiao="+regiao}>Utilitarios</Link></summary>
           <ol type="1">
-            <li><Link href={StringModo+"/utilitarios/conversordetexto?regiao="+regiao}>conversordetexto</Link></li>
-            <li><Link href={StringModo+"/utilitarios/conversordeunidade?regiao="+regiao}>conversordeunidade</Link></li>
+            <li><Link href={StringModo+"/utilitarios/conversordetexto?regiao="+regiao}>Conversor de Texto</Link></li>
+            <li><Link href={StringModo+"/utilitarios/conversordeunidade?regiao="+regiao}>Conversor de Unidade</Link></li>
+            <li><Link href={StringModo+"/utilitarios/servicosgratuitos?regiao="+regiao}>Servicos Gratuitos</Link></li>
+            
           </ol>
         </details>
 
@@ -297,6 +299,40 @@ const ListadeRotas = function (props) {
         padding-top: 10px;
         font-size: 22px;
       }
+      summary {
+            background-color: #ffffff;
+            border-radius: 8px;
+            color: #222222;
+            display: block;
+            font-size: 16px;
+            height: 25px;
+            width: 290px;
+            border: solid 2px #dbdbdb;
+            margin: 0;
+            padding: 0px;
+            padding-top: 5px;
+            padding-left: 5px;
+            -webkit-box-shadow: 2px 2px 20px rgba(1, 1, 1, 0.17);
+            -moz-box-shadow: 2px 2px 20px rgba(1, 1, 1, 0.17);
+            box-shadow: 2px 2px 20px rgba(1, 1, 1, 0.17);
+          }
+      li {
+            background-color: #ffffff;
+            border-radius: 8px;
+            color: #222222;
+            display: block;
+            font-size: 16px;
+            height: 25px;
+            width: 250px;
+            border: solid 2px blue;
+            margin: 4px;
+            padding: 0px;
+            padding-top: 5px;
+            padding-left: 5px;
+            -webkit-box-shadow: 2px 2px 20px rgba(1, 1, 1, 0.17);
+            -moz-box-shadow: 2px 2px 20px rgba(1, 1, 1, 0.17);
+            box-shadow: 2px 2px 20px rgba(1, 1, 1, 0.17);
+          }
     `}</style>
     </div>
   )

@@ -20,8 +20,10 @@ const moHeaderSideDoValente = function (props) {
   console.log('║  Header  ║ modo='+modo);
   //console.log('║          ║ estado='+JsonRegiao.estado);
   //console.log('╚══════════╝ capital='+JsonRegiao.capital);
+  
+  //Div display="DivLinhaResponsivo"
   return (
-    <Div display="justificado">
+    <Div display="responsivo">
         <div className="DivHeaderSideDoValente logo">
           <a href={StringModo+"/?regiao="+regiao} >
             <Img src="/static/assetsv5/img/log_laranja1.png" width="50px" height="50px" alt="Logo Site Valente" title="Logo Site Valente" class="LogoSiteValente" modo={modo} />
@@ -56,14 +58,18 @@ const moHeaderSideDoValente = function (props) {
       }
       .pHeaderSideDoValente{
         padding-top: 15px;
-        font-size: 40px;
+        font-size: 25px;
         font-family: sans-serif;
         text-align: center;
       }
 
       @media(min-width: 900px) {
+        .pHeaderSideDoValente{
+          font-size: 60px;
+        }
         .esconder{
           display : None;
+        }
       }
 
     `}</style>

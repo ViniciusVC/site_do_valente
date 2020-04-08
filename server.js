@@ -173,7 +173,8 @@ app.prepare()
     server.get('/utilitarios/', (req, res) => {app.render(req, res, '/routes/utilitarios', req.query);}) 
     server.get('/utilitarios/conversordetexto/', (req, res) => {app.render(req, res, '/routes/utilitarios/conversordetexto', req.query);})
     server.get('/utilitarios/conversordeunidade/', (req, res) => {app.render(req, res, '/routes/utilitarios/conversordeunidade', req.query);})
-        
+    server.get('/utilitarios/servicosgratuitos/', (req, res) => {app.render(req, res, '/routes/utilitarios/servicosgratuitos', req.query);})
+    
     //======================================================================
 
     server.get('/game/', (req, res) => {app.render(req, res, '/routes/game', req.query);}) 

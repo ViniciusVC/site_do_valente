@@ -22,6 +22,10 @@ const templateHome = function (props) {
         <FavIcon />
         <meta name="description" content="Bem vindo ao SITE DO VALENTE" />
         <link rel="canonical" href="/" />
+        <link rel="canonical" href="https://www.oi.com.br/"/>
+        <link rel="amphtml" href="https://www.oi.com.br/amp/"/>
+        <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
+        <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
       </Head>
       <Layout regiao={regiao} modo={modo}>
           <h1>Bem vindo ao Projeto SITE_DO_VALENTE</h1>

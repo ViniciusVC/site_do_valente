@@ -28,6 +28,7 @@ const conversordeunidade = function (props) {
       <Layout regiao={regiao} modo={modo}>
           <h1>Conversor de Unidade</h1>
           <div>
+            <p>Esta página está em desenvolvimento. Volte em breve.</p>
           <select id="regiao" name="regiao">
             <option value="metros">metros</option>
             <option value="Quilômetros">Quilômetros</option>

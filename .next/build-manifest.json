@@ -11,11 +11,11 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/routes/eu": [
+    "/routes/amp": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/routes/eu/curriculo": [
+    "/routes/amp/codigo/apache/instalubuntu": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]
