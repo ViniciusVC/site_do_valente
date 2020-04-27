@@ -1,7 +1,11 @@
 import React from 'react'
+import Img from '../../../atoms/atImg/index.js'
+import Div from '../../../atoms/atDiv/index.js'
+import Layout from '../../../moleculas/layout'
+import MoHead from '../../..//moleculas/moHead'
+
 import Head from 'next/head'
 import FaviIcon from '../../../atoms/atFavIcon'
-import Layout from '../../../moleculas/layout'
 import * as Util from '../../../../controller/util.js';
 
 const codigoAsp = function (props) {
@@ -15,18 +19,24 @@ const codigoAsp = function (props) {
 
   return (
     <div>
-      <Head>
-        <title>ASP</title>
-        <FaviIcon />
-        <meta name="description" content="ASP" />
-        <link rel="canonical" href="/codigo/asp/" />
-        <link rel="amphtml" href="/amp/codigo/asp/" />
-        <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
-        <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
-      </Head>
-      <Layout regiao={regiao} modo={modo}>
+      <MoHead modo={modo} title="ASP" description="Código ASP" canonical="/codigo/asp/"/>
+      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="ASP">
+      <Div display="responsivo">
+          <div className="coluna404">
           <h1>ASP</h1>
-          <p>O ASP, também conhecido como ASP Clássico hoje em dia, é uma estrutura de bibliotecas básicas para processamento de linguagens de script no lado servidor para geração de conteúdo dinâmico na Web.</p>
+          <p>O ASP, também conhecido como ASP Clássico hoje em dia, é uma estrutura de bibliotecas básicas para processamento de linguagens de script no lado servidor para geração de conteúdo dinâmico na Web.</p>         </div>
+          <div>
+            <Img 
+                src="/static/assetsv5/img/codigo/logoasp.png"
+                width="323px"
+                height="136px"
+                alt="Logo ASP"
+                title="Logo ASP"
+                class="ClassLogoASP"
+                modo={modo}>
+            </Img>
+          </div>
+        </Div>
       </Layout>
       <style jsx>{`
         .h1{

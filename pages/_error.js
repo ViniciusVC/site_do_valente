@@ -1,86 +1,22 @@
-import React from 'react'
-import Head from 'next/head';
-import Header04 from '../components/organisms/Eu/header04'
-import Img from '../components/atoms/atImg/index.js'
-import Div from '../components/atoms/atDiv/index.js'
-import Layout from '../components/moleculas/layout'
+import React from 'react';
+import Templa404 from '../components/templates/404.js';
+import * as Util from '../controller/util.js';
+//import { withAmp } from 'next/amp';
 
-const Error = function(props){
-console.log('\u001b[31m╔════════════════════════════════════════╗');
-console.log('\u001b[31m║      _error 404                        ║');
-console.log('\u001b[31m╚════════════════════════════════════════╝\u001b[0m');
-return(
-  <div>
-    <Head>
-        <title>Página não encontrada</title>
-        <link rel="icon" href="/favicon.ico" />
-        <meta name="description" content="Pagina não encontrada." />
-        <meta name="robots" content="noindex" />
-        <link rel="canonical" href="/"/>
-    </Head>
-    <Layout regiao="RJ" modo="html">
-    <Div display="justificado">
-        <div className="coluna404">
-          <h1 className='title'>Ih, essa página não foi encontrada</h1>
-          <p>
-            Talvez o endereço digitado esteja incorreto ou você tenha
-            clicado em uma página que não existe.
-          </p>
-          <p>
-            Você pode ver as opções do menu acima ou continuar
-            a navegação pela página inicial.
-          </p><br/>
-        </div>
-        <div>
-            <Img 
-              src="/static/assetsv5/img/hero-large-404.png"
-              width="323px"
-              height="436px"
-              alt="Pagina não encontrada"
-              title="Pagina não encontrada"
-              class="ClassImg404"
-              modo="html">
-            </Img>
-        </div>
-    </Div>
-    </Layout>
-    <style jsx>{`
-      .title {
-        margin: 0;
-        padding-top: 80px;
-        line-height: 1.15;
-        font-size: 48px;
-      }
-      .coluna404{
-        width: 50%;
-      }
-    `}</style>
-  </div>
-)}
-
-export default Error
-
-
-/*
-class Error extends React.Component {
-  static getInitialProps({ res, err }) {
-    const statusCode = res ? res.statusCode : err ? err.statusCode : null
-    return { statusCode }
-  }
-
-  render() {
-    return (
-      <div>
-      <h1>Pagina não encontrada</h1>
-      <p>
-        {this.props.statusCode
-          ? `An error ${this.props.statusCode} occurred on server`
-          : 'An error occurred on client'}
-      </p>
-      </div>
-    )
-  }
+const RotaIndex = function(props){
+  console.log('+++++++++++++++++++++++++++++');
+  console.log('Rota Erro 404');
+  console.log(props.url.query.regiao);
+  //var regiao = req.query.regiao
+  //var regiao = Util.validaProps(props.regiao, "SP")
+  var regiao = Util.validaProps(props.url.query.regiao,"RJ")
+  //var modo = Util.validaProps(props.modo,"html")
+  return(
+    <Templa404 
+      modo="html" 
+      regiao={regiao}/>
+  )
 }
-*/
-
-
+//export default withAmp(RotaIndex); // Usado para páginas AMP
+//export default withAmp(RotaIndex, { hybrid: true }); // Usado para páginas hibridas
+export default RotaIndex // Usado para páginas HTML

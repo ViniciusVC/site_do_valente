@@ -1,22 +1,6 @@
 import React from 'react'
-import Head from 'next/head'
-import FavIcon from '../atoms/atFavIcon'
+import MoHead from '../moleculas/moHead'
 import * as Util from '../../controller/util.js';
-// import Arrow from '../atoms/atCampoTexto';
-// import BtLink from '../atoms/atBtLink';
-
-// ====== copiado de Documentoscopia - Projeto Piloto ======
-import Alerta from '../moleculas/moAlerta.js'
-import AtCampotexto from '../atoms/atCampoTexto';
-//import EnviaArquivo from '../../moleculas/moBtEnviaArquivo.js';
-// import BtSubmit from '../../atoms/atBtSubmit/index.js';
-// import AtCampoInvisivel from '../../atoms/atCampoInvisivel/index.js';
-// import Captcha from '../../moleculas/moCaptcha.js';
-// import ContentCamposDoc from './contentCamposDoc.js'
-// import AtLabelCampo from './atLabelCampo.js';
-// ==========================================================
-
-
 
 const templateHub = function (props) {
   console.log('╔════════════════════════════════════════╗');
@@ -27,12 +11,8 @@ const templateHub = function (props) {
 
   return (
     <div className="DivHubIndex">
-      <Head>
-        <title>Hub de Contato</title>
-        <FavIcon />
-        <meta name="description" content="Hub de Contato" />
-        <link rel="canonical" href="/hub/" />
-      </Head>
+      <MoHead modo={modo} title="Hub de Contato" canonical="/"/>
+      
         <h1 className="DivHubTutulo">
           <img src="/static/assetsv5/img/robo.jpg" width="50px" height="50px"/>
           Hub de Contato
@@ -72,5 +52,10 @@ const templateHub = function (props) {
 
 export default templateHub
 
-
   
+// <Head>
+//         <title>Hub de Contato</title>
+//         <FavIcon />
+//         <meta name="description" content="Hub de Contato" />
+//         <link rel="canonical" href="/hub/" />
+//       </Head>

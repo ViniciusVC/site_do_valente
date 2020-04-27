@@ -1,40 +1,53 @@
 import React from 'react'
-import Head from 'next/head'
-import FaviIcon from '../../../atoms/atFavIcon'
 import Layout from '../../../moleculas/layout'
+import MoHead from '../../../moleculas/moHead'
+import DivCodigo from '../../../atoms/atDivCodigo'
+import DivNaveg from '../../../atoms/atDivNaveg'
 import * as Util from '../../../../controller/util.js';
 
 const atendimentoOi = function (props) {
 
-  console.log('╔═══════════════════════════════════╗');
-  console.log('║     codigo - HTML - Lista         ║');
-  console.log('╚═══════════════════════════════════╝');
+  console.log('╔════════════════════════════════════╗');
+  console.log('║ Template - codigo - HTML - Lista06 ║');
+  console.log('╚════════════════════════════════════╝');
 
   var regiao = Util.validaProps(props.regiao , "RJ");
   var modo = Util.validaProps(props.modo, "html");
+  const JsonRegiao = Util.regiao(regiao);
 
   return (
     <div>
-      <Head>
-        <title>HTML Lista com Descrição</title>
-        <FaviIcon />
-        <meta name="description" content="HTML Lista com Descrição" />
-        <link rel="canonical" href="/codigo/html/lista06/" />
-        <link rel="amphtml" href="/amp/codigo/html/lista06/" />
-        <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
-        <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
-      </Head>
-      <Layout regiao={regiao} modo={modo}>
-          <h1>HTML Lista com Descrição</h1>
-          Segue um exemplo de Lista com descrição<br/>
-          <dl> 
+      <MoHead modo={modo} title="HTML Lista com Descrição" description="HTML Lista com Descrição" canonical="/codigo/html/lista06/"/>
+      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="html">
+        <h1>HTML Lista com Descrição</h1>
+        <p>
+          A tag dl define uma listas com descrição.<br/>
+          A tag dt define um item da lista.<br/>
+          A tag dd define a descrição do item.<br/>
+        </p>
+          Segue um exemplo de Lista com descrição<br/>        
+        <DivNaveg>
+        <dl> 
               <dt>Titulo(dt)</dt>
               <dd>descrição(dd)</dd>
-              <dt>Titulo(dt)</dt>
+              <dt>Titulo(dt){JsonRegiao.timea}</dt>
               <dd>descrição(dd)</dd>
-              <dt>Titulo(dt)</dt>
+              <dt>Titulo(dt){JsonRegiao.timeb}</dt>
               <dd>descrição(dd)</dd>
           </dl>
+        </DivNaveg>
+        <DivCodigo titulo="codigo HTML da Lista">
+          {'<dl>'}<br/>
+          &ensp; {'<dt>Titulo(dt)</dt>'}<br/>
+          &ensp; {'<dd>descrição(dd)</dd>'}<br/>
+          &ensp; {'<dt>Titulo(dt)'+JsonRegiao.timea+'</dt>'}<br/>
+          &ensp; {'<dd>descrição(dd)</dd>'}<br/>
+          &ensp; {'<dt>Titulo(dt)'+JsonRegiao.timeb+'</dt>'}<br/>
+          &ensp; {'descrição(dd)'}<br/>
+          {'</dl>'}<br/>
+        </DivCodigo>
+
+
         </Layout>
       <style jsx>{`
         .h1{

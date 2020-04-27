@@ -1,13 +1,13 @@
 import React from 'react';
-import Templateredirect from '../../../../components/templates/codigo/apache/redirect.js';
+import Templateh1pbr from '../../../../components/templates/codigo/html/h1_p_br.js';
 import * as Util from '../../../../controller/util.js';
 
 //import { withAmp } from 'next/amp';
 
-const Retaredirect = function(props){
+const RotaH1PBR = function(props){
   // var regiao = Util.validaProps(props.url.query.regiao,"SP")
   return(
-    <Templateredirect 
+    <Templateh1pbr 
       modo="html" 
       regiao={Util.validaProps(props.url.query.regiao,"RJ")} />
   )
@@ -15,4 +15,4 @@ const Retaredirect = function(props){
 
 //export default withAmp(Retaredirect, { hybrid: true });
 //export default withAmp(Retaredirect);
-export default Retaredirect
+export default RotaH1PBR

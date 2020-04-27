@@ -1,47 +1,8 @@
 
-// layout de Documentoscopia - Projeto Piloto
+// Projeto Piloto Documentoscopia - Equipe SEO
 import React from 'react';
 import Compress from 'compress.js';
 //import Img from '../atoms/atImg/index.js';
-
-// class MyLink extends React.Component {
-//   render () {
-//     const { ...props } = this.props
-//     return <a {...props} onClick={this.handleClick} />
-//   }
-//   handleClick = event => {
-//     if (this.props.onClick) {
-//       var conteudo = this.props.onClick(event);
-//       //alert('conteudo='+conteudo);
-//       //alert(this.props);
-//       //console.log(this.props);
-//       alert(this.props.id);
-//       this.props.value = "Clicou";
-//       //formdocumentoscopia[conteudo].onClick();
-//       //event
-//     }
-//   }
-// }
-// class MyImg extends React.Component {
-//   render () {
-//     const { ...props } = this.props
-//     return <a {...props} onClick={this.handleClick} />
-//   }
-//   handleClick = event => {
-//     if (this.props.onClick) {
-//       var conteudo = this.props.onClick(event);
-//       alert('conteudo='+conteudo);
-//       //alert(this.props);
-//       //console.log(this.props);
-//       //alert("clicou em "+this);
-//       //alert(conteudo);
-//       document.getElementById(conteudo).onClick();
-//       //conteudo.onClick();
-//       //formdocumentoscopia[conteudo].onClick();
-//       //event
-//     }
-//   }
-// }
 
 const btEnviaArquivo = props => {
 
@@ -60,47 +21,19 @@ const btEnviaArquivo = props => {
       console.log(files[0])
       console.log(images[0])
       console.log('_____________________________');
-      //.files
-      //.src
-      //.mimetype    
-      //.fieldname
-      //.value
       const img = images[0]
       const imagemSaida = document.getElementById(IdFile + "Send");
       const imagemPreview = document.getElementById(IdFile + "Preview")
       const nomeImagem = document.getElementById(IdFile + "NomeImagem")
-      // returns an array of compressed images
-
-      // imagemSaida.mimetype = `${images[0].prefix}${images[0].data}`;
-      // imagemSaida.files[0] = images[0].data;
-      // imagemSaida.data = images[0].data;
-      // imagemSaida.files[0].file.name = images[0].alt;
-      // imagemSaida.file.size = images[0].endSizeInMb;
-      // imagemSaida.files[0].file.size = images[0].endSizeInMb;        
 
       imagemPreview.src = img.prefix + img.data;
-
 
       imagemSaida.value = img.data;
 
       nomeImagem.value = img.alt;
-
-      //canvas.toDataURL();
-      //imagemSaida.data = img.prefix+img.data
-
-      //imagemSaida.files[0].File.name = img.prefix+img.data; //img.alt;
-
-      //imagemSaida.Files[0].File.size = img.endSizeInMb;
-      //imagemSaida.src = img.data;
-
-      //document.getElementById(IdFile+"Send").files[0] = img; 
-      //`${images[0].prefix}${images[0].data}`     
     })
   }
 
-
-  // var modo = "html";
-  // if( props.modo!=undefined){modo=props.modo};
   var varId = "id";
   var varId2 = "idPreview";
   var varId3 = "idSend";
@@ -115,8 +48,6 @@ const btEnviaArquivo = props => {
   if (props.name != undefined) { varName = props.name };
   var varValue = "--";
   if (props.value != undefined) { varValue = props.value };
-  // var varImg="../static/assetsv5/img/documentoscopia/carteira-icone.jpg";
-  // if( props.img!=undefined){varImg=props.img};
 
   return (
     <div className="divImgEnviArquivo">

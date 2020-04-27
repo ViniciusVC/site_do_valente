@@ -1,4 +1,4 @@
-export { consumptionProfile } from "./consumptionProfile";
+export { circulo } from "./circulo";
 export { alert } from "./alert";
 export { inputAlert } from "./inputAlert";
 export { inputSuccess } from "./inputSuccess";
@@ -28,6 +28,7 @@ export { combo } from "./combo";
 export { comboB } from "./comboB";
 export { comboC } from "./comboC";
 export { comprar } from "./comprar";
+export { consumptionProfile } from "./consumptionProfile";
 export { conexao } from "./conexao";
 export { configuracao } from "./configuracao";
 export { contract } from "./contract";
@@ -39,8 +40,17 @@ export { feat_certificate } from "./feat-certificate"; // eslint-disable-line
 export { feat_cloud } from "./feat-cloud"; // eslint-disable-line
 export { feat_modem } from "./feat-modem"; // eslint-disable-line
 export { feat_wifi } from "./feat-wifi"; // eslint-disable-line
+
+export { game01 } from "./game01"; // ! ! !
+export { game02 } from "./game02"; // ! ! !
+export { game03 } from "./game03"; // ! ! !
+export { game04 } from "./game04"; // ! ! !
+export { game05 } from "./game05"; // ! ! !
+export { game06 } from "./game06"; // ! ! !
+
 export { google_plus } from "./google-plus"; // eslint-disable-line
 export { help } from "./help";
+export { html } from "./html";
 export { home } from "./home";
 export { historico, historico as history } from "./historico";
 export { info } from "./info";
@@ -72,6 +82,9 @@ export { product_tvhd } from "./product-tv-HD"; // eslint-disable-line
 export { product_tv } from "./product-tv"; // eslint-disable-line
 export { protecao } from "./protecao";
 export { protocol } from "./protocol";
+
+export { quebracabeca } from "./quebracabeca"; // ! ! !
+
 export { recompensa } from "./recompensa";
 export { redefinir } from "./redefinir";
 export { rechargeOld } from "./rechargeOld";

@@ -25,7 +25,7 @@ const codigoAsp = function (props) {
         <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
         <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
       </Head>
-      <Layout regiao={regiao} modo={modo}>
+      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="CGI">
           <h1>CGI PERL</h1>
           <p>CGI é um protocolo de comunicação (um código) através do qual o servidor HTTP (ou servidor web) intermedia a transferência de informações entre um programa (no mesmo computador que o servidor) e um cliente HTTP (o seu browser).</p>
           <p>Perl é uma linguagem de programação.</p>

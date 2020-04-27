@@ -1,7 +1,8 @@
 import React from 'react'
-import Head from 'next/head'
-import FaviIcon from '../../../atoms/atFavIcon'
+import Img from '../../../atoms/atImg/index.js'
+import Div from '../../../atoms/atDiv/index.js'
 import Layout from '../../../moleculas/layout'
+import MoHead from '../../../moleculas/moHead'
 import * as Util from '../../../../controller/util.js';
 
 const Knockout = function (props) {
@@ -15,18 +16,28 @@ const Knockout = function (props) {
 
   return (
     <div>
-      <Head>
-      <title>Knockout JS</title>
-        <FaviIcon />
-        <meta name="description" content="Knockout JS" />
-        <link rel="canonical" href="/codigo/knockout" />
-        <link rel="amphtml" href="/amp/codigo/knockout" />
-        <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
-        <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
-      </Head>
-      <Layout regiao={regiao} modo={modo}>
-          <h1>Knockout JS</h1>
-          <p>Aqui entrara a descrição...</p>
+      <MoHead modo={modo} title="KnockoutJS" description="Codigo Knockout JS" canonical="/codigo/knockout/"/>
+      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="KnockoutJS">
+      <Div display="responcivo">
+          <div className="coluna404">
+            <h1>Knockout JS</h1>
+            <p>
+              Knockout é uma implementação JavaScript independente do padrão Model-View-ViewModel com modelos.<br />
+              Os princípios subjacentes são, portanto: uma separação clara entre os dados do domínio, visualize os componentes e os dados a serem exibidos.
+            </p>
+          </div>
+          <div>
+              <Img 
+                src="/static/assetsv5/img/codigo/logoknockout.png"
+                width="323px"
+                height="436px"
+                alt="Logo Knockout JS"
+                title="Logo Knockout JS"
+                class="ClassKnockoutJS"
+                modo={modo}>
+              </Img>
+          </div>
+        </Div>
       </Layout>
       <style jsx>{`
         .h1{

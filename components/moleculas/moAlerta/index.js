@@ -19,7 +19,7 @@ const moAlerta = props => {
         <center>
           <Img
             class="AlertaErro"
-            src="/static/assetsv5/img/documentoscopia/erro_ico.png"
+            src="/static/assetsv5/img/erro_ico.png"
             width="50px"
             height="50px"
             modo={modo} />

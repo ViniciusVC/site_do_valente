@@ -1,37 +1,52 @@
 import React from 'react'
-import Head from 'next/head'
-import FaviIcon from '../../../atoms/atFavIcon'
 import Layout from '../../../moleculas/layout'
+import MoHead from '../../../moleculas/moHead'
+import DivCodigo from '../../../atoms/atDivCodigo'
+import DivNaveg from '../../../atoms/atDivNaveg'
 import * as Util from '../../../../controller/util.js';
 
 const atendimentoOi = function (props) {
 
-  console.log('╔═══════════════════════════════════╗');
-  console.log('║     codigo - HTML - Lista         ║');
-  console.log('╚═══════════════════════════════════╝');
+  console.log('╔════════════════════════════════════╗');
+  console.log('║ Template - codigo - HTML - Lista01 ║');
+  console.log('╚════════════════════════════════════╝');
 
   var regiao = Util.validaProps(props.regiao , "RJ");
   var modo = Util.validaProps(props.modo, "html");
+  const JsonRegiao = Util.regiao(regiao);
 
   return (
     <div>
-      <Head>
-        <title>HTML Lista</title>
-        <FaviIcon />
-        <meta name="description" content="HTML Lista" />
-        <link rel="canonical" href="/codigo/html/lista01/" />
-        <link rel="amphtml" href="/amp/codigo/html/lista01/" />
-        <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
-        <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
-      </Head>
-      <Layout regiao={regiao} modo={modo}>
-          <h1>HTML Lista</h1>
+      <MoHead modo={modo} title="HTML Lista" description="HTML Lista" canonical="/codigo/html/lista01/"/>
+      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="html">
+        <h1>HTML Listas não ordenadas</h1>
+        <p>
+          A tag ul define uma listas não ordenadas.<br/>
+          A tag li define um item da lista.
+        </p>
+        <p>
           Segue um exemplo de Lista não ordenada<br/>
+        </p>
+        <DivNaveg>
           <ul>
-              <li>Vinicius</li>
+              <li>Carolina</li>
               <li>Gabriel</li>
               <li>Filipe</li>
+              <li>{JsonRegiao.timea}</li>
+              <li>{JsonRegiao.timeb}</li>
           </ul>
+        </DivNaveg>
+        <DivCodigo titulo="codigo HTML da Lista">
+          {'<ul>'}<br/>
+          &ensp; {'<li>Carolina</li>'}<br/>
+          &ensp; {'<li>Gabriel</li>'}<br/>
+          &ensp; {'<li>Filipe</li>'}<br/>
+          &ensp; {'<li>'+JsonRegiao.timea+'</li>'}<br/>
+          &ensp; {'<li>'+JsonRegiao.timeb+'</li>'}<br/>
+          {'</ul>'}<br/>
+        </DivCodigo>
+          
+
         </Layout>
       <style jsx>{`
         .h1{

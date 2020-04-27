@@ -1,8 +1,8 @@
 import React from 'react'
-import Head from 'next/head'
-import FaviIcon from '../../../atoms/atFavIcon'
+import Div from '../../../atoms/atDiv/index.js'
 import Layout from '../../../moleculas/layout'
 import * as Util from '../../../../controller/util.js';
+import MoHead from '../../../moleculas/moHead'
 
 const animaBut = function (props) {
 
@@ -17,412 +17,281 @@ const animaBut = function (props) {
 
   return (
     <div>
-      <Head>
-        <title>Exemplos de CSS animação de butão</title>
-        <FaviIcon />
-        <meta name="description" content="CSS_anima_but" />
-        <link rel="canonical" href="/codigo/css/anima_but" />
-        <link rel="amphtml" href="/amp/codigo/css/anima_but" />
-        <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
-        <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
-      </Head>
-      <Layout regiao={regiao} modo={modo}>
-          <h1>Exemplos de CSS animação de butão</h1>
-          <div id="wrapper">
-
-            <div id="wrapper-inner">
-
-              <div className="wrapperInnerTab">
-                <div className="wrapperInnerTab-title">Exemplo 1</div>
-                <div className="wrapperInnerTab-backgrounds">
+      <MoHead modo={modo} title="Exemplos de CSS animação de butão" description="CSS_anima_but" canonical="/codigo/css/anima_but/"/> 
+      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="CSS">
+      <Div display="vertical">
+          <div>
+            <h1>Animação de Butão</h1>
+            <p>Segue alguns exemplos de botões animados apenas com CSS.</p>
+          </div>           
+          
+          <div>Exemplo 1</div>
+          <Div display="responcivo">                  
                   <div className="wrapperInnerTab-backgrounds-first">
                     <div className="sim-button button1">
                       <span>{JsonRegiao.timea}</span>
                     </div>
                   </div>
+                  
                   <div className="wrapperInnerTab-backgrounds-second">
                     <div className="sim-button button1">
                       <span>{JsonRegiao.timeb}</span>
                     </div>
                   </div>
+                  
                   <div className="wrapperInnerTab-backgrounds-third">
                     <div className="sim-button button1">
                       <span>{JsonRegiao.capital}</span>
                     </div>
                   </div>
-                </div>
-              </div>
-
-              <div className="wrapperInnerTab">
-                <div className="wrapperInnerTab-title">Exemplo 2</div>
-                <div className="wrapperInnerTab-backgrounds">
+          </Div>
+          
+          <div>Exemplo 2</div>
+          <Div display="responcivo">
                   <div className="wrapperInnerTab-backgrounds-first">
                     <div className="sim-button button2" data-text={JsonRegiao.timea}><span>{JsonRegiao.timea}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-second">
                     <div className="sim-button button2" data-text={JsonRegiao.timeb}><span>{JsonRegiao.timeb}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-third">
                     <div className="sim-button button2" data-text={JsonRegiao.capital}><span>{JsonRegiao.capital}</span></div></div>
-                </div>
-              </div>
-
-              <div className="wrapperInnerTab">
-                <div className="wrapperInnerTab-title">Exemplo 3</div>
-                <div className="wrapperInnerTab-backgrounds">
+          </Div>
+              
+          <div>Exemplo 3</div>
+          <Div display="responcivo">
+                
                   <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button3" data-text={JsonRegiao.timea}><span>{JsonRegiao.timea}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button3" data-text={JsonRegiao.timeb}><span>{JsonRegiao.timeb}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button3" data-text={JsonRegiao.capital}><span>{JsonRegiao.capital}</span></div></div>
-                </div>
-              </div>
+          </Div>
+              
+          <div>Exemplo 4</div>
 
-              <div className="wrapperInnerTab">
-                <div className="wrapperInnerTab-title">Exemplo 4</div>
-                <div className="wrapperInnerTab-backgrounds">
+          <Div display="responcivo">
+                
                   <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button4" data-text={JsonRegiao.timea}><span>{JsonRegiao.timea}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button4" data-text={JsonRegiao.timeb}><span>{JsonRegiao.timeb}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button4" data-text={JsonRegiao.capital}><span>{JsonRegiao.capital}</span></div></div>
-                </div>
-              </div>
+          </Div>
+          
 
-              <div className="wrapperInnerTab">
-                <div className="wrapperInnerTab-title">Exemplo 5</div>
-                <div className="wrapperInnerTab-backgrounds">
+              
+                <div>Exemplo 5</div>
+          <Div display="responcivo">
+                
                   <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button5"><span>{JsonRegiao.timea}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button5"><span>{JsonRegiao.timeb}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button5"><span>{JsonRegiao.capital}</span></div></div>
-                </div>
-              </div>
+                </Div>
+              
 
-              <div className="wrapperInnerTab">
-                <div className="wrapperInnerTab-title">Exemplo 6</div>
-                <div className="wrapperInnerTab-backgrounds">
+              
+                <div>Exemplo 6</div>
+                <Div display="responcivo">                
                   <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button6"><span>{JsonRegiao.timea}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button6"><span>{JsonRegiao.timeb}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button6"><span>{JsonRegiao.capital}</span></div></div>
-                </div>
-              </div>
+                </Div>
+              
 
-              <div className="wrapperInnerTab">
-                <div className="wrapperInnerTab-title">Exemplo 7</div>
-                <div className="wrapperInnerTab-backgrounds">
+              
+                <div>Exemplo 7</div>
+                <Div display="responcivo">                
                   <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button7"><span>{JsonRegiao.timea}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button7"><span>{JsonRegiao.timeb}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button7"><span>{JsonRegiao.capital}</span></div></div>
-                </div>
-              </div>
+                </Div>
 
-              <div className="wrapperInnerTab">
-                <div className="wrapperInnerTab-title">Exemplo 8</div>
-                <div className="wrapperInnerTab-backgrounds">
+              
+                <div>Exemplo 8</div>
+                <Div display="responcivo">                
                   <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button8"><span>{JsonRegiao.timea}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button8"><span>{JsonRegiao.timeb}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button8"><span>{JsonRegiao.capital}</span></div></div>
-                </div>
-              </div>
+                </Div>
 
-              <div className="wrapperInnerTab">
-                <div className="wrapperInnerTab-title">Exemplo 9</div>
-                <div className="wrapperInnerTab-backgrounds">
+              
+                <div>Exemplo 9</div>
+                <Div display="responcivo">                
                   <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button9"><span>{JsonRegiao.timea}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button9"><span>{JsonRegiao.timeb}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button9"><span>{JsonRegiao.capital}</span></div></div>
-                </div>
-              </div>
+                </Div>
 
-              <div className="wrapperInnerTab">
-                <div className="wrapperInnerTab-title">Exemplo 10</div>
-                <div className="wrapperInnerTab-backgrounds">
+              
+                <div>Exemplo 10</div>
+                <Div display="responcivo">
                   <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button10"><span>{JsonRegiao.timea}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button10"><span>{JsonRegiao.timeb}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button10"><span>{JsonRegiao.capital}</span></div></div>
-                </div>
-              </div>
+                </Div>
 
-              <div className="wrapperInnerTab">
-                <div className="wrapperInnerTab-title">Exemplo 11</div>
-                <div className="wrapperInnerTab-backgrounds">
+              
+                <div>Exemplo 11</div>
+                <Div display="responcivo">
                   <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button11"><span>{JsonRegiao.timea}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button11"><span>{JsonRegiao.timeb}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button11"><span>{JsonRegiao.capital}</span></div></div>
-                </div>
-              </div>
+                </Div>
 
-              <div className="wrapperInnerTab">
-                <div className="wrapperInnerTab-title">Exemplo 12</div>
-                <div className="wrapperInnerTab-backgrounds">
+              
+                <div>Exemplo 12</div>
+                <Div display="responcivo">
                   <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button12"><span>{JsonRegiao.timea}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button12"><span>{JsonRegiao.timeb}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button12"><span>{JsonRegiao.capital}</span></div></div>
-                </div>
-              </div>
+                </Div>
 
-              <div className="wrapperInnerTab">
-                <div className="wrapperInnerTab-title">Exemplo 13</div>
-                <div className="wrapperInnerTab-backgrounds">
+              
+                <div>Exemplo 13</div>
+                <Div display="responcivo">
                   <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button13"><span>{JsonRegiao.timea}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button13"><span>{JsonRegiao.timeb}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button13"><span>{JsonRegiao.capital}</span></div></div>
-                </div>
-              </div>
+                </Div>
 
-              <div className="wrapperInnerTab">
-                <div className="wrapperInnerTab-title">Exemplo 14</div>
-                <div className="wrapperInnerTab-backgrounds">
+              
+                <div>Exemplo 14</div>
+                <Div display="responcivo">
                   <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button14"><span>{JsonRegiao.timea}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button14"><span>{JsonRegiao.timeb}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button14"><span>{JsonRegiao.capital}</span></div></div>
-                </div>
-              </div>
+                </Div>
 
-              <div className="wrapperInnerTab">
-                <div className="wrapperInnerTab-title">Exemplo 15</div>
-                <div className="wrapperInnerTab-backgrounds">
+              
+                <div>Exemplo 15</div>
+                <Div display="responcivo">
                   <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button15"><span>{JsonRegiao.timea}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button15"><span>{JsonRegiao.timeb}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button15"><span>{JsonRegiao.capital}</span></div></div>
-                </div>
-              </div>
+                </Div>
 
-              <div className="wrapperInnerTab">
-                <div className="wrapperInnerTab-title">Exemplo 16</div>
-                <div className="wrapperInnerTab-backgrounds">
+              
+                <div>Exemplo 16</div>
+                <Div display="responcivo">
                   <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button16"><span>{JsonRegiao.timea}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button16"><span>{JsonRegiao.timeb}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button16"><span>{JsonRegiao.capital}</span></div></div>
-                </div>
-              </div>
+                </Div>
 
-              <div className="wrapperInnerTab">
-                <div className="wrapperInnerTab-title">Exemplo 17</div>
-                <div className="wrapperInnerTab-backgrounds">
+              
+                <div>Exemplo 17</div>
+                <Div display="responcivo">
                   <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button17"><span>{JsonRegiao.timea}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button17"><span>{JsonRegiao.timeb}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button17"><span>{JsonRegiao.capital}</span></div></div>
-                </div>
-              </div>
+                </Div>
 
-              <div className="wrapperInnerTab">
-                <div className="wrapperInnerTab-title">Exemplo 18</div>
-                <div className="wrapperInnerTab-backgrounds">
+              
+                <div>Exemplo 18</div>
+                <Div display="responcivo">
                   <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button18"><span>{JsonRegiao.timea}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button18"><span>{JsonRegiao.timeb}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button18"><span>{JsonRegiao.capital}</span></div></div>
-                </div>
-              </div>
+                </Div>
 
-              <div className="wrapperInnerTab">
-                <div className="wrapperInnerTab-title">Exemplo 19</div>
-                <div className="wrapperInnerTab-backgrounds">
+              
+                <div>Exemplo 19</div>
+                <Div display="responcivo">
                   <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button19"><span>{JsonRegiao.timea}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button19"><span>{JsonRegiao.timeb}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button19"><span>{JsonRegiao.capital}</span></div></div>
-                </div>
-              </div>
+                </Div>
 
-              <div className="wrapperInnerTab">
-                <div className="wrapperInnerTab-title">Exemplo 20</div>
-                <div className="wrapperInnerTab-backgrounds">
+              
+                <div>Exemplo 20</div>
+                <Div display="responcivo">
                   <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button20"><span>{JsonRegiao.timea}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button20"><span>{JsonRegiao.timeb}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button20"><span>{JsonRegiao.capital}</span></div></div>
-                </div>
-              </div>
+                </Div>
 
-              <div className="wrapperInnerTab">
-                <div className="wrapperInnerTab-title">Exemplo 21</div>
-                <div className="wrapperInnerTab-backgrounds">
+              
+                <div>Exemplo 21</div>
+                <Div display="responcivo">
                   <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button21"><span>{JsonRegiao.timea}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button21"><span>{JsonRegiao.timeb}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button21"><span>{JsonRegiao.capital}</span></div></div>
-                </div>
-              </div>
+                </Div>
 
-              <div className="wrapperInnerTab">
-                <div className="wrapperInnerTab-title">Exemplo 22</div>
-                <div className="wrapperInnerTab-backgrounds">
+              
+                <div>Exemplo 22</div>
+                <Div display="responcivo">
                   <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button22"><span>{JsonRegiao.timea}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button22"><span>{JsonRegiao.timeb}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button22"><span>{JsonRegiao.capital}</span></div></div>
-                </div>
-              </div>
+                </Div>
 
-              <div className="wrapperInnerTab">
-                <div className="wrapperInnerTab-title">Exemplo 23</div>
-                <div className="wrapperInnerTab-backgrounds">
+              
+                <div>Exemplo 23</div>
+                <Div display="responcivo">
                   <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button23"><span>{JsonRegiao.timea}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button23"><span>{JsonRegiao.timeb}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button23"><span>{JsonRegiao.capital}</span></div></div>
-                </div>
-              </div>
+                </Div>
 
-              <div className="wrapperInnerTab">
-                <div className="wrapperInnerTab-title">Exemplo 24</div>
-                <div className="wrapperInnerTab-backgrounds">
+              
+                <div>Exemplo 24</div>
+                <Div display="responcivo">
                   <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button24"><span>{JsonRegiao.timea}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button24"><span>{JsonRegiao.timeb}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button24"><span>{JsonRegiao.capital}</span></div></div>
-                </div>
-              </div>
+                </Div>
 
-              <div className="wrapperInnerTab">
-                <div className="wrapperInnerTab-title">Exemplo 25</div>
-                <div className="wrapperInnerTab-backgrounds">
+              
+                <div>Exemplo 25</div>
+                <Div display="responcivo">
                   <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button25"><span>{JsonRegiao.timea}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button25"><span>{JsonRegiao.timeb}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button25"><span>{JsonRegiao.capital}</span></div></div>
-                </div>
-              </div>
+                </Div>
 
-              <div className="wrapperInnerTab">
-                <div className="wrapperInnerTab-title">Exemplo 26</div>
-                <div className="wrapperInnerTab-backgrounds">
+              
+                <div>Exemplo 26</div>
+                <Div display="responcivo">
                   <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button26"><span>{JsonRegiao.timea}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button26"><span>{JsonRegiao.timeb}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button26"><span>{JsonRegiao.capital}</span></div></div>
-                </div>
-              </div>
+                </Div>
 
-              <div className="wrapperInnerTab">
-                <div className="wrapperInnerTab-title">Exemplo 27</div>
-                <div className="wrapperInnerTab-backgrounds">
+              
+                <div>Exemplo 27</div>
+                <Div display="responcivo">
                   <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button27"><span>{JsonRegiao.timea}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button27"><span>{JsonRegiao.timeb}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button27"><span>{JsonRegiao.capital}</span></div></div>
-                </div>
-              </div>
+                </Div>
 
-              <div className="wrapperInnerTab">
-                <div className="wrapperInnerTab-title">Exemplo 28</div>
-                <div className="wrapperInnerTab-backgrounds">
+              
+                <div>Exemplo 28</div>
+                <Div display="responcivo">
                   <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button28"><span>{JsonRegiao.timea}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button28"><span>{JsonRegiao.timeb}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button28"><span>{JsonRegiao.capital}</span></div></div>
-                </div>
-              </div>
+                </Div>
 
-              <div className="wrapperInnerTab">
-                <div className="wrapperInnerTab-title">Exemplo 29</div>
-                <div className="wrapperInnerTab-backgrounds">
+              
+                <div>Exemplo 29</div>
+                <Div display="responcivo">
                   <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button29"><span>{JsonRegiao.timea}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button29"><span>{JsonRegiao.timeb}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button29"><span>{JsonRegiao.capital}</span></div></div>
-                </div>
-              </div>
+                </Div>
 
-              <div className="wrapperInnerTab">
-                <div className="wrapperInnerTab-title">Exemplo 30</div>
-                <div className="wrapperInnerTab-backgrounds">
+              
+                <div>Exemplo 30</div>
+                <Div display="responcivo">
                   <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button30"><span>{JsonRegiao.timea}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button30"><span>{JsonRegiao.timeb}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button30"><span>{JsonRegiao.capital}</span></div></div>
-                </div>
-              </div>
+                </Div>
+              
 
-            </div>
-          </div>
+            </Div>
+
       </Layout>
       <style jsx>{`
-        #header{
-          background-color: #3f8dbf;
-          float: left;
-          width: 100%;
-          height: 50px;
-          color: rgba(255,255,255,1);
-          line-height: 50px;
-          position: fixed;
-          left: 0px;
-          top: 0px;
-          z-index: 10;
-        }
-        #header a {
-          color: rgba(255,255,255,1);
-          text-decoration: none;
-          display: block;
-          font-size: 15px;
-        }
-        #header-left{
-          float: left;
-          height: 50px;
-        }
-        #header-left:hover #header-left-icon{
-          background-color: #3F8DBF;
-        }
-        #header-left:hover #header-left-text{
-          background-color: #599BC8;
-        }
-        #header-left-icon{
-          float: left;
-          height: 50px;
-          width: 50px;
-          text-align: center;
-          background-color: #35759F;
-          -webkit-transition: background 0.5s;
-          -moz-transition: background 0.5s;
-          -o-transition: background 0.5s;
-          transition: background 0.5s;
-        }
-        #header-left-icon a {
-          font-size: 25px;
-        }
-        #header-left-text{
-          float: left;
-          height: 50px;
-          -webkit-transition: background 0.5s;
-          -moz-transition: background 0.5s;
-          -o-transition: background 0.5s;
-          transition: background 0.5s;
-        }
-        #header-left-text a {
-          padding-left: 20px;
-          padding-right: 20px;
-        }
-        #header-right{
-          float: right;
-          height: 50px;
-        }
-        #header-right:hover #header-right-icon{
-          background-color: #3F8DBF;
-          }
-        #header-right:hover #header-right-text{
-          background-color: #599BC8;
-          }
-        #header-right-icon{
-          float: right;
-          height: 50px;
-          width: 50px;
-          text-align: center;
-          background-color: #35759F;
-          -webkit-transition: background 0.5s;
-          -moz-transition: background 0.5s;
-        
-          -o-transition: background 0.5s;
-          transition: background 0.5s;
-        }
-        #header-right-text{
-          float: right;
-          height: 50px;
-          -webkit-transition: background 0.5s;
-          -moz-transition: background 0.5s;
-          -o-transition: background 0.5s;
-          transition: background 0.5s;
-        }
-        #header-right-text a{
-          padding-right: 20px;
-          padding-left: 20px;
-        }
-
-
-
         #awesome{
           margin-top: 200px !important;	
-        }
-        #wrapper {
-          float: left;
-          width: 100%;
-        }
-        #wrapper-inner{
-          width: 950px;
-          margin-right: auto;
-          margin-left: auto;
         }
 
         .wrapperInnerTab{
@@ -430,36 +299,27 @@ const animaBut = function (props) {
           width: 100%;
           margin-top: 125px;
         }
-        .wrapperInnerTab-title {
-          width: 100%;
-          margin-top: 30px;
-          font-size: 25px;
-          color: #666666;
-          float: left;
-          text-align: center;
-          margin-bottom: 80px;
-        }
         .wrapperInnerTab-backgrounds { 
           float: left;
           height: 300px;
-          width: 950px;
+          width: 100%;
         }
         .wrapperInnerTab-backgrounds-first{
           float: left;
           height: 300px;
-          width: 33.33%;
+          width: 300px;
           background-color: #ffab82;
         }
         .wrapperInnerTab-backgrounds-second{
           float: left;
           height: 300px;
-          width: 33.33%;
+          width: 300px;
           background-color: #bbaeb6;
         }
         .wrapperInnerTab-backgrounds-third{
           float: left;
           height: 300px;
-          width: 33.33%;
+          width: 300px;
           background-color: #56364a;
         }
         .sim-button{
@@ -2009,14 +1869,6 @@ const animaBut = function (props) {
           -webkit-transform: translate(94.9845px,0) rotate(180deg);
           -moz-transform: translate(94.9845px,0) rotate(180deg);
           transform: translate(94.9845px,0) rotate(180deg);
-        }
-    `}</style>
-      <style jsx global>{`
-        body{
-          margin: 0px;
-          padding: 0px;
-          background-color: #ffffff;
-          font-family: sans-serif;        
         }
     `}</style>
     </div>

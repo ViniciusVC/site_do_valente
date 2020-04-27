@@ -1,13 +1,14 @@
 import React from 'react'
-import Head from 'next/head'
-import FaviIcon from '../../../atoms/atFavIcon'
+import DivCodigo from '../../../atoms/atDivCodigo'
+import DivNaveg from '../../../atoms/atDivNaveg'
 import Layout from '../../../moleculas/layout'
 import * as Util from '../../../../controller/util.js';
+import MoHead from '../../../moleculas/moHead'
 
 const atendimentoOi = function (props) {
 
   console.log('╔════════════════════════════════════════╗');
-  console.log('║        codigo   - css                  ║');
+  console.log('║  codigo - css - Paragrafo, ID e Class  ║');
   console.log('╚════════════════════════════════════════╝');
 
   var regiao = Util.validaProps(props.regiao , "RJ");
@@ -15,42 +16,39 @@ const atendimentoOi = function (props) {
 
   return (
     <div>
-      <Head>
-        <title>CSS Paragrafo, ID e Class</title>
-        <FaviIcon />
-        <meta name="description" content="CSS" />
-        <link rel="canonical" href="/codigo/css/css01" />
-        <link rel="amphtml" href="/amp/codigo/css/css01" />
-        <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
-        <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
-      </Head>
-      <Layout regiao={regiao} modo={modo}>
+      <MoHead modo={modo} title="CSS Paragrafo, ID e Class" canonical="/codigo/css/css01/"/> 
+      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="CSS">
         <h1>CSS Paragrafo, ID e Class</h1>
-        A seguir alguns exemploes de estilisação de HTML: 
-        {' /*Istó é um comentario no css*/'}<br/>
-        <p>
-          {' <p></p>'}  
-          {' /* Aplicando CSS ao componente */'}<br/>
-          {' p {'}<br/>
-          {' font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;'}<br/>
-          {' font-size:12;'}<br/>
-          {' color:#FF0000;'}<br/>
-          {' }'}<br/>
-        </p>
-        <p id="paragrafo2">
-          {'<p id="paragrafo2"></p>'}  
-          {'/* Aplicando CSS com ID */ '}<br/>
-          {'/ #paragrafo2 { '}<br/>
-          {'/   color: green; '}<br/>
-          {'/ } '}<br/>
-        </p>
-        <p className="paragrafo3">
-          {'<p className="paragrafo3"></p>'}
-          {' /* Aplicando CSS com CLASS */ '}<br/>
-          {' .paragrafo3 { '}<br/>
-          {'  color: #FFFFFF; '}<br/>
-          {' } '}<br/>
-        </p>
+        A seguir alguns exemploes de HTML com estilisação:<br/>
+        <DivNaveg>
+          <p>paragrafo simples.</p>
+          <p id="paragrafo2">Paragrafo com id.</p>
+          <p className="paragrafo3">Paragrafo com class.</p>
+        </DivNaveg>        
+        
+        <DivCodigo titulo="Codigo HTML">
+            {'<p>paragrafo simples.</p>'}
+            {'<p id="paragrafo2">Paragrafo com id.</p>'}  
+            {'<p className="paragrafo3">Paragrafo com class.</p>'}
+        </DivCodigo>
+  
+        <DivCodigo titulo="CSS">
+            {' /*Istó é um comentario no css*/'}<br/>
+            {' /* Aplicando CSS ao componente */'}<br/>
+            {' p {'}<br/>
+            &ensp; {' font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;'}<br/>
+            &ensp; {' font-size:12;'}<br/>
+            &ensp; {' color:#FF0000;'}<br/>
+            {' }'}<br/>
+            {'/* Aplicando CSS com ID */ '}<br/>
+            {' #paragrafo2 { '}<br/>
+            &ensp; {'   color: green; '}<br/>
+            {' } '}<br/>
+            {' /* Aplicando CSS com CLASS */ '}<br/>
+            {' .paragrafo3 { '}<br/>
+            &ensp; {'  color: #FFFFFF; '}<br/>
+            {' } '}<br/>
+        </DivCodigo>
       </Layout>
       <style jsx>{`
         .h1{

@@ -9,6 +9,9 @@ const layout = props => {
   console.log('Rodando /layout.js');
   var regiao = Util.validaProps(props.regiao , "RJ");
   var modo = Util.validaProps(props.modo, "html");
+  var titulo = Util.validaProps(props.titulo, "Home");
+  var categoria = Util.validaProps(props.categoria, "Outros");
+
   return (
     <div className="Body">
       <Div display="justificado">
@@ -20,13 +23,17 @@ const layout = props => {
           </div>
           <div className="borda"></div>
           <Div display="justificado">
-            <div className="codigoIndexListadeRotas DivSombra">
-              <ListadeRotas regiao={regiao} modo={modo} />
+            
+            <div className="codigoIndexListadeRotas DivSombra esconder">
+              <ListadeRotas regiao={regiao} modo={modo} titulo={titulo} categoria={categoria}/>
             </div>
-            <div className="borda"></div>
+
+            <div className="borda esconder"></div>
+
             <div className="divCss DivSombra">
               {props.children}
-            </div>  
+            </div>
+
           </Div>
           <div className="borda"></div>
           <div className="DivSombra">
@@ -57,7 +64,6 @@ const layout = props => {
         border-radius: 8px;
         color: #222222;
         display: block;
-        /*height: 3.42857143rem;*/
         border: solid 1px #dbdbdb;
         padding: 10px;
         box-sizing: border-box;
@@ -66,11 +72,21 @@ const layout = props => {
         box-shadow: 2px 2px 10px rgba(1, 1, 1, 0.57);        
       }
 
+      /* .menu { width:600px; } */
       .codigoIndexListadeRotas{
         width:25%;
       }
       .divCss{
-        width:75%;
+         width:75%;
+      }
+
+      @media(max-width: 900px) {
+        .esconder{
+          display : None;
+        }
+        .divCss{
+          width:100%;
+        }
       }
 
     `}</style>
@@ -83,7 +99,8 @@ const layout = props => {
         body{
           margin: 0px;
           padding: 0px;
-          background-color: #ffffff;
+          background-color: #D3D3D3;
+          background-image: linear-gradient(45deg, #05005d, #bdb8a7, #aaf1ff );
           font-family: SimplonBP-Regular, sans-serif;        
         }
     `}</style>

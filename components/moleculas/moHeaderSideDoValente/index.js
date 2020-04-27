@@ -15,31 +15,27 @@ const moHeaderSideDoValente = function (props) {
   if(modo=="AMP" || modo=="amp"){
     StringModo = "/amp";
   }
-  //console.log(JsonRegiao);
-  console.log('╔══════════╗ regiao='+regiao);
-  console.log('║  Header  ║ modo='+modo);
-  //console.log('║          ║ estado='+JsonRegiao.estado);
-  //console.log('╚══════════╝ capital='+JsonRegiao.capital);
-  
-  //Div display="DivLinhaResponsivo"
+  console.log('* Header do Valente | modo='+modo+ ' | regiao='+regiao);
+
   return (
-    <Div display="responsivo">
-        <div className="DivHeaderSideDoValente logo">
+    <Div display="justificado">
+        <div className="logo">
           <a href={StringModo+"/?regiao="+regiao} >
             <Img src="/static/assetsv5/img/log_laranja1.png" width="50px" height="50px" alt="Logo Site Valente" title="Logo Site Valente" class="LogoSiteValente" modo={modo} />
           </a>
-          <div className="esconder">
-            <MenuMobile01 modo={modo}/>MENU
-          </div>
         </div>
-        <div className='DivHeaderSideDoValente pHeaderSideDoValente'>
+        <div className='TitulodoSite'>
           <span>Site do Valente</span>
         </div>
+        <div className="esconder">
+            <MenuMobile01 modo={modo}/>
+          </div>
         <div>
             <MoRegiao modo={modo} regiao={regiao} />
         </div>
       <style jsx>{`
       .logo{
+        margin:0px;
         padding-top: 10px;
         animation-duration: 1s;
         animation-name: slideinSombra;
@@ -52,26 +48,28 @@ const moHeaderSideDoValente = function (props) {
           padding-top: 10px;
         }
       }
-
-      .DivHeaderSideDoValente{
-        margin:0px;
-      }
-      .pHeaderSideDoValente{
+      .TitulodoSite{
         padding-top: 15px;
         font-size: 25px;
         font-family: sans-serif;
         text-align: center;
+        font-size: 60px;
       }
 
       @media(min-width: 900px) {
-        .pHeaderSideDoValente{
-          font-size: 60px;
-        }
         .esconder{
           display : None;
         }
       }
 
+      @media(max-width: 900px) {
+        .TitulodoSite {
+          display : None;
+        }
+        .logo{
+          display : None;
+        }
+      }
     `}</style>
     </Div>
   )

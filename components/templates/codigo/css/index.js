@@ -1,7 +1,9 @@
 import React from 'react'
-import Head from 'next/head'
-import FaviIcon from '../../../atoms/atFavIcon'
+import Img from '../../../atoms/atImg/index.js'
+import Div from '../../../atoms/atDiv/index.js'
+import MoHead from '../../../moleculas/moHead'
 import Layout from '../../../moleculas/layout'
+
 import * as Util from '../../../../controller/util.js';
 
 const codigoCSS = function (props) {
@@ -15,19 +17,26 @@ const codigoCSS = function (props) {
 
   return (
     <div>
-      <Head>
-        <title>CSS</title>
-        <FaviIcon />
-        <meta name="description" content="CSS" />
-        <link rel="canonical" href="/codigo/css" />
-        <link rel="amphtml" href="/amp/codigo/css" />
-        <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
-        <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
-      </Head>
-      <Layout regiao={regiao} modo={modo}>
-          <h1>CSS</h1>
-          <p>Cascading Style Sheets é um mecanismo para adicionar estilo a um documento web. O código CSS pode ser aplicado diretamente nas tags ou ficar contido dentro das tags style. Também é possível, em vez de colocar a formatação dentro do documento, criar um link para um arquivo CSS que contém os estilos.</p>
-        </Layout>
+      <MoHead modo={modo} title="CSS" description="Codigo CSS" canonical="/codigo/css/"/>  
+      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="CSS">
+        <Div display="responcivo">
+          <div className="coluna404">
+            <h1>CSS</h1>
+            <p>Cascading Style Sheets é um mecanismo para adicionar estilo a um documento web. O código CSS pode ser aplicado diretamente nas tags ou ficar contido dentro das tags style. Também é possível, em vez de colocar a formatação dentro do documento, criar um link para um arquivo CSS que contém os estilos.</p>
+          </div>
+          <div>
+            <Img 
+                src="/static/assetsv5/img/codigo/logocss.png"
+                width="323px"
+                height="436px"
+                alt="Logo CSS"
+                title="Logo CSS"
+                class="ClassLogoCSS"
+                modo={modo}>
+            </Img>
+          </div>
+        </Div>
+      </Layout>
       <style jsx>{`
         .h1{
           color : #000000;

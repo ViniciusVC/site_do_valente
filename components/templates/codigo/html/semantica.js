@@ -1,7 +1,8 @@
 import React from 'react'
-import Head from 'next/head'
-import FaviIcon from '../../../atoms/atFavIcon'
 import Layout from '../../../moleculas/layout'
+import MoHead from '../../../moleculas/moHead'
+import DivCodigo from '../../../atoms/atDivCodigo'
+import DivNaveg from '../../../atoms/atDivNaveg'
 import * as Util from '../../../../controller/util.js';
 
 const atendimentoOi = function (props) {
@@ -15,31 +16,30 @@ const atendimentoOi = function (props) {
 
   return (
     <div>
-      <Head>
-        <title>HTML Semantica</title>
-        <FaviIcon />
-        <meta name="description" content="HTML Semantica" />
-        <link rel="canonical" href="/codigo/html/semantica/" />
-        <link rel="amphtml" href="/amp/codigo/html/semantica/" />
-        <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
-        <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
-      </Head>
-      <Layout regiao={regiao} modo={modo}>
+      <MoHead modo={modo} title="HTML Semantica" description="codigo HTML Semantica" canonical="/codigo/html/semantica/"/>
+      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="html">
         <h1>HTML Semantica</h1>
-        Obs.: para expor o codigo basta trocar {'<>'} por {'&lt;'} e {'&gt;'} 
-        <br/>&lt;section&gt;
-        <br/>&lt;article&gt;
-        <br/>&lt;nav&gt;
-        <br/>&lt;aside&gt;
-        <br/>&lt;main&gt;
-        <br/>&lt;figure&gt;
-        <br/>&lt;footer&gt;
-        <br/>&lt;a&gt;
-        <br/>&lt;em&gt;
-        <br/>&lt;strong&gt;
-        <br/>&lt;cite&gt;
-        <br/>&lt;q&gt;
-        <br/>&lt;time&gt;
+        <p>
+        HTML semântico é o uso da marcação HTML para reforçar a semântica, ou significado, das informações em páginas da Web e aplicativos da Web, em vez de apenas definir sua apresentação ou aparência.<br/>
+        O HTML semântico é processado pelos navegadores da web tradicionais.
+        </p>
+
+        <DivCodigo titulo="codigo">
+          
+          <br/>&lt;section&gt;
+          <br/>&lt;article&gt;
+          <br/>&lt;nav&gt;
+          <br/>&lt;aside&gt;
+          <br/>&lt;main&gt;
+          <br/>&lt;figure&gt;
+          <br/>&lt;footer&gt;
+          <br/>&lt;a&gt;
+          <br/>&lt;em&gt;
+          <br/>&lt;strong&gt;
+          <br/>&lt;cite&gt;
+          <br/>&lt;q&gt;
+          <br/>&lt;time&gt;
+        </DivCodigo>
       </Layout>
       <style jsx>{`
         .h1{
@@ -54,3 +54,5 @@ const atendimentoOi = function (props) {
 }
 
 export default atendimentoOi
+
+// Obs.: para expor o codigo basta trocar '<>' por '&lt;' e '&gt;' 

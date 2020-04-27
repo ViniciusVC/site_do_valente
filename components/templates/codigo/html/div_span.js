@@ -1,7 +1,8 @@
 import React from 'react'
-import Head from 'next/head'
-import FaviIcon from '../../../atoms/atFavIcon'
 import Layout from '../../../moleculas/layout'
+import MoHead from '../../../moleculas/moHead'
+import DivCodigo from '../../../atoms/atDivCodigo'
+import DivNaveg from '../../../atoms/atDivNaveg'
 import * as Util from '../../../../controller/util.js';
 
 const atendimentoOi = function (props) {
@@ -15,23 +16,44 @@ const atendimentoOi = function (props) {
 
   return (
     <div>
-      <Head>
-        <title>HTML - DIV e SPAN</title>
-        <FaviIcon />
-        <meta name="description" content="HTML - DIV e SPAN" />
-        <link rel="canonical" href="/codigo/html/div_span/" />
-        <link rel="amphtml" href="/amp/codigo/html/div_span/" />
-        <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
-        <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
-      </Head>
-      <Layout regiao={regiao} modo={modo}>
+      <MoHead modo={modo} title="HTML - DIV e SPAN" description="Código - HTML - DIV e SPAN" canonical="/codigo/html/div_span/"/>
+      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="html">
         <h1>HTML - DIV e SPAN</h1>
+        <p>
+          A tag div define uma divisão ou seção em um documento HTML.<br/>
+          O elemento div é frequentemente usado como um contêiner para outros elementos HTML para estilizá-los com CSS ou para executar determinadas tarefas com JavaScript.
+        </p>
+        <p>
+          A tag span é usada para agrupar elementos embutidos em um documento.<br/>
+          A tag span não fornece nenhuma alteração visual por si só.<br/>
+          A tag span fornece uma maneira de adicionar um gancho a uma parte de um texto ou a uma parte de um documento.
+        </p>
         <p>Segue exemplos das tags de DIV e SPAN.</p>
-        <div>
-          <p>
+        <DivNaveg>
+          <div className="div">
+            <p>
               Bla bla bla Bla <span>Exmplo de SPAN</span> bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla bla
-          </p>
-        </div>
+            </p>
+          </div>
+        </DivNaveg>
+        <DivCodigo titulo="Codigo HTML com DIV e SPAN">
+          {'<div>'}<br/>
+          {' <p>'}<br/>
+          {'Bla bla bla Bla <span>Exmplo de SPAN</span> bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla bla'}<br/>
+          {' </p>'}<br/>
+          {'</div>'}<br/>
+        </DivCodigo>
+        <DivCodigo titulo="CSS">
+          {'.div {'}<br/>
+          &ensp; background-color: red;<br/>
+          &ensp; padding: 20px;<br/>
+          {'}'}<br/>
+          {'span {'}<br/>
+          &ensp; background-color: blue; <br/>
+          &ensp; padding: 10px;<br/>
+          {'}'}<br/>
+        </DivCodigo>
+
       </Layout>
       <style jsx>{`
         .h1{
@@ -40,7 +62,7 @@ const atendimentoOi = function (props) {
         .p{
           color : #000000;
         }
-        div {
+        .div {
           background-color: red;
           padding: 20px;
         }

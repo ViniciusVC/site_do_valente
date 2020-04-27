@@ -1,10 +1,12 @@
 import React from 'react'
-import Head from 'next/head'
-import FaviIcon from '../../../atoms/atFavIcon'
 import Layout from '../../../moleculas/layout'
+import MoHead from '../../../moleculas/moHead'
+import DivCodigo from '../../../atoms/atDivCodigo'
+import DivNaveg from '../../../atoms/atDivNaveg'
+import Img from '../../../atoms/atImg'
 import * as Util from '../../../../controller/util.js';
 
-const atendimentoOi = function (props) {
+const imgfigcaption = function (props) {
 
   console.log('╔════════════════════════════════════════╗');
   console.log('║  codigo  - HTML - IMG e FIGCAPTION     ║');
@@ -15,20 +17,26 @@ const atendimentoOi = function (props) {
 
   return (
     <div>
-      <Head>
-        <title>HTML Figure e Legenda</title>
-        <FaviIcon />
-        <meta name="description" content="HTML Figure e Legenda" />
-        <link rel="canonical" href="/codigo/html/img_figcaption/" />
-        <link rel="amphtml" href="/amp/codigo/html/img_figcaption/" />
-        <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
-        <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
-      </Head>
-      <Layout regiao={regiao} modo={modo}>
+      <MoHead modo={modo} title="HTML Figure e Legenda" description="HTML Figure e Legenda" canonical="/codigo/html/img_figcaption//"/>
+      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="html">
         <h1>HTML Figure e Legenda</h1>
-        <p>Segue exmplo das tags IMG e FIGCAPTION.</p>
-        <img src="papagaio.jpg" alt="Papagaio" title="Papagaio" />
-        <figcaption>Legenda da foto</figcaption>
+        <p>
+        Use um elemento figure para marcar uma foto em um documento e um elemento figcaption para definir uma legenda para a foto:
+        </p>
+        <p>Segue exmplo das tags FIGURE, IMG e FIGCAPTION.</p>        
+        <DivNaveg>
+          <figure>
+            <Img src="/static/assetsv5/img/log_laranja1.png" width="256px" height="256px" alt="Exemplo tag IMG html" title="Exemplo tag IMG html" class="ClassImgNext" modo={modo} />
+            <figcaption>Legenda da foto</figcaption>
+          </figure>
+        </DivNaveg>
+        <DivCodigo titulo="Codigo HTML da Imagem">
+          {'<figure>'}<br/>
+          &ensp; {'<img src="log_laranja1.png" alt="Exemplo tag IMG html" title="Exemplo tag IMG html" />'}<br/>
+          &ensp; {'<figcaption>Legenda da foto</figcaption>'}<br/>
+          {'</figure>'}<br/>
+        </DivCodigo>
+
       </Layout>
       <style jsx>{`
         .h1{
@@ -42,4 +50,4 @@ const atendimentoOi = function (props) {
   )
 }
 
-export default atendimentoOi
+export default imgfigcaption

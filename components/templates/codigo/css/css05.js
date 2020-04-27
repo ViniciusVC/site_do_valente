@@ -1,14 +1,15 @@
 import React from 'react'
-import Head from 'next/head'
-import FaviIcon from '../../../atoms/atFavIcon'
 import Layout from '../../../moleculas/layout'
+import DivCodigo from '../../../atoms/atDivCodigo'
+import DivNaveg from '../../../atoms/atDivNaveg'
 import * as Util from '../../../../controller/util.js';
+import MoHead from '../../../moleculas/moHead'
 
 const atendimentoOi = function (props) {
 
-  console.log('╔════════════════════════════════════════╗');
-  console.log('║        codigo   - css                  ║');
-  console.log('╚════════════════════════════════════════╝');
+  console.log('╔════════════════════════════════════╗');
+  console.log('║ codigo - css 5 - Classe, ID e Span ║');
+  console.log('╚════════════════════════════════════╝');
 
   var regiao = Util.validaProps(props.regiao , "RJ");
   var modo = Util.validaProps(props.modo, "html");
@@ -16,19 +17,23 @@ const atendimentoOi = function (props) {
 
   return (
     <div>
-      <Head>
-        <title>CSS - Classe, ID e Span</title>
-        <FaviIcon />
-        <meta name="description" content="CSS - Classe, ID e Span" />
-        <link rel="canonical" href="/codigo/css/css05" />
-        <link rel="amphtml" href="/amp/codigo/css/css05" />
-        <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
-        <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
-      </Head>
-      <Layout regiao={regiao} modo={modo}>
+      <MoHead modo={modo} title="CSS - Classe, ID e Span" canonical="/codigo/css/css05/"/> 
+      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="CSS">
           <h1>CSS - Classe, ID e Span</h1>
           A seguir alguns exemploes de estilisação de HTML: 
           <p>Cascading Style Sheets é um mecanismo para adicionar estilo a um documento web. O código CSS pode ser aplicado diretamente nas tags ou ficar contido dentro das tags style. Também é possível, em vez de colocar a formatação dentro do documento, criar um link para um arquivo CSS que contém os estilos.</p>
+          <DivNaveg>
+          <p>Paragrafo simples.</p>
+        </DivNaveg>
+        
+        <DivCodigo titulo="Codigo HTML">
+          {'<p>Paragrafo simples.</p>'}
+        </DivCodigo>
+          
+        <DivCodigo titulo="CSS">
+          {'p{color : #000000;}'}
+        </DivCodigo>
+
       </Layout >
       <style jsx>{`
         .h1{

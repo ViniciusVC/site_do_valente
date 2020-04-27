@@ -4,6 +4,8 @@ import Link from 'next/link'
 import FaviIcon from '../../../atoms/atFavIcon'
 import Layout from '../../../moleculas/layout'
 import * as Util from '../../../../controller/util.js';
+import DivCodigo from '../../../atoms/atDivCodigo'
+//import DivNaveg from '../../../atoms/atDivNaveg'
 
 const codigoAspRedirect = function (props) {
 
@@ -25,15 +27,15 @@ const codigoAspRedirect = function (props) {
         <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
         <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
       </Head>
-      <Layout regiao={regiao} modo={modo}>
+      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="CGI">
         <h1>REDIRECT com CGI PERL</h1>
           <p>Como fazer redirect 301 no codigo com CGI PERL</p>
-          <p>
-          <xmp>
-          {'$q = new CGI;'}<br/>
-          {'print $q->redirect("http://www.seu-novo-site.com.br/");'}<br/>
-          </xmp>
-          </p>
+          <DivCodigo titulo="Codigo redirect CGI PERL">
+            <xmp>
+              {'$q = new CGI;'}<br/>
+              {'print $q->redirect("http://www.seu-novo-site.com.br/");'}<br/>
+            </xmp>
+          </DivCodigo> 
           <Link href={"/codigo/cgi?regiao="+regiao}>O que é CGI?</Link>
       </Layout>
       <style jsx>{`

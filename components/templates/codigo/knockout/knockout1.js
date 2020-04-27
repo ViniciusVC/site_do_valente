@@ -1,13 +1,12 @@
 import React from 'react'
-import Head from 'next/head'
-import FaviIcon from '../../../atoms/atFavIcon'
 import Layout from '../../../moleculas/layout'
+import MoHead from '../../../moleculas/moHead'
 import * as Util from '../../../../controller/util.js';
 
 const Knockout = function (props) {
 
   console.log('╔════════════════════════════════╗');
-  console.log('║        codigo   Knockout       ║');
+  console.log('║       codigo   Knockout  1     ║');
   console.log('╚════════════════════════════════╝');
 
   var regiao = Util.validaProps(props.regiao , "RJ");
@@ -15,18 +14,11 @@ const Knockout = function (props) {
 
   return (
     <div>
-      <Head>
-      <title>Knockout JS</title>
-        <FaviIcon />
-        <meta name="description" content="Knockout JS" />
-        <link rel="canonical" href="/codigo/knockout" />
-        <link rel="amphtml" href="/amp/codigo/knockout" />
-        <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
-        <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
-      </Head>
+      <MoHead modo={modo} title="KnockoutJS" description="Codigo Knockout JS" canonical="/codigo/knockout/knockout1"/>
       <Layout regiao={regiao} modo={modo}>
           <h1>Knockout JS</h1>
-          <p>Aqui entrara a descrição...</p>
+          <p>Knockout é uma implementação JavaScript independente do padrão Model-View-ViewModel com modelos.<br />
+            Os princípios subjacentes são, portanto: uma separação clara entre os dados do domínio, visualize os componentes e os dados a serem exibidos.</p>
       </Layout>
       <style jsx>{`
         .h1{
@@ -36,7 +28,6 @@ const Knockout = function (props) {
           color : #000000;
         }
     `}</style>
-
     </div>
   )
 }

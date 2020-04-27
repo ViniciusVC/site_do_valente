@@ -1,8 +1,6 @@
 import React from 'react'
-//import Link from 'next/link'
-import Head from 'next/head'
-import FaviIcon from '../../atoms/atFavIcon'
 import Layout from '../../moleculas/layout'
+import MoHead from '../../moleculas/moHead'
 import * as Util from '../../../controller/util.js';
 import Div from '../../atoms/atDiv'
 
@@ -50,16 +48,8 @@ const conversordetexto = function (props) {
 
   return (
     <div>
-      <Head>
-        <title>Conversor de Texto</title>
-        <FaviIcon />
-        <meta name="description" content="Conversor de Texto" />
-        <link rel="canonical" href="/game/conversordetexto/" />
-        <link rel="amphtml" href="/amp/game/conversordetexto/" />
-        <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
-        <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
-      </Head>
-      <Layout regiao={regiao} modo={modo}>
+      <MoHead modo={modo} title="Conversor de Textos" canonical="/utilitarios/conversordetexto/"/>
+      <Layout regiao={regiao} modo={modo} titulo="Utilitarios" categoria="Utilitarios">
       <h1>Conversor de Texto</h1>
         <Div display="responsivo">
         
@@ -74,13 +64,13 @@ const conversordetexto = function (props) {
               <textarea className="DesenhoSombra" id="textareaconvertido" name="textareaconvertido" rows="6" cols="45" spellcheck="false"></textarea><br />
             </div>
           </Div>
-          <Div display="vertical">
-            <a id="btLinkConvertc" className="btLinkBranco DesenhoSombra" onClick={() => {FuncConverter("c")}}>TUDO MAIUSCULA.</a>
-            <a id="btLinkConvertd" className="btLinkBranco DesenhoSombra" onClick={() => {FuncConverter("d")}}>tudo minuscula.</a>
-            <a id="btLinkConverta" className="btLinkBranco DesenhoSombra" onClick={() => {FuncConverter("a")}}>Primeira letra da fraze maiuscula.</a>
-            <a id="btLinkConverta" className="btLinkBranco DesenhoSombra" onClick={() => {FuncConverter("f")}}>pRIMEIRA lETRA dA fRAZE mINUSCULA.</a>
-            <a id="btLinkConvertb" className="btLinkBranco DesenhoSombra" onClick={() => {FuncConverter("b")}}>Todas As Primeiras Letras Maiusculas.</a>
-            <a id="btLinkConvertb" className="btLinkBranco DesenhoSombra" onClick={() => {FuncConverter("e")}}>tODAS aS pRIMEIRAS lETRAS mINUSCULAS.</a>
+          <Div display="vertical"><br/>
+            <a id="btLinkConvertc" className="btCinza" onClick={() => {FuncConverter("c")}}>TUDO MAIUSCULA.</a><br/>
+            <a id="btLinkConvertd" className="btCinza" onClick={() => {FuncConverter("d")}}>tudo minuscula.</a><br/>            
+            <a id="btLinkConverta" className="btCinza" onClick={() => {FuncConverter("a")}}>Primeira letra da fraze maiuscula.</a><br/>
+            <a id="btLinkConverta" className="btCinza" onClick={() => {FuncConverter("f")}}>pRIMEIRA lETRA dA fRAZE mINUSCULA.</a><br/>
+            <a id="btLinkConvertb" className="btCinza" onClick={() => {FuncConverter("b")}}>Todas As Primeiras Letras Maiusculas.</a><br/>
+            <a id="btLinkConvertb" className="btCinza" onClick={() => {FuncConverter("e")}}>tODAS aS pRIMEIRAS lETRAS mINUSCULAS.</a><br/>
           </Div>
         </Div>
       </Layout>
@@ -91,6 +81,35 @@ const conversordetexto = function (props) {
         .btLinkBranco {
           height: 3.42857143rem;
         }
+        .btCinza {
+            padding: 10px;
+            transition: all 0.8s;
+            font-family: oiTextRegular, sans-serif;
+            background-color: #26293c;
+            border-radius: 15px;
+            color: #ffffff;
+            display: block;
+            font-size: 1rem; /*16px*/
+            text-align: center;
+            text-decoration: none;
+            border: solid 2px #4a516b;
+            cursor: pointer;
+            outline: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-style: normal;
+            width: 100%;
+            max-width: 500px;
+          }
+          .btCinza:hover {
+            transition: all 0.8s;
+            -webkit-transition: all 0.8s;
+            -moz-transition: all 0.8s;
+            -o-transition: all 0.8s;
+            /*color: #d82482;*/
+            background-color: #4a516b;
+          }
+
         .DesenhoSombra {
             font-family: oiTextRegular, sans-serif;
             background-color: #ffffff;
@@ -98,7 +117,6 @@ const conversordetexto = function (props) {
             color: #222222;
             display: block;
             font-size: 1rem; /*16px*/
-            
             text-align: center;
             width: 90%;
             text-decoration: none;

@@ -1,7 +1,8 @@
 import React from 'react'
-import Head from 'next/head'
-import FaviIcon from '../../atoms/atFavIcon'
+import Img from '../../atoms/atImg/index.js'
+import Div from '../../atoms/atDiv/index.js'
 import Layout from '../../moleculas/layout'
+import MoHead from '../../moleculas/moHead'
 import * as Util from '../../../controller/util.js';
 
 const codhtml5 = function (props) {
@@ -15,18 +16,25 @@ const codhtml5 = function (props) {
 
   return (
     <div>
-      <Head>
-        <title>HTML5</title>
-        <FaviIcon />
-        <meta name="description" content="HTML5" />
-        <link rel="canonical" href="/codigo/html5" />
-        <link rel="amphtml" href="/amp/codigo/html5" />
-        <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
-        <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
-      </Head>
-      <Layout regiao={regiao} modo={modo}>
-          <h1>HTML5</h1>
-          <p>Linguagens de programação podem ser usadas para expressar algoritmos com precisão. O conjunto de palavras (lexemas classificados em tokens), compostos de acordo com essas regras, constituem o código fonte de um software. Esse código fonte é depois traduzido para código de máquina, que é executado pelo microprocessador.</p>
+      <MoHead modo={modo} title="HTML5" description="Código HTML5" canonical="/codigo/html5/"/>
+      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="html">
+        <Div display="justificado">
+          <div className="coluna404">
+            <h1>HTML5</h1>
+            <p>Linguagens de programação podem ser usadas para expressar algoritmos com precisão. O conjunto de palavras (lexemas classificados em tokens), compostos de acordo com essas regras, constituem o código fonte de um software. Esse código fonte é depois traduzido para código de máquina, que é executado pelo microprocessador.</p>
+          </div>
+          <div>
+              <Img 
+                src="/static/assetsv5/img/codigo/logohtml.png"
+                width="323px"
+                height="436px"
+                alt="Logo HTML5"
+                title="Logo HTML5"
+                class="ClassLogoHTML5"
+                modo={modo}>
+              </Img>
+          </div>
+        </Div>
       </Layout>
       <style jsx>{`
         .h1{

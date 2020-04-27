@@ -1,13 +1,14 @@
 import React from 'react'
-import Head from 'next/head'
-import FaviIcon from '../../../atoms/atFavIcon'
 import Layout from '../../../moleculas/layout'
+import MoHead from '../../../moleculas/moHead'
+import DivCodigo from '../../../atoms/atDivCodigo'
+import DivNaveg from '../../../atoms/atDivNaveg'
 import * as Util from '../../../../controller/util.js';
 
 const atendimentoOi = function (props) {
 
   console.log('╔════════════════════════════════════════╗');
-  console.log('║        codigo  - HTML                  ║');
+  console.log('║     codigo  - HTML - TAG DETAILS       ║');
   console.log('╚════════════════════════════════════════╝');
 
   var regiao = Util.validaProps(props.regiao , "RJ");
@@ -15,18 +16,12 @@ const atendimentoOi = function (props) {
 
   return (
     <div>
-      <Head>
-        <title>HTML detalhes</title>
-        <FaviIcon />
-        <meta name="description" content="HTML detalhes" />
-        <link rel="canonical" href="/codigo/html/detalhes/" />
-        <link rel="amphtml" href="/amp/codigo/html/detalhes/" />
-        <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
-        <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
-      </Head>
-      <Layout regiao={regiao} modo={modo}>
-        <h1>HTML</h1>
-        <p>Segue 2 exmplos de TAG DETAILS.</p>
+      <MoHead modo={modo} title="Codigo HTML TAG DETAILS" description="Codigo HTML TAG DETAILS" canonical="/codigo/html/detalhes/"/>
+      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="html">
+        <h1>HTML - TAG DETAILS</h1>
+        <p>O elemento HTML details (details) é usado como uma ferramenta de onde o usuário irá obter informações adicionais.</p>
+        <p>Segue 2 exemplos de TAG DETAILS.</p>        
+        <DivNaveg>
         <details>
             <summary>Ver detalhes</summary>
             <ul>
@@ -41,6 +36,24 @@ const atendimentoOi = function (props) {
             <a href="http://wwww.youtube.com" tabindex="1" accesskey="y">youtube</a><br/>
             <a href="http://wwww.gmail.com" tabindex="2" accesskey="m">GMAIL</a><br/>
         </details>
+        </DivNaveg>
+
+        <DivCodigo titulo="Codigo HTML com DETAILS">
+          {'<details>'}<br/>
+          {'<summary>Ver detalhes</summary>'}<br/>
+          &ensp;{'<ul>'}<br/>
+          &ensp; &ensp;{'<li>teste 1</li>'}<br/>
+          &ensp; &ensp;{'<li>teste 2</li>'}<br/>
+          &ensp; &ensp;{'<li>teste 3</li>'}<br/>
+          &ensp; {'</ul>'}<br/>
+          {'</details>'}<br/>
+          {'<details>'}<br/>
+          &ensp;{'<summary>Ver detalhes</summary>'}<br/>
+          &ensp;{'<a href="http://wwww.google.com" tabindex="3" accesskey="g">google</a><br/>'}<br/>
+          &ensp;{'<a href="http://wwww.youtube.com" tabindex="1" accesskey="y">youtube</a><br/>'}<br/>
+          &ensp;{'<a href="http://wwww.gmail.com" tabindex="2" accesskey="m">GMAIL</a><br/>'}<br/>
+          {'</details>'}<br/>
+        </DivCodigo>
       </Layout>
       <style jsx>{`
         .h1{

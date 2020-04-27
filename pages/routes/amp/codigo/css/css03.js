@@ -1,7 +1,7 @@
 import React from 'react';
 import { withAmp } from 'next/amp';
 import * as Util from '../../../../../controller/util.js';
-import TemplateCSS02 from '../../../../../components/templates/codigo/css/css.js';
+import TemplateCSS02 from '../../../../../components/templates/codigo/css/css03.js';
 
 const RotaCSS02 = function(props){
   return(

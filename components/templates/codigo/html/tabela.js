@@ -1,19 +1,8 @@
 import React from 'react'
-//import Link from 'next/link'
-import Head from 'next/head'
-import FaviIcon from '../../../atoms/atFavIcon'
 import Layout from '../../../moleculas/layout'
-
-import Div from '../../../atoms/atDiv'
-
-import ListadeRotas from '../../../moleculas/moListadeRotas/index.js'
-import HeaderSideDoValente from '../../../moleculas/moHeaderSideDoValente/index.js'
-
-//import HeaderMinhaOi from '../../organisms/codigo/headerCodigo.js/index.js.js'
-//import FooterMinhaOi from '../../organisms/codigo/footerCodigo.js/index.js'
-//import ContentAtendimento from '../../organisms/codigo/contentAtendimento.js'
-//import Line from '../../atoms/atLine';
-//import HeaderMenu from "../../moleculas/codigo/headerMenu";
+import MoHead from '../../../moleculas/moHead'
+import DivCodigo from '../../../atoms/atDivCodigo'
+import DivNaveg from '../../../atoms/atDivNaveg'
 import * as Util from '../../../../controller/util.js';
 
 const atendimentoOi = function (props) {
@@ -21,25 +10,25 @@ const atendimentoOi = function (props) {
   console.log('╔════════════════════════════════╗');
   console.log('║     codigo - HTML - Tabela     ║');
   console.log('╚════════════════════════════════╝');
-
   const regiao = Util.validaProps(props.regiao , "RJ");
   const modo = Util.validaProps(props.modo, "html");
   const JsonRegiao = Util.regiao(regiao);
   
   return (
     <div>
-      <Head>
-        <title>CSS - Tabelas Style</title>
-        <FaviIcon />
-        <meta name="description" content="CSS - Tabelas Style" />
-        <link rel="canonical" href="/codigo/css/css13/" />
-        <link rel="amphtml" href="/amp/codigo/css/css13/" />
-        <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
-        <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
-      </Head>
-      <Layout regiao={regiao} modo={modo}>
-        <h1>CSS - Tabelas Style</h1>
-        <p>Cascading Style Sheets é um mecanismo para adicionar estilo a um documento web. O código CSS pode ser aplicado diretamente nas tags ou ficar contido dentro das tags style. Também é possível, em vez de colocar a formatação dentro do documento, criar um link para um arquivo CSS que contém os estilos.</p>
+      <MoHead modo={modo} title="HTML Table" description="Código HTML Table" canonical="/codigo/html/tabela"/>
+      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="html">
+       <h1>HTML - Tabelas</h1>
+       <p>
+        A tag table define uma tabela HTML.<br/>
+        Uma tabela HTML consiste no elemento table e em um ou mais elementos tr , th e td .<br/>
+        O elemento tr define uma linha da tabela, o elemento th define um cabeçalho da tabela e o elemento td define uma célula da tabela.<br/>
+        Uma tabela HTML mais complexa também pode incluir elementos caption, col, colgroup, thead, tfoot e tbody.<br/>
+       </p>
+       <p>
+        As tabelas não devem ser usadas para o layout da página! Historicamente, alguns autores da Web usaram mal as tabelas em HTML como uma maneira de controlar o layout da página. No entanto, existem várias alternativas ao uso de tabelas HTML para layout, principalmente usando CSS.<br/>
+       </p> 
+       <DivNaveg>
         <table>
           <caption>Cadastro dos melhores Times</caption>
           <thead>
@@ -69,6 +58,38 @@ const atendimentoOi = function (props) {
             </tr>
           </tfoot>
         </table>
+       </DivNaveg>
+       <DivCodigo titulo="codigo">
+          {'<table>'}<br/>
+          {'<caption>Cadastro dos melhores Times</caption>'}<br/>
+          {'<thead>'}<br/>
+          &ensp; {'<tr>'}<br/>
+          &ensp; &ensp; {'<th>Time:</th>'}<br/>
+          &ensp; &ensp; {'<th>e-mail:</th>'}<br/>
+          &ensp; &ensp; {'<th>Telefone:</th>'}<br/>
+          &ensp; &ensp; {'<th>Cidade:</th>'}<br/>
+          &ensp; {'</tr>'}<br/>
+          {'</thead>'}<br/>
+          {'<tbody>'}<br/>
+          &ensp; {'<tr>'}<br/>
+          &ensp; &ensp; {'<td>'+JsonRegiao.timea+'</td>'}<br/>
+          &ensp; &ensp; {'<td>'+JsonRegiao.timeb+'@gmail.com</td>'}<br/>
+          &ensp; &ensp; {'<td>(21)12341234</td>'}<br/>
+          &ensp; &ensp; {'<td rowspan="2">{JsonRegiao.capital}</td>'}<br/>
+          &ensp; {'</tr>'}<br/>
+          &ensp; {'<tr>'}<br/>
+          &ensp; &ensp; {'<td>'+JsonRegiao.timea+'</td>'}<br/>
+          &ensp; &ensp; {'<td>'+JsonRegiao.timeb+'@gmail.com</td>'}<br/>
+          &ensp; &ensp; {'<td>(21)12341234</td>'}<br/>
+          &ensp; {'</tr>'}<br/>
+          {'</tbody>'}<br/>
+          {'<tfoot>'}<br/>
+          &ensp; {'<tr>'}<br/>
+          &ensp; &ensp; {'<td colspan="3">Total : 2</td>'}<br/>
+          &ensp; {'</tr>'}<br/>
+          {'</tfoot>'}<br/>
+          {'</table>'}<br/>
+       </DivCodigo>
       </Layout>
       <style jsx>{`
         .h1{

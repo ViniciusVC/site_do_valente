@@ -1,4 +1,4 @@
-// layout de Documentoscopia - Projeto Piloto
+// Projeto Piloto Documentoscopia - Equipe SEO
 import React from 'react';
 import Img from '../atoms/atImg/index.js';
 
@@ -18,7 +18,7 @@ const moAlerta = props => {
         <center>
           <Img
             class="AlertaErro"
-            src="/static/assetsv5/img/documentoscopia/erro_ico.png"
+            src="/static/assetsv5/img/erro_ico.png"
             width="50px"
             height="50px"
             modo={modo} />
@@ -96,47 +96,5 @@ const moAlerta = props => {
     </div>
     )
 };
-//background-color: white;
 
 export default moAlerta
-
-
-// .divAlertaErro{
-//   padding: 1.2rem;
-//   padding-top: 5rem;
-//   margin: 1.2rem;
-//   background-color: #ffffff;
-//   position : absolute;
-//   top: 180px;
-//   -webkit-box-shadow: 2px 2px 20px rgba(1, 1, 1, 0.60);
-//   -moz-box-shadow:    2px 2px 20px rgba(1, 1, 1, 0.60);
-//   box-shadow:         2px 2px 20px rgba(1, 1, 1, 0.60);
-//   display : none;
-//   animation: abreJanela 1s ease 0s 1 normal none running;
-// }
-// .divAlertaErro:active{
-//   transition-duration: 1s;
-//   top: 100px;
-//   opacity: 0;
-//   display : none;
-// }
-// @keyframes abreJanela{
-//   0% {
-//     top: 100px;
-//     opacity: 0;
-//   }
-//   100% {
-//     top: 180px;
-//     opacity: 1;
-//   }
-// }
-// @keyframes fechaJanela{
-//   0% {
-//     top: 180px;
-//     opacity: 1;
-//   }
-//   100% {
-//     top: 100px;
-//     opacity: 0;
-//   }
-// }

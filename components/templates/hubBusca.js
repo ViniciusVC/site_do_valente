@@ -1,23 +1,8 @@
 import React from 'react'
-import Head from 'next/head'
-import FavIcon from '../atoms/atFavIcon'
+import MoHead from '../moleculas/moHead'
 import * as Util from '../../controller/util.js';
-// import Div from '../atoms/atDiv'
-// import ListadeRotas from '../moleculas/moListadeRotas/index.js'
-// import HeaderSideDoValente from '../moleculas/moHeaderSideDoValente/index.js'
-// import Arrow from '../atoms/atCampoTexto';
-// import BtLink from '../atoms/atBtLink';
-
-// ====== copiado de Documentoscopia - Projeto Piloto ======
 import Alerta from '../moleculas/moAlerta.js'
-//import AtCampotexto from '../atoms/atCampoTexto';
-//import EnviaArquivo from '../../moleculas/moBtEnviaArquivo.js';
-// import BtSubmit from '../../atoms/atBtSubmit/index.js';
-// import AtCampoInvisivel from '../../atoms/atCampoInvisivel/index.js';
-// import Captcha from '../../moleculas/moCaptcha.js';
-// import ContentCamposDoc from './contentCamposDoc.js'
-// import AtLabelCampo from './atLabelCampo.js';
-// ==========================================================
+
 
 
 
@@ -47,12 +32,7 @@ const templateHub = function (props) {
 
   return (
     <div>
-      <Head>
-        <title>Hub de Contato</title>
-        <FavIcon />
-        <meta name="description" content="Hub de Contato" />
-        <link rel="canonical" href="/hub/" />
-      </Head>
+      <MoHead modo={modo} title="Hub de Contato - Busca" canonical="/"/>
         <form action="/api1/hubResposta" method="get" id="formHubContato" name="formHubContato" encType="multipart/form-data">
             <div className="grupodecampos">
               <p>Entre com um CPF ou Conta Fatura no campo a baixo.</p>
@@ -104,3 +84,9 @@ export default templateHub
 
 
   
+// <Head>
+// <title>Hub de Contato</title>
+// <FavIcon />
+// <meta name="description" content="Hub de Contato" />
+// <link rel="canonical" href="/hub/" />
+// </Head>

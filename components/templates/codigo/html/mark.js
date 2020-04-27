@@ -1,7 +1,8 @@
 import React from 'react'
-import Head from 'next/head'
-import FaviIcon from '../../../atoms/atFavIcon'
 import Layout from '../../../moleculas/layout'
+import MoHead from '../../../moleculas/moHead'
+import DivCodigo from '../../../atoms/atDivCodigo'
+import DivNaveg from '../../../atoms/atDivNaveg'
 import * as Util from '../../../../controller/util.js';
 
 const atendimentoOi = function (props) {
@@ -15,19 +16,20 @@ const atendimentoOi = function (props) {
 
   return (
     <div>
-      <Head>
-        <title>HTML formulario_mark</title>
-        <FaviIcon />
-        <meta name="description" content="HTML formulario_mark" />
-        <link rel="canonical" href="/codigo/html/formulario_mark/" />
-        <link rel="amphtml" href="/amp/codigo/html/formulario_mark/" />
-        <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
-        <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
-      </Head>
-      <Layout regiao={regiao} modo={modo}>
-          <h1>HTML</h1>
-          Segue um exemplo da TAG MARK.<br/>
-          <p>Nono no nono <mark>nononon no nono</mark> nono nonono no. Nono no nono nononon no nono nono nonono no , Nono no nono nononon no nono nono nonono no, Nono no nono nononon no nono nono nonono no.</p>
+      <MoHead modo={modo} title="HTML formulario_mark" description="codigo HTML formulario_mark" canonical="/codigo/html/formulario_mark/"/>
+      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="html">
+        <h1>HTML MARK</h1>
+        <p>
+          A tag mark define o texto marcado.<br/>
+          Use a tag mark se desejar destacar partes do seu texto.
+        </p>
+        <p>Segue um exemplo da TAG MARK.</p>
+        <DivNaveg>
+        <p>Nono no nono <mark>nononon no nono</mark> nono nonono no. Nono no nono nononon no nono nono nonono no , Nono no nono nononon no nono nono nonono no, Nono no nono nononon no nono nono nonono no.</p>
+        </DivNaveg>
+        <DivCodigo titulo="Codigo HTML MARK">
+        {'<p>Nono no nono <mark>nononon no nono</mark> nono nonono no. Nono no nono nononon no nono nono nonono no , Nono no nono nononon no nono nono nonono no, Nono no nono nononon no nono nono nonono no.</p>'} 
+        </DivCodigo>
         </Layout>
       <style jsx>{`
         .h1{

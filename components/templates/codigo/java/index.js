@@ -1,7 +1,10 @@
 import React from 'react'
-import Head from 'next/head'
-import FaviIcon from '../../../atoms/atFavIcon'
+import Img from '../../../atoms/atImg/index.js'
+import Div from '../../../atoms/atDiv/index.js'
+import DivCodigo from '../../../atoms/atDivCodigo'
+//import DivNaveg from '../../../atoms/atDivNaveg'
 import Layout from '../../../moleculas/layout'
+import MoHead from '../../../moleculas/moHead'
 import * as Util from '../../../../controller/util.js';
 
 const codigoJava = function (props) {
@@ -15,18 +18,34 @@ const codigoJava = function (props) {
 
   return (
     <div>
-      <Head>
-        <title>Java</title>
-        <FaviIcon />
-        <meta name="description" content="Java" />
-        <link rel="canonical" href="/codigo/java/" />
-        <link rel="amphtml" href="/amp/codigo/java/" />
-        <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
-        <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
-      </Head>
-      <Layout regiao={regiao} modo={modo}>
-          <h1>Java</h1>
-          <p>Java...</p>
+      <MoHead modo={modo} title="Java" description="Código Java" canonical="/codigo/java/"/>
+      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="Java">
+        <Div display="responcivo">
+          <div className="coluna404">
+            <h1>Java</h1>
+            <p>Java é uma linguagem de programação orientada a objetos desenvolvida na década de 90 por uma equipe de programadores chefiada por James Gosling, na empresa Sun Microsystems.<br/>
+              A linguagem de programação Java é a linguagem convencional da Plataforma Java, mas não é a sua única linguagem.<br/>
+            </p>
+            <DivCodigo titulo="Exemplo de código JAVA:">
+              {'public class OláMundo {'}<br/>
+              {'  public static void main(String[] args) {'}<br/>
+              {'     System.out.println("Olá, Mundo!"); //Imprime na tela a frase'}<br/>
+              {'  }'}<br/>
+              {'}'}<br/>
+            </DivCodigo>
+          </div>
+          <div>
+                <Img 
+                  src="/static/assetsv5/img/codigo/logojava.svg"
+                  width="323px"
+                  height="436px"
+                  alt="Logo Java"
+                  title="Logo Java"
+                  class="ClassLogoJava"
+                  modo={modo}>
+                </Img>
+          </div>
+        </Div>
       </Layout>
       <style jsx>{`
         .h1{

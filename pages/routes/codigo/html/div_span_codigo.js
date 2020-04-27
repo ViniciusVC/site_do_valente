@@ -1,5 +1,5 @@
 import React from 'react';
-import Templateredirect from '../../../../components/templates/codigo/apache/redirect.js';
+import Templateredirect from '../../../../components/templates/codigo/html/redirect.js';
 import * as Util from '../../../../controller/util.js';
 
 //import { withAmp } from 'next/amp';

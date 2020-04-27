@@ -1,5 +1,5 @@
 import React from 'react';
-import TemplateColdfusion from '../../../../../components/templates/codigo/apache/redirect.js';
+import TemplateColdfusion from '../../../../../components/templates/codigo/coldfusion/redirect.js';
 import * as Util from '../../../../../controller/util.js';
 import { withAmp } from 'next/amp';
 

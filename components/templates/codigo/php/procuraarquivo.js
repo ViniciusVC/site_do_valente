@@ -1,7 +1,8 @@
 import React from 'react'
-import Head from 'next/head'
-import FaviIcon from '../../../atoms/atFavIcon'
 import Layout from '../../../moleculas/layout'
+import MoHead from '../../../moleculas/moHead'
+import DivCodigo from '../../../atoms/atDivCodigo'
+//import DivNaveg from '../../../atoms/atDivNaveg'
 import * as Util from '../../../../controller/util.js';
 
 const atendimentoOi = function (props) {
@@ -16,19 +17,11 @@ const atendimentoOi = function (props) {
 
   return (
     <div>
-      <Head>
-        <title>Encontrar arquivio no PHP</title>
-        <FaviIcon />
-        <meta name="description" content="Encontrar arquivio no PHP" />
-        <link rel="canonical" href="/codigo/php/procuraarquivo" />
-        <link rel="amphtml" href="/amp/codigo/php/procuraarquivo" />
-        <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
-        <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
-      </Head>
+      <MoHead modo={modo} title="Encontrar arquivio no PHP" canonical="/codigo/php/procuraarquivo/"/>
       <Layout regiao={regiao} modo={modo}>
           <h1>Encontrar arquivio no PHP</h1>
-          <p>
-            {'<?php'}<br/>
+          <DivCodigo titulo="Código PHP">
+          {'<?php'}<br/>
             {'if(file_exists("CAMINHO/PARA/ARQUIVO.txt")) { '}<br/>
             {'echo "O arquivo já existe"; '}<br/>
             {'} '}<br/>
@@ -36,7 +29,7 @@ const atendimentoOi = function (props) {
             {'echo "não foi possível encontrar o arquivo"; '}<br/>
             {'} '}<br/>
             {'?>'}<br/>
-          </p>
+          </DivCodigo>
       </Layout>
       <style jsx>{`
         .h1{

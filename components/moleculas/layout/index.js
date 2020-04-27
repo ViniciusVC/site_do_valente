@@ -9,81 +9,95 @@ const layout = props => {
   console.log('Rodando /layout.js');
   var regiao = Util.validaProps(props.regiao , "RJ");
   var modo = Util.validaProps(props.modo, "html");
+  var titulo = Util.validaProps(props.titulo, "Home");
+  var categoria = Util.validaProps(props.categoria, "Outros");
+
   return (
     <div className="Body">
+      <div className="borda"></div>
       <Div display="justificado">
         <div className="borda"></div>
-        <Div display="vertical">
-          <div className="borda"></div>
-          <div className="DivSombra">
-            <HeaderSideDoValente regiao={regiao} modo={modo}/>
-          </div>
-          <div className="borda"></div>
-          <Div display="justificado">
+        <Div display="justificado">
             
             <div className="codigoIndexListadeRotas DivSombra esconder">
-              <ListadeRotas regiao={regiao} modo={modo} />
+              <ListadeRotas regiao={regiao} modo={modo} titulo={titulo} categoria={categoria}/>
+              <a>{"<"}</a>
             </div>
-
             <div className="borda esconder"></div>
+            
+            <Div display="vertical">
+              
+              <div className="DivSombra">
+                <HeaderSideDoValente regiao={regiao} modo={modo}/>
+              </div>
 
-            <div className="divCss DivSombra">
-              {props.children}
-            </div>
+              <div className="borda"></div>
+              
+              <div className="divCss DivSombra">
+                  {props.children}
+              </div>
+              
+              <div className="borda"></div>
+              
+              <div className="DivSombra">
+                <HeaderSideDoValente regiao={regiao} modo={modo}/>
+              </div>
+
+            </Div>      
 
           </Div>
-          <div className="borda"></div>
-          <div className="DivSombra">
-            <HeaderSideDoValente regiao={regiao} modo={modo}/>
-          </div>
-        </Div>  
+
+        
         <div className="borda"></div>
         
       </Div>
       <style jsx>{`
+      .atDivJustificado {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
       .Body{
+        color: #ffffff;
         width:100%;
         margin : 0px;
         padding : 0px;
       }
       .borda{
-        width:10px;
-        height: 10px;
+        width:25px;
+        height: 25px;
       }
       .DivSombra{
-        background-color: #696969;
         width: 100%;
-        color: #333;
         font-size: 17px;
         font-family: sans-serif;
-        background-color: #ffffff;
-        background-image: linear-gradient(180deg, #ffffff, #ffffff, #bdb8a7 );
-        border-radius: 8px;
-        color: #222222;
+        background-color: #282c45;
+        background-image: linear-gradient(45deg, #16192a, #282c45, #282c45 );
+        border-radius: 4px;
         display: block;
-        border: solid 1px #dbdbdb;
+        /*border: solid 1px #000000;*/
         padding: 10px;
         box-sizing: border-box;
-        -webkit-box-shadow: 2px 2px 10px rgba(1, 1, 1, 0.57);
-        -moz-box-shadow: 2px 2px 10px rgba(1, 1, 1, 0.57);
-        box-shadow: 2px 2px 10px rgba(1, 1, 1, 0.57);        
+        -webkit-box-shadow: -9px 9px 20px rgba(1, 1, 1, 0.57);
+        -moz-box-shadow: -9px 9px 20px rgba(1, 1, 1, 0.57);
+        box-shadow: -9px 9px 20px rgba(1, 1, 1, 0.57);        
       }
 
       /* .menu { width:600px; } */
       .codigoIndexListadeRotas{
         width:25%;
       }
+
       .divCss{
-         width:75%;
-      }
+          width:100%;
+          padding-left:20px;
+        }
 
       @media(max-width: 900px) {
         .esconder{
           display : None;
         }
-        .divCss{
-          width:100%;
-        }
+
       }
 
     `}</style>
@@ -96,8 +110,9 @@ const layout = props => {
         body{
           margin: 0px;
           padding: 0px;
-          background-color: #D3D3D3;
-          background-image: linear-gradient(45deg, #05005d, #bdb8a7, #aaf1ff );
+          background-color: #353c4f;
+          color: #ffffff;
+          /*background-image: linear-gradient(45deg, #353c4f, #1e2434, #5d6683 );*/
           font-family: SimplonBP-Regular, sans-serif;        
         }
     `}</style>

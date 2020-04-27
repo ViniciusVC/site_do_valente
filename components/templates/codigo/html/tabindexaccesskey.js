@@ -1,7 +1,8 @@
 import React from 'react'
-import Head from 'next/head'
-import FaviIcon from '../../../atoms/atFavIcon'
 import Layout from '../../../moleculas/layout'
+import MoHead from '../../../moleculas/moHead'
+import DivCodigo from '../../../atoms/atDivCodigo'
+import DivNaveg from '../../../atoms/atDivNaveg'
 import * as Util from '../../../../controller/util.js';
 
 const atendimentoOi = function (props) {
@@ -15,22 +16,29 @@ const atendimentoOi = function (props) {
 
   return (
     <div>
-      <Head>
-        <title>HTML Tabindex Accesskey</title>
-        <FaviIcon />
-        <meta name="description" content="HTML formulario_Tabindex_Accesskey" />
-        <link rel="canonical" href="/codigo/html/formulario_Tabindex_Accesskey/" />
-        <link rel="amphtml" href="/amp/codigo/html/formulario_Tabindex_Accesskey/" />
-        <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
-        <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
-      </Head>
-      <Layout regiao={regiao} modo={modo}>
-          <h1>HTML Tabindex Accesskey</h1>
-          Segue exemplo das propriedades Tabindex e Accesskey.<br/>
-          <a href="http://wwww.google.com" tabindex="3" accesskey="g">google</a><br/>
+      <MoHead modo={modo} title="HTML Tabindex Accesskey" description="Código HTML Tabindex Accesskey" canonical="/codigo/html/tabindexaccesskey/"/>
+      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="html">
+        <h1>HTML Tabindex Accesskey</h1>
+        <p>
+          O atributo global tabindex indica se um elemento pode receber foco de entrada (se ele é focável), se e em qual posição ele deve fazer parte da navegação sequencial do teclado (geralmente com a tecla Tab, daí seu nome).<br/>
+          Ele aceita valores inteiros, com diferentes resultados dependendo do valor.<br/>
+        </p>
+        <p>O atributo accesskey fornece uma dica para gerar um atalho de teclado no elemento atual.</p>
+        <p>Segue exemplo das propriedades Tabindex e Accesskey.</p>
+        <DivNaveg>
+
+        <a href="http://wwww.google.com" tabindex="3" accesskey="g">google</a><br/>
           <a href="http://wwww.youtube.com" tabindex="1" accesskey="y">youtube</a><br/>
           <a href="http://wwww.gmail.com" tabindex="2" accesskey="m">GMAIL</a><br/>
-        </Layout>
+
+        </DivNaveg>
+        <DivCodigo titulo="Codigo HTML Tabindex Accesskey">
+          {'<a href="http://gwwww.google.com" tabindex="3" accesskey="g">google</a><br/>'}<br/>
+          {'<a href="http://wwww.youtube.com" tabindex="1" accesskey="y">youtube</a><br/>'}<br/>
+          {'<a href="http://wwww.gmail.com" tabindex="2" accesskey="m">GMAIL</a><br/>'}<br/>
+        </DivCodigo>
+
+         </Layout>
       <style jsx>{`
         .h1{
           color : #000000;

@@ -1,37 +1,50 @@
 import React from 'react'
-import Head from 'next/head'
-import FaviIcon from '../../../atoms/atFavIcon'
 import Layout from '../../../moleculas/layout'
+import MoHead from '../../../moleculas/moHead'
+import DivCodigo from '../../../atoms/atDivCodigo'
+import DivNaveg from '../../../atoms/atDivNaveg'
 import * as Util from '../../../../controller/util.js';
 
 const atendimentoOi = function (props) {
 
-  console.log('╔═══════════════════════════════════╗');
-  console.log('║     codigo - HTML - Lista         ║');
-  console.log('╚═══════════════════════════════════╝');
+  console.log('╔════════════════════════════════════╗');
+  console.log('║ Template - codigo - HTML - Lista02 ║');
+  console.log('╚════════════════════════════════════╝');
 
   var regiao = Util.validaProps(props.regiao , "RJ");
   var modo = Util.validaProps(props.modo, "html");
+  const JsonRegiao = Util.regiao(regiao);
 
   return (
     <div>
-      <Head>
-        <title>HTML Lista Ordenada type 1</title>
-        <FaviIcon />
-        <meta name="description" content="HTML Lista Ordenada type 1" />
-        <link rel="canonical" href="/codigo/html/lista02/" />
-        <link rel="amphtml" href="/amp/codigo/html/lista02/" />
-        <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
-        <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
-      </Head>
-      <Layout regiao={regiao} modo={modo}>
-          <h1>HTML Lista Lista Ordenada(type=1)</h1>
-          Segue um exemplo de Lista Ordenada(type=1)<br/>
+      <MoHead modo={modo} title="HTML Lista Ordenada type 1" description="HTML Lista Ordenada type 1" canonical="/codigo/html/lista02/"/>
+      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="html">
+        <h1>HTML Lista Ordenada type 1</h1>
+        <p>
+          A tag ol define uma listas não ordenadas.<br/>
+          A tag li define um item da lista.
+        </p>
+          Segue um exemplo de Lista Ordenada com type=1<br/>
+        <DivNaveg>
           <ol type="1">
               <li>Carolina</li>
               <li>Filipe</li>
               <li>Gabriel</li>
+              <li>{JsonRegiao.timea}</li>
+              <li>{JsonRegiao.timeb}</li>
           </ol>
+        </DivNaveg>
+        <DivCodigo titulo="codigo HTML da Lista">
+          {'<ol type="1">'}<br/>
+          &ensp; {'<li>Carolina</li>'}<br/>
+          &ensp; {'<li>Gabriel</li>'}<br/>
+          &ensp; {'<li>Filipe</li>'}<br/>
+          &ensp; {'<li>'+JsonRegiao.timea+'</li>'}<br/>
+          &ensp; {'<li>'+JsonRegiao.timeb+'</li>'}<br/>
+          {'</ol>'}<br/>
+        </DivCodigo>
+
+
         </Layout>
       <style jsx>{`
         .h1{

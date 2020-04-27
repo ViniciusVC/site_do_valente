@@ -1,7 +1,8 @@
 import React from 'react'
-import Head from 'next/head'
-import FaviIcon from '../../../atoms/atFavIcon'
 import Layout from '../../../moleculas/layout'
+import DivCodigo from '../../../atoms/atDivCodigo'
+//import DivNaveg from '../../../atoms/atDivNaveg'
+import MoHead from '../../../moleculas/moHead'
 import * as Util from '../../../../controller/util.js';
 
 const codigoJavaRedirect = function (props) {
@@ -15,18 +16,14 @@ const codigoJavaRedirect = function (props) {
 
   return (
     <div>
-      <Head>
-        <title>REDIRECT com Java</title>
-        <FaviIcon />
-        <meta name="description" content="REDIRECT com Java" />
-        <link rel="canonical" href="/codigo/java/redirect/" />
-        <link rel="amphtml" href="/amp/codigo/java/redirect/" />
-        <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
-        <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
-      </Head>
+      <MoHead modo={modo} title="REDIRECT com Java" description="codigo REDIRECT no Java" canonical="/codigo/java/redirect/"/>
       <Layout regiao={regiao} modo={modo}>
           <h1>Redirect Java</h1>
           <p>Java...</p>
+          <p>Pagina em costrução.</p>
+          <DivCodigo titulo="Código JAVA">
+            <p>Pagina em costrução.</p>
+          </DivCodigo>
       </Layout>
       <style jsx>{`
         .h1{

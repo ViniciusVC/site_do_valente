@@ -1,8 +1,7 @@
 import React from 'react'
-import Head from 'next/head'
 import Link from 'next/link'
-import FavIcon from '../../atoms/atFavIcon'
 import Layout from '../../moleculas/layout'
+import MoHead from '../../moleculas/moHead'
 import * as Util from '../../../controller/util.js';
 
 const templateHome = function (props) {
@@ -13,13 +12,8 @@ const templateHome = function (props) {
   var modo = Util.validaProps(props.modo, "html");
   return (
     <div>
-      <Head>
-        <title>Vinícius Valente Coutinho</title>
-        <FavIcon />
-        <meta name="description" content="Curriculo Vinícius Valente Coutinho" />
-        <link rel="canonical" href="/curriculo/" />
-      </Head>
-      <Layout regiao={regiao} modo={modo}>
+      <MoHead modo={modo} title="Vinícius Valente Coutinh" description="Curriculo Vinícius Valente Coutinho" canonical="/uticurriculo/"/>
+      <Layout regiao={regiao} modo={modo} titulo="Eu" categoria="curriculo">
           <h1>CURR&Iacute;CULO</h1>
           Vinicius Valente Coutinho
           <h2>CONTATO:</h2>

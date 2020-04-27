@@ -1,7 +1,8 @@
 import React from 'react'
-import Head from 'next/head'
-import FaviIcon from '../../../atoms/atFavIcon'
 import Layout from '../../../moleculas/layout'
+import MoHead from '../../../moleculas/moHead'
+import DivCodigo from '../../../atoms/atDivCodigo'
+import DivNaveg from '../../../atoms/atDivNaveg'
 import * as Util from '../../../../controller/util.js';
 
 const atendimentoOi = function (props) {
@@ -15,21 +16,21 @@ const atendimentoOi = function (props) {
 
   return (
     <div>
-      <Head>
-        <title>HTML</title>
-        <FaviIcon />
-        <meta name="description" content="HTML" />
-        <link rel="canonical" href="/codigo/html" />
-        <link rel="amphtml" href="/amp/codigo/html" />
-        <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
-        <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
-      </Head>
-      <Layout regiao={regiao} modo={modo}>
-        <h1>HTML Comentario</h1>
-        <p>Todo o texto que colocar dentro está comentado, ou seja, não aparecerá na página. Dentro de um comentário pode colocar o texto ou código HTML, como etiquetas. O comentário começa por <! -- e finaliza por --> Tudo o que colocar entre essas etiquetas está comentado.</p>
-        <p>Segue um exemplo de comentario em HTML.</p>
-        <p>{'<!-- Tudo aqui dentro é um comentário -->'}</p>
-        <p>Comentários ajudão a organizar o código.</p>
+      <MoHead modo={modo} title="HTML Comentario" description="Codigo de comentario em HTML" canonical="/codigo/html/"/>
+      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="html">
+      <h1>HTML Comentario</h1>
+        <p>
+          Todo o texto que colocar dentro está comentado, ou seja, não aparecerá na página. <br/>
+          Dentro de um comentário pode colocar o texto ou código HTML, como etiquetas. <br/>
+          O comentário começa por {'<'}! -- e finaliza por --{'>'} Tudo o que colocar entre essas etiquetas está comentado.</p>
+        <p>Segue um exemplo de comentario em HTML.</p>        
+        <DivNaveg>
+          <br/>
+        </DivNaveg>
+        <DivCodigo titulo="codigo">
+          {'<!-- Tudo aqui dentro é um comentário -->'}
+        </DivCodigo>
+        <p>Comentários ajudão a organizar o código e não são visiveis para o navegador.</p>
       </Layout>
       <style jsx>{`
         .h1{

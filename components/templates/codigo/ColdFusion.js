@@ -1,13 +1,14 @@
 import React from 'react'
-import Head from 'next/head'
-import FaviIcon from '../../atoms/atFavIcon'
+import Img from '../../atoms/atImg/index.js'
+import Div from '../../atoms/atDiv/index.js'
 import Layout from '../../moleculas/layout'
+import MoHead from '../../moleculas/moHead'
 import * as Util from '../../../controller/util.js';
 
 const atendimentoOi = function (props) {
 
   console.log('╔════════════════════════════════╗');
-  console.log('║        codigo  ColdFusion       ║');
+  console.log('║       codigo  ColdFusion       ║');
   console.log('╚════════════════════════════════╝');
 
   var regiao = Util.validaProps(props.regiao , "RJ");
@@ -15,18 +16,29 @@ const atendimentoOi = function (props) {
 
   return (
     <div>
-      <Head>
-        <title>ColdFusion</title>
-        <FaviIcon />
-        <meta name="description" content="coldfusion" />
-        <link rel="canonical" href="/codigo/coldfusion" />
-        <link rel="amphtml" href="/amp/codigo/coldfusion" />
-        <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
-        <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
-      </Head>
-      <Layout regiao={regiao} modo={modo}>
-          <h1>ColdFusion</h1>
-          <p>Aqui entrara a descrição...</p>
+      <MoHead modo={modo} title="ColdFusion" description="Código ColdFusion" canonical="/codigo/coldfusion/"/>
+      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="ColdFusion"> 
+        <Div display="justificado">
+          <div className="coluna404">
+            <h1>ColdFusion</h1>
+            <p>
+              ColdFusion é uma plataforma de desenvolvimento Web proprietária da Adobe Systems.<br/>
+              O ColdFusion utiliza da linguagem CFML para o desenvolvimento de aplicações e páginas dinâmicas.<br/>
+              A plataforma ColdFusion oferece integração nativa com plataforma Adobe Flash e seus derivados Flex e Adobe AIR.
+            </p>  
+          </div>
+          <div>
+              <Img 
+                src="/static/assetsv5/img/codigo/logocoldfusion.png"
+                width="323px"
+                height="436px"
+                alt="Logo ColdFusion"
+                title="Logo ColdFusion"
+                class="ClassLogoColdFusion"
+                modo={modo}>
+              </Img>
+          </div>
+        </Div>
       </Layout>
       <style jsx>{`
         .h1{

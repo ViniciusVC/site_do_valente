@@ -1,7 +1,10 @@
 import React from 'react'
-import Head from 'next/head'
-import FaviIcon from '../../../atoms/atFavIcon'
+//import Head from 'next/head'
+import Img from '../../../atoms/atImg/index.js'
+import Div from '../../../atoms/atDiv/index.js'
+//import FaviIcon from '../../../atoms/atFavIcon'
 import Layout from '../../../moleculas/layout'
+import MoHead from '../../..//moleculas/moHead'
 import * as Util from '../../../../controller/util.js';
 
 const apache = function (props) {
@@ -16,19 +19,26 @@ const apache = function (props) {
 
   return (
     <div>
-      <Head>
-        <title>Apache</title>
-        <FaviIcon />
-        <meta name="description" content="Apache" />
-        <link rel="canonical" href="/codigo/apache" />
-        <link rel="amphtml" href="/amp/codigo/apache" />
-        <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
-        <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
-      </Head>
-      <Layout regiao={regiao} modo={modo}>
-          <h1>Apache</h1>
-          <p>O Servidor HTTP Apache ou Servidor Apache ou HTTP Daemon Apache ou somente Apache, é o servidor web livre criado em 1995 por Rob McCool.</p>
-        </Layout >
+      <MoHead modo={modo} title="Apache" description="Código Apache" canonical="/codigo/apache/"/>
+      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="Apache">
+        <Div display="responsivo">
+          <div className="coluna404">
+            <h1>Apache</h1>
+            <p>O Servidor HTTP Apache ou Servidor Apache ou HTTP Daemon Apache ou somente Apache, é o servidor web livre criado em 1995 por Rob McCool.</p>
+          </div>
+          <div>
+            <Img 
+                src="/static/assetsv5/img/codigo/logoapache.png"
+                width="323px"
+                height="136px"
+                alt="Logo Apache"
+                title="Logo Apache"
+                class="ClassLogoApache"
+                modo={modo}>
+            </Img>
+          </div>
+        </Div>
+      </Layout >
       <style jsx>{`
         .h1{
           color : #000000;

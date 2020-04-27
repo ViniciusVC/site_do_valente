@@ -1,313 +1,258 @@
 import React from 'react'
-import Link from 'next/link'
-
+//import a from 'next/a'
+import Details from '../../atoms/atDetails'
+import * as Util from "../../../controller/util.js";
 
 //console.log('Instanciando templates/index.js');
 const ListadeRotas = function (props) {
   const regiao = props.regiao;
   const modo = props.modo;
+  const titulo = Util.validaProps(props.titulo, "nenhum");
+  const categoria = Util.validaProps(props.categoria, "categoria");
+  
   var StringModo = "";
   if(modo=="AMP" || modo=="amp"){
     StringModo = "/amp";
   }
+
+
   return (
     <div>
       <nav className='CssRotasProjeto'>
         
-        <details>
-          <summary><Link href={StringModo+"/?regiao="+regiao}>Home</Link></summary>
+        <Details open={titulo=="Home"}>
+          <summary><a href={StringModo+"/?regiao="+regiao}>Home</a></summary>
           <ol type="1">
-          <li><Link href={"/?regiao="+regiao}>Home (Pagina em HTML)</Link></li>
-          <li><Link href={"/amp/?regiao="+regiao}>Home (Pagina em AMP)</Link></li>
+          <li><a href={"/?regiao="+regiao} alert="Home (Pagina em HTML)">Pagina em HTML</a></li>
+          <li><a href={"/amp/?regiao="+regiao} alert="Home (Pagina em AMP)">Pagina em AMP</a></li>
           </ol>
-        </details>
+        </Details>
 
-        <details>
-          <summary>CODIGO</summary>
+        <Details open={titulo=="Codigo"}>
+          <summary>Codigo</summary>
           
-            <details>
-              <summary><Link href={StringModo+"/codigo/apache/?regiao="+regiao}>Apache</Link></summary>
+          <Details open={categoria=="html"}>
+              <summary ><a href={StringModo+"/codigo/html/?regiao="+regiao}>HTML</a></summary>
               <ol type="1">
-                <li><Link href={StringModo+"/codigo/apache/instalubuntu?regiao="+regiao}>Instalar Apache no Ubuntu</Link></li>
-                <li><Link href={StringModo+"/codigo/apache/alias?regiao="+regiao}>Alias em Apache</Link></li>
-                <li><Link href={StringModo+"/codigo/apache/redirect?regiao="+regiao}>redirect 301 em Apache</Link></li>
+                <li><a href={StringModo+"/codigo/html/?regiao="+regiao}>HTML5 Introdução</a></li>
+                <li><a href={StringModo+"/codigo/html/semantica/?regiao="+regiao}>Estrutura da Página</a></li>
+                <li><a href={StringModo+"/codigo/html/h1_p_br/?regiao="+regiao}>Titulo, Parágrafo e Quebra</a></li>
+                <li><a href={StringModo+"/codigo/html/lista01/?regiao="+regiao}>Listas Não ordenada</a></li>
+                <li><a href={StringModo+"/codigo/html/lista02/?regiao="+regiao}>Listas Ordenada (type=1)</a></li>
+                <li><a href={StringModo+"/codigo/html/lista03/?regiao="+regiao}>Listas Ordenada (type=A)</a></li>
+                <li><a href={StringModo+"/codigo/html/lista04/?regiao="+regiao}>Listas Ordenada (type=i)</a></li>
+                <li><a href={StringModo+"/codigo/html/lista05/?regiao="+regiao}>Listas Ordenada (type=I)</a></li>
+                <li><a href={StringModo+"/codigo/html/lista06/?regiao="+regiao}>Listas Com descrição</a></li>
+                <li><a href={StringModo+"/codigo/html/img/?regiao="+regiao}>Imagem</a></li>        
+                <li><a href={StringModo+"/codigo/html/img_figcaption/?regiao="+regiao}>Figure e Figcaption</a></li>
+                <li><a href={StringModo+"/codigo/html/iframe/?regiao="+regiao}>Iframe</a></li>
+                <li><a href={StringModo+"/codigo/html/links/?regiao="+regiao}>Links - tag A</a></li>
+                <li><a href={StringModo+"/codigo/html/tabela/?regiao="+regiao}>Tabelas</a></li>
+                <li><a href={StringModo+"/codigo/css/css13/?regiao="+regiao}>Tabelas Style</a></li>
+                <li><a href={StringModo+"/codigo/html/div_span/?regiao="+regiao}>Div e Span</a></li>
+                <li><a href={StringModo+"/codigo/html/comentario/?regiao="+regiao}>Comentários</a></li>
+                <li><a href={StringModo+"/codigo/html/meta/?regiao="+regiao}>Meta Tag</a></li>
+                {/* <li><a href={StringModo+"/codigo/html/?regiao="+regiao}>Midia Audio</a></li>*/}
+                {/* <li><a href={StringModo+"/codigo/html/?regiao="+regiao}>?Midia Vídeo</a></li>*/}
+                {/* <li><a href={StringModo+"/codigo/html/?regiao="+regiao}>?Midia Video (Criando legendas)</a></li>*/}
+                {/* <li><a href={StringModo+"/codigo/html/?regiao="+regiao}>?Midia Object</a></li> */}
+                <li><a href={StringModo+"/codigo/html/form01/?regiao="+regiao}>Formulários</a></li>
+                <li><a href={StringModo+"/codigo/html/form02/?regiao="+regiao}>Formulário com legenda</a></li>
+                <li><a href={StringModo+"/codigo/html/form03/?regiao="+regiao}>Formulário atributos</a></li>
+                <li><a href={StringModo+"/codigo/html/form04/?regiao="+regiao}>Form: radio e checkbox</a></li>
+                <li><a href={StringModo+"/codigo/html/form05/?regiao="+regiao}>Form: Number Range Color</a></li>
+                <li><a href={StringModo+"/codigo/html/form06/?regiao="+regiao}>Form: Date, Time</a></li>
+                <li><a href={StringModo+"/codigo/html/form07/?regiao="+regiao}>Formulário Button</a></li>
+                <li><a href={StringModo+"/codigo/html/form08/?regiao="+regiao}>Form: Select, Optgroup</a></li>
+                <li><a href={StringModo+"/codigo/html/form09/?regiao="+regiao}>Formulários Datalist</a></li>
+                <li><a href={StringModo+"/codigo/html/form10/?regiao="+regiao}>Formulário Keygen</a></li>
+                <li><a href={StringModo+"/codigo/html/form11/?regiao="+regiao}>Formulário sbmit externo</a></li>
+                {/* <li><a href={StringModo+"/codigo/html/form01/?regiao="+regiao}>?Formulário Autocomplete e Placeholder</a></li>*/}
+                {/* <li><a href={StringModo+"/codigo/html/form01/?regiao="+regiao}>?Formulário Types: File, Hidden, Search, URL, Tel</a></li>*/}
+                {/* <li><a href={StringModo+"/codigo/html/form01/?regiao="+regiao}>?Formulário Textarea, Spellcheck</a></li>*/}
+                {/* <li><a href={StringModo+"/codigo/html/form01/?regiao="+regiao}>?Formulários Form, Formaction, Formmethod, Formenctype, Formnovalidate</a></li> */}
+                <li><a href={StringModo+"/codigo/html/mark/?regiao="+regiao}>Mark e Contenteditable</a></li>
+                <li><a href={StringModo+"/codigo/html/tabindexaccesskey/?regiao="+regiao}>Tabindex e Accesskey</a></li>
+                <li><a href={StringModo+"/codigo/html/details/?regiao="+regiao}>Details</a></li>
+                <li><a href={StringModo+"/codigo/html/hgroup/?regiao="+regiao}>Hgroup</a></li>
+                <li><a href={StringModo+"/codigo/html/meterprogress/?regiao="+regiao}>Meter e Progresse</a></li>
+                <li><a href={StringModo+"/codigo/html/links/?regiao="+regiao}>Tag a</a></li>
+                <li><a href={StringModo+"/codigo/html/map/?regiao="+regiao}>Imagem MAP</a></li>          
+                <li><a href={StringModo+"/codigo/html/timedatetime/?regiao="+regiao}>Time e Datetime</a></li>
+                <li><a href={StringModo+"/codigo/html/semantica/?regiao="+regiao}>Semantica</a></li>
+                <li><a href={StringModo+"/codigo/html/canvas/?regiao="+regiao}>Canvas</a></li>
               </ol>
-            </details>
+            </Details>     
 
-            <details>
-              <summary><Link href={StringModo+"/codigo/asp/?regiao="+regiao}>ASP</Link></summary>
+            <Details open={categoria=="SVG"}>
+              <summary>SVG</summary>
               <ol type="1">
-                <li><Link href={StringModo+"/codigo/asp/?regiao="+regiao}>ASP</Link></li>
-                <li><Link href={StringModo+"/codigo/asp/redirect?regiao="+regiao}>redirect 301 em ASP</Link></li>
+                <li><a href={StringModo+"/codigo/html/svg01/?regiao="+regiao}>SVG rect</a></li>
+                <li><a href={StringModo+"/codigo/html/svg02/?regiao="+regiao}>SVG ellipse, text</a></li>
+                <li><a href={StringModo+"/codigo/html/svg03/?regiao="+regiao}>SVG line, polygon, polyline</a></li>
               </ol>
-            </details>
+            </Details>     
 
-            <details>
-              <summary><Link href={StringModo+"/codigo/cgi/?regiao="+regiao}>CGI PERL</Link></summary>
+            <Details open={categoria=="CSS"}>
+              <summary><a href={StringModo+"/codigo/css/?regiao="+regiao}>CSS</a></summary>
               <ol type="1">
-                <li><Link href={StringModo+"/codigo/cgi/redirect?regiao="+regiao}>redirect 301 em CGI</Link></li>
+                <li><a href={StringModo+"/codigo/css/css01/?regiao="+regiao}>Introdução ao CSS</a></li>
+                <li><a href={StringModo+"/codigo/css/css02/?regiao="+regiao}>Estilizando textos</a></li>
+                <li><a href={StringModo+"/codigo/css/css03/?regiao="+regiao}>Imagens de fundo</a></li>
+                <li><a href={StringModo+"/codigo/css/css04/?regiao="+regiao}>Link e Divs</a></li>
+                <li><a href={StringModo+"/codigo/css/css05/?regiao="+regiao}>Classe, ID e Span</a></li>
+                <li><a href={StringModo+"/codigo/css/css06/?regiao="+regiao}>Margin, padding e floatAula</a></li>
+                <li><a href={StringModo+"/codigo/css/css07/?regiao="+regiao}>Posição e z-index</a></li>
+                <li><a href={StringModo+"/codigo/css/css08/?regiao="+regiao}>Efeito hover</a></li>
+                <li><a href={StringModo+"/codigo/css/css09/?regiao="+regiao}>Herança</a></li>
+                <li><a href={StringModo+"/codigo/css/css10/?regiao="+regiao}>Menu com listas</a></li>
+                <li><a href={StringModo+"/codigo/css/css11/?regiao="+regiao}>Menu drop-down</a></li>
+                <li><a href={StringModo+"/codigo/css/css12/?regiao="+regiao}>Validação</a></li>
+                <li><a href={StringModo+"/codigo/css/css13/?regiao="+regiao}>Tabelas Style</a></li>
+                <li><a href={StringModo+"/codigo/css/anima_but/?regiao="+regiao}>Exemplos Anima But</a></li>
               </ol>
-            </details>
-            <details>
-              <summary><Link href={StringModo+"/codigo/coldfusion/?regiao="+regiao}>ColdFusion</Link></summary>
-              <ol type="1">
-                <li><Link href={StringModo+"/codigo/coldfusion/?regiao="+regiao}>redirect 301 em ColdFusion</Link></li>
-              </ol>
-            </details>
+            </Details>
             
-            <details>
-              <summary><Link href={StringModo+"/codigo/css/?regiao="+regiao}>CSS</Link></summary>
+            <Details open={categoria=="Python"}>
+              <summary><a href={StringModo+"/codigo/python/?regiao="+regiao}>Python</a></summary>
+            </Details>
+
+            <Details open={categoria=="Apache"}>
+              <summary><a href={StringModo+"/codigo/apache/?regiao="+regiao}>Apache</a></summary>
               <ol type="1">
-                <li><Link href={StringModo+"/codigo/css/?regiao="+regiao}>Introdução ao CSS</Link></li>
-                <li><Link href={StringModo+"/codigo/css/css02/?regiao="+regiao}>Estilizando textos</Link></li>
-                <li><Link href={StringModo+"/codigo/css/css03/?regiao="+regiao}>Imagens de fundo e atributo text</Link></li>
-                <li><Link href={StringModo+"/codigo/css/css04/?regiao="+regiao}>Links e Divs</Link></li>
-                <li><Link href={StringModo+"/codigo/css/css05/?regiao="+regiao}>Classe, ID e Span</Link></li>
-                <li><Link href={StringModo+"/codigo/css/css06/?regiao="+regiao}>Margin, padding e floatAula</Link></li>
-                <li><Link href={StringModo+"/codigo/css/css07/?regiao="+regiao}>Posicionamento de elementos, bordas e z-index</Link></li>
-                <li><Link href={StringModo+"/codigo/css/css08/?regiao="+regiao}>Efeitos com o atributo hover</Link></li>
-                <li><Link href={StringModo+"/codigo/css/css09/?regiao="+regiao}>Herança</Link></li>
-                <li><Link href={StringModo+"/codigo/css/css10/?regiao="+regiao}>Criando um menu com listas</Link></li>
-                <li><Link href={StringModo+"/codigo/css/css11/?regiao="+regiao}>Menu drop-down</Link></li>
-                <li><Link href={StringModo+"/codigo/css/css12/?regiao="+regiao}>Validação e Web Standards</Link></li>
-                <li><Link href={StringModo+"/codigo/css/css13/?regiao="+regiao}>Tabelas Style</Link></li>
-                <li><Link href={StringModo+"/codigo/css/anima_but/?regiao="+regiao}>Exemplos Anima But</Link></li>
+                <li><a href={StringModo+"/codigo/apache/instalubuntu?regiao="+regiao}>Instalar Apache no Ubuntu</a></li>
+                <li><a href={StringModo+"/codigo/apache/alias?regiao="+regiao}>Alias em Apache</a></li>
+                <li><a href={StringModo+"/codigo/apache/redirect?regiao="+regiao}>redirect 301 em Apache</a></li>
               </ol>
-            </details>
-
-            <details>
-              <summary><Link href={StringModo+"/codigo/html5/?regiao="+regiao}>HTML</Link></summary>
+            </Details>
+            <Details open={categoria=="ASP"}>
+              <summary><a href={StringModo+"/codigo/asp/?regiao="+regiao}>ASP</a></summary>
               <ol type="1">
-                <li>
-                  <Link href={StringModo+"/codigo/html5/?regiao="+regiao}>HTML5 Introdução</Link><br />
-                </li>
-                <li>
-                  <Link href={StringModo+"/amp/codigo/html5/?regiao="+regiao}>HTML5 Introdução (Pagina AMP)</Link><br />
-                </li>
-                <li>
-                  <Link href={StringModo+"/codigo/?regiao="+regiao}>Estrutura da Página HTML5</Link><br />
-                </li>
-                <li>
-                  <Link href={StringModo+"/amp/codigo/?regiao="+regiao}>Estrutura da Página HTML5 (Pagina AMP)</Link><br />
-                </li>
-                <li>
-                  <Link href={StringModo+"/codigo/?regiao="+regiao}>Titulo, Parágrafo e Quebra de Linha</Link><br />
-                </li>
-                <li>
-                  <Link href={StringModo+"/amp/codigo/?regiao="+regiao}>Titulo, Parágrafo e Quebra de Linha (Pagina AMP)</Link><br />
-                </li>
-                <li>
-                  <details>
-                    <summary>Listas</summary>
-                    <Link href={StringModo+"/codigo/?regiao="+regiao}>Não ordenada</Link><br />
-                    <Link href={StringModo+"/codigo/?regiao="+regiao}>Ordenada (type=1)</Link><br />
-                    <Link href={StringModo+"/codigo/?regiao="+regiao}>Ordenada (type=A)</Link><br />
-                    <Link href={StringModo+"/codigo/?regiao="+regiao}>Ordenada (type=i)</Link><br />
-                    <Link href={StringModo+"/codigo/?regiao="+regiao}>Ordenada (type=I)</Link><br />
-                    <Link href={StringModo+"/codigo/?regiao="+regiao}>Com descrição</Link><br />
-                  </details>
-                </li>
-                <li>
-                  <details>
-                    <summary>Imagem</summary>
-                    <Link href={StringModo+"/codigo/?regiao="+regiao}>Imagens</Link><br />
-                    <Link href={StringModo+"/codigo/?regiao="+regiao}>MAP</Link><br />
-                    <Link href={StringModo+"/codigo/?regiao="+regiao}>Figure e Figcaption</Link><br />
-                  </details>
-                </li>
-                <li>
-                  <Link href={StringModo+"/codigo/?regiao="+regiao}>Iframe</Link><br />
-                </li>
-                <li>
-                  <Link href={StringModo+"/codigo/?regiao="+regiao}>Links</Link><br />
-                </li>
-                <li>
-                  <details>
-                    <summary>Tabelas</summary>
-                    <Link href={StringModo+"/codigo/?regiao="+regiao}>Tabelas</Link><br />
-                    <Link href={StringModo+"/codigo/?regiao="+regiao}>Tabelas Style</Link><br />
-                  </details>
-                </li>
-                <li>
-                  <Link href={StringModo+"/codigo/?regiao="+regiao}>Div e Span</Link><br />
-                </li>
-                <li>
-                  <Link href={StringModo+"/codigo/?regiao="+regiao}>Comentários</Link><br />
-                </li>
-                <li>
-                  <details>
-                    <summary>Midia</summary>
-                    <Link href={StringModo+"/codigo/?regiao="+regiao}>Audio</Link><br />
-                    <Link href={StringModo+"/codigo/?regiao="+regiao}>Vídeo</Link><br />
-                    <Link href={StringModo+"/codigo/?regiao="+regiao}>Video (Criando legendas)</Link><br />
-                    <Link href={StringModo+"/codigo/?regiao="+regiao}>Object</Link><br />
-                  </details>
-                </li>
-                <li>
-                  <details>
-                    <summary>Formulário</summary>
-                    <Link href={StringModo+"/codigo/?regiao="+regiao}>Formulários</Link><br />
-                    <Link href={StringModo+"/codigo/?regiao="+regiao}>com legenda)</Link><br />
-                    <Link href={StringModo+"/codigo/?regiao="+regiao}>atributos</Link><br />
-                    <Link href={StringModo+"/codigo/?regiao="+regiao}>campos: radio e checkbox)</Link><br />
-                    <Link href={StringModo+"/codigo/?regiao="+regiao}>campos: Number, Range e Color)</Link><br />
-                    <Link href={StringModo+"/codigo/?regiao="+regiao}>Autocomplete e Placeholder</Link><br />
-                    <Link href={StringModo+"/codigo/?regiao="+regiao}>Types: File, Hidden, Search, URL, Tel</Link><br />
-                    <Link href={StringModo+"/codigo/?regiao="+regiao}>Types Date, Time, Month, Week, Datetime local</Link><br />
-                    <Link href={StringModo+"/codigo/?regiao="+regiao}>Textarea, Spellcheck</Link><br />
-                    <Link href={StringModo+"/codigo/?regiao="+regiao}>Button</Link><br />
-                    <Link href={StringModo+"/codigo/?regiao="+regiao}>Select, Optgroup</Link><br />
-                    <Link href={StringModo+"/codigo/?regiao="+regiao}>Formulários Datalist)</Link><br />
-                    <Link href={StringModo+"/codigo/?regiao="+regiao}>Formulários Form, Formaction, Formmethod, Formenctype, Formnovalidate</Link><br />
-                    <Link href={StringModo+"/codigo/?regiao="+regiao}>Mark e Contenteditable</Link><br />
-                    <Link href={StringModo+"/codigo/?regiao="+regiao}>Tabindex e Accesskey</Link><br />
-                    <Link href={StringModo+"/codigo/?regiao="+regiao}>Formulário Campo (Keygen)</Link><br />
-                  </details>
-                </li>
-                <li>
-                  <Link href={StringModo+"/codigo/?regiao="+regiao}>Details</Link><br />
-                </li>
-                <li>
-                  <Link href={StringModo+"/codigo/?regiao="+regiao}>Hgroup</Link><br />
-                  <Link href={StringModo+"/codigo/?regiao="+regiao}>Meter e Progresse</Link><br />
-
-                  <Link href={StringModo+"/codigo/?regiao="+regiao}>Tag link</Link><br />
-                  <Link href={StringModo+"/codigo/?regiao="+regiao}>Time e Datetime</Link><br />
-                  <Link href={StringModo+"/codigo/?regiao="+regiao}>Menu e Menuitem</Link><br />
-                </li>
-                <li>
-                  <details>
-                    <summary>SVG</summary>
-                    <Link href={StringModo+"/codigo/?regiao="+regiao}>rect</Link><br />
-                    <Link href={StringModo+"/codigo/?regiao="+regiao}>ellipse, text</Link><br />
-                    <Link href={StringModo+"/codigo/?regiao="+regiao}>line, polygon, polyline</Link><br />
-                  </details>
-                </li>
-                <li>
-                  <details>
-                    <summary>Carrosel</summary>
-                    <Link href={StringModo+"/codigo/?regiao="+regiao}>Carrosel 01</Link><br />
-                    <Link href={StringModo+"/codigo/?regiao="+regiao}>Carrosel 02</Link><br />
-                  </details>
-                </li>
-                <li>
-                  <Link href={StringModo+"/codigo/?regiao="+regiao}>Semantica</Link><br />
-                </li>
+                <li><a href={StringModo+"/codigo/asp/?regiao="+regiao}>ASP</a></li>
+                <li><a href={StringModo+"/codigo/asp/redirect?regiao="+regiao}>redirect 301 em ASP</a></li>
               </ol>
-            </details>
-
-            <details>
-              <summary><Link href={StringModo+"/codigo/java/?regiao="+regiao}>Java</Link></summary>
+            </Details>
+            <Details open={categoria=="CGI"}>
+              <summary><a href={StringModo+"/codigo/cgi/?regiao="+regiao}>CGI PERL</a></summary>
               <ol type="1">
-                <li><Link href={StringModo+"/codigo/java/?regiao="+regiao}>Java</Link></li>
-                <li><Link href={StringModo+"/codigo/java/?regiao="+regiao}>redirect 301 em JSP</Link></li>
+                <li><a href={StringModo+"/codigo/cgi/redirect?regiao="+regiao}>redirect 301 em CGI</a></li>
               </ol>
-            </details>
-
-            <details>
-              <summary><Link href={StringModo+"/codigo/javascript?regiao="+regiao}>JS JavaScript</Link></summary>
+            </Details>
+            <Details open={categoria=="ColdFusion"}>
+              <summary><a href={StringModo+"/codigo/coldfusion/?regiao="+regiao}>ColdFusion</a></summary>
               <ol type="1">
-                <li><Link href={StringModo+"/codigo/javascript?regiao="+regiao}>JS JavaScript</Link></li>
-                <li><Link href={StringModo+"/codigo/javascript?regiao="+regiao}>JS JavaScript</Link></li>
-                <li><Link href={StringModo+"/codigo/javascript?regiao="+regiao}>JS JavaScript</Link></li>
+                <li><a href={StringModo+"/codigo/coldfusion/?regiao="+regiao}>redirect 301 em ColdFusion</a></li>
               </ol>
-            </details>
-
-            <details>
-              <summary><Link href={StringModo+"/codigo/knockout/?regiao="+regiao}>knockout JS</Link></summary>
+            </Details>
+            <Details open={categoria=="JavaScript"}>
+              <summary><a href={StringModo+"/codigo/javascript?regiao="+regiao}>JavaScript</a></summary>
               <ol type="1">
-                <li><Link href={StringModo+"/codigo/knockout/?regiao="+regiao}>knockout JS exemplo 01</Link></li>
-                <li><Link href={StringModo+"/codigo/knockout/?regiao="+regiao}>knockout JS exemplo 02</Link></li>
-                <li><Link href={StringModo+"/codigo/knockout/?regiao="+regiao}>knockout JS exemplo 03</Link></li>
-                <li><Link href={StringModo+"/codigo/knockout/?regiao="+regiao}>knockout JS exemplo 04</Link></li>
-                <li><Link href={StringModo+"/codigo/knockout/?regiao="+regiao}>knockout JS exemplo 05</Link></li>
-                <li><Link href={StringModo+"/codigo/knockout/?regiao="+regiao}>knockout JS exemplo 06</Link></li>
+                <li><a href={StringModo+"/codigo/javascript?regiao="+regiao}>JS JavaScript</a></li>
+                <li><a href={StringModo+"/codigo/javascript?regiao="+regiao}>JS JavaScript</a></li>
+                <li><a href={StringModo+"/codigo/javascript?regiao="+regiao}>JS JavaScript</a></li>
               </ol>
-            </details>
-
-            <details>
-              <summary><Link href={StringModo+"/codigo/dotnet/?regiao="+regiao}>.NET</Link></summary>
+            </Details>
+            <Details open={categoria=="Java"}>
+              <summary><a href={StringModo+"/codigo/java/?regiao="+regiao}>Java</a></summary>
               <ol type="1">
-                <li><Link href={StringModo+"/codigo/dotnet/?regiao="+regiao}>.NET</Link></li>
-                <li><Link href={StringModo+"/codigo/dotnet/?regiao="+regiao}>redirect 301 em ASP.NET</Link></li>
+                <li><a href={StringModo+"/codigo/java/?regiao="+regiao}>Java</a></li>
+                <li><a href={StringModo+"/codigo/java/?regiao="+regiao}>redirect 301 em JSP</a></li>
               </ol>
-            </details>
+            </Details>
 
-            <details>
-              <summary><Link href={StringModo+"/codigo/php/?regiao="+regiao}>PHP</Link></summary>
+            <Details open={categoria=="knockout"}>
+              <summary><a href={StringModo+"/codigo/knockout/?regiao="+regiao}>knockout JS</a></summary>
               <ol type="1">
-                <li><Link href={StringModo+"/codigo/php/?regiao="+regiao}>PHP</Link></li>
-                <li><Link href={StringModo+"/codigo/php/redirect/?regiao="+regiao}>redirect 301 no PHP</Link></li>
-                <li><Link href={StringModo+"/codigo/php/procuraarquivo/?regiao="+regiao}>encontrar arquivio no PHP</Link></li>
-                <li><Link href={StringModo+"/codigo/php/procuradiretorio/?regiao="+regiao}>encontrar diretorio no PHP</Link></li>
+                <li><a href={StringModo+"/codigo/knockout/?regiao="+regiao}>knockout JS exemplo 01</a></li>
+                <li><a href={StringModo+"/codigo/knockout/?regiao="+regiao}>knockout JS exemplo 02</a></li>
+                <li><a href={StringModo+"/codigo/knockout/?regiao="+regiao}>knockout JS exemplo 03</a></li>
+                <li><a href={StringModo+"/codigo/knockout/?regiao="+regiao}>knockout JS exemplo 04</a></li>
+                <li><a href={StringModo+"/codigo/knockout/?regiao="+regiao}>knockout JS exemplo 05</a></li>
+                <li><a href={StringModo+"/codigo/knockout/?regiao="+regiao}>knockout JS exemplo 06</a></li>
               </ol>
-            </details>
+            </Details>
 
-            <details>
-              <summary><Link href={StringModo+"/codigo/rubyonrails/?regiao="+regiao}>Ruby on Rails</Link></summary>
+            <Details open={categoria==".Net"}>
+              <summary><a href={StringModo+"/codigo/dotnet/?regiao="+regiao}>.NET</a></summary>
               <ol type="1">
-                <li><Link href={StringModo+"/codigo/rubyonrails/?regiao="+regiao}>redirect 301 em Ruby on Rails</Link></li>
+                <li><a href={StringModo+"/codigo/dotnet/?regiao="+regiao}>.NET</a></li>
+                <li><a href={StringModo+"/codigo/dotnet/?regiao="+regiao}>redirect 301 em ASP.NET</a></li>
               </ol>
-            </details>
-        </details>
+            </Details>
 
-        <details>
-          <summary><Link href={StringModo+"/utilitarios/?regiao="+regiao}>Utilitarios</Link></summary>
+            <Details open={categoria=="PHP"}>
+              <summary><a href={StringModo+"/codigo/php/?regiao="+regiao}>PHP</a></summary>
+              <ol type="1">
+                <li><a href={StringModo+"/codigo/php/?regiao="+regiao}>PHP</a></li>
+                <li><a href={StringModo+"/codigo/php/redirect/?regiao="+regiao}>redirect 301 no PHP</a></li>
+                <li><a href={StringModo+"/codigo/php/procuraarquivo/?regiao="+regiao}>encontrar arquivio no PHP</a></li>
+                <li><a href={StringModo+"/codigo/php/procuradiretorio/?regiao="+regiao}>encontrar diretorio no PHP</a></li>
+              </ol>
+            </Details>
+
+            <Details open={categoria=="Ruby on Rails"}>
+              <summary><a href={StringModo+"/codigo/rubyonrails/?regiao="+regiao}>Ruby on Rails</a></summary>
+              <ol type="1">
+                <li><a href={StringModo+"/codigo/rubyonrails/redirect/?regiao="+regiao}>redirect 301 em Ruby on Rails</a></li>
+              </ol>
+            </Details>
+        </Details>
+
+        <Details open={titulo=="Utilitarios"}>
+          <summary><a href={StringModo+"/utilitarios/?regiao="+regiao}>Utilitarios</a></summary>
           <ol type="1">
-            <li><Link href={StringModo+"/utilitarios/conversordetexto?regiao="+regiao}>Conversor de Texto</Link></li>
-            <li><Link href={StringModo+"/utilitarios/conversordeunidade?regiao="+regiao}>Conversor de Unidade</Link></li>
-            <li><Link href={StringModo+"/utilitarios/servicosgratuitos?regiao="+regiao}>Servicos Gratuitos</Link></li>
-            
+            <li><a href={StringModo+"/utilitarios/conversordetexto?regiao="+regiao}>Conversor de Texto</a></li>
+            <li><a href={StringModo+"/utilitarios/conversordeunidade?regiao="+regiao}>Conversor de Unidade</a></li>
+            <li><a href={StringModo+"/utilitarios/conversorUnicode?regiao="+regiao}>Conversor Unicode</a></li>
+            <li><a href={StringModo+"/utilitarios/servicosgratuitos?regiao="+regiao}>Servicos Gratuitos</a></li> 
           </ol>
-        </details>
+        </Details>
 
-        <details>
-          <summary><Link href={StringModo+"/game/?regiao="+regiao}>Games</Link></summary>
+        <Details open={titulo=="Games"}>
+          <summary><a href={StringModo+"/game/?regiao="+regiao}>Games</a></summary>
           <ol type="1">
-            <li><Link href={StringModo+"/game/controleogodzilla?regiao="+regiao}>GAME - Controle O Godzilla</Link></li>
-            <li><Link href={StringModo+"/game/tanque?regiao="+regiao}>GAME - Tanque</Link></li>
+            <li><a href={StringModo+"/game/controleogodzilla?regiao="+regiao}>Controle O Godzilla</a></li>
+            <li><a href={StringModo+"/game/tanque?regiao="+regiao}>Tanque de Guerra</a></li>
+            <li><a href={StringModo+"/game/ecossistema?regiao="+regiao}>Ecossistema</a></li>
           </ol>
-        </details>
+        </Details>
 
-        {/* <details>
-          <summary><Link href={StringModo+"/hub/?regiao="+regiao}>Hub de Contato</Link></summary>
-        </details> */}
+        {/* <Details open={titulo=="outros"}>
+          <summary><a href={StringModo+"/hub/?regiao="+regiao}>Hub de Contato</a></summary>
+        </Details> */}
 
-        <details>
-          <summary ><Link href={"/componentes/"}>Componentes</Link></summary>
+        <Details open={titulo=="Componentes"}>
+          <summary ><a href={"/componentes/"}>Componentes</a></summary>
           <ol type="1">
-            <li><Link href={StringModo+"/componentes/?regiao="+regiao}>Componentes</Link></li>
+            <li><a href={StringModo+"/componentes/?regiao="+regiao}>Componentes</a></li>
           </ol>
-        </details>
-        <details>
-          <summary><Link href={StringModo+"/eu/?regiao="+regiao}>Quem Sou Eu</Link></summary>
+        </Details>
+        <Details open={titulo=="Eu"}>
+          <summary><a href={StringModo+"/eu/?regiao="+regiao}>Quem Sou Eu</a></summary>
           <ol type="1">
-            <li><Link href={StringModo+"/eu/curriculo/?regiao="+regiao}>Curriculo</Link></li>
+            <li><a href={StringModo+"/eu/curriculo/?regiao="+regiao}>Curriculo</a></li>
           </ol>
-        </details>
+        </Details>
       </nav>
 
       <style jsx>{`
+      a {
+        text-decoration: none;
+        font-style: normal;
+        color: #ffffff;
+          }
       .CssRotasProjeto {
         width: 100%;
-        color: #333;
         font-size: 17px;
       }
-      .CssTitleRotasProjeto {
-        margin: 0;
-        width: 100%;
-        padding-top: 10px;
-        font-size: 22px;
-      }
       summary {
-            background-color: #ffffff;
             border-radius: 8px;
-            color: #222222;
+            color: #ffffff;
             display: block;
             font-size: 16px;
             height: 25px;
-            width: 290px;
-            border: solid 2px #dbdbdb;
+            width: 90%;
+            /*border: solid 2px #dbdbdb;*/
             margin: 0;
             padding: 0px;
             padding-top: 5px;
@@ -316,22 +261,33 @@ const ListadeRotas = function (props) {
             -moz-box-shadow: 2px 2px 20px rgba(1, 1, 1, 0.17);
             box-shadow: 2px 2px 20px rgba(1, 1, 1, 0.17);
           }
+      summary:hover {
+        padding-left: 9px;
+        background-color: #1d2033;
+          }
+      ol {
+            width: 100%;
+          }
       li {
-            background-color: #ffffff;
             border-radius: 8px;
-            color: #222222;
+            color: #ffffff;
             display: block;
             font-size: 16px;
             height: 25px;
-            width: 250px;
-            border: solid 2px blue;
-            margin: 4px;
+            width: 85%;
+            margin-top: 4px;
+            margin-left: -9px;
             padding: 0px;
             padding-top: 5px;
             padding-left: 5px;
             -webkit-box-shadow: 2px 2px 20px rgba(1, 1, 1, 0.17);
             -moz-box-shadow: 2px 2px 20px rgba(1, 1, 1, 0.17);
             box-shadow: 2px 2px 20px rgba(1, 1, 1, 0.17);
+          }
+      li:hover {
+        border: solid 2px blue;
+        padding-left: 9px;
+        background-color: #1d2033;
           }
     `}</style>
     </div>

@@ -1,10 +1,12 @@
 import React from 'react'
-import Head from 'next/head'
-import FaviIcon from '../../../atoms/atFavIcon'
 import Layout from '../../../moleculas/layout'
+import MoHead from '../../../moleculas/moHead'
 import * as Util from '../../../../controller/util.js';
+import Img from '../../../atoms/atImg/index.js'
+import Div from '../../../atoms/atDiv/index.js'
 
-const atendimentoOi = function (props) {
+
+const html = function (props) {
 
   console.log('╔════════════════════════════════════════╗');
   console.log('║        codigo  - HTML                  ║');
@@ -15,18 +17,27 @@ const atendimentoOi = function (props) {
 
   return (
     <div>
-      <Head>
-        <title>HTML</title>
-        <FaviIcon />
-        <meta name="description" content="HTML" />
-        <link rel="canonical" href="/codigo/html" />
-        <link rel="amphtml" href="/amp/codigo/html" />
-        <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
-        <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
-      </Head>
-      <Layout regiao={regiao} modo={modo}>
-        <h1>HTML</h1>
-        <p>Linguagens de programação podem ser usadas para expressar algoritmos com precisão. O conjunto de palavras (lexemas classificados em tokens), compostos de acordo com essas regras, constituem o código fonte de um software. Esse código fonte é depois traduzido para código de máquina, que é executado pelo microprocessador.</p>
+      <MoHead modo={modo} title="codigo HTML" description="codigo HTML" canonical="/codigo/html/"/>
+      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="html">
+        <Div display="justificado">
+          <div className="coluna404">
+            <h1>HTML 5</h1>
+            <p>Linguagens de programação podem ser usadas para expressar algoritmos com precisão. <br/>
+              O conjunto de palavras (lexemas classificados em tokens), compostos de acordo com essas regras, constituem o código fonte de um software.<br/> 
+              Esse código fonte é depois traduzido para código de máquina, que é executado pelo microprocessador.</p>
+          </div>
+          <div>
+              <Img 
+                src="/static/assetsv5/img/codigo/logohtml.png"
+                width="323px"
+                height="436px"
+                alt="Logo HTML5"
+                title="Logo HTML5"
+                class="ClassLogoHTML5"
+                modo={modo}>
+              </Img>
+          </div>
+        </Div>
       </Layout>
       <style jsx>{`
         .h1{
@@ -40,4 +51,4 @@ const atendimentoOi = function (props) {
   )
 }
 
-export default atendimentoOi
+export default html

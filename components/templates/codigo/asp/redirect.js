@@ -1,6 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
 import FaviIcon from '../../../atoms/atFavIcon'
+import DivCodigo from '../../../atoms/atDivCodigo'
+//import DivNaveg from '../../../atoms/atDivNaveg'
 import Layout from '../../../moleculas/layout'
 import * as Util from '../../../../controller/util.js';
 
@@ -24,17 +26,17 @@ const codigoAspRedirect = function (props) {
         <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
         <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
       </Head>
-      <Layout regiao={regiao} modo={modo}>
+      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="ASP">
         <h1>REDIRECT com ASP</h1>
-          <p>
-          <xmp>
-          {'<%@ Language=VBScript %>'}<br/>
-          {'<%'}<br/>
-          {'Response.Status="301 Moved Permanently"'}<br/>
-          {'Response.AddHeader "Location","http://www.seu-novo-site.com.br/"'}<br/>
-          {'%>'}<br/>
-          </xmp>
-          </p>
+          <DivCodigo titulo="REDIRECT com ASP">
+            <xmp>
+              {'<%@ Language=VBScript %>'}<br/>
+              {'<%'}<br/>
+              {'Response.Status="301 Moved Permanently"'}<br/>
+              {'Response.AddHeader "Location","http://www.seu-novo-site.com.br/"'}<br/>
+              {'%>'}<br/>
+            </xmp>
+          </DivCodigo> 
       </Layout>
       <style jsx>{`
         .h1{

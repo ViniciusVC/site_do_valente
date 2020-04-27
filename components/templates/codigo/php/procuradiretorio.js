@@ -1,7 +1,8 @@
 import React from 'react'
-import Head from 'next/head'
-import FaviIcon from '../../../atoms/atFavIcon'
 import Layout from '../../../moleculas/layout'
+import MoHead from '../../../moleculas/moHead'
+import DivCodigo from '../../../atoms/atDivCodigo'
+//import DivNaveg from '../../../atoms/atDivNaveg'
 import * as Util from '../../../../controller/util.js';
 
 const atendimentoOi = function (props) {
@@ -16,18 +17,10 @@ const atendimentoOi = function (props) {
 
   return (
     <div>
-      <Head>
-        <title>Encontrar diretorio no PHP</title>
-        <FaviIcon />
-        <meta name="description" content="Encontrar diretorio no PHP" />
-        <link rel="canonical" href="/codigo/php/procuradiretorio" />
-        <link rel="amphtml" href="/amp/codigo/php/procuradiretorio" />
-        <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
-        <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
-      </Head>
+      <MoHead modo={modo} title="Encontrar diretorio no PHP" canonical="/codigo/php/procuradiretorio/"/>
       <Layout regiao={regiao} modo={modo}>
           <h1>Encontrar diretorio no PHP</h1>
-          <p>
+          <DivCodigo titulo="Código PHP">
             {'<?php'}<br/>
             {'if(is_dir(" C:/Server/htdocs/teste")) { '}<br/>
             {'  echo "diretório encontrádo"; '}<br/>
@@ -36,8 +29,7 @@ const atendimentoOi = function (props) {
             {'  echo "não foi possível encontrar o diretório ou este é um arquivo"; '}<br/>
             {'} '}<br/>
             {'?>'}<br/>
-          </p>
-
+          </DivCodigo>
       </Layout>
       <style jsx>{`
         .h1{
