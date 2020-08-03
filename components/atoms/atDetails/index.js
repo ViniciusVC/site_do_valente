@@ -5,19 +5,21 @@ import * as Util from "../../../controller/util.js";
 const atdetails = props => {
   
   const open = Util.validaProps(props.open, false);
-  console.log('open =' + open);
+  //console.log('open =' + open);
 
   if (open) {
     return (
       <details open>
-        {props.children}
+        {props.children}  
       </details>
+
     );
   } else {
     return (
       <details>
         {props.children}
       </details>
+
     );
   }
 };

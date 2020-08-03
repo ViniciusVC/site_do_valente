@@ -2,6 +2,7 @@ import React from 'react';
 import { withAmp } from 'next/amp';
 //import { useAmp } from 'next/amp' //(Não neste projeto)
 import * as Util from '../../../../controller/util.js';
+
 import TemplateGameAMP from '../../../../components/templates/game/tanque.js';
 
 const RotaGameAMP = function(props){

@@ -50,7 +50,7 @@ const templateHome = function (props) {
 
           <h3>Consultor. De 2015 a 2016</h3>
           <ul>
-          <li>Consorcior de solução web para Consorcio Intermunicipal de Especialidades</li>
+          <li>Consultor de solução web para Consorcio Intermunicipal de Especialidades</li>
           <li>Trabalhos como designer e Ilustrador</li>
           </ul>
           
@@ -105,7 +105,7 @@ const templateHome = function (props) {
           <li>Desenvolvimento de sites utilisando as tecnologias .net e ActionScript.</li>
           </ul>
 
-          <h3>Zion NetWork (produtora de sites) - Programador e Webdesogn. De 7/2000 a 12/2000</h3>
+          <h3>Zion NetWork (produtora de sites) - Programador e Webdesign. De 7/2000 a 12/2000</h3>
           <ul>
           <li>Desenvolvimento de Portais para empresas utilizando ASP, PHP e ActionScript;</li>
           <li>Design gr&aacute;fico;</li>

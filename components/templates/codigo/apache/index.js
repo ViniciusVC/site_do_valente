@@ -2,7 +2,7 @@ import React from 'react'
 //import Head from 'next/head'
 import Img from '../../../atoms/atImg/index.js'
 import Div from '../../../atoms/atDiv/index.js'
-//import FaviIcon from '../../../atoms/atFavIcon'
+import BtLink from '../../../atoms/atBtLink'
 import Layout from '../../../moleculas/layout'
 import MoHead from '../../..//moleculas/moHead'
 import * as Util from '../../../../controller/util.js';
@@ -25,6 +25,9 @@ const apache = function (props) {
           <div className="coluna404">
             <h1>Apache</h1>
             <p>O Servidor HTTP Apache ou Servidor Apache ou HTTP Daemon Apache ou somente Apache, é o servidor web livre criado em 1995 por Rob McCool.</p>
+            <BtLink href={"/codigo/apache/alias?regiao="+regiao} value="Alias" estilo="cinza"/><br/>
+            <BtLink href={"/codigo/apache/instalubuntu?regiao="+regiao} value="Instalar Apache no Ubuntu" estilo="cinza"/><br/>
+            <BtLink href={"/codigo/apache/redirect?regiao="+regiao} value="Redirect" estilo="cinza"/><br/>
           </div>
           <div>
             <Img 

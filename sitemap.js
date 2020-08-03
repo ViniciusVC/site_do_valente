@@ -44,6 +44,7 @@ exports.xml = function(req, res, next) {
         var XMLdeSaida = '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">';
         XMLdeSaida += '<url><loc>/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>';
         XMLdeSaida += '<url><loc>/eu</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>';
+        
         XMLdeSaida += '</urlset>';
         res.send('<style>'+XMLdeSaida+'</style>');
     }

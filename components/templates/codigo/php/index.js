@@ -1,6 +1,6 @@
 import React from 'react'
-import Img from '../../atoms/atImg/index.js'
-import Div from '../../atoms/atDiv/index.js'
+import Img from '../../../atoms/atImg/index.js'
+import Div from '../../../atoms/atDiv/index.js'
 import Layout from '../../../moleculas/layout'
 import MoHead from '../../../moleculas/moHead'
 import * as Util from '../../../../controller/util.js';

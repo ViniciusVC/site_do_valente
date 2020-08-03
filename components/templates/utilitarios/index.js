@@ -21,13 +21,13 @@ const atendimentoOi = function (props) {
       <Layout regiao={regiao} modo={modo} titulo="Utilitarios" categoria="Utilitarios">
           <h1>UTILITARIOS</h1>
           <p>Aplicações úteis.</p>
-          <BtLink href={"/utilitarios/conversordetexto?regiao="+regiao} value="Conversor de Texto" estilo="cinza"/><br/>
+          <BtLink href={"/utilitarios/conversordetexto?regiao="+regiao} value="Conversor de Texto" estilo="luz"/><br/>
           Conversão de textos maiusculos e minusculos.<br/>
           Experimento de codigo em javascript.<br/><br/>
-          <BtLink href={"/utilitarios/conversordeunidade?regiao="+regiao} value="conversor de Unidade" estilo="cinza"/><br/>
+          <BtLink href={"/utilitarios/conversordeunidade?regiao="+regiao} value="conversor de Unidade" estilo="luz"/><br/>
           Conversão de medidas de comprimento.<br/>
           Outro experimento de codigo em javascript.<br/><br/>
-          <BtLink href={"/utilitarios/servicosgratuitos?regiao="+regiao} value="Servicos Gratuitos" estilo="cinza"/><br/>
+          <BtLink href={"/utilitarios/servicosgratuitos?regiao="+regiao} value="Servicos Gratuitos" estilo="luz"/><br/>
           Lista com diversos serviços gratuitos na WEB.<br/><br/>
       </Layout>
       <style jsx>{`

@@ -35,7 +35,8 @@ const orgEcossistema = function (props) {
         personagens[NumSer].hierarquia=4;
         personagens[NumSer].width=20;
         personagens[NumSer].height=20;
-        personagens[NumSer].velocidade=3;
+        personagens[NumSer].velocidade=30;
+        personagens[NumSer].imge="https://images.vexels.com/media/users/3/177827/isolated/preview/03cbb4fb0d0318befadf121314e35d40-cabelo-de-monstro-monstro-liso-by-vexels.png";
         personagens[NumSer].img="https://images.vexels.com/media/users/3/177827/isolated/preview/03cbb4fb0d0318befadf121314e35d40-cabelo-de-monstro-monstro-liso-by-vexels.png";
         personagens[NumSer].objImg.src ="https://images.vexels.com/media/users/3/177827/isolated/preview/03cbb4fb0d0318befadf121314e35d40-cabelo-de-monstro-monstro-liso-by-vexels.png";
         personagens[NumSer].direcao="parado";
@@ -44,44 +45,48 @@ const orgEcossistema = function (props) {
     }else if(tipo=="carnivoro"){
         personagens[NumSer].tipo="carnivoro";
         personagens[NumSer].hierarquia=4;
-        personagens[NumSer].width=20;
-        personagens[NumSer].height=20;
-        personagens[NumSer].img="https://image.flaticon.com/icons/svg/1236/1236125.svg";
+        personagens[NumSer].width=40;
+        personagens[NumSer].height=40;
+        personagens[NumSer].imge="/static/assetsv5/img/game/minitrexe.png";
+        personagens[NumSer].img="/static/assetsv5/img/game/minitrex.png";
         personagens[NumSer].velocidade=4;
-        personagens[NumSer].objImg.src ="https://image.flaticon.com/icons/svg/1236/1236125.svg";
+        personagens[NumSer].objImg.src ="/static/assetsv5/img/game/minitrex.png";
         personagens[NumSer].direcao="parado";
         personagens[NumSer].objetivo="nada";
         personagens[NumSer].tempo=2000;
     }else if(tipo=="herbivoro"){
         personagens[NumSer].tipo="herbivoro";
         personagens[NumSer].hierarquia=3;
-        personagens[NumSer].width=20;
+        personagens[NumSer].width=40;
         personagens[NumSer].height=20;
         personagens[NumSer].velocidade=2;
-        personagens[NumSer].img="https://images.vexels.com/media/users/3/177828/isolated/preview/2cad4138c11ac3e2798bed47b3e21084-monstro-olho-peludo-plano-by-vexels.png";
-        personagens[NumSer].objImg.src ="https://images.vexels.com/media/users/3/177828/isolated/preview/2cad4138c11ac3e2798bed47b3e21084-monstro-olho-peludo-plano-by-vexels.png";
+        personagens[NumSer].imge="/static/assetsv5/img/game/herbivoroe.png";
+        personagens[NumSer].img="/static/assetsv5/img/game/herbivoro.png";
+        personagens[NumSer].objImg.src ="/static/assetsv5/img/game/herbivoro.png";
         personagens[NumSer].direcao="parado";
         personagens[NumSer].objetivo="nada";
         personagens[NumSer].tempo=1000;
     }else if(tipo=="ovo"){
         personagens[NumSer].tipo="ovo";
         personagens[NumSer].hierarquia=2;
-        personagens[NumSer].width=20;
-        personagens[NumSer].height=20;
+        personagens[NumSer].width=10;
+        personagens[NumSer].height=10;
         personagens[NumSer].velocidade=0;
-        personagens[NumSer].img="https://image.flaticon.com/icons/svg/1462/1462011.svg";
-        personagens[NumSer].objImg.src ="https://image.flaticon.com/icons/svg/1462/1462011.svg";
+        personagens[NumSer].imge="/static/assetsv5/img/game/ovo.png";
+        personagens[NumSer].img="/static/assetsv5/img/game/ovo.png";
+        personagens[NumSer].objImg.src ="/static/assetsv5/img/game/ovo.png";
         personagens[NumSer].direcao="parado";
         personagens[NumSer].objetivo="nada";
         personagens[NumSer].tempo=100;
     }else if(tipo=="planta"){
         personagens[NumSer].tipo="planta";
         personagens[NumSer].hierarquia=1;
-        personagens[NumSer].width=20;
-        personagens[NumSer].height=20;
+        personagens[NumSer].width=41;
+        personagens[NumSer].height=49;
         personagens[NumSer].velocidade=0;
-        personagens[NumSer].img="https://image.flaticon.com/icons/png/512/1431/premium/1431933.png";
-        personagens[NumSer].objImg.src ="https://image.flaticon.com/icons/png/512/1431/premium/1431933.png";
+        personagens[NumSer].imge="/static/assetsv5/img/game/arvore.png";
+        personagens[NumSer].img="/static/assetsv5/img/game/arvore.png";
+        personagens[NumSer].objImg.src ="/static/assetsv5/img/game/arvore.png";
         personagens[NumSer].direcao="parado";
         personagens[NumSer].objetivo="nada";
         personagens[NumSer].tempo=100;
@@ -91,8 +96,9 @@ const orgEcossistema = function (props) {
         personagens[NumSer].width=20;
         personagens[NumSer].height=20;
         personagens[NumSer].velocidade=0;
+        personagens[NumSer].imge="https://image.flaticon.com/icons/svg/1642/1642901.svg";
         personagens[NumSer].img="https://image.flaticon.com/icons/svg/1642/1642901.svg";
-        personagens[NumSer].objImg.src="https://image.flaticon.com/icons/svg/1642/1642901.svg";
+        personagens[NumSer].objImg.src="/static/assetsv5/img/game/caverinha.png";
         personagens[NumSer].direcao="parado";
         personagens[NumSer].objetivo="nada";
         personagens[NumSer].tempo=100;
@@ -102,8 +108,21 @@ const orgEcossistema = function (props) {
         personagens[NumSer].width=600;
         personagens[NumSer].height=600;
         personagens[NumSer].velocidade=0;
-        personagens[NumSer].img="/static/assetsv5/img/game/tanqueclareira.jpg";
-        personagens[NumSer].objImg.src="/static/assetsv5/img/game/tanqueclareira.jpg";
+        personagens[NumSer].imge="/static/assetsv5/img/game/terrenoecossistema.jpg";
+        personagens[NumSer].img="/static/assetsv5/img/game/terrenoecossistema.jpg";
+        personagens[NumSer].objImg.src="/static/assetsv5/img/game/terrenoecossistema.jpg";
+        personagens[NumSer].direcao="parado";
+        personagens[NumSer].objetivo="nada";
+        personagens[NumSer].tempo=100;
+    }else if(tipo=="pedra"){
+        personagens[NumSer].tipo="pedra";
+        personagens[NumSer].hierarquia=0;
+        personagens[NumSer].width=80;
+        personagens[NumSer].height=80;
+        personagens[NumSer].velocidade=0;
+        personagens[NumSer].imge="/static/assetsv5/img/game/pedra.png";
+        personagens[NumSer].img="/static/assetsv5/img/game/pedra.png";
+        personagens[NumSer].objImg.src="/static/assetsv5/img/game/pedra.png";
         personagens[NumSer].direcao="parado";
         personagens[NumSer].objetivo="nada";
         personagens[NumSer].tempo=100;
@@ -182,10 +201,10 @@ const orgEcossistema = function (props) {
         }
       } else if(personagens[serA].tipo=="ovo"&&personagens[serA].tempo<1){
         funcPropSer("altera",serA, "herbivoro", "manter", "manter");
-      }else if(personagens[serA].tipo=="planta"&&personagens[serA].tempo<1){
-        personagens[serA].width = personagens[serA].width+2,
-        personagens[serA].height = personagens[serA].height+2,
-        personagens[serA].tempo = 100;
+      // }else if(personagens[serA].tipo=="planta"&&personagens[serA].tempo<1){
+      //   personagens[serA].width = personagens[serA].width+2,
+      //   personagens[serA].height = personagens[serA].height+2,
+      //   personagens[serA].tempo = 100;
       }else if(personagens[serA].tipo=="coco"&&personagens[serA].tempo<1){
         funcPropSer("altera",serA, "planta", "manter", "manter");
       }// Fim do if
@@ -205,12 +224,14 @@ const orgEcossistema = function (props) {
     //for (i=0; i < 5; i++) {
       console.log("i="+i);
       console.log("tipo = "+personagens[i].tipo);
-      pespectiva =  parseInt(personagens[i].y/10); //(y = 0 a 600) Proporção 10 a 60
-      CTX.drawImage(personagens[i].objImg, personagens[i].x,personagens[i].y,(personagens[i].width+pespectiva),(personagens[i].height+pespectiva));  
+      //pespectiva =  parseInt(personagens[i].y/10); //(y = 0 a 600) Proporção 10 a 60
+      //CTX.drawImage(personagens[i].objImg, personagens[i].x, personagens[i].y, (personagens[i].width+pespectiva),(personagens[i].height+pespectiva));  
+      CTX.drawImage(personagens[i].objImg, personagens[i].x, personagens[i].y, personagens[i].width, personagens[i].height);
       CTX.font = "30px Arial";
       CTX.fillStyle = "red"; //personagens[i].cor
       //CTX.fillText(i+'-'+personagens[i].tipo, personagens[i].x+25,personagens[i].y-10);
-      CTX.fillText(personagens[i].objetivo, personagens[i].x+25,personagens[i].y);
+      //CTX.fillText(i);
+      //CTX.fillText(personagens[i].objetivo, personagens[i].x+25, personagens[i].y);
       //CTX.fillText(personagens[i].direcao, personagens[i].x+25,personagens[i].y+10);
       //CTX.fillText(personagens[i].tempo, personagens[i].x+25,personagens[i].y+20);
     }
@@ -243,7 +264,6 @@ const orgEcossistema = function (props) {
         //"+1" 
         varDistancia = varDistancia + personagens[serA].y+personagens[serB].y
       }
-
     }
     return varDistancia
   }
@@ -292,11 +312,13 @@ const orgEcossistema = function (props) {
       }
     } else if(varDirecao=="<-"){
       personagens[personaAtual].x = personagens[personaAtual].x - personagens[personaAtual].velocidade
+      personagens[personaAtual].objImg.src=personagens[personaAtual].imge;
       if(personagens[personaAtual].x < 0){
-        personagens[personaAtual].x = 600;
+        personagens[personaAtual].x = 599;
       }
     } else if(varDirecao=="->"){
       personagens[personaAtual].x = personagens[personaAtual].x + personagens[personaAtual].velocidade
+      personagens[personaAtual].objImg.src=personagens[personaAtual].img;
       if(personagens[personaAtual].x > 600){
         personagens[personaAtual].x = 0;
       }
@@ -320,17 +342,29 @@ const orgEcossistema = function (props) {
     funcPropSer("novo",i++,"planta",funcLocalInit(),funcLocalInit())
     funcPropSer("novo",i++,"coco",funcLocalInit(),funcLocalInit())
     funcPropSer("novo",i++,"herbivoro",funcLocalInit(),funcLocalInit())
-    funcPropSer("novo",i++,"carnivoro",funcLocalInit(),funcLocalInit());
     funcPropSer("novo",i++,"planta",funcLocalInit(),funcLocalInit())
     funcPropSer("novo",i++,"planta",funcLocalInit(),funcLocalInit())
     funcPropSer("novo",i++,"planta",funcLocalInit(),funcLocalInit())
+    funcPropSer("novo",i++,"planta",funcLocalInit(),funcLocalInit())
+    funcPropSer("novo",i++,"planta",funcLocalInit(),funcLocalInit())
+    funcPropSer("novo",i++,"planta",funcLocalInit(),funcLocalInit())
+    funcPropSer("novo",i++,"planta",funcLocalInit(),funcLocalInit())
+    funcPropSer("novo",i++,"planta",funcLocalInit(),funcLocalInit())
+    funcPropSer("novo",i++,"planta",funcLocalInit(),funcLocalInit())
+    funcPropSer("novo",i++,"pedra",funcLocalInit(),funcLocalInit())
+    funcPropSer("novo",i++,"pedra",funcLocalInit(),funcLocalInit())
+    funcPropSer("novo",i++,"pedra",funcLocalInit(),funcLocalInit())
   }
 
   function iniciarGame(){
+    document.getElementById("canvasGame").style.display = "block";
+    document.getElementById("Controles").style.display = "block";
+    document.getElementById("btLinkIniciar").style.display = "none";
+    
 
     iniciarPersonagens();
 
-    window.addEventListener("keydown", function (event) {
+      window.addEventListener("keydown", function (event) {
       console.log('| Digitou algo | <══════════════════════════════════════');
       var varKeyCode = event.keyCode
       var varKey = event.key
@@ -365,26 +399,37 @@ const orgEcossistema = function (props) {
     return Math.floor(Math.random() * 500 + 1)
   }
 
+
   return (
     <Div display="responsivo">
       <div>
-      <a id="btLinkIniciar" className="btCinza" onClick={() => {iniciarGame()}}>Iniciar Game</a>
-      <canvas id="canvasGame" width="600" height="600"></canvas>
+        <a id="btLinkIniciar" className="btCinza" onClick={() => {iniciarGame()}}>Iniciar Ecossistema</a>
+        <canvas id="canvasGame" width="600" height="600"></canvas>
       </div>
-      <div>
-        Controle do personagem AVATAR.
-        <a id="btLinkIniciar" className="btCinza" onClick={() => {moverPersonagem(1,"subir")}}>sobe</a>
-        <a id="btLinkIniciar" className="btCinza" onClick={() => {moverPersonagem(1,"<-")}}>esquerda</a>
-        <a id="btLinkIniciar" className="btCinza" onClick={() => {moverPersonagem(1,"->")}}>direita</a>
-        <a id="btLinkIniciar" className="btCinza" onClick={() => {moverPersonagem(1,"descer")}}>desce</a>   
+      <div id="Controles" className="Controles">
+        <Div display="vertical">
+          <h2>Controle do personagem AVATAR.</h2>
+          <a id="btLinkIniciar" className="btCinza" onClick={() => {moverPersonagem(1,"subir")}}>sobe</a>
+          <Div display="justificado">
+          <a id="btLinkIniciar" className="btCinza" onClick={() => {moverPersonagem(1,"<-")}}>esquerda</a>
+          <a id="btLinkIniciar" className="btCinza" onClick={() => {moverPersonagem(1,"->")}}>direita</a>
+          </Div>
+          <a id="btLinkIniciar" className="btCinza" onClick={() => {moverPersonagem(1,"descer")}}>desce</a>   
+        </Div>
       </div>
       <style jsx>{`
+        .Controles{
+          margin: 10px;
+          width: 100%;
+          display: none;
+        }
         .Godzilla {
           position: absolute;
         }
-        /*canvas {
-          border : solid 1px;
-        }*/
+        canvas {
+          display: none;
+          /*border : solid 1px;*/
+        }
         .btCinza {
             padding: 10px;
             transition: all 0.8s;
@@ -395,16 +440,15 @@ const orgEcossistema = function (props) {
             display: block;
             font-size: 1rem; /*16px*/
             text-align: center;
-
             text-decoration: none;
             border: solid 2px #4a516b;
             cursor: pointer;
             outline: 0;
-            margin: 0;
+            margin-bottom : 10px;
             box-sizing: border-box;
             font-style: normal;
             width: 100%;
-            max-width: 500px;
+            max-width: 600px;
           }
           .btCinza:hover {
             transition: all 0.8s;

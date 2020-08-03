@@ -35,10 +35,11 @@ const ecossistema = function (props) {
     <div>
       <MoHead modo={modo} title="Teste Game Ecossistema" description="Desenvolvimento de Game com JS - Ecossistema." canonical="/game/ecossistema/"/>
       <Layout regiao={regiao} modo={modo} titulo="Games" categoria="Games">
-          <h1>Teste Game Ecossistema</h1>
-          <p>Estudo de desenvolvimento de game.</p>
-          <p>carnivoros come erbivoro que come planta.</p>
+          <h1>Simulador de Ecossistema</h1>
           {retornaogame(modo,regiao)}
+          <p>Carnivoro come herbivoro.<br/> 
+            herbivoro come planta, foge de carnivoro e se reproduz.</p>
+          <p>Estudo de desenvolvimento de game apenas com JS e canvas.</p>
           <br/>
       </Layout>
     </div>

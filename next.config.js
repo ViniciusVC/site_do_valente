@@ -117,8 +117,10 @@ module.exports = {
         '/codigo/rubyonrails/': { page: '/routes/codigo/rubyonrails'},
         '/amp/codigo/rubyonrails/': { page: '/routes/amp/codigo/rubyonrails'},
         //======================================================================
+
         '/game/': { page: '/routes/game'}, 
         '/game/controleogodzilla/': { page: '/routes/game/controleogodzilla'},
+        
         //======================================================================
         '/hub/': { page: '/routes/hub'}, 
         '/hubbusca/': { page: '/routes/hub/busca'}, 

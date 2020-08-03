@@ -33,10 +33,10 @@ const tanque = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="Teste Game Tanque PhaserJS" description="Desenvolvimento de Game com PhaserJS - Tanque de Guerra." canonical="/game/tanque/"/>
+      <MoHead modo={modo} title="Game Tanque Teste PhaserJS" description="Desenvolvimento de Game com PhaserJS - Tanque de Guerra." canonical="/game/tanque/"/>
       <Layout regiao={regiao} modo={modo} titulo="Games" categoria="gGameame">
-          <h1>Teste Game Tanque PhaserJS</h1>
-          <p>Estudo de desenvolvimento de game com PhaserJS.</p>
+          <h1>Game Tanque (Teste PhaserJS)</h1>
+          <p>Estudo de desenvolvimento de game com a biblioteca PhaserJS.</p>
           {retornaogame(modo,regiao)}
           <br/>
       </Layout>

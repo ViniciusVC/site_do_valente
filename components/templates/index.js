@@ -30,7 +30,7 @@ const templateHome = function (props) {
             2 - Páginas AMP (Next + React + AMP)<br />
             4 - Gerador de captcha interno (Não funciona com balance).<br />
             Repositorio : https://github.com/ViniciusVC/site_do_valente</p>
-            <BtLink href={"/eu/?regiao="+regiao} value="Quem sou eu." estilo="cinza"/>
+            <BtLink href={"/eu/?regiao="+regiao} value="Quem sou eu." estilo="luz"/>
             <br />
         </Layout>
       <style jsx>{`
@@ -47,14 +47,5 @@ const templateHome = function (props) {
 
 export default templateHome
 
+//estilo="cinza"
 
-//<Head>
-//<title>Home SITE DO VALENTE</title>
-//<FavIcon />
-//<meta name="description" content="Bem vindo ao SITE DO VALENTE" />
-//<link rel="canonical" href="/" />
-//<link rel="canonical" href="https://www.oi.com.br/"/>
-//<link rel="amphtml" href="https://www.oi.com.br/amp/"/>
-//<script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
-//<script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
-//</Head>

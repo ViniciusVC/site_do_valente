@@ -1,18 +1,18 @@
 import React from 'react';
-import Templateredirect from '../../../../components/templates/codigo/html/redirect.js';
+import TemplateDivSpan from '../../../../components/templates/codigo/html/div_span.js';
 import * as Util from '../../../../controller/util.js';
 
 //import { withAmp } from 'next/amp';
 
-const Retaredirect = function(props){
+const RotaDivSpan = function(props){
   // var regiao = Util.validaProps(props.url.query.regiao,"SP")
   return(
-    <Templateredirect 
+    <TemplateDivSpan
       modo="html" 
       regiao={Util.validaProps(props.url.query.regiao,"RJ")} />
   )
 }
 
-//export default withAmp(Retaredirect, { hybrid: true });
-//export default withAmp(Retaredirect);
-export default Retaredirect
+//export default withAmp(RotaDivSpan, { hybrid: true });
+//export default withAmp(RotaDivSpan);
+export default RotaDivSpan

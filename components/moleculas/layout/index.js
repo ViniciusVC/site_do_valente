@@ -2,104 +2,76 @@ import React from 'react'
 import Div from '../../atoms/atDiv'
 
 import ListadeRotas from '../moListadeRotas/index.js'
+import Janela from '../moJanela/index.js'
 import HeaderSideDoValente from '../moHeaderSideDoValente/index.js'
 import * as Util from '../../../controller/util.js';
 
 const layout = props => {
-  console.log('Rodando /layout.js');
+  console.log('Rodando /layout.js Luz Verde');
   var regiao = Util.validaProps(props.regiao , "RJ");
   var modo = Util.validaProps(props.modo, "html");
   var titulo = Util.validaProps(props.titulo, "Home");
   var categoria = Util.validaProps(props.categoria, "Outros");
 
+  //Layout Luz verde
   return (
-    <div className="Body">
-      <div className="borda"></div>
+    <div className="CSSLayout">
       <Div display="justificado">
-        <div className="borda"></div>
-        <Div display="justificado">
-            
-            <div className="codigoIndexListadeRotas DivSombra esconder">
-              <ListadeRotas regiao={regiao} modo={modo} titulo={titulo} categoria={categoria}/>
-              <a>{"<"}</a>
-            </div>
-            <div className="borda esconder"></div>
-            
+          
+          <div className="layoutManu esconder">
+            <Janela estilo="luz">
+                <ListadeRotas regiao={regiao} modo={modo} titulo={titulo} categoria={categoria}/>
+            </Janela>
+          </div>
+
+          <div className="layoutBody">
             <Div display="vertical">
-              
-              <div className="DivSombra">
+              <Janela estilo="luz">
                 <HeaderSideDoValente regiao={regiao} modo={modo}/>
-              </div>
-
-              <div className="borda"></div>
-              
-              <div className="divCss DivSombra">
-                  {props.children}
-              </div>
-              
-              <div className="borda"></div>
-              
-              <div className="DivSombra">
+              </Janela>
+              <Janela estilo="luz">
+                <div className="conteudo">
+                {props.children}
+                </div>
+              </Janela>
+              <Janela estilo="luz">
                 <HeaderSideDoValente regiao={regiao} modo={modo}/>
-              </div>
-
-            </Div>      
-
-          </Div>
-
-        
-        <div className="borda"></div>
+              </Janela>
+            </Div>
+          </div>      
         
       </Div>
       <style jsx>{`
-      .atDivJustificado {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-      }
-      .Body{
+      .CSSLayout{
         color: #ffffff;
         width:100%;
         margin : 0px;
         padding : 0px;
+        padding-top : 10px;
       }
-      .borda{
-        width:25px;
-        height: 25px;
+      .layoutManu{
+        width: 25%;
+        padding-left:2%;
       }
-      .DivSombra{
-        width: 100%;
-        font-size: 17px;
-        font-family: sans-serif;
-        background-color: #282c45;
-        background-image: linear-gradient(45deg, #16192a, #282c45, #282c45 );
-        border-radius: 4px;
-        display: block;
-        /*border: solid 1px #000000;*/
-        padding: 10px;
-        box-sizing: border-box;
-        -webkit-box-shadow: -9px 9px 20px rgba(1, 1, 1, 0.57);
-        -moz-box-shadow: -9px 9px 20px rgba(1, 1, 1, 0.57);
-        box-shadow: -9px 9px 20px rgba(1, 1, 1, 0.57);        
+      .layoutBody{
+        width: 70%;
+        padding-right:2%;
       }
-
-      /* .menu { width:600px; } */
-      .codigoIndexListadeRotas{
-        width:25%;
-      }
-
-      .divCss{
-          width:100%;
-          padding-left:20px;
-        }
-
-      @media(max-width: 900px) {
-        .esconder{
+      @media(max-width: 1169px) {
+        .layoutManu{
           display : None;
         }
-
+        .layoutBody{
+          width: 96%;
+          padding-left:2%;
+        }
+        .conteudo{
+          width: 50%;
+        }
       }
-
+      @media(max-width: 1169px) {
+        
+      }
     `}</style>
       <style jsx global>{`
         ${Util.fontesCSS1()}
@@ -110,10 +82,10 @@ const layout = props => {
         body{
           margin: 0px;
           padding: 0px;
-          background-color: #353c4f;
-          color: #ffffff;
-          /*background-image: linear-gradient(45deg, #353c4f, #1e2434, #5d6683 );*/
-          font-family: SimplonBP-Regular, sans-serif;        
+          background-color: #002128;
+          background-image: url("/static/assetsv5/img/layout_luz/fundo04.jpg");
+          color: #10ecf5;
+          font-family: SimplonBP-Regular, sans-serif;       
         }
     `}</style>
     </div>
@@ -121,3 +93,51 @@ const layout = props => {
 }
 
 export default layout
+
+
+/*
+ <div className="borda"></div>
+      <Div display="justificado">
+        
+        <div className="borda"></div>
+
+        <Div display="justificado">
+          <div className="codigoIndexListadeRotas esconder">
+            <Janela estilo="luz">
+              Menu
+              <ListadeRotas regiao={regiao} modo={modo} titulo={titulo} categoria={categoria}/>
+            </Janela>
+          </div>
+          
+          <div className="borda esconder"></div>
+            
+            <Div display="vertical">
+              
+              <Janela estilo="luz">
+                Header
+                <HeaderSideDoValente regiao={regiao} modo={modo}/>
+              </Janela>
+
+              <div className="borda"></div>
+              
+  
+                <Janela estilo="luz">
+                  Body
+                  {props.children}
+                </Janela>
+  
+              
+              <div className="borda"></div>
+              
+              <Janela estilo="luz">
+                Foter
+                <HeaderSideDoValente regiao={regiao} modo={modo}/>
+              </Janela>
+
+            </Div>      
+
+          </Div>
+
+        
+        <div className="borda"></div>
+        */

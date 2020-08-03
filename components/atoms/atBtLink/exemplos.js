@@ -7,6 +7,18 @@ export const atBtLink = (modo) => {
     <div>
       <h2>BtLink</h2>
       <div>
+        Componente atBtLink itemLuzVerde (site_do_valente):
+        <BtLink href="https://www.facebook.com/" value="item Luz Verde" estilo="itemLuzVerde"/>
+        <p className="p">Codigo:{'<BtLink href="https://www.facebook.com/" value="item Luz Verde" estilo="itemLuzVerde"/>'}</p>
+      </div>
+      <div>
+        Componente atBtLink luz (site_do_valente):
+        <BtLink href="https://www.facebook.com/" value="Link luz" estilo="luz"/>
+        <p className="p">Codigo:{'<BtLink href="https://www.facebook.com/" value="Link luz" estilo="luz"/>'}</p>
+      </div>
+      
+      
+      <div>
         Componente atBtLink Purple (site_do_valente):
         <BtLink href="https://www.facebook.com/" value="Link cinza" estilo="cinza"/>
         <p className="p">Codigo:{'<BtLink href="https://www.facebook.com/" value="Link cinza" estilo="cinza"/>'}</p>

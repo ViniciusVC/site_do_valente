@@ -18,55 +18,58 @@ const moHeaderSideDoValente = function (props) {
   console.log('* Header do Valente | modo='+modo+ ' | regiao='+regiao);
 
   return (
-    <Div display="justificado">
-        <div className="logo">
+    <Div display="responsivo">
+        <div className="logo headerpc">
           <a href={StringModo+"/?regiao="+regiao} >
-            <Img src="/static/assetsv5/img/log_laranja1.png" width="50px" height="50px" alt="Logo Site Valente" title="Logo Site Valente" class="LogoSiteValente" modo={modo} />
+            <Img src="/static/assetsv5/img/logo_vvc.png" width="100px" height="100px" alt="Logo Site Valente" title="Logo Site Valente" class="LogoSiteValente" modo={modo} />
           </a>
         </div>
-        <div className='TitulodoSite'>
-          <span>Site do Valente</span>
+        <div className="TitulodoSite headerpc">
+          <span>VVC Estudio</span>
         </div>
-        <div className="esconder">
+        <div className="heaermob">
             <MenuMobile01 modo={modo}/>
-          </div>
+        </div>
         <div>
-            <MoRegiao modo={modo} regiao={regiao} />
+          <p></p>
+          <MoRegiao modo={modo} regiao={regiao} />
         </div>
       <style jsx>{`
       .logo{
         margin:0px;
         padding-top: 10px;
-        animation-duration: 1s;
+        /*animation-delay: 2s;*/
+        animation-duration: 3s;
         animation-name: slideinSombra;
       }
       @keyframes slideinSombra {
-        from {
-          padding-top: 0px;
+        0% {
+            opacity: 0.0;
         }
-        to {
-          padding-top: 10px;
+        50% {
+            opacity: 0.5;
+        }
+        100% {
+            opacity: 1.0;
         }
       }
       .TitulodoSite{
+        color: #10ecf5;
         padding-top: 15px;
-        font-size: 25px;
+        font-size: 20px;
         font-family: sans-serif;
         text-align: center;
         font-size: 60px;
       }
 
-      @media(min-width: 900px) {
-        .esconder{
+      @media(min-width: 1169px) {
+        .heaermob{
           display : None;
         }
       }
 
-      @media(max-width: 900px) {
-        .TitulodoSite {
-          display : None;
-        }
-        .logo{
+      @media(max-width: 1169px) {
+        .headerpc{
           display : None;
         }
       }

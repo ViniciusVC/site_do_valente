@@ -6,7 +6,7 @@ import * as Util from '../../../controller/util.js';
 import Icon from '../../atoms/atIcon/index.js'
 //import MenuMobileItens from '../moMenuMobileItens.js'
 import ListadeRotas from '../moListadeRotas/index.js'
-
+import Janela from '../moJanela/index.js'
 
 const MenuMobile01 = props => {
   var modo = Util.validaProps(props.modo,"html");
@@ -21,15 +21,18 @@ const MenuMobile01 = props => {
     return(
       <div>
         <div className="contMenuMobile" id="contMenuMobiles">
+
               <div id="lightboxMenu" className="lightboxMenu" >
                 <div className="close"  role="button" tabindex="0">
                   <a onClick={() => {fechalightboxMenu()}}>
                     <Icon type="close" color="#ffffff" />
                   </a>
                 </div>
-                <ListadeRotas/>
+                <Janela estilo="luz">
+                  <ListadeRotas/>
+                </Janela>
               </div>
-          </div>
+        </div>
         <div>
             <a onClick={() => {abrirlightboxMenu()}}>
               <Icon type="menu" color="#ffffff" width="25px"/>MENU
@@ -61,14 +64,14 @@ const MenuMobile01 = props => {
               margin : 10px;
               height: 100vh;
               width: 86vw;
-              border-radius: 8px;
+              /*border-radius: 8px;*/
            
-              box-shadow: rgba(0, 0, 0, 1.3) 0px 0px 15px;
-              background: white;
+              /*box-shadow: rgba(0, 0, 0, 1.3) 0px 0px 15px;
+              background: white;*/
               transition: all 0.3s ease 0s;
               overflow-y: scroll;
-              background-color: #ffffff;
-              background-image: linear-gradient(45deg, #16192a, #282c45, #282c45 );
+              /*background-color: #ffffff;
+              background-image: linear-gradient(45deg, #16192a, #282c45, #282c45 );*/
               padding: 10px;
             }
 
@@ -91,10 +94,12 @@ const MenuMobile01 = props => {
       <div>
           <amp-lightbox id="PopupMenu" layout="nodisplay">
             <div className="lightboxMenu" >
-              <span className="closeMenu" on="tap:PopupMenu.close" role="button" tabindex="0">
-                <Icon type="close" color="#ffffff" />
-              </span>
-              <ListadeRotas/>
+              <Janela estilo="luz">
+                <span className="closeMenu" on="tap:PopupMenu.close" role="button" tabindex="0">
+                  <Icon type="close" color="#ffffff" />
+                </span>
+                <ListadeRotas/>
+              </Janela>
             </div>
           </amp-lightbox>
           <div className="ampstart-btn caps m2" on="tap:PopupMenu" role="button" tabindex="0">
@@ -112,15 +117,15 @@ const MenuMobile01 = props => {
               
               height: 100vh;
               width: 86vw;
-              border-radius: 8px;
+              /*border-radius: 8px;
            
               box-shadow: rgba(0, 0, 0, 1.3) 0px 0px 15px;
-              background: white;
+              background: white;*/
               transition: all 0.3s ease 0s;
               overflow-y: scroll;
-              background-color: #ffffff;
+              /*background-color: #ffffff;
               background-image: linear-gradient(45deg, #16192a, #282c45, #282c45 );
-              padding: 10px;
+              padding: 10px;*/
              
             }
             .closeMenu {

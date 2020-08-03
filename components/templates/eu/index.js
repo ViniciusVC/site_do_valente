@@ -1,9 +1,10 @@
 import React from 'react'
-import Link from 'next/link'
+//import Link from 'next/link'
 import Img from '../../atoms/atImg'
 import BtLink from '../../atoms/atBtLink'
 import Layout from '../../moleculas/layout'
 import MoHead from '../../moleculas/moHead'
+import Janela from '../../moleculas/moJanela/index.js'
 import * as Util from '../../../controller/util.js';
 
 const templateHome = function (props) {
@@ -22,7 +23,7 @@ const templateHome = function (props) {
           com experiencia em configuração de CDN, Apache, AMP, SEO, NodeJS, PHP, Hadoop.<br/> 
           Atualmente liderando equipe de desenvolvimento de projeto de BigData.<br/> 
           Atuei como lider de equipe em projeto AMP com foco em melhoria do SEO.</p>
-          <BtLink href={"/eu/curriculo/?regiao="+regiao} value="Veja meu curriculo aqui." estilo="cinza"/>
+          <BtLink href={"/eu/curriculo/?regiao="+regiao} value="Veja meu curriculo aqui." estilo="luz"/>
           <br/>
         </Layout>
       <style jsx>{`

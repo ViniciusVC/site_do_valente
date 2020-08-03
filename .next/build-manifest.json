@@ -11,11 +11,11 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/routes/componentes/componentes": [
+    "/routes/eu/curriculo": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/routes/game/ecossistema": [
+    "/routes/game/cristalbot": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]

@@ -9,6 +9,7 @@ const handle = app.getRequestHandler()
 const multer = require('multer');
 
 //API do captcha Meus Documentos
+//var apiNoticias = require('./api1/noticias.js');
 var apicaptcha = require('./api1/captcha.js');
 var hubResposta = require('./api1/hubResposta.js');
 var sitemap = require('./sitemap.js');
@@ -75,15 +76,15 @@ app.prepare()
     
     server.get('/eu/', (req, res) => {app.render(req, res, '/routes/eu', req.query); }) 
     server.get('/amp/eu/', (req, res) => {app.render(req, res, '/routes/amp/eu', req.query); }) 
-     
     server.get('/eu/curriculo/', (req, res) => {app.render(req, res, '/routes/eu/curriculo', req.query); }) 
     server.get('/curriculo/', (req, res) => {app.render(req, res, '/routes/eu/curriculo', req.query); }) 
     server.get('/amp/curriculo/', (req, res) => {app.render(req, res, '/routes/amp/eu/curriculo', req.query); }) 
+    server.get('/amp/eu/curriculo/', (req, res) => {app.render(req, res, '/routes/amp/eu/curriculo', req.query); }) 
 
     //======================================================================
 
-    server.get('/codigo/', (req, res) => { app.render(req, res, '/routes/codigo/index', req.query);})
-    server.get('/amp/codigo/', (req, res) => { app.render(req, res, '/routes/amp/codigo/index', req.query);})
+    server.get('/codigo/', (req, res) => { app.render(req, res, '/routes/codigo', req.query);})
+    server.get('/amp/codigo/', (req, res) => { app.render(req, res, '/routes/amp/codigo', req.query);})
 
     server.get('/codigo/html5/', (req, res) => { app.render(req, res, '/routes/codigo/html', req.query);})
     server.get('/amp/codigo/html5/', (req, res) => { app.render(req, res, '/routes/amp/html', req.query);})
@@ -224,20 +225,38 @@ app.prepare()
     //======================================================================
 
     server.get('/utilitarios/', (req, res) => {app.render(req, res, '/routes/utilitarios', req.query);}) 
+    server.get('/amp/utilitarios/', (req, res) => {app.render(req, res, '/routes/amp/utilitarios', req.query);}) 
+
     server.get('/utilitarios/conversordetexto/', (req, res) => {app.render(req, res, '/routes/utilitarios/conversordetexto', req.query);})
+    server.get('/amp/utilitarios/conversordetexto/', (req, res) => {app.render(req, res, '/routes/amp/utilitarios/conversordetexto', req.query);})
+
     server.get('/utilitarios/conversordeunidade/', (req, res) => {app.render(req, res, '/routes/utilitarios/conversordeunidade', req.query);})
+    server.get('/amp/utilitarios/conversordeunidade/', (req, res) => {app.render(req, res, '/routes/amp/utilitarios/conversordeunidade', req.query);})
+
+    server.get('/utilitarios/conversorunicode/', (req, res) => {app.render(req, res, '/routes/utilitarios/conversordeunidade', req.query);})
+    server.get('/amp/utilitarios/conversorunicode/', (req, res) => {app.render(req, res, '/routes/amp/utilitarios/conversordeunidade', req.query);})
+
     server.get('/utilitarios/servicosgratuitos/', (req, res) => {app.render(req, res, '/routes/utilitarios/servicosgratuitos', req.query);})
-    
+    server.get('/amp/utilitarios/servicosgratuitos/', (req, res) => {app.render(req, res, '/routes/amp/utilitarios/servicosgratuitos', req.query);})
+
     //======================================================================
 
     server.get('/game/', (req, res) => {app.render(req, res, '/routes/game', req.query);}) 
     server.get('/amp/game/', (req, res) => {app.render(req, res, '/routes/amp/game', req.query);}) 
+
+    server.get('/game/cristalbot/', (req, res) => {app.render(req, res, '/routes/game/cristalbot', req.query);})
+    server.get('/amp/game/cristalbot/', (req, res) => {app.render(req, res, '/routes/amp/game/cristalbot', req.query);})
+    server.get('/cristalbot/', (req, res) => {app.render(req, res, '/routes/game/cristalbot', req.query);})
+    server.get('/amp/cristalbot/', (req, res) => {app.render(req, res, '/routes/amp/game/cristalbot', req.query);})
+
     server.get('/game/controleogodzilla/', (req, res) => {app.render(req, res, '/routes/game/controleogodzilla', req.query);})
     server.get('/amp/game/controleogodzilla/', (req, res) => {app.render(req, res, '/routes/amp/game/controleogodzilla', req.query);})
     server.get('/game/tanque/', (req, res) => {app.render(req, res, '/routes/game/tanque', req.query);})
     server.get('/amp/game/tanque/', (req, res) => {app.render(req, res, '/routes/amp/game/tanque', req.query);})
     server.get('/game/ecossistema/', (req, res) => {app.render(req, res, '/routes/game/ecossistema', req.query);})
     server.get('/amp/game/ecossistema/', (req, res) => {app.render(req, res, '/routes/amp/game/ecossistema', req.query);})
+    server.get('/game/cobrinha/', (req, res) => {app.render(req, res, '/routes/game/cobrinha', req.query);})
+    server.get('/amp/game/cobrinha/', (req, res) => {app.render(req, res, '/routes/amp/game/cobrinha', req.query);})
 
     
     //======================================================================
@@ -266,7 +285,11 @@ app.prepare()
 
     //======================================================================
 
+    // server.get('/api1/noticias/', apiNoticias.api);
+    // server.get('/noticias/api1/', apiNoticias.api);
+    // server.get('/api/noticias/', apiNoticias.api);
 
+    //======================================================================
     
     server.get('/sitemap.xml', sitemap.xml);
 
