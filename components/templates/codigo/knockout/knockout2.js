@@ -6,7 +6,7 @@ import * as Util from '../../../../controller/util.js';
 const Knockout = function (props) {
 
   console.log('╔════════════════════════════════╗');
-  console.log('║       codigo   Knockout  2     ║');
+  console.log('║     Tutorial   Knockout  2     ║');
   console.log('╚════════════════════════════════╝');
 
   var regiao = Util.validaProps(props.regiao , "RJ");
@@ -14,7 +14,7 @@ const Knockout = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="KnockoutJS" description="Codigo Knockout JS" canonical="/codigo/knockout/knockout2"/>
+      <MoHead modo={modo} title="KnockoutJS" description="Tutorial Knockout JS" canonical="/codigo/knockout/knockout2"/>
       <Layout regiao={regiao} modo={modo}>
           <h1>Knockout JS - 2</h1>
           <p>Knockout é uma implementação JavaScript independente do padrão Model-View-ViewModel com modelos.<br />

@@ -10,7 +10,7 @@ import * as Util from '../../../../controller/util.js';
 const apache = function (props) {
 
   console.log('╔══════════════════════════════╗');
-  console.log('║        codigo - Apache       ║');
+  console.log('║      Tutorial - Apache       ║');
   console.log('╚══════════════════════════════╝');
 
   var regiao = Util.validaProps(props.regiao , "RJ");
@@ -19,7 +19,7 @@ const apache = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="Apache" description="Código Apache" canonical="/codigo/apache/"/>
+      <MoHead modo={modo} title="Apache" description="O que é o Apache" canonical="/codigo/apache/"/>
       <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="Apache">
         <Div display="responsivo">
           <div className="coluna404">

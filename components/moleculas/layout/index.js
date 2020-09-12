@@ -4,6 +4,8 @@ import Div from '../../atoms/atDiv'
 import ListadeRotas from '../moListadeRotas/index.js'
 import Janela from '../moJanela/index.js'
 import HeaderSideDoValente from '../moHeaderSideDoValente/index.js'
+import FooterSideDoValente from '../mofooterSideDoValente/index.js'
+
 import * as Util from '../../../controller/util.js';
 
 const layout = props => {
@@ -35,7 +37,7 @@ const layout = props => {
                 </div>
               </Janela>
               <Janela estilo="luz">
-                <HeaderSideDoValente regiao={regiao} modo={modo}/>
+                <FooterSideDoValente regiao={regiao} modo={modo}/>
               </Janela>
             </Div>
           </div>      

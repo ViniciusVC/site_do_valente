@@ -8,7 +8,7 @@ import * as Util from '../../../../controller/util.js';
 const atendimentoOi = function (props) {
 
   console.log('╔════════════════════════════════════════╗');
-  console.log('║        codigo  - HTML                  ║');
+  console.log('║        Tutorial - HTML - Pagina        ║');
   console.log('╚════════════════════════════════════════╝');
 
   var regiao = Util.validaProps(props.regiao , "RJ");
@@ -16,9 +16,9 @@ const atendimentoOi = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="Estrutura da Página HTML5" description="Estrutura da Página HTML5" canonical="/codigo/html/pagina/"/>
+      <MoHead modo={modo} title="Estrutura da Página HTML" description="Tutorial Estrutura da Página HTML5" canonical="/codigo/html/pagina/"/>
       <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="html">
-      <h1>HTML Estrutura da Página HTML5</h1>
+      <h1>Estrutura da Página HTML5</h1>
         <p>Segue a estrutura de uma página HTML5.</p>        
         <DivNaveg>
 

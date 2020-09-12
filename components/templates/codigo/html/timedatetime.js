@@ -8,7 +8,7 @@ import * as Util from '../../../../controller/util.js';
 const atendimentoOi = function (props) {
 
   console.log('╔════════════════════════════════════════╗');
-  console.log('║    codigo - HTML - Time e Datetime     ║');
+  console.log('║    Tutorial - HTML - Time e Datetime     ║');
   console.log('╚════════════════════════════════════════╝');
 
   var regiao = Util.validaProps(props.regiao , "RJ");
@@ -16,7 +16,7 @@ const atendimentoOi = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="HTML Time e Datetime" description="Código HTML Time e Datetime" canonical="/codigo/html/"/>
+      <MoHead modo={modo} title="HTML Time e Datetime" description="Tutorial HTML Time e Datetime" canonical="/codigo/html/"/>
       <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="html">
       <h1>HTML Time e Datetime</h1>
       <p>

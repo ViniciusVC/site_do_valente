@@ -19,21 +19,27 @@ const moHeaderSideDoValente = function (props) {
 
   return (
     <Div display="responsivo">
+
         <div className="logo headerpc">
           <a href={StringModo+"/?regiao="+regiao} >
             <Img src="/static/assetsv5/img/logo_vvc.png" width="100px" height="100px" alt="Logo Site Valente" title="Logo Site Valente" class="LogoSiteValente" modo={modo} />
           </a>
         </div>
+
         <div className="TitulodoSite headerpc">
           <span>VVC Estudio</span>
         </div>
+
         <div className="heaermob">
             <MenuMobile01 modo={modo}/>
         </div>
+
         <div>
           <p></p>
           <MoRegiao modo={modo} regiao={regiao} />
+         
         </div>
+        
       <style jsx>{`
       .logo{
         margin:0px;

@@ -18,11 +18,11 @@ const codigoJava = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="Python" description="Código Python" canonical="/codigo/python/"/>
+      <MoHead modo={modo} title="Python" description="O que é Python" canonical="/codigo/python/"/>
       <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="Python">
         <Div display="responcivo">
           <div className="coluna404">
-            <h1>Python</h1>
+            <h1>O que é Python?</h1>
             <p>Python é uma linguagem de programação de alto nível, interpretada, de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte.<br/>
               Foi lançada por Guido van Rossum em 1991.<br/>
             </p>

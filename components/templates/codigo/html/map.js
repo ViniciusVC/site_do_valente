@@ -8,7 +8,7 @@ import * as Util from '../../../../controller/util.js';
 const atendimentoOi = function (props) {
 
   console.log('╔════════════════════════════════════════╗');
-  console.log('║        codigo  - HTML                  ║');
+  console.log('║        Tutorial - HTML                  ║');
   console.log('╚════════════════════════════════════════╝');
 
   var regiao = Util.validaProps(props.regiao , "RJ");
@@ -16,7 +16,7 @@ const atendimentoOi = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="codigo HTMl MAP" description="codigo" canonical="/codigo/html/map"/>
+      <MoHead modo={modo} title="codigo HTMl MAP" description="Tutorial de MAP no HTML." canonical="/codigo/html/map"/>
       <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="html">
         
       <h1>HTML MAP</h1>

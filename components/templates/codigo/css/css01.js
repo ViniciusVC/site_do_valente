@@ -7,9 +7,9 @@ import MoHead from '../../../moleculas/moHead'
 
 const atendimentoOi = function (props) {
 
-  console.log('╔════════════════════════════════════════╗');
-  console.log('║  codigo - css - Paragrafo, ID e Class  ║');
-  console.log('╚════════════════════════════════════════╝');
+  console.log('╔══════════════════════════════════════════╗');
+  console.log('║  Tutorial - css - Paragrafo, ID e Class  ║');
+  console.log('╚══════════════════════════════════════════╝');
 
   var regiao = Util.validaProps(props.regiao , "RJ");
   var modo = Util.validaProps(props.modo, "html");

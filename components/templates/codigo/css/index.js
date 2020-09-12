@@ -9,7 +9,7 @@ import * as Util from '../../../../controller/util.js';
 const codigoCSS = function (props) {
 
   console.log('╔════════════════════════════════════════╗');
-  console.log('║        codigo   - css                  ║');
+  console.log('║        Tutorial - css                  ║');
   console.log('╚════════════════════════════════════════╝');
 
   var regiao = Util.validaProps(props.regiao , "RJ");

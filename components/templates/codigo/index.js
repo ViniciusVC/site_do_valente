@@ -15,14 +15,14 @@ const codigo = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="codigo" description="codigo - Linguagens de programação" canonical="/codigo/"/>
+      <MoHead modo={modo} title="codigo" description="O que e Codigo ou Linguagens de programacao" canonical="/codigo/"/>
       <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="Codigo">
           <h1>Linguagens de programação</h1>
+          <p>O que é um CODIGO?</p>
           <p>Podem ser usadas para expressar algoritmos com precisão. <br/>
             O conjunto de palavras (lexemas classificados em tokens), compostos de acordo com essas regras, constituem o código fonte de um software. <br/>
             Esse código fonte é depois traduzido para código de máquina, que é executado pelo microprocessador.</p>
           <p>É um método padronizado, formado por um conjunto de regras sintáticas e semânticas, de implementação de um código fonte - que pode ser compilado e transformado em um programa de computador, ou usado como script interpretado - que informará instruções de processamento ao computador.</p>
-         
       </Layout>
       <style jsx>{`
         .h1{

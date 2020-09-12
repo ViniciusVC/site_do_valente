@@ -8,7 +8,7 @@ import * as Util from '../../../../controller/util.js';
 const atendimentoOi = function (props) {
 
   console.log('╔════════════════════════════════════════╗');
-  console.log('║        codigo  - HTML                  ║');
+  console.log('║        Tutorial - HTML                 ║');
   console.log('╚════════════════════════════════════════╝');
 
   var regiao = Util.validaProps(props.regiao , "RJ");
@@ -16,7 +16,7 @@ const atendimentoOi = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="HTML Script" description="HTML Script" canonical="/codigo/html/script/"/>
+      <MoHead modo={modo} title="HTML Script" description="Tutorial Script no HTML" canonical="/codigo/html/script/"/>
       <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="html">
       <h1>HTML Script</h1>
         <p>Segue exemplo de aplicação de script no html.</p>

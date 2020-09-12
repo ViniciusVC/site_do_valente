@@ -8,7 +8,7 @@ import * as Util from '../../../../controller/util.js';
 const atendimentoOi = function (props) {
 
   console.log('╔════════════════════════════════════════╗');
-  console.log('║     codigo - HTML - Formulário         ║');
+  console.log('║     Tutorial - HTML - Formulário         ║');
   console.log('╚════════════════════════════════════════╝');
 
   var regiao = Util.validaProps(props.regiao , "RJ");
@@ -16,7 +16,7 @@ const atendimentoOi = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="HTML Tabindex Accesskey" description="Código HTML Tabindex Accesskey" canonical="/codigo/html/tabindexaccesskey/"/>
+      <MoHead modo={modo} title="HTML Tabindex Accesskey" description="Tutorial HTML Tabindex Accesskey" canonical="/codigo/html/tabindexaccesskey/"/>
       <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="html">
         <h1>HTML Tabindex Accesskey</h1>
         <p>

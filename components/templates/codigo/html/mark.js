@@ -8,7 +8,7 @@ import * as Util from '../../../../controller/util.js';
 const atendimentoOi = function (props) {
 
   console.log('╔════════════════════════════════════════╗');
-  console.log('║     codigo - HTML - Formulário         ║');
+  console.log('║     Tutorial - HTML - Formulário         ║');
   console.log('╚════════════════════════════════════════╝');
 
   var regiao = Util.validaProps(props.regiao , "RJ");
@@ -16,7 +16,7 @@ const atendimentoOi = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="HTML formulario_mark" description="codigo HTML formulario_mark" canonical="/codigo/html/formulario_mark/"/>
+      <MoHead modo={modo} title="HTML formulario_mark" description="Tutorial de formulario_mark em HTML" canonical="/codigo/html/formulario_mark/"/>
       <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="html">
         <h1>HTML MARK</h1>
         <p>

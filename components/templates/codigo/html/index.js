@@ -9,7 +9,7 @@ import ListadeRotasHTML from '../../../moleculas/moListadeRotas/listaHTML.js'
 const html = function (props) {
 
   console.log('╔════════════════════════════════════════╗');
-  console.log('║        codigo  - HTML                  ║');
+  console.log('║        Tutorial  - HTML                ║');
   console.log('╚════════════════════════════════════════╝');
 
   var regiao = Util.validaProps(props.regiao , "RJ");
@@ -21,7 +21,7 @@ const html = function (props) {
       <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="html">
         <Div display="responsivo">
           <div className="coluna404">
-            <h1>HTML 5</h1>
+            <h1>O que é HTML 5</h1>
             <p>Linguagens de programação podem ser usadas para expressar algoritmos com precisão. <br/>
               O conjunto de palavras (lexemas classificados em tokens), compostos de acordo com essas regras, constituem o código fonte de um software.<br/> 
               Esse código fonte é depois traduzido para código de máquina, que é executado pelo microprocessador.</p>

@@ -10,7 +10,7 @@ import * as Util from '../../../../controller/util.js';
 const codigoJava = function (props) {
 
   console.log('╔═══════════════════════════╗');
-  console.log('║        codigo  Java       ║');
+  console.log('║  Tutorial - O que é Java  ║');
   console.log('╚═══════════════════════════╝');
 
   var regiao = Util.validaProps(props.regiao , "RJ");
@@ -18,11 +18,11 @@ const codigoJava = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="Java" description="Código Java" canonical="/codigo/java/"/>
+      <MoHead modo={modo} title="Java" description="O que é Java." canonical="/codigo/java/"/>
       <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="Java">
         <Div display="responcivo">
           <div className="coluna404">
-            <h1>Java</h1>
+            <h1>O que é Java?</h1>
             <p>Java é uma linguagem de programação orientada a objetos desenvolvida na década de 90 por uma equipe de programadores chefiada por James Gosling, na empresa Sun Microsystems.<br/>
               A linguagem de programação Java é a linguagem convencional da Plataforma Java, mas não é a sua única linguagem.<br/>
             </p>

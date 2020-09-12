@@ -14,8 +14,8 @@ const moHead = props => {
     return (
       <Head>
       <title>{title}</title>
-      <FavIcon />
-      <meta name="description" content={title} />
+      <FavIcon href={props.href}/>
+      <meta name="description" content={description} />
       <link rel="canonical" href={canonical} />
       <link rel="amphtml" href={amphtml} />
       </Head>
@@ -24,7 +24,7 @@ const moHead = props => {
     return (
       <Head>
       <title>{title}</title>
-      <FavIcon />
+      <FavIcon href={props.icohref}/>
       <meta name="description" content={description} />
       <link rel="canonical" href={canonical} />
       <link rel="amphtml" href={amphtml} />

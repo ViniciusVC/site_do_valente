@@ -8,7 +8,7 @@ import * as Util from '../../../../controller/util.js';
 const atendimentoOi = function (props) {
 
   console.log('╔════════════════════════════════╗');
-  console.log('║       codigo  ColdFusion       ║');
+  console.log('║     Tutorial - ColdFusion      ║');
   console.log('╚════════════════════════════════╝');
 
   var regiao = Util.validaProps(props.regiao , "RJ");
@@ -16,11 +16,11 @@ const atendimentoOi = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="ColdFusion" description="Código ColdFusion" canonical="/codigo/coldfusion/"/>
+      <MoHead modo={modo} title="ColdFusion" description="O que é ColdFusion." canonical="/codigo/coldfusion/"/>
       <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="ColdFusion">
         <Div display="responsivo">
           <div className="coluna404">
-            <h1>ColdFusion</h1>
+            <h1>O que é ColdFusion?</h1>
             <p>
               ColdFusion é uma plataforma de desenvolvimento Web proprietária da Adobe Systems.<br/>
               O ColdFusion utiliza da linguagem CFML para o desenvolvimento de aplicações e páginas dinâmicas.<br/>

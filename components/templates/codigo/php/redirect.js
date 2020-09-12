@@ -8,7 +8,7 @@ import * as Util from '../../../../controller/util.js';
 const atendimentoOi = function (props) {
 
   console.log('╔════════════════════════════════╗');
-  console.log('║     odigo - PHP - redirect     ║');
+  console.log('║   Tutorial - PHP - redirect    ║');
   console.log('╚════════════════════════════════╝');
 
   var regiao = Util.validaProps(props.regiao , "RJ");
@@ -17,7 +17,7 @@ const atendimentoOi = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="Redirect PHP" description="Codigo REDIRECIONAMENTOS NO PHP" canonical="/codigo/"/>
+      <MoHead modo={modo} title="Redirect PHP" description="Tutorial REDIRECIONAMENTOS NO PHP" canonical="/codigo/"/>
       <Layout regiao={regiao} modo={modo}>
           <h1>CRIANDO REDIRECIONAMENTOS NO PHP</h1>
           <p>Para criar um REDIRECT 301 no PHP use o código a seguir:</p>

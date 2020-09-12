@@ -8,7 +8,7 @@ import * as Util from '../../../../controller/util.js';
 const atendimentoOi = function (props) {
 
   console.log('╔════════════════════════════════════╗');
-  console.log('║    codigo  - HTML - div e span     ║');
+  console.log('║    Tutorial  - HTML - div e span     ║');
   console.log('╚════════════════════════════════════╝');
 
   var regiao = Util.validaProps(props.regiao , "RJ");
@@ -16,7 +16,7 @@ const atendimentoOi = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="HTML - DIV e SPAN" description="Código - HTML - DIV e SPAN" canonical="/codigo/html/div_span/"/>
+      <MoHead modo={modo} title="HTML - DIV e SPAN" description="Tutorial - HTML - DIV e SPAN" canonical="/codigo/html/div_span/"/>
       <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="html">
         <h1>HTML - DIV e SPAN</h1>
         <p>

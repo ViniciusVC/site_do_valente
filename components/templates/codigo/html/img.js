@@ -9,7 +9,7 @@ import * as Util from '../../../../controller/util.js';
 const TemplateIMG = function (props) {
 
   console.log('╔═══════════════════════════╗');
-  console.log('║  codigo  - HTML - IMG     ║');
+  console.log('║  Tutorial  - HTML - IMG     ║');
   console.log('╚═══════════════════════════╝');
 
   var regiao = Util.validaProps(props.regiao , "RJ");
@@ -17,7 +17,7 @@ const TemplateIMG = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="HTML Figure e Legenda" description="HTML Figure e Legenda" canonical="/codigo/html/img_figcaption//"/>
+      <MoHead modo={modo} title="HTML Figure e Legenda" description="Tutorial HTML Figure e Legenda" canonical="/codigo/html/img_figcaption//"/>
       <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="html">
       <h1>HTML Figura</h1>
       <p>

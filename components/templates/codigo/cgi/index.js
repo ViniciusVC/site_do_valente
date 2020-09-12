@@ -8,7 +8,7 @@ import * as Util from '../../../../controller/util.js';
 const codigoAsp = function (props) {
 
   console.log('╔═══════════════════════════╗');
-  console.log('║        codigo  CGI        ║');
+  console.log('║      Tutorial  CGI        ║');
   console.log('╚═══════════════════════════╝');
 
   var regiao = Util.validaProps(props.regiao , "RJ");
@@ -19,7 +19,7 @@ const codigoAsp = function (props) {
       <Head>
         <title>CGI PERL</title>
         <FaviIcon />
-        <meta name="description" content="CGI PERL" />
+        <meta name="description" content="O que é CGI PERL" />
         <link rel="canonical" href="/codigo/cgi/" />
         <link rel="amphtml" href="/amp/codigo/cgi/" />
         <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>

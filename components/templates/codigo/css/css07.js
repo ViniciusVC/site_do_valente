@@ -8,7 +8,7 @@ import MoHead from '../../../moleculas/moHead';
 const atendimentoOi = function (props) {
 
   console.log('╔═════════════════════════════════════════╗');
-  console.log('║ codigo - css 7 - Posição bordas z-index ║');
+  console.log('║ Tutorial - css 7 - Posição bordas z-index ║');
   console.log('╚═════════════════════════════════════════╝');
 
   var regiao = Util.validaProps(props.regiao , "RJ");

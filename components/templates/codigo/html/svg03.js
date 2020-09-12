@@ -8,7 +8,7 @@ import * as Util from '../../../../controller/util.js';
 const templatesvg = function (props) {
 
   console.log('╔════════════════════════════════════════╗');
-  console.log('║     codigo - HTML - SVG 03        ║');
+  console.log('║       Tutorial - HTML - SVG 03         ║');
   console.log('╚════════════════════════════════════════╝');
 
   var regiao = Util.validaProps(props.regiao , "RJ");
@@ -16,7 +16,7 @@ const templatesvg = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="HTML formulario_mark" description="codigo HTML formulario_mark" canonical="/codigo/html/formulario_mark/"/>
+      <MoHead modo={modo} title="HTML formulario_mark" description="Tutorial HTML formulario_mark" canonical="/codigo/html/formulario_mark/"/>
       <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="SVG">
         <h1>SVG Line, Polygon e Polyline</h1>
         <p>

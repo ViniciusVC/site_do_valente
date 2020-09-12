@@ -11,7 +11,7 @@ import * as Util from '../../../../controller/util.js';
 const codigoAsp = function (props) {
 
   console.log('╔═══════════════════════════╗');
-  console.log('║        codigo  ASP        ║');
+  console.log('║       Tutorial - ASP      ║');
   console.log('╚═══════════════════════════╝');
 
   var regiao = Util.validaProps(props.regiao , "RJ");
@@ -19,10 +19,10 @@ const codigoAsp = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="ASP" description="Código ASP" canonical="/codigo/asp/"/>
+      <MoHead modo={modo} title="ASP" description="Tutorial ASP" canonical="/codigo/asp/"/>
       <Layout regiao={regiao} modo={modo}>
       <Div display="responsivo">
-          <div className="coluna404">
+          <div>
           <h1>ASP</h1>
           <p>O ASP, também conhecido como ASP Clássico hoje em dia, é uma estrutura de bibliotecas básicas para processamento de linguagens de script no lado servidor para geração de conteúdo dinâmico na Web.</p>         </div>
           <div>

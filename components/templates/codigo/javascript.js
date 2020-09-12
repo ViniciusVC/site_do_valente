@@ -18,12 +18,13 @@ const atendimentoOi = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="JavaScript" description="Código JavaScript" canonical="/codigo/javascript/"/>
+      <MoHead modo={modo} title="JavaScript" description="O que é JavaScript" canonical="/codigo/javascript/"/>
       <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="JavaScript">
         <Div display="responcivo">
           <div className="coluna404">
             <h1>JavaScript</h1>
-            <p>JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multi-paradigma. Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web.</p>   
+            <p>O que é JavaScript?</p>
+            <p>JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multi-paradigma. Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web.</p>
           </div>
           <div>
               <Img 

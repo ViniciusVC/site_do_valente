@@ -8,7 +8,7 @@ import * as Util from '../../../../controller/util.js';
 const atendimentoOi = function (props) {
 
   console.log('╔════════════════════════════════════════╗');
-  console.log('║     codigo - HTML - Formulário         ║');
+  console.log('║     Tutorial - HTML - Formulário         ║');
   console.log('╚════════════════════════════════════════╝');
 
   var regiao = Util.validaProps(props.regiao , "RJ");
@@ -16,7 +16,7 @@ const atendimentoOi = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="HTML Formario Legenda" description="HTML Formario Legenda" canonical="/codigo/html/formulario_Legenda/"/>
+      <MoHead modo={modo} title="HTML Formario Legenda" description="Tutorial HTML Formario Legenda" canonical="/codigo/html/formulario_Legenda/"/>
       <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="html">
       <h1>HTML Formário com Legenda</h1>
           Tag {'<legend>Aqui dentro entra o texto da legenda</legend>'}.<br/>

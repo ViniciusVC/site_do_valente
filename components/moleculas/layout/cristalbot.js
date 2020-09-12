@@ -3,7 +3,7 @@ import Div from '../../atoms/atDiv'
 
 import ListadeRotas from '../moListadeRotas/index.js'
 import Janela from '../moJanela/index.js'
-import HeaderSideDoValente from '../moHeaderSideDoValente/index.js'
+import FooterSideDoValente from '../mofooterSideDoValente/index.js'
 import * as Util from '../../../controller/util.js';
 
 const layoutCristalBot = props => {
@@ -32,7 +32,7 @@ const layoutCristalBot = props => {
                 </div>
               </div>
               <Janela estilo="luz">
-                <HeaderSideDoValente regiao={regiao} modo={modo}/>
+                <FooterSideDoValente regiao={regiao} modo={modo}/>
               </Janela>
             </Div>
           </div>      

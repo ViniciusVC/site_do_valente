@@ -8,7 +8,7 @@ import * as Util from '../../../../controller/util.js';
 const atendimentoOi = function (props) {
 
   console.log('╔════════════════════════════════╗');
-  console.log('║     codigo - HTML - Tabela     ║');
+  console.log('║     Tutorial - HTML - Tabela     ║');
   console.log('╚════════════════════════════════╝');
   const regiao = Util.validaProps(props.regiao , "RJ");
   const modo = Util.validaProps(props.modo, "html");
@@ -16,7 +16,7 @@ const atendimentoOi = function (props) {
   
   return (
     <div>
-      <MoHead modo={modo} title="HTML Table" description="Código HTML Table" canonical="/codigo/html/tabela"/>
+      <MoHead modo={modo} title="HTML Table" description="Tutorial HTML Table" canonical="/codigo/html/tabela"/>
       <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="html">
        <h1>HTML - Tabelas</h1>
        <p>

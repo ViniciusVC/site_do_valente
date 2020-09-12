@@ -18,7 +18,7 @@ function funIframe(varmodo){
 const htmliframe = function (props) {
 
   console.log('╔════════════════════════════════════════╗');
-  console.log('║        codigo  - HTML - iframe         ║');
+  console.log('║        Tutorial  - HTML - iframe         ║');
   console.log('╚════════════════════════════════════════╝');
 
   var regiao = Util.validaProps(props.regiao , "RJ");
@@ -26,7 +26,7 @@ const htmliframe = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="codigo HTML" description="codigo HTML" canonical="/codigo/html/"/>
+      <MoHead modo={modo} title="HTML iframe" description="Tutorial HTML Iframe" canonical="/codigo/html/"/>
       <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="html">
         <h1>Iframe</h1>
         <p>

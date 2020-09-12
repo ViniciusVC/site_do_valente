@@ -4,7 +4,7 @@ import Details from '../../atoms/atDetails'
 import BtLink from '../../atoms/atBtLink'
 import ListadeRotasHTML from './listaHTML.js'
 import * as Util from "../../../controller/util.js";
-import Li from './itemMenu.js';
+//import Li from './itemMenu.js';
 
 //consdive.log('Instanciando templates/index.js');
 const ListadeRotas = function (props) {
@@ -32,7 +32,7 @@ const ListadeRotas = function (props) {
 
         <Details open={titulo=="Codigo"}>
         
-          <summary><BtLink href="" value="Código >" estilo="luz"/></summary>
+          <summary><BtLink href="" value="Tutoriais >" estilo="luz"/></summary>
           <div className="subitens">
           <BtLink href={StringModo+"/codigo/?regiao="+regiao} value="Código intro" estilo="itemLuzVerde"/>
 

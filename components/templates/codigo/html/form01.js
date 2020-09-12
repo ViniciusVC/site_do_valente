@@ -8,7 +8,7 @@ import * as Util from '../../../../controller/util.js';
 const atendimentoOi = function (props) {
 
   console.log('╔════════════════════════════════════════╗');
-  console.log('║     codigo - HTML - Formulário         ║');
+  console.log('║     Tutorial - HTML - Formulário         ║');
   console.log('╚════════════════════════════════════════╝');
 
   var regiao = Util.validaProps(props.regiao , "RJ");
@@ -16,7 +16,7 @@ const atendimentoOi = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="HTML Formulario" description="HTML Formulario" canonical="/codigo/html/formulario/"/>
+      <MoHead modo={modo} title="HTML Formulario" description="Tutorial HTML Formulario" canonical="/codigo/html/formulario/"/>
       <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="html"> 
         <h1>HTML Formulário</h1>
         Segue um exemplo de um formário simples.<br/>

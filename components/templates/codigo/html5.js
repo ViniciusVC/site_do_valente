@@ -19,7 +19,7 @@ const codhtml5 = function (props) {
       <MoHead modo={modo} title="HTML5" description="Código HTML5" canonical="/codigo/html5/"/>
       <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="html">
         <Div display="justificado">
-          <div className="coluna404">
+          <div>
             <h1>HTML5</h1>
             <p>Linguagens de programação podem ser usadas para expressar algoritmos com precisão. O conjunto de palavras (lexemas classificados em tokens), compostos de acordo com essas regras, constituem o código fonte de um software. Esse código fonte é depois traduzido para código de máquina, que é executado pelo microprocessador.</p>
           </div>

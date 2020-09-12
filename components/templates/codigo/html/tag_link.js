@@ -8,7 +8,7 @@ import * as Util from '../../../../controller/util.js';
 const atendimentoOi = function (props) {
 
   console.log('╔════════════════════════════════════════╗');
-  console.log('║        codigo  - HTML - Tag link       ║');
+  console.log('║        Tutorial  - HTML - Tag link       ║');
   console.log('╚════════════════════════════════════════╝');
 
   var regiao = Util.validaProps(props.regiao , "RJ");
@@ -16,7 +16,7 @@ const atendimentoOi = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="HTML MetaTag link" description="codigo HTML MetaTag link" canonical="/codigo/html/tag_link/"/>
+      <MoHead modo={modo} title="HTML MetaTag link" description="Tutorial HTML MetaTag link" canonical="/codigo/html/tag_link/"/>
       <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="html">
       <h1>HTML Tag link</h1>
         <p>A tag LINK é uma META TAG.</p>        

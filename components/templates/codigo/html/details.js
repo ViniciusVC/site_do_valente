@@ -8,7 +8,7 @@ import * as Util from '../../../../controller/util.js';
 const atendimentoOi = function (props) {
 
   console.log('╔════════════════════════════════════════╗');
-  console.log('║     codigo  - HTML - TAG DETAILS       ║');
+  console.log('║     Tutorial  - HTML - TAG DETAILS       ║');
   console.log('╚════════════════════════════════════════╝');
 
   var regiao = Util.validaProps(props.regiao , "RJ");
@@ -16,7 +16,7 @@ const atendimentoOi = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="Codigo HTML TAG DETAILS" description="Codigo HTML TAG DETAILS" canonical="/codigo/html/detalhes/"/>
+      <MoHead modo={modo} title="Tutorial HTML TAG DETAILS" description="Tutorial HTML TAG DETAILS" canonical="/codigo/html/detalhes/"/>
       <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="html">
         <h1>HTML - TAG DETAILS</h1>
         <p>O elemento HTML details (details) é usado como uma ferramenta de onde o usuário irá obter informações adicionais.</p>

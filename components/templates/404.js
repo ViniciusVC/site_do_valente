@@ -5,6 +5,7 @@ import Icon from '../atoms/atIcon/index.js'
 import Div from '../atoms/atDiv/index.js'
 import Layout from '../moleculas/layout'
 import MoHead from '../moleculas/moHead'
+import BtLink from '../atoms/atBtLink'
 import * as Util from '../../controller/util.js';
 
 //import Head from 'next/head'
@@ -20,20 +21,25 @@ const templateHome = function (props) {
     <div>
       <MoHead modo={modo} title="Página não encontrada" description="Página não encontrada" canonical="/404/"/>
       <Layout regiao={regiao} modo={modo} titulo="Erro" categoria="Erro">
-        <Div display="justificado">
+        <Div display="responsivo">
           <div className="coluna404">
-            
             <h1 className='title'>Ih, essa página não foi encontrada</h1>
-            
             <p>
               Talvez o endereço digitado esteja incorreto ou você tenha
               clicado em uma página que não existe.
             </p>
-            <p>
-              Você pode ver as opções do menu acima ou continuar
-              a navegação pela página inicial.
-            </p><br/>
-            <Icon type="inputAlert" color="#ffffff" width="30px"/>
+            <Div display="justificado">
+              <div>
+                <Icon type="inputAlert" color="#ffffff" width="30px"/>
+              </div>
+              <div>
+                <p>
+                Você pode ver as opções do menu ao lado ou continuar
+                a navegação pela página inicial.
+                </p>
+              </div>
+            </Div>
+            <BtLink href={"/?regiao="+regiao} value="Página inicial." estilo="luz"/>
           </div>
           <div>
               <Img 

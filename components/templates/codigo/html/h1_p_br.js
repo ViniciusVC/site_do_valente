@@ -8,7 +8,7 @@ import * as Util from '../../../../controller/util.js';
 const atendimentoOi = function (props) {
 
   console.log('╔════════════════════════════════════════╗');
-  console.log('║    codigo - HTML - H1 H2 H3 P e BR     ║');
+  console.log('║    Tutorial - HTML - H1 H2 H3 P e BR     ║');
   console.log('╚════════════════════════════════════════╝');
 
   var regiao = Util.validaProps(props.regiao , "RJ");

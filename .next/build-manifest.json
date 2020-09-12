@@ -1,23 +1,780 @@
 {
-  "devFiles": [
-    "static/development/dll/dll_d71c1af1605d81df73ef.js"
-  ],
+  "devFiles": [],
   "pages": {
+    "/": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
     "/_app": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
     ],
     "/_error": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/index": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/amp": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/amp/codigo": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/amp/codigo/apache": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/amp/codigo/apache/alias": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/amp/codigo/apache/instalubuntu": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/amp/codigo/apache/redirect": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/amp/codigo/asp": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/amp/codigo/asp/redirect": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/amp/codigo/cgi": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/amp/codigo/cgi/redirect": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/amp/codigo/coldfusion": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/amp/codigo/coldfusion/redirect": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/amp/codigo/css": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/amp/codigo/css/anima_but": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/amp/codigo/css/css02": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/amp/codigo/css/css03": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/amp/codigo/css/css04": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/amp/codigo/css/css05": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/amp/codigo/css/css06": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/amp/codigo/css/css07": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/amp/codigo/css/css08": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/amp/codigo/css/css09": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/amp/codigo/css/css10": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/amp/codigo/css/css11": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/amp/codigo/css/css12": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/amp/codigo/css/css13": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/amp/codigo/html5": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/amp/codigo/java": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/amp/codigo/java/redirect": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/amp/codigo/knockout": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/amp/codigo/knockout/knockout_ex_01": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/amp/codigo/knockout/knockout_ex_02": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/amp/codigo/knockout/knockout_ex_03": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/amp/codigo/knockout/knockout_ex_04": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/amp/codigo/knockout/knockout_ex_05": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/amp/codigo/python": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/amp/componentes/componentes": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/amp/eu": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/amp/eu/curriculo": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/amp/game": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/amp/game/cobrinha": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/amp/game/controleogodzilla": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/amp/game/cristalbot": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/amp/game/ecossistema": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/amp/game/tanque": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/amp/utilitarios": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/amp/utilitarios/conversordetexto": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/amp/utilitarios/conversordeunidade": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/amp/utilitarios/servicosgratuitos": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/apache": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/apache/alias": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/apache/instalubuntu": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/apache/redirect": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/asp": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/asp/redirect": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/cgi": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/cgi/redirect": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/coldfusion": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/coldfusion/redirect": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/css": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/css/anima_but": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/css/css02": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/css/css03": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/css/css04": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/css/css05": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/css/css06": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/css/css07": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/css/css08": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/css/css09": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/css/css10": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/css/css11": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/css/css12": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/css/css13": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/html": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/html/canvas": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/html/comentario": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/html/details": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/html/div_span": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/html/div_span_codigo": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/html/form01": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/html/form02": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/html/form03": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/html/form04": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/html/form05": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/html/form06": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/html/form07": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/html/form08": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/html/form09": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/html/form10": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/html/form11": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/html/h1_p_br": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/html/hgroup": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/html/iframe": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/html/img": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/html/img_figcaption": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/html/links": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/html/lista01": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/html/lista02": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/html/lista03": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/html/lista04": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/html/lista05": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/html/lista06": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/html/map": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/html/mark": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/html/meta": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/html/meterprogress": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/html/pagina": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/html/script": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/html/semantica": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/html/svg01": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/html/svg02": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/html/svg03": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/html/tabela": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/html/tabindexaccesskey": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/html/tag_link": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/html/timedatetime": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/html5": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/java": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/java/redirect": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/javascript": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/javascript/javascript": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/knockout": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/knockout/knockout_ex_01": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/knockout/knockout_ex_02": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/knockout/knockout_ex_03": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/knockout/knockout_ex_04": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/knockout/knockout_ex_05": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/knockout/knockout_ex_06": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/php": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/php/procuraarquivo": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/php/procuradiretorio": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/php/redirect": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/python": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/rubyonrails": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/codigo/rubyonrails/redirect": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/componentes/componentes": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/eu": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
     ],
     "/routes/eu/curriculo": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/game": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/game/cobrinha": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/game/controleogodzilla": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
     ],
     "/routes/game/cristalbot": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/game/ecossistema": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/game/tanque": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/hub": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/hub/busca": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/utilitarios": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/utilitarios/conversordetexto": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/utilitarios/conversordeunidade": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
+    ],
+    "/routes/utilitarios/servicosgratuitos": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.b633397dbd09eccda873.js",
+      "static/runtime/main-3ca982412cf0bdd08859.js"
     ]
   }
 }

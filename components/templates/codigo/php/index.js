@@ -8,7 +8,7 @@ import * as Util from '../../../../controller/util.js';
 const atendimentoOi = function (props) {
 
   console.log('╔═══════════════════════════╗');
-  console.log('║        codigo - PHP       ║');
+  console.log('║      Tutorial - PHP       ║');
   console.log('╚═══════════════════════════╝');
 
   var regiao = Util.validaProps(props.regiao , "RJ");
@@ -17,11 +17,11 @@ const atendimentoOi = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="PHP" description="Código PHP" canonical="/codigo/PHP/"/>
+      <MoHead modo={modo} title="PHP" description="Tutorial PHP" canonical="/codigo/PHP/"/>
       <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="PHP">
         <Div display="justificado">
           <div className="coluna404">
-            <h1>PHP</h1>
+            <h1>O que é PHP?</h1>
             <p>
               PHP é uma linguagem de programação.
               Usada originalmente apenas para o desenvolvimento de aplicações presentes e atuantes no lado do servidor, capazes de gerar conteúdo dinâmico na Internet.<br/>

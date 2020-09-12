@@ -7,7 +7,7 @@ import MoHead from '../../../moleculas/moHead'
 const animaBut = function (props) {
 
   console.log('╔════════════════════════════════════════╗');
-  console.log('║      codigo - css - anima_but          ║');
+  console.log('║      Tutorial - css - anima_but        ║');
   console.log('╚════════════════════════════════════════╝');
 
   const regiao = Util.validaProps(props.regiao , "RJ");

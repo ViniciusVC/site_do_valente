@@ -22,7 +22,7 @@ import * as Util from '../../../../controller/util.js';
 const atendimentoOi = function (props) {
 
   console.log('╔════════════════════════════════════════╗');
-  console.log('║    codigo   - css -  Tabelas Style     ║');
+  console.log('║    Tutorial  - css -  Tabelas Style    ║');
   console.log('╚════════════════════════════════════════╝');
 
   const regiao = Util.validaProps(props.regiao , "RJ");
