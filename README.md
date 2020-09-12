@@ -85,10 +85,9 @@ npm run export
 Commit dos arquivos locais
 Não esqueça de acessar o diretório da sua aplicação: "cd vvcestudio-com-br"
 
-git init
 git add .
 git commit -m "publish website"
-Copy
+
 
 Publicar arquivos na Umbler
 git remote add umbler https://kamino.deploy.umbler.com/jg28zggk/vvcestudio-com-br.git
