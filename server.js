@@ -63,7 +63,7 @@ console.log('\x1b[33m Carregou as dependencias \u001b[34m');
 app.prepare()
 .then(() => {
     const server = express()
-    const porta = 8000;
+    const porta = 3000; //8000
     const upload = multer();
     // Rotas do projeto
 
