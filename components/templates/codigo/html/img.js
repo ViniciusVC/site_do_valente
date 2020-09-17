@@ -18,7 +18,7 @@ const TemplateIMG = function (props) {
   return (
     <div>
       <MoHead modo={modo} title="HTML Figure e Legenda" description="Tutorial HTML Figure e Legenda" canonical="/codigo/html/img_figcaption//"/>
-      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="html">
+      <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="html">
       <h1>HTML Figura</h1>
       <p>
         A tag img define uma imagem em uma página HTML.<br/>

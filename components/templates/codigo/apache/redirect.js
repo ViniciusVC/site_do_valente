@@ -8,7 +8,7 @@ import * as Util from '../../../../controller/util.js';
 const apacheRedirect = function (props) {
 
   console.log('╔════════════════════════════════╗');
-  console.log('║   codigo - Apache - redirect   ║');
+  console.log('║   Tutoriais - Apache - redirect   ║');
   console.log('╚════════════════════════════════╝');
 
   const regiao = Util.validaProps(props.regiao , "RJ");
@@ -18,7 +18,7 @@ const apacheRedirect = function (props) {
   return (
     <div>
       <MoHead modo={modo} title="Apache Redirect" description="Código Apache Redirect" canonical="/codigo/apache/redirect/"/>
-      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="Apache">
+      <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="Apache">
         <h1>REDIRECT</h1>
         <p>
           <br/>Oque a diretiva Redirect faz?

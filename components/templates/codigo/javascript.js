@@ -9,7 +9,7 @@ import * as Util from '../../../controller/util.js';
 const atendimentoOi = function (props) {
 
   console.log('╔════════════════════════════════╗');
-  console.log('║       codigo  JavaScript       ║');
+  console.log('║     Tutoriais  JavaScript      ║');
   console.log('╚════════════════════════════════╝');
 
   var regiao = Util.validaProps(props.regiao , "RJ");
@@ -19,7 +19,7 @@ const atendimentoOi = function (props) {
   return (
     <div>
       <MoHead modo={modo} title="JavaScript" description="O que é JavaScript" canonical="/codigo/javascript/"/>
-      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="JavaScript">
+      <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="JavaScript">
         <Div display="responcivo">
           <div className="coluna404">
             <h1>JavaScript</h1>

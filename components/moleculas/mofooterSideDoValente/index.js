@@ -25,7 +25,6 @@ const moHeaderSideDoValente = function (props) {
           <a href={StringModo+"/?regiao="+regiao} >
             <Img src="/static/assetsv5/img/logo_vvc.png" width="100px" height="100px" alt="Logo Site Valente" title="Logo Site Valente" class="LogoSiteValente" modo={modo} />
           </a>
-
         </div>
         <div>
           <Div display="responsivo">
@@ -37,6 +36,10 @@ const moHeaderSideDoValente = function (props) {
               <BtLink href={StringModo+"/utilitarios/?regiao="+regiao} value="Utilitarios" estilo="luz"/>
               <BtLink href={StringModo+"/game?regiao="+regiao} value="Jogos" estilo="luz"/>                  
             </div>    
+            <div>
+              <BtLink href="https://sites.google.com/view/vvc-estudio/home" value="Design" estilo="luz"/>
+              <BtLink href={StringModo+"/eu?regiao="+regiao} value="Autor" estilo="luz"/>       
+            </div>
           </Div>
           <Div display="horizontal">
             <div>

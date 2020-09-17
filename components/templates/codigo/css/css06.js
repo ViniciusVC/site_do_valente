@@ -19,7 +19,7 @@ const atendimentoOi = function (props) {
     <div>
       <MoHead modo={modo} title="CSS - Margin, padding e floatAula" canonical="/codigo/css/css06/"/> 
       
-      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="CSS">
+      <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="CSS">
       
         <h1>CSS - Margin, padding e float</h1>
         A seguir alguns exemploes de estilisação de HTML: 

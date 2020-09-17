@@ -7,7 +7,10 @@ export const atGTM = (modo) => (
       <p className="p">
         O GTM, não é um componente visual.<br/>
         modo={modo}<br/>
-        Ferramenta Google Tag Manager - O Google Analytics permite avaliar seu ROI de publicidade e acompanhar seus aplicativos e sites em Flash, vídeo e redes sociais.</p>
+        Ferramenta Google Tag Manager - O Google Analytics permite avaliar seu ROI de publicidade e acompanhar seus aplicativos e sites, vídeo e redes sociais.</p>
+        Ex.: 
+        {"import GTM from '../../atoms/atGTM';"}
+        {'<GTM position="head" modo={modo} codGTM="UA-123456789-1" />'}
       <style jsx>{`
           .p{ 
             background-color: #ffffff;

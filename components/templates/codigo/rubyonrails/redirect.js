@@ -8,7 +8,7 @@ import * as Util from '../../../../controller/util.js';
 const codigoRubyRedirect = function (props) {
 
   console.log('╔════════════════════════════════╗');
-  console.log('║    codigo - Ruby - Redirect    ║');
+  console.log('║    Tutoriais - Ruby - Redirect    ║');
   console.log('╚════════════════════════════════╝');
 
   var regiao = Util.validaProps(props.regiao , "RJ");
@@ -17,7 +17,7 @@ const codigoRubyRedirect = function (props) {
   return (
     <div>
       <MoHead modo={modo} title="Ruby On Rails" description="Código Ruby On Rails" canonical="/codigo/rubyonrails/redirect/"/>
-      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="Ruby on Rails">
+      <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="Ruby on Rails">
           <div className="coluna404">
             <h1>redirect 301 em Ruby on Rails</h1>
             <DivCodigo titulo="codigo">

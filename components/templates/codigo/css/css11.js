@@ -25,7 +25,7 @@ const atendimentoOi = function (props) {
   return (
     <div>
       <MoHead modo={modo} title="CSS 11 - Menu drop-down" canonical="/codigo/css/css11/"/> 
-      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="CSS">
+      <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="CSS">
           <h1>CSS 11 - Menu drop-down</h1>
           <p>Cascading Style Sheets é um mecanismo para adicionar estilo a um documento web. O código CSS pode ser aplicado diretamente nas tags ou ficar contido dentro das tags style. Também é possível, em vez de colocar a formatação dentro do documento, criar um link para um arquivo CSS que contém os estilos.</p>
           <DivNaveg>

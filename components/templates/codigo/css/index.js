@@ -18,7 +18,7 @@ const codigoCSS = function (props) {
   return (
     <div>
       <MoHead modo={modo} title="CSS" description="Codigo CSS" canonical="/codigo/css/"/>  
-      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="CSS">
+      <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="CSS">
         <Div display="responcivo">
           <div className="coluna404">
             <h1>CSS</h1>

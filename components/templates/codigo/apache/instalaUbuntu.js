@@ -6,7 +6,7 @@ import * as Util from '../../../../controller/util.js';
 const instalaubuntu = function (props) {
 
   console.log('╔═════════════════════════════════╗');
-  console.log('║ codigo - Apache - instalaubuntu ║');
+  console.log('║ Tutoriais - Apache - instalaubuntu ║');
   console.log('╚═════════════════════════════════╝');
 
   var regiao = Util.validaProps(props.regiao , "RJ");
@@ -16,7 +16,7 @@ const instalaubuntu = function (props) {
   return (
     <div>
       <MoHead modo={modo} title="Instalando Apache no Ubuntu" canonical="/codigo/apache/instalaubuntu/"/>
-      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="Apache">
+      <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="Apache">
         <h1>Instalando Apache no Ubuntu</h1>
           <p>
           <br/>Resumo

@@ -18,7 +18,7 @@ const atendimentoOi = function (props) {
   return (
     <div>
       <MoHead modo={modo} title="Redirect PHP" description="Tutorial REDIRECIONAMENTOS NO PHP" canonical="/codigo/"/>
-      <Layout regiao={regiao} modo={modo}>
+      <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="PHP">
           <h1>CRIANDO REDIRECIONAMENTOS NO PHP</h1>
           <p>Para criar um REDIRECT 301 no PHP use o código a seguir:</p>
           <DivCodigo titulo="Código redirect em PHP">

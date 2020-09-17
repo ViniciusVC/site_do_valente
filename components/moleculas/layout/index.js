@@ -5,8 +5,8 @@ import ListadeRotas from '../moListadeRotas/index.js'
 import Janela from '../moJanela/index.js'
 import HeaderSideDoValente from '../moHeaderSideDoValente/index.js'
 import FooterSideDoValente from '../mofooterSideDoValente/index.js'
-
 import * as Util from '../../../controller/util.js';
+import GTM from '../../atoms/atGTM';
 
 const layout = props => {
   console.log('Rodando /layout.js Luz Verde');
@@ -18,6 +18,7 @@ const layout = props => {
   //Layout Luz verde
   return (
     <div className="CSSLayout">
+      <GTM position="body" modo={modo} codGTM="UA-143307429-1" />
       <Div display="justificado">
           
           <div className="layoutManu esconder">
@@ -67,9 +68,6 @@ const layout = props => {
           width: 96%;
           padding-left:2%;
         }
-        .conteudo{
-          width: 50%;
-        }
       }
       @media(max-width: 1169px) {
         
@@ -96,50 +94,4 @@ const layout = props => {
 
 export default layout
 
-
-/*
- <div className="borda"></div>
-      <Div display="justificado">
-        
-        <div className="borda"></div>
-
-        <Div display="justificado">
-          <div className="codigoIndexListadeRotas esconder">
-            <Janela estilo="luz">
-              Menu
-              <ListadeRotas regiao={regiao} modo={modo} titulo={titulo} categoria={categoria}/>
-            </Janela>
-          </div>
-          
-          <div className="borda esconder"></div>
-            
-            <Div display="vertical">
-              
-              <Janela estilo="luz">
-                Header
-                <HeaderSideDoValente regiao={regiao} modo={modo}/>
-              </Janela>
-
-              <div className="borda"></div>
-              
-  
-                <Janela estilo="luz">
-                  Body
-                  {props.children}
-                </Janela>
-  
-              
-              <div className="borda"></div>
-              
-              <Janela estilo="luz">
-                Foter
-                <HeaderSideDoValente regiao={regiao} modo={modo}/>
-              </Janela>
-
-            </Div>      
-
-          </Div>
-
-        
-        <div className="borda"></div>
-        */
+//Não esqueça de do GTM do body.

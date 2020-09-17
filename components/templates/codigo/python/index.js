@@ -19,7 +19,7 @@ const codigoJava = function (props) {
   return (
     <div>
       <MoHead modo={modo} title="Python" description="O que é Python" canonical="/codigo/python/"/>
-      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="Python">
+      <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="Python">
         <Div display="responcivo">
           <div className="coluna404">
             <h1>O que é Python?</h1>

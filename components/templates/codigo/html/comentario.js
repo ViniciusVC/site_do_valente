@@ -17,7 +17,7 @@ const atendimentoOi = function (props) {
   return (
     <div>
       <MoHead modo={modo} title="HTML Comentario" description="Tutorial de comentario em HTML" canonical="/codigo/html/"/>
-      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="html">
+      <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="html">
       <h1>HTML Comentario</h1>
         <p>
           Todo o texto que colocar dentro está comentado, ou seja, não aparecerá na página. <br/>

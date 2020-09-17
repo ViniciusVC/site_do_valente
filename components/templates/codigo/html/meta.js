@@ -17,7 +17,7 @@ const atendimentoOi = function (props) {
   return (
     <div>
      <MoHead modo={modo} title="HTML META TAGS" description="Tutorial HTML META TAGS" canonical="/codigo/html/meta/"/>
-     <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="html">
+     <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="html">
       <h1>HTML META TAGS</h1>
       <p>
         Metadados são dados (informações) sobre dados.<br/>

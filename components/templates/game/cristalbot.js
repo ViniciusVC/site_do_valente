@@ -25,7 +25,7 @@ const game = function (props) {
       <MoHead modo={modo} title="Cristal Bot" canonical="/cristalbot" icohref="/static/assetsv5/img/faviconcristal.ico"/>
       <Layout regiao={regiao} modo={modo} titulo="Games" categoria="Games">
         <Div display="justificado">
-          <h1>Game Cristal Bot</h1>
+          <h1><Img src="/static/assetsv5/img/cristalbot/logocistalbotmini.png" width="200px" height="100px" alt="Game Cristal Bot" title="Game Cristal Bot" class="CristalBotLogo" modo={modo} /></h1>
           <div className="heaermob">
             <MenuMobile01 modo={modo}/>
           </div>
@@ -34,6 +34,7 @@ const game = function (props) {
           <Div display="responcivo">
             <div>
               <br/><br/><br/>
+              
               <p>Cristal Bot é um game independente brasileiro, está na sua versão beta, e é feito por uma única pessoa.<br/>
               Foi desenvolvido na plataforma Unity com linguage de programação C# e modelagem 3D no Blender.<br/>
               Desenvolvi tanto o código quanto a arte do jogo.</p>

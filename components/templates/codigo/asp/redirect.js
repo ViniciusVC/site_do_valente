@@ -26,7 +26,7 @@ const codigoAspRedirect = function (props) {
         <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
         <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
       </Head>
-      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="ASP">
+      <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="ASP">
         <h1>REDIRECT com ASP</h1>
           <DivCodigo titulo="REDIRECT com ASP">
             <xmp>

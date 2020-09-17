@@ -27,7 +27,7 @@ const htmliframe = function (props) {
   return (
     <div>
       <MoHead modo={modo} title="HTML iframe" description="Tutorial HTML Iframe" canonical="/codigo/html/"/>
-      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="html">
+      <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="html">
         <h1>Iframe</h1>
         <p>
           A tag iframe especifica um quadro embutido.<br/>

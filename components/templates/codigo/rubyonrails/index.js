@@ -8,7 +8,7 @@ import * as Util from '../../../../controller/util.js';
 const codigoRuby = function (props) {
 
   console.log('╔═══════════════════════════╗');
-  console.log('║        codigo  Ruby       ║');
+  console.log('║     Tutoriais  Ruby       ║');
   console.log('╚═══════════════════════════╝');
 
   var regiao = Util.validaProps(props.regiao , "RJ");
@@ -17,7 +17,7 @@ const codigoRuby = function (props) {
   return (
     <div>
       <MoHead modo={modo} title="Ruby On Rails" description="Código Ruby On Rails" canonical="/codigo/rubyonrails/"/>
-      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="Ruby on Rails">
+      <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="Ruby on Rails">
         <Div display="responcivo">
           <div className="coluna404">
             <h1>Ruby on Rails</h1>

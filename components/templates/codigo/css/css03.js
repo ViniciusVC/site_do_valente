@@ -18,7 +18,7 @@ const atendimentoOi = function (props) {
   return (
     <div>
       <MoHead modo={modo} title="CSS - Imagens de fundo e atributo text" canonical="/codigo/css/css03/"/> 
-      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="CSS">
+      <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="CSS">
         <h1>CSS - Imagens de fundo e atributo text</h1><br/>
         A seguir um exemploes de estilisação de HTML:
         <DivNaveg>

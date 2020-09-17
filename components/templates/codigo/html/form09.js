@@ -17,7 +17,7 @@ const atendimentoOi = function (props) {
   return (
     <div>
       <MoHead modo={modo} title="HTML Formulario Campo Datalist" description="coHTML Formulario Campo Datalistdigo" canonical="/codigo/html/formulario_campos_06_datalist/"/>
-      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="html">
+      <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="html">
       <h1>HTML Formulario Campo Datalist</h1>
           Segue um exemplo de um formário com campos imput e datalist.<br/>
         <DivNaveg>

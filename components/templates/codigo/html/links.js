@@ -18,7 +18,7 @@ const atendimentoOi = function (props) {
   return (
     <div>
       <MoHead modo={modo} title="codigo HTML Link" description="Tutorial de Link no HTML" canonical="/codigo/html/links/"/>
-      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="html">
+      <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="html">
       <h1>HTML - Links</h1>
         <p>
           A tag a define um hiperlink, usado para vincular de uma página para outra.<br/>

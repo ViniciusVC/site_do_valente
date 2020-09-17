@@ -17,7 +17,7 @@ const atendimentoOi = function (props) {
   return (
     <div>
       <MoHead modo={modo} title="HTML Formario Legenda" description="Tutorial HTML Formario Legenda" canonical="/codigo/html/formulario_Legenda/"/>
-      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="html">
+      <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="html">
       <h1>HTML Formário com Legenda</h1>
           Tag {'<legend>Aqui dentro entra o texto da legenda</legend>'}.<br/>
           Segue um exemplo de um formário com Legenda.<br/>

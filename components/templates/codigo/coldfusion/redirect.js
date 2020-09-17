@@ -19,7 +19,7 @@ const atendimentoOi = function (props) {
   return (
     <div>
       <MoHead modo={modo} title="ColdFusion" description="Tutorial ColdFusion Redirect" canonical="/codigo/coldfusion/"/>
-      <Layout regiao={regiao} modo={modo}>
+      <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="ColdFusion">
             <h1>ColdFusion - Redirect</h1>
             <p>Pagina em cosntrução</p>
             <p>

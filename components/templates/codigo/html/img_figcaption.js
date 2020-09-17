@@ -18,7 +18,7 @@ const imgfigcaption = function (props) {
   return (
     <div>
       <MoHead modo={modo} title="HTML Figure e Legenda" description="Tutorial HTML Figure e Legenda" canonical="/codigo/html/img_figcaption//"/>
-      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="html">
+      <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="html">
         <h1>HTML Figure e Legenda</h1>
         <p>
         Use um elemento figure para marcar uma foto em um documento e um elemento figcaption para definir uma legenda para a foto:

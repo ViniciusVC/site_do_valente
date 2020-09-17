@@ -16,6 +16,7 @@ const componentes = function(props){
     console.log('╚════════════════════════════════════════╝');
     var regiao = Util.validaProps(props.regiao,"rj");
     var modo = Util.validaProps(props.modo,"html");
+    
     var id = Util.validaProps(props.id,"atArrow");
     var StringModo = "";
     if(modo=="AMP" || modo=="amp"){
@@ -25,7 +26,7 @@ const componentes = function(props){
     return(
     <div>
       <MoHead modo={modo} title="Componentes" description="Componentes html do Portal da Oi (AMP)." canonical="/"/>
-      <Layout regiao={regiao} modo={modo} titulo="Componentes" categoria="Componentes"> 
+      <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="Componentes"> 
       <dib><h1 className='title'>Componentes React deste Projeto.</h1></dib>
       <Div display="horizontal">
         <div className='coluna1'>

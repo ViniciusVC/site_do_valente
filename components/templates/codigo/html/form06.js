@@ -17,7 +17,7 @@ const atendimentoOi = function (props) {
   return (
     <div>
       <MoHead modo={modo} title="HTML Formulario Campos Datas" canonical="/codigo/html/formulario_campos_03_datas/"/>
-      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="html">
+      <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="html">
       <h1>HTML Formulário Campos Datas</h1>
         Segue um exemplo de um formário com os campos date, time, month, week e datetime-local.<br/>
         <DivNaveg>

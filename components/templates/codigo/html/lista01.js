@@ -18,7 +18,7 @@ const atendimentoOi = function (props) {
   return (
     <div>
       <MoHead modo={modo} title="HTML Lista" description="Tutorial de Lista no HTML" canonical="/codigo/html/lista01/"/>
-      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="html">
+      <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="html">
         <h1>HTML Listas não ordenadas</h1>
         <p>
           A tag ul define uma listas não ordenadas.<br/>

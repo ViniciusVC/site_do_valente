@@ -17,7 +17,7 @@ const atendimentoOi = function (props) {
   return (
     <div>
       <MoHead modo={modo} title="HTML Formulario Campo Select" description="HTML Formulario Campo Select" canonical="/codigo/html/formulario_campos_05_select/"/>
-      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="html">
+      <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="html">
       <h1>HTML Formulário Campo Select</h1>
           Segue um exemplo de um formário com campo select.<br />        
         <DivNaveg>

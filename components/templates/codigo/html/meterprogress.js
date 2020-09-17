@@ -17,7 +17,7 @@ const atendimentoOi = function (props) {
   return (
     <div>
       <MoHead modo={modo} title="HTML Meter e Progress" description="Tutorial HTML Meter e Progress" canonical="/codigo/html/meter_progress/"/>
-      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="html">
+      <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="html">
         <h1>HTML Meter e Progress</h1>
         <p>
           Medidor (Meter) : <br/>        

@@ -8,7 +8,7 @@ import * as Util from '../../../../controller/util.js';
 const apacheAlias = function (props) {
 
   console.log('╔══════════════════════════════╗');
-  console.log('║    codigo - Apache - Alias   ║');
+  console.log('║    Tutoriais - Apache - Alias   ║');
   console.log('╚══════════════════════════════╝');
 
   const regiao = Util.validaProps(props.regiao , "RJ");
@@ -18,7 +18,7 @@ const apacheAlias = function (props) {
   return (
     <div>
       <MoHead modo={modo} title="ALIAS e REDIRECIONAMENTOS no APACHE" description="CRIANDO ALIAS E REDIRECIONAMENTOS NO APACHE" canonical="/codigo/apache/alias/"/>
-      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="Apache">
+      <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="Apache">
         <h1>CRIANDO ALIAS E REDIRECIONAMENTOS NO APACHE</h1>
           <p>
           <br/>(

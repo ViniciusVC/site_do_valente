@@ -17,7 +17,7 @@ const atendimentoOi = function (props) {
   return (
     <div>
       <MoHead modo={modo} title="codigo HTMl MAP" description="Tutorial de MAP no HTML." canonical="/codigo/html/map"/>
-      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="html">
+      <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="html">
         
       <h1>HTML MAP</h1>
         O map serve para criar areas clicaveis em uma imagem.<br/>

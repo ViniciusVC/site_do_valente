@@ -17,7 +17,7 @@ const atendimentoOi = function (props) {
   return (
     <div>
       <MoHead modo={modo} title="HTML - DIV e SPAN" description="Tutorial - HTML - DIV e SPAN" canonical="/codigo/html/div_span/"/>
-      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="html">
+      <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="html">
         <h1>HTML - DIV e SPAN</h1>
         <p>
           A tag div define uma divisão ou seção em um documento HTML.<br/>

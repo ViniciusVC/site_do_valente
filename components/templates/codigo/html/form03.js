@@ -17,7 +17,7 @@ const atendimentoOi = function (props) {
   return (
     <div>
       <MoHead modo={modo} title="HTML Formulário Atributos" canonical="/codigo/html/formulario_atributos/"/>
-      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="html">
+      <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="html">
       <h1>HTML Formulário simples</h1>
           Segue um exemplo de um formário simples.<br/>        
         <DivNaveg>

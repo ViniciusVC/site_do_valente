@@ -15,7 +15,7 @@ const Knockout = function (props) {
   return (
     <div>
       <MoHead modo={modo} title="KnockoutJS" description="Tutorial Knockout JS" canonical="/codigo/knockout/knockout2"/>
-      <Layout regiao={regiao} modo={modo}>
+      <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="KnockoutJS">
           <h1>Knockout JS - 2</h1>
           <p>Knockout é uma implementação JavaScript independente do padrão Model-View-ViewModel com modelos.<br />
             Os princípios subjacentes são, portanto: uma separação clara entre os dados do domínio, visualize os componentes e os dados a serem exibidos.</p>

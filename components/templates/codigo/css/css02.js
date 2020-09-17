@@ -17,7 +17,7 @@ const atendimentoOi = function (props) {
   return (
     <div className="Body">
       <MoHead modo={modo} title="CSS - img, text" canonical="/codigo/css/css02/"/> 
-      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="CSS">
+      <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="CSS">
       <h1>CSS - img, text</h1>
       <h1>CSS Paragrafo, ID e Class</h1>
         A seguir alguns exemploes de HTML com estilisação:<br/>

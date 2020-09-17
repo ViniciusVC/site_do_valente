@@ -3,7 +3,9 @@ import Div from '../../atoms/atDiv'
 
 import ListadeRotas from '../moListadeRotas/index.js'
 import HeaderSideDoValente from '../moHeaderSideDoValente/index.js'
+import FooterSideDoValente from '../mofooterSideDoValente/index.js'
 import * as Util from '../../../controller/util.js';
+import GTM from '../../atoms/atGTM';
 
 const layout = props => {
   console.log('Rodando /layout.js');
@@ -14,6 +16,7 @@ const layout = props => {
 
   return (
     <div className="Body">
+      <GTM position="body" modo={modo} codGTM="UA-143307429-1" />
       <div className="borda"></div>
       <Div display="justificado">
         <div className="borda"></div>
@@ -39,7 +42,7 @@ const layout = props => {
               <div className="borda"></div>
               
               <div className="DivSombra">
-                <HeaderSideDoValente regiao={regiao} modo={modo}/>
+                <FooterSideDoValente regiao={regiao} modo={modo}/>
               </div>
 
             </Div>      
@@ -120,3 +123,5 @@ const layout = props => {
 }
 
 export default layout
+
+//Não esqueça de do GTM do body.

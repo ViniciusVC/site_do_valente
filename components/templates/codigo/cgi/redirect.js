@@ -10,7 +10,7 @@ import DivCodigo from '../../../atoms/atDivCodigo'
 const codigoAspRedirect = function (props) {
 
   console.log('╔════════════════════════════════╗');
-  console.log('║     codigo - CGI - Redirect    ║');
+  console.log('║     Tutoriais - CGI - Redirect    ║');
   console.log('╚════════════════════════════════╝');
 
   var regiao = Util.validaProps(props.regiao , "RJ");
@@ -27,7 +27,7 @@ const codigoAspRedirect = function (props) {
         <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
         <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
       </Head>
-      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="CGI">
+      <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="CGI">
         <h1>REDIRECT com CGI PERL</h1>
           <p>Como fazer redirect 301 no codigo com CGI PERL</p>
           <DivCodigo titulo="Codigo redirect CGI PERL">

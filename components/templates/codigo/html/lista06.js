@@ -18,7 +18,7 @@ const atendimentoOi = function (props) {
   return (
     <div>
       <MoHead modo={modo} title="HTML Lista com Descrição" description="Tutorial HTML Lista com Descrição" canonical="/codigo/html/lista06/"/>
-      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="html">
+      <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="html">
         <h1>HTML Lista com Descrição</h1>
         <p>
           A tag dl define uma listas com descrição.<br/>

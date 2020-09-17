@@ -32,7 +32,7 @@ const atendimentoOi = function (props) {
   return (
     <div>
       <MoHead modo={modo} title="CSS - Tabelas Style" canonical="/codigo/css/css13/"/>  
-      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="CSS">
+      <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="CSS">
         <h1>CSS - Tabelas Style</h1>
         <p>
         A tag table define uma tabela HTML.<br/>

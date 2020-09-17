@@ -6,7 +6,7 @@ import * as Util from '../../../controller/util.js';
 const codigo = function (props) {
 
   console.log('╔══════════════════════════════╗');
-  console.log('║        codigo   index        ║');
+  console.log('║      Tutoriais   index       ║');
   console.log('╚══════════════════════════════╝');
 
   var regiao = Util.validaProps(props.regiao , "RJ");
@@ -16,7 +16,7 @@ const codigo = function (props) {
   return (
     <div>
       <MoHead modo={modo} title="codigo" description="O que e Codigo ou Linguagens de programacao" canonical="/codigo/"/>
-      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="Codigo">
+      <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="Codigo">
           <h1>Linguagens de programação</h1>
           <p>O que é um CODIGO?</p>
           <p>Podem ser usadas para expressar algoritmos com precisão. <br/>

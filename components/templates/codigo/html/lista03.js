@@ -18,7 +18,7 @@ const atendimentoOi = function (props) {
   return (
     <div>
       <MoHead modo={modo} title="HTML Lista Ordenada type A" description="Tutorial HTML Lista Ordenada type A" canonical="/codigo/html/lista03/"/>
-      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="html">
+      <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="html">
         <h1>HTML Lista Ordenada (type=A)</h1>
         <p>
           A tag ol define uma listas não ordenadas.<br/>

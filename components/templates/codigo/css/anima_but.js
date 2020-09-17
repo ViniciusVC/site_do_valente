@@ -18,7 +18,7 @@ const animaBut = function (props) {
   return (
     <div>
       <MoHead modo={modo} title="Exemplos de CSS animação de butão" description="CSS_anima_but" canonical="/codigo/css/anima_but/"/> 
-      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="CSS">
+      <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="CSS">
       <Div display="vertical">
           <div>
             <h1>Animação de Butão</h1>

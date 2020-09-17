@@ -18,7 +18,7 @@ const atendimentoOi = function (props) {
   return (
     <div>
       <MoHead modo={modo} title="CSS 07 - Posicionamento de elementos, bordas e z-index" canonical="/codigo/css/css07/"/> 
-      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="CSS">
+      <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="CSS">
           <h1>CSS 7 - Posicionamento de elementos, bordas e z-index</h1>
           
           <DivNaveg>

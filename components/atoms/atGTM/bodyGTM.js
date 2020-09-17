@@ -1,41 +1,78 @@
 //Component atomo Price.js
 
-import React from 'react'
-
-function verificaValor(X,Y){
-  if (X!=undefined){
-    return X
-  }else{
-    return Y
-  }
-}
+import React from 'react';
+import * as Util from '../../../controller/util.js';
 
 const bodyGTM = props => {
-  //var codGTM = 'GTM-K89BB78';
-  //var codGTM = 'GTM-KR9G4JB';
-  //console.log('Rodando /componentes/atoms/atGTM/index.js');
-  var codGTM = verificaValor(props.codGTM, 'GTM-K89BB78');
+  //console.log('Rodando /componentes/atoms/atGTM/bodyGTM.js');
+  var codGTM = Util.validaProps(props.codGTM, 'UA-177955684-1');
   var varSRC="https://www.googletagmanager.com/ns.html?id="+codGTM;
-  //<!-- Google Tag Manager body (noscript) -->
-  return(
-          <iframe
+  var modo = Util.validaProps(props.modo, 'html');
+  //var varAmpGtm = "{vars:{account:"+codGTM+"},triggers:{trackPageview:{on:visible,request:pageview}}}";
+  // var varAmpGtm = { 
+  //                 "vars": { "account": "UA-177955684-1" },
+  //                 "triggers": { 
+  //                    "trackPageview": { "on": "visible", "request": "pageview" } 
+  //                 } 
+  //             }
+
+  if(modo=="html" || modo=="HTML"){
+    return(
+      <noscript>
+        <iframe
             src={varSRC}
             height="0" 
             width="0">
-          </iframe>
-  )
+        </iframe>
+      </noscript>
+    )
+  }else{
+    return(
+      <amp-analytics type="googleanalytics">
+        <script type="application/json">
+          {`
+            { "vars": { "account": "UA-177955684-1" }, "triggers": { "trackPageview": { "on": "visible", "request": "pageview" } } }
+          `}
+        </script>
+      </amp-analytics>
+    )
+  }
 }
 
 export default bodyGTM
 
-// BODY
 
-// <!-- Google Tag Manager (noscript) -->
-// <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K89BB78"
-// height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-// <!-- End Google Tag Manager (noscript) -->
+// Codigo GTM Body com script para html retornar.
+//<script>
+// window.dataLayer = window.dataLayer || [];
+// function gtag(){dataLayer.push(arguments);}
+// gtag('js', new Date());
+// gtag('config', 'UA-177955684-1');
+//</script>
 
+
+// Codigo GTM Body para AMP retornar.
+//<amp-analytics type="googleanalytics" id="analytics1">
+//<script type="application/json">
+//{
+//  "vars": {
+//    "account": "UA-177955684-1"
+//  },
+//  "triggers": {
+//    "trackPageview": {
+//      "on": "visible",
+//      "request": "pageview"
+//    }
+//  }
+//}
+//</script>
+//</amp-analytics>
+
+
+
+
+// Codigo GTM do BODY para html com Iframe.
 // <!-- Google Tag Manager (noscript) -->
-// <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KR9G4JB"
+// <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=UA-177955684-1"
 // height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 // <!-- End Google Tag Manager (noscript) -->

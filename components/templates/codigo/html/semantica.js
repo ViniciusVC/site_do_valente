@@ -17,7 +17,7 @@ const atendimentoOi = function (props) {
   return (
     <div>
       <MoHead modo={modo} title="HTML Semantica" description="Tutorial Semantica HTML" canonical="/codigo/html/semantica/"/>
-      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="html">
+      <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="html">
         <h1>HTML Semantica</h1>
         <p>
         HTML semântico é o uso da marcação HTML para reforçar a semântica, ou significado, das informações em páginas da Web e aplicativos da Web, em vez de apenas definir sua apresentação ou aparência.<br/>

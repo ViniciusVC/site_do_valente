@@ -18,7 +18,7 @@ const html = function (props) {
   return (
     <div>
       <MoHead modo={modo} title="codigo HTML" description="codigo HTML" canonical="/codigo/html/"/>
-      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="html">
+      <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="html">
         <Div display="responsivo">
           <div className="coluna404">
             <h1>O que é HTML 5</h1>

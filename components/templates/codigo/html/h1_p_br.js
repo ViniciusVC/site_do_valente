@@ -17,7 +17,7 @@ const atendimentoOi = function (props) {
   return (
     <div>
       <MoHead modo={modo} title="codigo HTML H1 H2 H3 P" description="codigo HTML H1 H2 H3 P" canonical="/codigo/html/"/>
-      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="html">
+      <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="html">
         <h1>HTML - H1, H2, H3, P e BR </h1>
         <p>
         As Heading Tags (H1, H2, H3, ...) são recursos de programação HTML utilizados para destacar títulos e sub-títulos de uma página. H1 é a abreviação do inglês para Header 1, ou Cabeçalho 1, logo, o mais importante dos Headers.

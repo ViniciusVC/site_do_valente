@@ -19,7 +19,7 @@ const atendimentoOi = function (props) {
   return (
     <div>
       <MoHead modo={modo} title="HTML - CANVAS" description="Tutorial de CANVAS HTML" canonical="/codigo/html/canvas/"/>
-      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="html">
+      <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="html">
       <h1>HTML - CANVAS</h1>
         <p>
           Canvas é um elemento da HTML5 destinado a delimitar uma área para renderização dinâmica de gráficos. Todo o trabalho de criação e animação é realizado através de linguagens de programação dinâmica. O elemento foi originalmente introduzido pela Apple Inc. para o navegador Safari.

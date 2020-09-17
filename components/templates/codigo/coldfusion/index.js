@@ -17,7 +17,7 @@ const atendimentoOi = function (props) {
   return (
     <div>
       <MoHead modo={modo} title="ColdFusion" description="O que é ColdFusion." canonical="/codigo/coldfusion/"/>
-      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="ColdFusion">
+      <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="ColdFusion">
         <Div display="responsivo">
           <div className="coluna404">
             <h1>O que é ColdFusion?</h1>

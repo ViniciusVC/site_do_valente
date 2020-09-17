@@ -17,7 +17,7 @@ const atendimentoOi = function (props) {
   return (
     <div>
       <MoHead modo={modo} title="HTML hgrup" description="Tutorial HTML hgrup" canonical="/codigo/html/hgrup/"/>
-      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="html">
+      <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="html">
         <h1>HTML hgrup</h1>
         <p>
           O elemento HTML hgroup destina-se a agrupar cabeçalhos de diferentes níveis para uma seção do documento.<br/>

@@ -17,7 +17,7 @@ const templatesvg = function (props) {
   return (
     <div>
       <MoHead modo={modo} title="HTML formulario_mark" description="Tutorial HTML formulario_mark" canonical="/codigo/html/formulario_mark/"/>
-      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="SVG">
+      <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="SVG">
         <h1>SVG Ellipse e Text</h1>
         <p>
           SVG é a abreviatura de Scalable Vector Graphics que pode ser traduzido do inglês como gráficos vetoriais escalonáveis. Trata-se de uma linguagem XML para descrever de forma vetorial desenhos e gráficos bidimensionais, quer de forma estática, quer dinâmica ou animada.  

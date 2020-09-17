@@ -17,7 +17,7 @@ const Knockout = function (props) {
   return (
     <div>
       <MoHead modo={modo} title="KnockoutJS" description="Tutorial Knockout JS" canonical="/codigo/knockout/"/>
-      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="KnockoutJS">
+      <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="KnockoutJS">
       <Div display="responcivo">
           <div className="coluna404">
             <h1>O que é Knockout JS?</h1>

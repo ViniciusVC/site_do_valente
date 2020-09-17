@@ -17,7 +17,7 @@ const atendimentoOi = function (props) {
   return (
     <div>
       <MoHead modo={modo} title="HTML Table" description="Tutorial HTML Table" canonical="/codigo/html/tabela"/>
-      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="html">
+      <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="html">
        <h1>HTML - Tabelas</h1>
        <p>
         A tag table define uma tabela HTML.<br/>

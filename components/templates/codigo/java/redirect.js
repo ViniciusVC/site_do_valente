@@ -19,7 +19,7 @@ const codigoJavaRedirect = function (props) {
   return (
     <div>
       <MoHead modo={modo} title="REDIRECT com Java" description="Tutorial REDIRECT no Java" canonical="/codigo/java/redirect/"/>
-      <Layout regiao={regiao} modo={modo}>
+      <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="Java">
           <h1>Redirect Java</h1>
           <p>Java...</p>
           <p>Pagina em costrução.</p>
