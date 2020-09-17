@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 19);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -7760,7 +7760,7 @@ var RotaCristalBot = function RotaCristalBot(props) {
 
 /***/ }),
 
-/***/ 19:
+/***/ 3:
 /*!***********************************************!*\
   !*** multi ./pages/routes/game/cristalbot.js ***!
   \***********************************************/

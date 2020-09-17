@@ -11548,7 +11548,7 @@ var RotaCristalBot = function RotaCristalBot(props) {
 
 /***/ }),
 
-/***/ 16:
+/***/ 0:
 /*!***********************************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Froutes%2Fgame%2Fcristalbot&absolutePagePath=%2Fhome%2Foi402825%2FDocumentos%2FProjetos%2Fsite_do_valente%2Fpages%2Froutes%2Fgame%2Fcristalbot.js ***!
   \***********************************************************************************************************************************************************************************************/
@@ -11571,5 +11571,5 @@ module.exports = dll_0b4d667fc966dc93bf48;
 
 /***/ })
 
-},[[16,"static/runtime/webpack.js"]]]);
+},[[0,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=cristalbot.js.map
