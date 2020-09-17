@@ -3,10 +3,6 @@
     "static/development/dll/dll_d71c1af1605d81df73ef.js"
   ],
   "pages": {
-    "/": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
     "/_app": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
@@ -15,27 +11,11 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/index": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/routes/codigo": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/routes/eu": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/routes/eu/curriculo": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
     "/routes/game": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/routes/tutorial/html/svg01": [
+    "/routes/game/cristalbot": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]

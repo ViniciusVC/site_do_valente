@@ -30,6 +30,31 @@ const ListadeRotas = function (props) {
           </div>
         </Details>
 
+        <Details open={titulo=="Utilitarios"}>
+          <summary><BtLink href="" value="Utilitarios >" estilo="luz"/></summary>
+          <div className="subitens">
+            <BtLink href={StringModo+"/utilitarios/?regiao="+regiao} value="Utilitarios" estilo="itemLuzVerde"/>
+            <BtLink href={StringModo+"/utilitarios/conversordetexto/?regiao="+regiao} value="Converta Textos" estilo="itemLuzVerde"/>
+            <BtLink href={StringModo+"/utilitarios/conversordeunidade/?regiao="+regiao} value="Converta Unidades" estilo="itemLuzVerde"/>
+            {/*<BtLink href={StringModo+"/utilitarios/conversorunicode/?regiao="+regiao} value="Converta Unicode" estilo="itemLuzVerde"/>*/}
+            <BtLink href={StringModo+"/utilitarios/servicosgratuitos/?regiao="+regiao} value="Servicos Gratuitos" estilo="itemLuzVerde"/>
+          </div>
+        </Details>
+
+        <Details open={titulo=="Games"}>
+          <summary><BtLink href="" value="Games >" estilo="luz"/></summary>
+          <div className="subitens">
+            <BtLink href={"/game?regiao="+regiao} value="Games do valente" estilo="itemLuzVerde"/>
+
+            <BtLink href={StringModo+"/game/cristalbot/?regiao="+regiao} value="Cristal Bot" estilo="itemLuzVerde"/>
+
+            <BtLink href={StringModo+"/game/controleogodzilla/?regiao="+regiao} value="Controle o Godzilla" estilo="itemLuzVerde"/>
+            <BtLink href={StringModo+"/game/tanque/?regiao="+regiao} value="Tanque de Guerra" estilo="itemLuzVerde"/>
+            <BtLink href={StringModo+"/game/ecossistema/?regiao="+regiao} value="Ecossistema" estilo="itemLuzVerde"/>
+            <BtLink href={StringModo+"/game/cobrinha/?regiao="+regiao} value="Cobrinha" estilo="itemLuzVerde"/>
+          </div>
+        </Details>
+
         <Details open={titulo=="Tutoriais"}>
         
           <summary><BtLink href="" value="Tutoriais >" estilo="luz"/></summary>
@@ -181,30 +206,9 @@ const ListadeRotas = function (props) {
             </div>
         </Details>
 
-        <Details open={titulo=="Utilitarios"}>
-          <summary><BtLink href="" value="Utilitarios >" estilo="luz"/></summary>
-          <div className="subitens">
-            <BtLink href={StringModo+"/utilitarios/?regiao="+regiao} value="Utilitarios" estilo="itemLuzVerde"/>
-            <BtLink href={StringModo+"/utilitarios/conversordetexto/?regiao="+regiao} value="Converta Textos" estilo="itemLuzVerde"/>
-            <BtLink href={StringModo+"/utilitarios/conversordeunidade/?regiao="+regiao} value="Converta Unidades" estilo="itemLuzVerde"/>
-            <BtLink href={StringModo+"/utilitarios/conversorunicode/?regiao="+regiao} value="Converta Unicode" estilo="itemLuzVerde"/>
-            <BtLink href={StringModo+"/utilitarios/servicosgratuitos/?regiao="+regiao} value="Servicos Gratuitos" estilo="itemLuzVerde"/>
-          </div>
-        </Details>
 
-        <Details open={titulo=="Games"}>
-          <summary><BtLink href="" value="Games >" estilo="luz"/></summary>
-          <div className="subitens">
-            <BtLink href={"/game?regiao="+regiao} value="Games do valente" estilo="itemLuzVerde"/>
 
-            <BtLink href={StringModo+"/game/cristalbot/?regiao="+regiao} value="Cristal Bot" estilo="itemLuzVerde"/>
 
-            <BtLink href={StringModo+"/game/controleogodzilla/?regiao="+regiao} value="Controle o Godzilla" estilo="itemLuzVerde"/>
-            <BtLink href={StringModo+"/game/tanque/?regiao="+regiao} value="Tanque de Guerra" estilo="itemLuzVerde"/>
-            <BtLink href={StringModo+"/game/ecossistema/?regiao="+regiao} value="Ecossistema" estilo="itemLuzVerde"/>
-            <BtLink href={StringModo+"/game/cobrinha/?regiao="+regiao} value="Cobrinha" estilo="itemLuzVerde"/>
-          </div>
-        </Details>
 
         <Details open={titulo=="Design"}>
           <summary><BtLink href="" value="Design >" estilo="luz"/></summary>
