@@ -8,6 +8,7 @@ import MenuMobile01 from '../moMenuMobile01/index.js'
 //console.log('moHeaderSideDoValente ');
 
 const moHeaderSideDoValente = function (props) {
+  const titulo = props.titulo;
   const regiao = props.regiao;
   const modo = props.modo;
   //const JsonRegiao = Util.regiao(regiao);
@@ -27,7 +28,7 @@ const moHeaderSideDoValente = function (props) {
         </div>
 
         <div className="TitulodoSite headerpc">
-          <span>VVC Estudio</span>
+          <h2>{titulo}</h2>
         </div>
 
         <div className="heaermob">
@@ -48,6 +49,13 @@ const moHeaderSideDoValente = function (props) {
         animation-duration: 3s;
         animation-name: slideinSombra;
       }
+      h2{
+        color: #10ecf5;
+        padding-top: 0px;
+        font-size: 30px;
+        font-family: sans-serif;
+        text-align: center;
+      }
       @keyframes slideinSombra {
         0% {
             opacity: 0.0;
@@ -57,16 +65,9 @@ const moHeaderSideDoValente = function (props) {
         }
         100% {
             opacity: 1.0;
+          }
         }
-      }
-      .TitulodoSite{
-        color: #10ecf5;
-        padding-top: 15px;
-        font-size: 20px;
-        font-family: sans-serif;
-        text-align: center;
-        font-size: 60px;
-      }
+        
 
       @media(min-width: 1169px) {
         .heaermob{

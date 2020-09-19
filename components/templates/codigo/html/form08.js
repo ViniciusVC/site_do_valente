@@ -19,7 +19,7 @@ const atendimentoOi = function (props) {
       <MoHead modo={modo} title="HTML Formulario Campo Select" description="HTML Formulario Campo Select" canonical="/codigo/html/formulario_campos_05_select/"/>
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="html">
       <h1>HTML Formulário Campo Select</h1>
-          Segue um exemplo de um formário com campo select.<br />        
+          Segue um exemplo de um formulário com campo select.<br />        
         <DivNaveg>
 
         <form action="cadastro.php" methodo="POST">
@@ -45,7 +45,7 @@ const atendimentoOi = function (props) {
                 </fieldset>
             </form>
         </DivNaveg>
-        Segue o codigo HTML deste fomulário:<br/>
+        Segue o codigo HTML deste formulário:<br/>
         <DivCodigo titulo="codigo">
 
         {'<form action="cadastro.php" methodo="POST">'}<br/>

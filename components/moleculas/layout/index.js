@@ -30,7 +30,7 @@ const layout = props => {
           <div className="layoutBody">
             <Div display="vertical">
               <Janela estilo="luz">
-                <HeaderSideDoValente regiao={regiao} modo={modo}/>
+                <HeaderSideDoValente regiao={regiao} modo={modo} titulo={titulo}/>
               </Janela>
               <Janela estilo="luz">
                 <div className="conteudo">

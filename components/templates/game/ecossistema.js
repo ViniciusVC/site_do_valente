@@ -37,8 +37,8 @@ const ecossistema = function (props) {
       <Layout regiao={regiao} modo={modo} titulo="Games" categoria="Games">
           <h1>Simulador de Ecossistema</h1>
           {retornaogame(modo,regiao)}
-          <p>Carnivoro come herbivoro.<br/> 
-            herbivoro come planta, foge de carnivoro e se reproduz.</p>
+          <p>Carnívoro come herbívoro.<br/> 
+            herbivoro come planta, foge de carnívoro e se reproduz.</p>
           <p>Estudo de desenvolvimento de game apenas com JS e canvas.</p>
           <br/>
       </Layout>

@@ -19,7 +19,7 @@ const atendimentoOi = function (props) {
       <MoHead modo={modo} title="CSS Paragrafo, ID e Class" canonical="/codigo/css/css01/"/> 
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="CSS">
         <h1>CSS Paragrafo, ID e Class</h1>
-        A seguir alguns exemploes de HTML com estilisação:<br/>
+        A seguir alguns exemplos de HTML com estilização:<br/>
         <DivNaveg>
           <p>paragrafo simples.</p>
           <p id="paragrafo2">Paragrafo com id.</p>

@@ -117,7 +117,7 @@ const orgTanque = function (props) {
       <div id="divgametanque"></div>
       <div id="divcarregando" className="divcarregando">Carregando...</div>
       <a id="btLinkIniciar" className="btCinza" onClick={() => {iniciarGame()}}>Iniciar Game</a>
-        S=Andar para traz<br/>
+        S=Andar para trás<br/>
         W=Andar para frente<br/>
         A=Virar para a esquerda<br/>
         D=Virar para a direita<br/>

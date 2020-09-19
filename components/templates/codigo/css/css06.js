@@ -22,7 +22,7 @@ const atendimentoOi = function (props) {
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="CSS">
       
         <h1>CSS - Margin, padding e float</h1>
-        A seguir alguns exemploes de estilisação de HTML: 
+        A seguir alguns exemplos de estilização de HTML: 
 
         <DivNaveg>
           <p>Paragrafo simples.</p>

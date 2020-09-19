@@ -19,7 +19,7 @@ const atendimentoOi = function (props) {
       <MoHead modo={modo} title="HTML Formulario Campo Datalist" description="coHTML Formulario Campo Datalistdigo" canonical="/codigo/html/formulario_campos_06_datalist/"/>
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="html">
       <h1>HTML Formulario Campo Datalist</h1>
-          Segue um exemplo de um formário com campos imput e datalist.<br/>
+          Segue um exemplo de um formulário com campos imput e datalist.<br/>
         <DivNaveg>
         <form action="cadastro.php" methodo="POST">
                 <fieldset>

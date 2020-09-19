@@ -11,7 +11,7 @@ const layout = props => {
   console.log('Rodando /layout.js');
   var regiao = Util.validaProps(props.regiao , "RJ");
   var modo = Util.validaProps(props.modo, "html");
-  var titulo = Util.validaProps(props.titulo, "Home");
+  var titulo = Util.validaProps(props.titulo, "");
   var categoria = Util.validaProps(props.categoria, "Outros");
 
   return (
@@ -30,7 +30,7 @@ const layout = props => {
             <Div display="vertical">
               
               <div className="DivSombra">
-                <HeaderSideDoValente regiao={regiao} modo={modo}/>
+                <HeaderSideDoValente regiao={regiao} modo={modo} titulo={titulo}/>
               </div>
 
               <div className="borda"></div>

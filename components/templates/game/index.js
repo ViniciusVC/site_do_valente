@@ -34,6 +34,9 @@ const game = function (props) {
             <BtLink href={"/game/ecossistema?regiao="+regiao} value="Simulador de Ecossistema" estilo="luz"/>
             <p>Estudo de desenvolvimento de game apenas com JS e canvas.<br/> 
             Uma simulação de ecossistema, Não é jogavel.</p>
+            <BtLink href={"/game/cobrinha?regiao="+regiao} value="Cobrinha" estilo="luz"/>
+            <p>Estudo de desenvolvimento de game apenas com JS e canvas.<br/> 
+            Classico jogo da cobrinha.</p>
       </Layout>
       <style jsx>{`
         .h1{

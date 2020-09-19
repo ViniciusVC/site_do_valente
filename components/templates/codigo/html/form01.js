@@ -19,7 +19,7 @@ const atendimentoOi = function (props) {
       <MoHead modo={modo} title="HTML Formulario" description="Tutorial HTML Formulario" canonical="/codigo/html/formulario/"/>
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="html"> 
         <h1>HTML Formulário</h1>
-        Segue um exemplo de um formário simples.<br/>
+        Segue um exemplo de um formulário simples.<br/>
         <DivNaveg>
           <form action="cadastro.php" methodo="POST">
               Nome :<br/>
@@ -29,7 +29,7 @@ const atendimentoOi = function (props) {
               <input type="submit" name="btn-enviar" value="Enviar"/>
           </form>
         </DivNaveg>
-        Segue o codigo HTML deste formuário:
+        Segue o codigo HTML deste formulário:
         <DivCodigo titulo="codigo">
          {' <form action="cadastro.php" methodo="POST">'}<br/>
          &ensp; {' Nome :<br/>'}<br/>

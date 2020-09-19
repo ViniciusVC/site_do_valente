@@ -19,7 +19,7 @@ const atendimentoOi = function (props) {
       <MoHead modo={modo} title="HTML Formulario Campos Datas" canonical="/codigo/html/formulario_campos_03_datas/"/>
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="html">
       <h1>HTML Formulário Campos Datas</h1>
-        Segue um exemplo de um formário com os campos date, time, month, week e datetime-local.<br/>
+        Segue um exemplo de um formulário com os campos date, time, month, week e datetime-local.<br/>
         <DivNaveg>
         <form action="cadastro.php" methodo="POST">
                 <fieldset>
@@ -40,7 +40,7 @@ const atendimentoOi = function (props) {
             </form>
 
         </DivNaveg>
-        Segue o codigo HTML deste fomulário:<br/>
+        Segue o codigo HTML deste formulário:<br/>
         <DivCodigo titulo="codigo">
           {'<form action="cadastro.php" methodo="POST">'}<br/>
             {'<fieldset>'}<br/>

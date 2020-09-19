@@ -19,7 +19,7 @@ const atendimentoOi = function (props) {
       <MoHead modo={modo} title="HTML formulario_submit" description="HTML formulario_submit" canonical="/codigo/html/formulario_submit/"/>
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="html">
       <h1>HTML - Formulário - Submit</h1>
-        Segue um exemplo de um formário com submit externo.<br/>
+        Segue um exemplo de um formulário com submit externo.<br/>
         
         <DivNaveg>
         <form id="form-cadastro" name="formulario-cadastro">

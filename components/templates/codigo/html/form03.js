@@ -19,7 +19,7 @@ const atendimentoOi = function (props) {
       <MoHead modo={modo} title="HTML Formulário Atributos" canonical="/codigo/html/formulario_atributos/"/>
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="html">
       <h1>HTML Formulário simples</h1>
-          Segue um exemplo de um formário simples.<br/>        
+          Segue um exemplo de um formulário simples.<br/>        
         <DivNaveg>
         <form action="cadastro.php" methodo="POST" enctype="epplication/x-www-from-urlencoded" name="formulario-cadastro">
                 <fieldset>
@@ -37,7 +37,7 @@ const atendimentoOi = function (props) {
                 </fieldset>
           </form>
         </DivNaveg>
-        Segue o codigo deste formário.<br/>
+        Segue o codigo deste formulário.<br/>
         <DivCodigo titulo="codigo">
           {'<form action="cadastro.php" methodo="POST" enctype="epplication/x-www-from-urlencoded" name="formulario-cadastro">'}<br/>
           {'<fieldset>'}<br/>

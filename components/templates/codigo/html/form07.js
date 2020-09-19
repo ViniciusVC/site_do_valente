@@ -19,7 +19,7 @@ const atendimentoOi = function (props) {
       <MoHead modo={modo} title="HTML Fornulário Campos button" description="HTML Fornulário Campos button" canonical="/codigo/html/formulario_campos_04_boton/"/>
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="html">
       <h1>HTML Fornulário Campo button</h1>
-          Segue um exemplo de um formário com Campo button.<br/>
+          Segue um exemplo de um formulário com Campo button.<br/>
         
         <DivNaveg>
         <form action="cadastro.php" methodo="POST">
@@ -36,7 +36,7 @@ const atendimentoOi = function (props) {
                 </fieldset>
           </form>
         </DivNaveg>
-        Segue o codigo HTML deste fomulário:<br/>
+        Segue o codigo HTML deste formulário:<br/>
         <DivCodigo titulo="codigo">
           {'<form action="cadastro.php" methodo="POST">'}<br/>
           {'<fieldset>'}<br/>

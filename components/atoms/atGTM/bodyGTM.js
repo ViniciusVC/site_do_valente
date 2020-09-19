@@ -29,11 +29,18 @@ const bodyGTM = props => {
   }else{
     return(
       <amp-analytics type="googleanalytics">
-        <script type="application/json">
-          {`
-            { "vars": { "account": "UA-177955684-1" }, "triggers": { "trackPageview": { "on": "visible", "request": "pageview" } } }
-          `}
-        </script>
+        <script 
+            type="application/json"
+            dangerouslySetInnerHTML={{
+              __html: `
+                { "vars": { "account": "${codGTM}" },
+                 "triggers": { 
+                    "trackPageview": { "on": "visible", "request": "pageview" } 
+                  } 
+                }
+              `,
+            }}
+        />
       </amp-analytics>
     )
   }

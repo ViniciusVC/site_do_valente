@@ -20,7 +20,7 @@ const atendimentoOi = function (props) {
       <MoHead modo={modo} title="CSS - Classe, ID e Span" canonical="/codigo/css/css05/"/> 
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="CSS">
           <h1>CSS - Classe, ID e Span</h1>
-          A seguir alguns exemploes de estilisação de HTML: 
+          A seguir alguns exemplos de estilização de HTML: 
           <p>Cascading Style Sheets é um mecanismo para adicionar estilo a um documento web. O código CSS pode ser aplicado diretamente nas tags ou ficar contido dentro das tags style. Também é possível, em vez de colocar a formatação dentro do documento, criar um link para um arquivo CSS que contém os estilos.</p>
           <DivNaveg>
           <p>Paragrafo simples.</p>

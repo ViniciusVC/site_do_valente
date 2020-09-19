@@ -24,10 +24,10 @@ const templateHome = function (props) {
             </div>
             <div>
               <p>Meu nome é Vinícius Valente Coutinho, Analista de Sistemas fullstack,<br/> 
-              com experiencia em configuração de CDN, Apache, AMP, SEO, NodeJS, PHP, Hadoop.<br/> 
+              com experiência em configuração de CDN, Apache, AMP, SEO, NodeJS, PHP, Hadoop.<br/> 
               Atualmente liderando equipe de desenvolvimento de projeto de BigData.<br/> 
-              Atuei como lider de equipe em projeto AMP com foco em melhoria do SEO.</p>
-              <BtLink href={"/eu/curriculo/?regiao="+regiao} value="Veja meu curriculo aqui." estilo="luz"/>
+              Atuei como líder de equipe em projeto AMP com foco em melhoria do SEO.</p>
+              <BtLink href={"/eu/curriculo/?regiao="+regiao} value="Veja meu currículo aqui." estilo="luz"/>
               <br/>
             </div>
           </Div>

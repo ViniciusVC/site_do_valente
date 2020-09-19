@@ -17,27 +17,32 @@ const templateHome = function (props) {
           <h1>CURR&Iacute;CULO</h1>
           Vinicius Valente Coutinho
           <h2>CONTATO:</h2>
-          Residencia em RJ, bairro Jacarepagua na cidade do Rio de janeiro.<br/>
-          Residencia em MG, bairro Parte Alta na cidade de Bicas.<br/>
+          Residência em RJ, bairro Jacarepaguá na cidade do Rio de janeiro.<br/>
+          Residência em MG, bairro Parte Alta na cidade de Bicas.<br/>
           E-mail : vinivalent@gmail.com<br/>
           Linkedin : <Link href="https://www.linkedin.com/in/vin%C3%ADcius-valente-51989523/">https://www.linkedin.com/in/vin%C3%ADcius-valente-51989523/</Link><br/>
           Google Sites : <Link href="https://sites.google.com/view/viniciusvalente/">https://sites.google.com/view/viniciusvalente/</Link><br/>
           GitHub : <Link href="https://github.com/ViniciusVC/">https://github.com/ViniciusVC/</Link><br/>
           <h2>OBJETIVOS:</h2>
-          Lider técnico; Fullstack; Gerente de Desenvolvimento de Sistemas<br/>
+          Líder técnico; Fullstack; Gerente de Desenvolvimento de Sistemas<br/>
 
           <h2>HIST&Oacute;RICO PROFISSIONAL:</h2>
           
           <h3>Oi - Atualmente des de 04/09/2017</h3>          
+          
+          <h3>01/07/2020 - Especialista - Equipe AI e Machine Learning:</h3>
+          <ul>
+          <li>Lider técnico projeto Predição de Falhas.</li>
+          </ul>
 
           <h3>11/11/2019 - Especialista - Equipe Insights:</h3>
           <ul>
-          <li>Lider técnico de projeto Big Data.</li>
+          <li>Líder técnico de projeto Big Data.</li>
           </ul>
 
           <h3>12/06/2018 - Especialista - Equipes e-commerce e SEO:</h3>
           <ul>
-          <li>Lider técnico do projeto AMP, gerado em servidor NodeJS.</li>
+          <li>Líder técnico do projeto AMP, gerado em servidor NodeJS.</li>
           <li>Configuração dos Apaches do site da Oi.</li>
           <li>Configuração da CDN-AWS.</li>
           </ul>
@@ -50,7 +55,7 @@ const templateHome = function (props) {
 
           <h3>Consultor. De 2015 a 2016</h3>
           <ul>
-          <li>Consultor de solução web para Consorcio Intermunicipal de Especialidades</li>
+          <li>Consultor de solução web para Consórcio Intermunicipal de Especialidades</li>
           <li>Trabalhos como designer e Ilustrador</li>
           </ul>
           

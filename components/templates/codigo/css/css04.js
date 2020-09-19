@@ -20,7 +20,7 @@ const atendimentoOi = function (props) {
       <MoHead modo={modo} title="CSS - Links e Divs" canonical="/codigo/css/css04/"/> 
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="CSS">
         <h1>CSS - Links e Divs</h1>
-        A seguir alguns exemploes de estilisação de HTML:   
+        A seguir alguns exemplos de HTML com estilização de HTML:   
         <DivNaveg>
           <div className="top_div">
             Exemplo Div.

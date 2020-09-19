@@ -20,7 +20,7 @@ const atendimentoOi = function (props) {
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="html">
       <h1>HTML Formulário com Keygen</h1>
         A tag {'<keygen>'} é utilizada para entrada de senhas.<br/>
-        Segue um exemplo de um formário com Keygen.<br/>
+        Segue um exemplo de um formulário com Keygen.<br/>
 
         <DivNaveg>
         <form action="logar.php" methodo="GET" name="formulario-login">

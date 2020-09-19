@@ -20,7 +20,7 @@ const atendimentoOi = function (props) {
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="html">
       <h1>HTML Formário com Legenda</h1>
           Tag {'<legend>Aqui dentro entra o texto da legenda</legend>'}.<br/>
-          Segue um exemplo de um formário com Legenda.<br/>
+          Segue um exemplo de um formulário com Legenda.<br/>
         <DivNaveg>
         <form action="cadastro.php" methodo="POST">
             <fieldset>
@@ -38,7 +38,7 @@ const atendimentoOi = function (props) {
 
         {'<form action="cadastro.php" methodo="POST">'}<br/>
         &ensp; {'<fieldset>'}<br/>
-        &ensp; &ensp; {'<legend>Exemplo de Formulário com legend</legend>'}<br/>
+        &ensp; &ensp; {'<legend>Exemplo de formulário com legend</legend>'}<br/>
         &ensp; &ensp; {'Nome :<br/>'}<br/>
         &ensp; &ensp; {'<input type="text" name="nome" /><br/>'}<br/>
         &ensp; &ensp; {'Senha :<br/>'}<br/>

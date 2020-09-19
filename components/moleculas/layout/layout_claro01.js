@@ -22,7 +22,7 @@ const layout = props => {
         <Div display="vertical">
           <div className="borda"></div>
           <div className="DivSombra">
-            <HeaderSideDoValente regiao={regiao} modo={modo}/>
+            <HeaderSideDoValente regiao={regiao} modo={modo} titulo={titulo}/>
           </div>
           <div className="borda"></div>
           <Div display="justificado">
