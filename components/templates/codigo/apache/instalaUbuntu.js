@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from '../../../moleculas/layout'
-import MoHead from '../../..//moleculas/moHead'
+import MoHead from '../../../moleculas/moHead'
+import DivCodigo from '../../../atoms/atDivCodigo'
 import * as Util from '../../../../controller/util.js';
 
 const instalaubuntu = function (props) {
@@ -15,26 +16,36 @@ const instalaubuntu = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="Instalando Apache no Ubuntu" canonical="/codigo/apache/instalaubuntu/"/>
+      <MoHead 
+        modo={modo} 
+        title="Instalando Apache no Ubuntu" 
+        canonical="/tutorial/apache/instalaubuntu/"/>
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="Apache">
         <h1>Instalando Apache no Ubuntu</h1>
           <p>
           <br/>Resumo
           <br/>
-          <br/>Logar como administrador:
-          <br/>$ sudo su
           <br/>
-          <br/>Atualizar o Ubuntu:
-          <br/>$ apt-get update 
+          <DivCodigo titulo="Logar como administrador:">
+            $ sudo su
+          </DivCodigo>
           <br/>
-          <br/>Instalar o Apache v2: 
-          <br/>$ apt-get install apache2
+          
+          <DivCodigo titulo="Atualizar o Ubuntu:">$ apt-get update </DivCodigo>
           <br/>
-          <br/>Reinicie o Apache: 
-          <br/>$ /etc/init.d/apache2 restart
+           
+          <DivCodigo titulo="Instalar o Apache v2:">$ apt-get install apache2</DivCodigo>
           <br/>
-          <br/>Permissão de escrita no diretório padrão do Apache: 
-          <br/>$ chmod 777 /var/www 
+           
+          <DivCodigo titulo="Reinicie o Apache:">
+            $ /etc/init.d/apache2 restart
+          </DivCodigo>
+
+          <DivCodigo titulo="Permissão de escrita no diretório padrão do Apache:">
+            $ chmod 777 /var/www 
+          </DivCodigo>
+
+          <br/>
           <br/>
           <br/>Teste usando
           <br/>http://localhost

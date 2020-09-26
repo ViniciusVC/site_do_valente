@@ -31,7 +31,11 @@ const atendimentoOi = function (props) {
   
   return (
     <div>
-      <MoHead modo={modo} title="CSS - Tabelas Style" canonical="/codigo/css/css13/"/>  
+      <MoHead
+        modo={modo}
+        title="CSS - Tabelas Style"
+        description="Tutorial CSS Tabelas Style."
+        canonical="/tutorial/css/css13/"/>  
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="CSS">
         <h1>CSS - Tabelas Style</h1>
         <p>

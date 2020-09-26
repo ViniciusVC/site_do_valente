@@ -17,10 +17,17 @@ const atendimentoOi = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="CSS - Imagens de fundo e atributo text" canonical="/codigo/css/css03/"/> 
+      <MoHead 
+        modo={modo} 
+        title="CSS - Imagens de fundo e atributo text" 
+        description="Tutorial 3 - CSS - Imagens de fundo e atributo text"
+        canonical="/tutorial/css/css03/"/> 
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="CSS">
-        <h1>CSS - Imagens de fundo e atributo text</h1><br/>
-        A seguir um exemplos de estilização de HTML:
+        <h1>
+          CSS - Imagens de fundo e atributo text</h1><br/>
+          background-image : Usado para aplicar uma imagem no fundo de um objeto html (ex.:DIV)<br/> 
+        <br/>
+        A seguir um exemplos de estilização de HTML:<br/>
         <DivNaveg>
           <div className="CSS03Div1">Exemplo Div</div> 
           <p>Texto do paragrafo 1</p>

@@ -17,29 +17,48 @@ const atendimentoOi = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="CSS - Classe, ID e Span" canonical="/codigo/css/css05/"/> 
+      <MoHead 
+        modo={modo} 
+        title="CSS - Classe, ID e Span" 
+        description="Tutorial 5 - CSS - Classe, ID e Span"
+        canonical="/tutorial/css/css05/"/> 
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="CSS">
-          <h1>CSS - Classe, ID e Span</h1>
+        <h1>CSS - Classe, ID e Span</h1>
+        <p>
+          Qual a diferença entre CLASS e ID?<br/>
+          Em HTML e CSS, há a possibilidade de aplicar estilos através de 'class' e 'id' e, em JavaScript é possível indentificar algum elemento de uma página por sua classe, id ou tag. Mas qual a diferença entre 'class' e 'id'?<br/>
+        </p>
+        <p>
+          Classe : são uma forma de identificar um grupo de elementos. Através delas, pode-se atribuir formatação a VÁRIOS elementos de uma vez.<br/> 
+          ID : As ids são uma forma de identificar um elemento, e devem ser ÚNICAS para cada elemento. É como se fossem impressões digitais de nossos dedos ou RGs. Através delas, pode-se atribuir formatação a um elemento em especial.<br/>
+          Span :<br/>
           A seguir alguns exemplos de estilização de HTML: 
-          <p>Cascading Style Sheets é um mecanismo para adicionar estilo a um documento web. O código CSS pode ser aplicado diretamente nas tags ou ficar contido dentro das tags style. Também é possível, em vez de colocar a formatação dentro do documento, criar um link para um arquivo CSS que contém os estilos.</p>
-          <DivNaveg>
-          <p>Paragrafo simples.</p>
+        </p>
+        <DivNaveg>
+          <div id="div1">div1</div>
+          <div className="classdivs">div2</div>
+          <span>Paragrafo simples.</span>
         </DivNaveg>
         
         <DivCodigo titulo="Codigo HTML">
-          {'<p>Paragrafo simples.</p>'}
+          {'<span>Paragrafo simples.</span>'}
         </DivCodigo>
           
         <DivCodigo titulo="CSS">
-          {'p{color : #000000;}'}
+          {"#div1{"}<br/>
+          color : #fff000;<br/>
+          {"}"}<br/>
+          {".classdivs{"}<br/>
+          color : #000000;<br/>
+          {"}"}<br/>
         </DivCodigo>
 
       </Layout >
       <style jsx>{`
-        .h1{
-          color : #000000;
+        #div1{
+          color : #fff000;
         }
-        .p{
+        .classdivs{
           color : #000000;
         }
     `}</style>

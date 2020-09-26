@@ -17,7 +17,10 @@ const html = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="codigo HTML" description="codigo HTML" canonical="/codigo/html/"/>
+      <MoHead 
+        modo={modo} 
+        title="tutorial HTML" 
+        description="tutorial Codigo HTML" canonical="/tutorial/html/"/>
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="html">
         <Div display="responsivo">
           <div className="coluna404">

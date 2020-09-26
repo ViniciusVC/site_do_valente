@@ -17,7 +17,7 @@ const atendimentoOi = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="Encontrar diretorio no PHP" canonical="/codigo/php/procuradiretorio/"/>
+      <MoHead modo={modo} title="Encontrar diretorio no PHP" description="Encontrar diretorio no PHP" canonical="/tutorial/php/procuradiretorio/"/>
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="PHP">
           <h1>Encontrar diretorio no PHP</h1>
           <DivCodigo titulo="Código PHP">

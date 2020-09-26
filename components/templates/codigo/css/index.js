@@ -17,7 +17,11 @@ const codigoCSS = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="CSS" description="Codigo CSS" canonical="/codigo/css/"/>  
+      <MoHead 
+        modo={modo} 
+        title="O que é CSS" 
+        description="tutorial CSS" 
+        canonical="/tutorial/css/"/>  
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="CSS">
         <Div display="responcivo">
           <div className="coluna404">
@@ -27,8 +31,8 @@ const codigoCSS = function (props) {
           <div>
             <Img 
                 src="/static/assetsv5/img/codigo/logocss.png"
-                width="323px"
-                height="436px"
+                width="200px"
+                height="280px"
                 alt="Logo CSS"
                 title="Logo CSS"
                 class="ClassLogoCSS"

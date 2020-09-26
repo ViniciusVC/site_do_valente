@@ -12,7 +12,7 @@ const ListadeRotas = function (props) {
   }
   //Layout luz verde
   return (
-    <BtLink href={StringModo+href+"?regiao="+regiao} value={props.children} estilo="itemLuzVerde"/>
+    <BtLink href={StringModo+href+"?regiao="+regiao} value={props.children} estilo="neonItem"/>
   )
 
 //  //Layout escuro

@@ -1,0 +1,52 @@
+import React, { Children } from "react";
+
+const BtLinkLaranja = props => {
+  var varValue = props.value;
+  var varHref = props.href;
+  return (
+      // Botão do formulário Meus Documentos.
+      <div>
+        <a className="btLinklaranja" href={varHref}>
+          {varValue}
+        </a>
+        <style jsx>{`
+          .btLinklaranja {
+            font-family: oiTextRegular, sans-serif;
+            background-color: #f8562c;
+            background-image: linear-gradient(260deg, #fb851c, #f8562c);
+            border-radius: 6px;
+            color: #ffffff;
+            display: block;
+            font-size: 1rem; /*16px*/
+            height: 3.42857143rem;
+            text-align: center;
+            width: 280px;
+            text-decoration: none;
+            border-bottom: solid 1px #dbdbdb;
+            cursor: pointer;
+            outline: 0;
+            margin: 0;
+            padding: 1.2rem;
+            box-sizing: border-box;
+            font-style: normal;
+            transition-duration: 1s;
+          }
+          .btLinklaranja:hover {
+            transition-duration: 1s;
+            color: #f8562c;
+            border: solid 1px #fb851c;
+            background-color: #ffffff;
+            background-image: none;
+          }
+        `}</style>
+      </div>
+    );
+    //transition: background-image: 2s, transform 2s;
+    //-webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+    //transition-delay: 0.5s //espera pra
+    //transition: all 0.8s;
+    //-webkit-transition: all 0.8s;
+    //-moz-transition: all 0.8s;
+    //-o-transition: all 0.8s; 
+};
+export default BtLinkLaranja;

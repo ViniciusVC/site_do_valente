@@ -21,7 +21,7 @@ const layoutCristalBot = props => {
       <Div display="justificado">
           
           <div className="layoutManu esconder">
-            <Janela estilo="luz">
+            <Janela estilo="terminal">
                 <ListadeRotas regiao={regiao} modo={modo} titulo={titulo} categoria={categoria}/>
             </Janela>
           </div>
@@ -29,11 +29,9 @@ const layoutCristalBot = props => {
           <div className="layoutBody">
             <Div display="vertical">
               <div>
-                <div className="conteudo">
                 {props.children}
-                </div>
               </div>
-              <Janela estilo="luz">
+              <Janela estilo="terminal">
                 <FooterSideDoValente regiao={regiao} modo={modo}/>
               </Janela>
             </Div>
@@ -62,7 +60,7 @@ const layoutCristalBot = props => {
         }
         .layoutBody{
           width: 100%;
-          padding-left:5px;
+          padding-right:0px;
         }
 
       }

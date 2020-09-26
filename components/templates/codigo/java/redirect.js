@@ -1,8 +1,9 @@
 import React from 'react'
 import Layout from '../../../moleculas/layout'
+import MoHead from '../../../moleculas/moHead'
+import OQueERedirect from '../../../moleculas/moOQueERedirect'
 import DivCodigo from '../../../atoms/atDivCodigo'
 //import DivNaveg from '../../../atoms/atDivNaveg'
-import MoHead from '../../../moleculas/moHead'
 import * as Util from '../../../../controller/util.js';
 import Icon from '../../../atoms/atIcon/index.js'
 
@@ -18,7 +19,11 @@ const codigoJavaRedirect = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="REDIRECT com Java" description="Tutorial REDIRECT no Java" canonical="/codigo/java/redirect/"/>
+      <MoHead 
+        modo={modo} 
+        title="REDIRECT com Java" 
+        description="Tutorial REDIRECT no Java" 
+        canonical="/tutorial/java/redirect/"/>
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="Java">
           <h1>Redirect Java</h1>
           <p>Java...</p>
@@ -27,6 +32,7 @@ const codigoJavaRedirect = function (props) {
           <DivCodigo titulo="Código JAVA">
             <p>Pagina em costrução.</p>
           </DivCodigo>
+          <OQueERedirect/>
       </Layout>
       <style jsx>{`
         .h1{

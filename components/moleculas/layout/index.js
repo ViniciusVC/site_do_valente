@@ -22,22 +22,22 @@ const layout = props => {
       <Div display="justificado">
           
           <div className="layoutManu esconder">
-            <Janela estilo="luz">
+            <Janela estilo="neon">
                 <ListadeRotas regiao={regiao} modo={modo} titulo={titulo} categoria={categoria}/>
             </Janela>
           </div>
 
           <div className="layoutBody">
             <Div display="vertical">
-              <Janela estilo="luz">
+              <Janela estilo="neon">
                 <HeaderSideDoValente regiao={regiao} modo={modo} titulo={titulo}/>
               </Janela>
-              <Janela estilo="luz">
+              <Janela estilo="neon">
                 <div className="conteudo">
                 {props.children}
                 </div>
               </Janela>
-              <Janela estilo="luz">
+              <Janela estilo="neon">
                 <FooterSideDoValente regiao={regiao} modo={modo}/>
               </Janela>
             </Div>
@@ -54,10 +54,10 @@ const layout = props => {
       }
       .layoutManu{
         width: 25%;
-        padding-left:2%;
+        /*padding-left:2%;*/
       }
       .layoutBody{
-        width: 70%;
+        width: 71%;
         padding-right:2%;
       }
       @media(max-width: 1169px) {
@@ -66,7 +66,7 @@ const layout = props => {
         }
         .layoutBody{
           width: 96%;
-          padding-left:2%;
+          /*padding-left:2%;*/
         }
       }
       @media(max-width: 1169px) {

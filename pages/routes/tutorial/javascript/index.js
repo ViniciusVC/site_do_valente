@@ -1,5 +1,5 @@
 import React from 'react';
-import TemplaJavaScript from '../../../../components/templates/codigo/javascript.js';
+import TemplaJavaScript from '../../../../components/templates/codigo/javascript/index.js';
 import * as Util from '../../../../controller/util.js';
 //import { withAmp } from 'next/amp';
 

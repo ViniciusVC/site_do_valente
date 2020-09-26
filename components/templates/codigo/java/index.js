@@ -18,7 +18,11 @@ const codigoJava = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="Java" description="O que é Java." canonical="/codigo/java/"/>
+      <MoHead 
+        modo={modo} 
+        title="O que é Java" 
+        description="Tutorial - O que é Java." 
+        canonical="/tutorial/java/"/>
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="Java">
         <Div display="responcivo">
           <div className="coluna404">

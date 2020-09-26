@@ -14,10 +14,13 @@ const animaBut = function (props) {
   const modo = Util.validaProps(props.modo, "html");
   const JsonRegiao = Util.regiao(regiao);
 
-
   return (
     <div>
-      <MoHead modo={modo} title="Exemplos de CSS animação de butão" description="CSS_anima_but" canonical="/codigo/css/anima_but/"/> 
+      <MoHead 
+        modo={modo} 
+        title="Exemplos de CSS animação de butão" 
+        description="Tutorial - Exemplos de animação de butão apenas com CSS." 
+        canonical="/tutorial/css/anima_but/"/> 
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="CSS">
       <Div display="vertical">
           <div>

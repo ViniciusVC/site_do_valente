@@ -8,7 +8,7 @@ import BtLink from '../../atoms/atBtLink'
 //import * as Util from '../../../controller/util.js';
 //console.log('moHeaderSideDoValente ');
 
-const moHeaderSideDoValente = function (props) {
+const moFooterSideDoValente = function (props) {
   const regiao = props.regiao;
   const modo = props.modo;
   //const JsonRegiao = Util.regiao(regiao);
@@ -28,17 +28,17 @@ const moHeaderSideDoValente = function (props) {
         </div>
         <div>
           <Div display="responsivo">
-            <div>
-              <BtLink href={StringModo+"/?regiao="+regiao} value="Home" estilo="luz"/>
-              <BtLink href={StringModo+"/codigo/?regiao="+regiao} value="Tutoriais" estilo="luz"/>
+            <div className="footerColuna">
+              <BtLink href={StringModo+"/?regiao="+regiao} value="Home" estilo="neon"/>
+              <BtLink href={StringModo+"/tutorial/?regiao="+regiao} value="Tutoriais" estilo="neon"/>
             </div>
-            <div>
-              <BtLink href={StringModo+"/utilitarios/?regiao="+regiao} value="Utilitarios" estilo="luz"/>
-              <BtLink href={StringModo+"/game?regiao="+regiao} value="Jogos" estilo="luz"/>                  
+            <div className="footerColuna">
+              <BtLink href={StringModo+"/utilitarios/?regiao="+regiao} value="Utilitarios" estilo="neon"/>
+              <BtLink href={StringModo+"/game/?regiao="+regiao} value="Jogos" estilo="neon"/>                  
             </div>    
-            <div>
-              <BtLink href="https://sites.google.com/view/vvc-estudio/home" value="Design" estilo="luz"/>
-              <BtLink href={StringModo+"/eu?regiao="+regiao} value="Autor" estilo="luz"/>       
+            <div className="footerColuna">
+              <BtLink href="https://sites.google.com/view/vvc-estudio/home" value="Design" estilo="neon"/>
+              <BtLink href={StringModo+"/eu/?regiao="+regiao} value="Autor" estilo="neon"/>       
             </div>
           </Div>
           <Div display="horizontal">
@@ -68,12 +68,12 @@ const moHeaderSideDoValente = function (props) {
           </Div>  
               © 2020 VVC Studio. Todos os direitos reservados.
         </div>
+        
         <div className="FooterdoSite">
-        <p></p>
+          <p></p>
           <MoRegiao modo={modo} regiao={regiao} />
-          
- 
         </div>
+
       <style jsx>{`
       .logo{
         margin:0px;
@@ -81,6 +81,10 @@ const moHeaderSideDoValente = function (props) {
         /*animation-delay: 2s;*/
         animation-duration: 3s;
         animation-name: slideinSombra;
+      }
+      
+      .footerColuna{
+        min-width: 155px;
       }
 
       .FooterdoSite{
@@ -94,7 +98,7 @@ const moHeaderSideDoValente = function (props) {
   )
 }
 
-export default moHeaderSideDoValente
+export default moFooterSideDoValente
 
 
 //© 2020 VVC Estudio. All Rights Reserved. 

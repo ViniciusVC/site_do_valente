@@ -19,7 +19,11 @@ const templateHome = function (props) {
   var modo = Util.validaProps(props.modo,"html");
   return (
     <div>
-      <MoHead modo={modo} title="Página não encontrada" description="Página não encontrada" canonical="/404/"/>
+      <MoHead 
+        modo={modo} 
+        title="Página não encontrada" 
+        description="Página não encontrada" 
+        canonical="/404/"/>
       <Layout regiao={regiao} modo={modo} titulo="Erro" categoria="Erro">
         <Div display="responsivo">
           <div className="coluna404">
@@ -39,7 +43,7 @@ const templateHome = function (props) {
                 </p>
               </div>
             </Div>
-            <BtLink href={"/?regiao="+regiao} value="Página inicial." estilo="luz"/>
+            <BtLink href={"/?regiao="+regiao} value="Página inicial." estilo="neon"/>
           </div>
           <div>
               <Img 

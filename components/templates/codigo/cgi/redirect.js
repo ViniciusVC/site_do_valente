@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import FaviIcon from '../../../atoms/atFavIcon'
 import Layout from '../../../moleculas/layout'
+import OQueERedirect from '../../../moleculas/moOQueERedirect'
 import * as Util from '../../../../controller/util.js';
 import DivCodigo from '../../../atoms/atDivCodigo'
 //import DivNaveg from '../../../atoms/atDivNaveg'
@@ -36,6 +37,7 @@ const codigoAspRedirect = function (props) {
               {'print $q->redirect("http://www.seu-novo-site.com.br/");'}<br/>
             </xmp>
           </DivCodigo> 
+          <OQueERedirect/>
           <Link href={"/codigo/cgi?regiao="+regiao}>O que é CGI?</Link>
       </Layout>
       <style jsx>{`

@@ -159,11 +159,6 @@ const templateHome = function (props) {
           <li> Lotus123, Dbase, Dbase Programado e Clipper: Info Grego's Inform&aacute;tica. - de 10/94 a 11/94</li>
           <li>IPD, Ms-Dos, Print Master, Formax, Wordstar: Info Grego's inform&aacute;tica. - de 14/6/94 a 14/07/94</li>
           </ul>
-
-          <h2>PRETEN&Ccedil;&Atilde;O SALARIAL:</h2>
-          R$ 9.500,00 (CLT)
-          <br/><br/>
-
         </Layout>
       <style jsx>{`
         .h2{

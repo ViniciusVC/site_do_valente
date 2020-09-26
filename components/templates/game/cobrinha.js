@@ -2,7 +2,7 @@ import React from 'react'
 //import Link from 'next/link'
 // import Head from 'next/head'
 // import FavIcon from '../../atoms/atFavIcon'
-import Layout from '../../moleculas/layout'
+import Layout from '../../moleculas/layout/cristalbot.js' // Esta pagina tem um layout diferente.
 import MoHead from '../../moleculas/moHead'
 import Cobrinha from '../../organisms/orgCobrinha'
 import * as Util from '../../../controller/util.js';
@@ -14,7 +14,7 @@ function retornaogame(modo,regiao){
   }else{ 
     return (
       <p>O jogo não pode ser visto no modo AMP.<br/>
-        <BtLink href={"/game/tanque?regiao="+regiao} value="Clique aqui para sair do modo AMP." estilo="cinza"/><br/>
+        <BtLink href={"/game/tanque?regiao="+regiao} value="Clique aqui para sair do modo AMP." estilo="neon"/><br/>
       </p>
       )
   }
@@ -33,11 +33,20 @@ const TemplateCobrinha = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="Teste Game Cobrinha" description="Desenvolvimento de Game com JS - Cobrinha." canonical="/game/Cobrinha/"/>
+      <MoHead 
+        modo={modo} 
+        title="Game Cobrinha Classico" 
+        description="Desenvolvimento de Game com JS - Cobrinha." 
+        canonical="/game/Cobrinha/"/>
       <Layout regiao={regiao} modo={modo} titulo="Games" categoria="Games">
-          <h1>Game Cobrinha</h1>
-          {retornaogame(modo,regiao)}
-          <br/>
+        <h1>Jogo da Cobrinha</h1>
+        {retornaogame(modo,regiao)}
+        <br/>
+        <p>
+          Verção do clássico Blockade ou "Jogo da Cobrinha".<br/>
+          Blockadev foi um videogame de arcade lançado em outubro de 1976 desenvolvido por Gremlin.<br/>
+          Foi o primeiro do que seria conhecido como "jogos de cobra".<br/>
+        </p>
       </Layout>
     </div>
   )

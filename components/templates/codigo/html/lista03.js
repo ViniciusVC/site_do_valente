@@ -17,7 +17,11 @@ const atendimentoOi = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="HTML Lista Ordenada type A" description="Tutorial HTML Lista Ordenada type A" canonical="/codigo/html/lista03/"/>
+      <MoHead 
+        modo={modo} 
+        title="HTML Lista Ordenada type A" 
+        description="Tutorial HTML Lista Ordenada type A" 
+        canonical="/tutorial/html/lista03/"/>
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="html">
         <h1>HTML Lista Ordenada (type=A)</h1>
         <p>

@@ -16,7 +16,11 @@ const atendimentoOi = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="HTML Fornulário Campos button" description="HTML Fornulário Campos button" canonical="/codigo/html/formulario_campos_04_boton/"/>
+      <MoHead 
+        modo={modo} 
+        title="HTML Fornulário Campos button" 
+        description="HTML Fornulário Campos button" 
+        canonical="/tutorial/html/formulario_campos_04_boton/"/>
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="html">
       <h1>HTML Fornulário Campo button</h1>
           Segue um exemplo de um formulário com Campo button.<br/>

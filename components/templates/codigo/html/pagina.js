@@ -16,7 +16,11 @@ const atendimentoOi = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="Estrutura da Página HTML" description="Tutorial Estrutura da Página HTML5" canonical="/codigo/html/pagina/"/>
+      <MoHead 
+        modo={modo} 
+        title="Estrutura da Página HTML" 
+        description="Tutorial Estrutura da Página HTML5" 
+        canonical="/tutorial/html/pagina/"/>
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="html">
       <h1>Estrutura da Página HTML5</h1>
         <p>Segue a estrutura de uma página HTML5.</p>        

@@ -16,7 +16,11 @@ const atendimentoOi = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="HTML Time e Datetime" description="Tutorial HTML Time e Datetime" canonical="/codigo/html/"/>
+      <MoHead 
+        modo={modo} 
+        title="HTML Time e Datetime" 
+        description="Tutorial HTML Time e Datetime" 
+        canonical="/tutorial/html/timedatetime/"/>
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="html">
       <h1>HTML Time e Datetime</h1>
       <p>

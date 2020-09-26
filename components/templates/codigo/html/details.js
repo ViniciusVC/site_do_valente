@@ -16,7 +16,7 @@ const atendimentoOi = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="Tutorial HTML TAG DETAILS" description="Tutorial HTML TAG DETAILS" canonical="/codigo/html/detalhes/"/>
+      <MoHead modo={modo} title="Tutorial HTML TAG DETAILS" description="Tutorial HTML TAG DETAILS" canonical="/tutorial/html/detalhes/"/>
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="html">
         <h1>HTML - TAG DETAILS</h1>
         <p>O elemento HTML details (details) é usado como uma ferramenta de onde o usuário irá obter informações adicionais.</p>

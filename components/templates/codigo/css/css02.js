@@ -16,11 +16,14 @@ const atendimentoOi = function (props) {
 
   return (
     <div className="Body">
-      <MoHead modo={modo} title="CSS - img, text" canonical="/codigo/css/css02/"/> 
+      <MoHead 
+        modo = {modo} 
+        title = "CSS - img, text" 
+        description = "Tutorial 2 - CSS - img, text"
+        canonical="/tutorial/css/css02/"/> 
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="CSS">
       <h1>CSS - img, text</h1>
-      <h1>CSS Paragrafo, ID e Class</h1>
-        A seguir alguns exemploes de HTML com estilisação:<br/>
+        A seguir alguns exemplos de HTML com estilização:<br/>
         
         <DivNaveg>
           <p>paragrafo simples.</p>
@@ -28,7 +31,7 @@ const atendimentoOi = function (props) {
           <p className="paragrafo3">Paragrafo com class.</p>
         </DivNaveg>
 
-        <DivCodigo titulo="Codigo HTML">
+        <DivCodigo titulo="Código HTML">
           {'<p>paragrafo simples.</p>'}<br/>
           {'<p id="paragrafo2">Paragrafo com id.</p>'}<br/>  
           {'<p className="paragrafo3">Paragrafo com class.</p>'}<br/>

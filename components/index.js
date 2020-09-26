@@ -16,7 +16,10 @@ export {atLine} from './atoms/atLine/exemplos.js';
 export {atLink} from './atoms/atLink/exemplos.js';
 export {atPrice} from './atoms/atPrice/exemplos.js';
 export {moLogin} from './moleculas/backup/moLogin/exemplos.js';
+
+export {moJanela} from './moleculas/moJanela/exemplos.js';
 export {moMenuMobile01} from './moleculas/moMenuMobile01/exemplos.js';
+export {moOQueERedirect} from './moleculas/moOQueERedirect/exemplos.js';
 export {moAlerta} from './moleculas/moAlerta/exemplos.js';
 export {moBtEnviaArquivo} from './moleculas/moBtEnviaArquivo/exemplos.js';
 export {moCaptcha} from './moleculas/moCaptcha/exemplos.js';

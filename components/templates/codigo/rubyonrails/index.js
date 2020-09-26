@@ -16,7 +16,7 @@ const codigoRuby = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="Ruby On Rails" description="Código Ruby On Rails" canonical="/codigo/rubyonrails/"/>
+      <MoHead modo={modo} title="Ruby On Rails" description="Tutorial - Ruby On Rails" canonical="/tutorial/rubyonrails/"/>
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="Ruby on Rails">
         <Div display="responcivo">
           <div className="coluna404">

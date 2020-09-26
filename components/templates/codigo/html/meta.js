@@ -16,7 +16,11 @@ const atendimentoOi = function (props) {
 
   return (
     <div>
-     <MoHead modo={modo} title="HTML META TAGS" description="Tutorial HTML META TAGS" canonical="/codigo/html/meta/"/>
+     <MoHead 
+      modo={modo} 
+      title="HTML META TAGS" 
+      description="Tutorial HTML META TAGS" 
+      canonical="/tutorial/html/meta/"/>
      <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="html">
       <h1>HTML META TAGS</h1>
       <p>

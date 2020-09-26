@@ -1,9 +1,11 @@
 import React from 'react'
 import Head from 'next/head'
+import Link from 'next/link'
 import FaviIcon from '../../../atoms/atFavIcon'
 import DivCodigo from '../../../atoms/atDivCodigo'
 //import DivNaveg from '../../../atoms/atDivNaveg'
 import Layout from '../../../moleculas/layout'
+import OQueERedirect from '../../../moleculas/moOQueERedirect'
 import * as Util from '../../../../controller/util.js';
 
 const codigoAspRedirect = function (props) {
@@ -36,7 +38,9 @@ const codigoAspRedirect = function (props) {
               {'Response.AddHeader "Location","http://www.seu-novo-site.com.br/"'}<br/>
               {'%>'}<br/>
             </xmp>
-          </DivCodigo> 
+          </DivCodigo>
+          <OQueERedirect/>
+          <Link href={"/codigo/ASP?regiao="+regiao}>O que é ASP?</Link>
       </Layout>
       <style jsx>{`
         .h1{

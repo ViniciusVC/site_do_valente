@@ -10,7 +10,7 @@ import * as Util from '../../../../controller/util.js';
 const codigoJava = function (props) {
 
   console.log('╔═══════════════════════════╗');
-  console.log('║        codigo  Python       ║');
+  console.log('║    Tutorial  Python       ║');
   console.log('╚═══════════════════════════╝');
 
   var regiao = Util.validaProps(props.regiao , "RJ");
@@ -18,7 +18,7 @@ const codigoJava = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="Python" description="O que é Python" canonical="/codigo/python/"/>
+      <MoHead modo={modo} title="Python" description="O que é Python" canonical="/tutorial/python/"/>
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="Python">
         <Div display="responcivo">
           <div className="coluna404">
@@ -36,11 +36,11 @@ const codigoJava = function (props) {
           <div>
             <Img 
                   src="/static/assetsv5/img/codigo/logopython.svg"
-                  width="323px"
-                  height="436px"
-                  alt="Logo Java"
-                  title="Logo Java"
-                  class="ClassLogoJava"
+                  width="200px"
+                  height="200px"
+                  alt="Logo python"
+                  title="Logo Python"
+                  class="ClassLogoPython"
                   modo={modo}>
             </Img>
           </div>

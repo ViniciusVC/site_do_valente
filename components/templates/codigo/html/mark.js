@@ -16,7 +16,11 @@ const atendimentoOi = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="HTML formulario_mark" description="Tutorial de formulario_mark em HTML" canonical="/codigo/html/formulario_mark/"/>
+      <MoHead 
+        modo={modo} 
+        title="HTML formulario_mark" 
+        description="Tutorial de formulario_mark em HTML" 
+        canonical="/tutorial/html/formulario_mark/"/>
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="html">
         <h1>HTML MARK</h1>
         <p>

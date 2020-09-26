@@ -8,7 +8,7 @@ import * as Util from '../../../../controller/util.js';
 const atendimentoOi = function (props) {
 
   console.log('╔════════════════════════════════════════╗');
-  console.log('║        Tutorial   - css 8 - hover        ║');
+  console.log('║        Tutorial   - css 8 - hover      ║');
   console.log('╚════════════════════════════════════════╝');
 
   var regiao = Util.validaProps(props.regiao , "RJ");
@@ -17,10 +17,15 @@ const atendimentoOi = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="CSS 8 - Efeitos com o atributo hover" canonical="/codigo/css/css08/"/> 
+      <MoHead 
+        modo={modo} 
+        title="CSS 8 - Efeitos com o atributo hover"
+        description = "Tutorial CSS - efeitos com o atributo hover"
+        canonical="/tutorial/css/css08/"/> 
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="CSS">
         <h1>CSS 8 - Efeitos com o atributo hover</h1>
-        <p>Cascading Style Sheets é um mecanismo para adicionar estilo a um documento web. O código CSS pode ser aplicado diretamente nas tags ou ficar contido dentro das tags style. Também é possível, em vez de colocar a formatação dentro do documento, criar um link para um arquivo CSS que contém os estilos.</p>
+        <p>O hover aplica uma alteração no estilo de um objeto, quando clicado pelo usuário, sem a necessidade de JavaScript.</p>
+        
         <DivNaveg>
           <a className="cssLinkHover" href="/eu/curriculo">Este é um link</a>
         </DivNaveg>

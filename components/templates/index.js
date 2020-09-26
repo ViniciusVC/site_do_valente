@@ -30,7 +30,7 @@ const templateHome = function (props) {
             2 - Páginas AMP (Next + React + AMP)<br />
             4 - Gerador de captcha interno (Não funciona com balance).<br />
             Repositório : https://github.com/ViniciusVC/site_do_valente</p>
-            <BtLink href={"/eu/?regiao="+regiao} value="Quem sou eu." estilo="luz"/>
+            <BtLink href={"/eu/?regiao="+regiao} value="Quem sou eu." estilo="neon"/>
             <br />
         </Layout>
       <style jsx>{`

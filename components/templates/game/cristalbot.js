@@ -5,11 +5,13 @@ import React from 'react'
 import Layout from '../../moleculas/layout/cristalbot.js' // Esta pagina tem um layout diferente.
 import MoHead from '../../moleculas/moHead'
 import MenuMobile01 from '../../moleculas/moMenuMobile01/index.js'
+import Janela from '../../moleculas/moJanela/index.js'
 import * as Util from '../../../controller/util.js';
 import BtLink from '../../atoms/atBtLink'
 import Img from '../../atoms/atImg'
 import DivNaveg from '../../atoms/atDivNaveg'
 import Div from '../../atoms/atDiv/index.js'
+
 
 const game = function (props) {
 
@@ -22,69 +24,62 @@ const game = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="Cristal Bot" canonical="/cristalbot" icohref="/static/assetsv5/img/faviconcristal.ico"/>
+      <MoHead 
+        modo={modo} 
+        title="Cristal Bot" 
+        canonical="/game/cristalbot/" 
+        icohref="/static/assetsv5/img/faviconcristal.ico"/>
       <Layout regiao={regiao} modo={modo} titulo="Games" categoria="Games">
-        <Div display="justificado">
-          <h1><Img src="/static/assetsv5/img/cristalbot/logocistalbotmini.png" width="200px" height="100px" alt="Game Cristal Bot" title="Game Cristal Bot" class="CristalBotLogo" modo={modo} /></h1>
-          <div className="heaermob">
-            <MenuMobile01 modo={modo}/>
-          </div>
-        </Div>
-          
-          <Div display="responcivo">
-            <div>
+        
+      <Div display="responcivo">
+        <div>
+          <Div display="justificado">
+          <a href="/game/cristalbot/">
+              <h1><Img src="/static/assetsv5/img/cristalbot/logocistalbotmini.png" width="200px" height="100px" alt="Game Cristal Bot" title="Game Cristal Bot" class="CristalBotLogo" modo={modo} /></h1>
+            </a>
+            <div className="heaermob">
+              <MenuMobile01 modo={modo}/>
+            </div>
+          </Div>
+          <div className="conteudo">
               <br/><br/><br/>
-              
-              <p>Cristal Bot é um game independente brasileiro, está na sua versão beta, e é feito por uma única pessoa.<br/>
-              Foi desenvolvido na plataforma Unity com linguage de programação C# e modelagem 3D no Blender.<br/>
-              Desenvolvi tanto o código quanto a arte do jogo.</p>
               <p>
-              Baixe a primeira versão de teste do Cristal Bot aqui. 
-              <BtLink href={"https://mega.nz/file/wHgSRCiB#ukPyQc493NQ3i8r6dXFN5KkkUS5xA44FsoowEY08M1I"} value="Baixar para Windows" estilo="luz"/>
-              <BtLink href={"https://mega.nz/file/wewRnTxA#GYSz1EGiCwHTeufaeyCofGNyYRiwAPeghCd_jM0FTgc"} value="Baixar para Linux" estilo="luz"/>
+                Cristal Bot é um game independente brasileiro, está na sua versão beta, e é feito por uma única pessoa.<br/>
+                Foi desenvolvido na plataforma Unity com linguage de programação C# e modelagem 3D no Blender.<br/>
+                Desenvolvi tanto o código quanto a arte do jogo.
+              </p>
+              <p>
+                No futuro, a busca extração de pedras presiosas não será na Terra. Será feita por robos em outros planetas. 
+              </p>
+              <p>
+              {/*Baixe a primeira versão de teste do Cristal Bot beta 2 aqui. */}
+              {/*<BtLink href={"https://mega.nz/file/wHgSRCiB#ukPyQc493NQ3i8r6dXFN5KkkUS5xA44FsoowEY08M1I"} value="Baixar para Windows" estilo="neon"/>*/}
+              {/*<BtLink href={"https://mega.nz/file/wewRnTxA#GYSz1EGiCwHTeufaeyCofGNyYRiwAPeghCd_jM0FTgc"} value="Baixar para Linux" estilo="neon"/>*/}
               <br/></p>
-            </div>
-            
-
-          </Div>
-
-
-          <DivNaveg>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/vqyOsArIorY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </DivNaveg>
-          Uma imagem do game Cristal Bot planeta Marte.
-          <DivNaveg>
-            <Img src="/static/assetsv5/img/cristalbot/cristalbot002.png" width="786px" height="453px" alt="Cristal Bot planeta Marte" title="Cristal Bot planeta Marte" class="Cristal Bot planeta Marte" modo={modo} />
-          </DivNaveg>  
-          Uma imagem do game Cristal Bot planeta Plutao.
-          <DivNaveg>
-              <Img src="/static/assetsv5/img/cristalbot/cristalbot003.png" width="786px" height="453px" alt="Cristal Bot planeta Plutao" title="Cristal Bot planeta Plutao" class="Cristal Bot planeta Plutao" modo={modo} />
-          </DivNaveg>
-          Uma imagem do game Cristal Bot planeta Lua.
-          <DivNaveg>
-            <Img src="/static/assetsv5/img/cristalbot/cristalbot004.png" width="786px" height="453px" alt="Cristal Bot planeta Lua" title="Cristal Bot planeta Lua" class="Cristal Bot planeta Lua" modo={modo} />
-          </DivNaveg>
-          Uma imagem do game Cristal Bot planeta Venus.
-          <DivNaveg>
-            <Img src="/static/assetsv5/img/cristalbot/cristalbot005.png" width="786px" height="453px" alt="Cristal Bot planeta Venus" title="Cristal Bot planeta Venus" class="Cristal Bot planeta Venus" modo={modo} />
-          </DivNaveg>
-          Uma imagem do game Cristal Bot planeta Mercurio.
-          <DivNaveg>
-            <Img src="/static/assetsv5/img/cristalbot/cristalbot006.png" width="786px" height="453px" alt="Cristal Bot planeta Mercurio" title="Cristal Bot planeta Mercurio" class="Cristal Bot planeta Mercurio" modo={modo} />
-          </DivNaveg>
-
+          </div>
+        </div>
+        <div>
           <Div display="responcivo">
-            <div>
-              <Img src="/static/assetsv5/img/cristalbot/cristalbot008.png" width="300px" height="300px" alt="Cristal Bot modelagem Blender" title="Cristal Bot modelagem Blender" class="Cristal Bot modelagem Blender" modo={modo} />
-              Imagem da modelagem 3D no Blender:<BtLink href={"https://br.pinterest.com/pin/395894623497558014/"} value="pinterest" estilo="luz"/>
+            <Janela estilo="terminal">
+              Um video do jogo, para você conhecer a jogabilidade.
+              <a href="/game/cristalbotvideob2/">
+                <Img src="/static/assetsv5/img/cristalbot/videocristalbotb2.jpg" width="200px" height="150px" alt="Cristal Bot planeta Marte" title="Video Cristal Bot 2" class="Video Cristal Bot Beta 2" modo={modo} />
+              </a>
+            </Janela>
+            <div className="conteudo">
             </div>
-            <div>
-              <Img src="/static/assetsv5/img/cristalbot/cristalbot007.jpeg" width="600px" height="350px" alt="Cristal Bot rascunho game" title="Cristal Bot rascunho game" class="Cristal Bot rascunho game" modo={modo} />
-              Uma foto do primeiro rascunho do jogo desenhado a mão.
-            </div>
+            <Janela estilo="terminal">
+              Veja aqui imagens dos planetas em que o robo explorador irá procuar as pedras preciosas.
+              <a href="/game/cristalbotimgb2/">
+                <Img src="/static/assetsv5/img/cristalbot/cristalbotimgsb1.jpg" width="200px" height="114px" alt="Cristal Bot planeta Marte" title="Cristal Bot Imagens 2" class="Cristal Bot imagens beta 2" modo={modo} />
+              </a>
+            </Janela>
           </Div>
-          
-          <div>
+          <div className="conteudo">
+                <p>
+                  Veja a página do Cristal Bot no facebook.
+                  <BtLink href={"https://web.facebook.com/gamecristalbot"} value="Cristal Bot no Facebook" estilo="neon"/> 
+                </p> 
                 <p>
                   Sobre o desenvolvimento do jogo:<br/>
                   Gerado na Plataforma Unity com linguagem C#;<br/>
@@ -95,10 +90,13 @@ const game = function (props) {
                   E para o desenho da logo foi utilisado Inkscape, Blender e Gimp.<br/>
                 </p>
                 <p>
-                  Veja a página do Cristal Bot no facebook.
-                  <BtLink href={"https://web.facebook.com/gamecristalbot"} value="Página no Facebook" estilo="luz"/> 
+                  Veja a página do Cristal Bot Beta 0.1.
+                  <BtLink href={"/game/cristalbotb1/"} value="Cristal Bot Beta 0.1" estilo="neon"/> 
                 </p> 
             </div>
+        </div>  
+      </Div>
+
            
       </Layout>
       <style jsx>{`
@@ -108,6 +106,9 @@ const game = function (props) {
         .p{
           color : #000000;
         }
+        .conteudo{
+          padding:10px;
+       }
         @media(min-width: 1169px) {
           .heaermob{
             display : None;

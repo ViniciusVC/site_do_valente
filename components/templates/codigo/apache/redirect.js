@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from '../../../moleculas/layout'
 import MoHead from '../../../moleculas/moHead'
+import OQueERedirect from '../../../moleculas/moOQueERedirect'
 import DivCodigo from '../../../atoms/atDivCodigo'
 //import DivNaveg from '../../../atoms/atDivNaveg'
 import * as Util from '../../../../controller/util.js';
@@ -17,7 +18,11 @@ const apacheRedirect = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="Apache Redirect" description="Código Apache Redirect" canonical="/codigo/apache/redirect/"/>
+      <MoHead 
+        modo={modo} 
+        title="Apache Redirect" 
+        description="Tutorial Apache Redirect" 
+        canonical="/tutorial/apache/redirect/"/>
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="Apache">
         <h1>REDIRECT</h1>
         <p>
@@ -30,26 +35,33 @@ const apacheRedirect = function (props) {
           <br/>* a nova URL deve ser escrita em sua forma absoluta.
           <br/>
           <br/>Alguns exemplos:
-          <br/>Redirect   /pesquisar  http://www.google.com.br
+          <DivCodigo>
+            Redirect   /pesquisar  http://www.google.com.br
+          </DivCodigo>
           <br/>
           <br/>Ao requisitar http://{JsonRegiao.timeb}.exemplos.com.br , haverá um redirecionamento para http://www.google.com.br
           <br/>
           <br/>Posso fazer com que esse redirecionamento se torne permanente para o cliente
-          <br/>
-          <br/>Redirect permanent   /melhorblog   https://{JsonRegiao.timeb}.wordpress.com
-          <br/>Redirect /musicas   http://www.srv.com/musicas
-          <br/>Redirect  /  https://{JsonRegiao.timeb}.exemplos.com.br/
+          <DivCodigo>
+            Redirect permanent   /melhorblog   https://{JsonRegiao.timeb}.wordpress.com
+            <br/>Redirect /musicas   http://www.srv.com/musicas
+            <br/>Redirect  /  https://{JsonRegiao.timeb}.exemplos.com.br/
+          </DivCodigo>
           <br/>
           <br/>Da mesma forma do Alias o Redirect também tem uma diretiva para expressão regular, o RedirectMatch.
           <br/>Exemplo:
-          <br/>RedirectMatch   (.*)\.avi$     https://avi.exemplos.com.br/$1
+          <DivCodigo>
+            RedirectMatch   (.*)\.avi$     https://avi.exemplos.com.br/$1
+          </DivCodigo>
           <br/> 
-          <br/>
           <br/>Para redirecionar arquivos individuais, como example.com/oldfile.htm para newfile.htm, você pode usar um redirecionamento 301 como este:
-          <br/>Redirect 301 /oldfile.htm /newfile.htm
-          <br/>Redirect 301 /oldfile.htm http://example.net/newfile.htm
+          <DivCodigo>
+            Redirect 301 /oldfile.htm /newfile.htm<br/>
+            Redirect 301 /oldfile.htm http://example.net/newfile.htm
+          </DivCodigo>
           <br/>
         </p>
+        <OQueERedirect/>
       </Layout>
       <style jsx>{`
         .h1{

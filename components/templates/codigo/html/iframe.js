@@ -26,7 +26,11 @@ const htmliframe = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="HTML iframe" description="Tutorial HTML Iframe" canonical="/codigo/html/"/>
+      <MoHead 
+        modo={modo} 
+        title="HTML iframe" 
+        description="Tutorial HTML Iframe" 
+        canonical="/tutorial/html/iframe/"/>
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="html">
         <h1>Iframe</h1>
         <p>

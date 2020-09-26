@@ -16,7 +16,10 @@ const atendimentoOi = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="HTML MetaTag link" description="Tutorial HTML MetaTag link" canonical="/codigo/html/tag_link/"/>
+      <MoHead 
+        modo={modo} title="HTML MetaTag link" 
+        description="Tutorial HTML MetaTag link" 
+        canonical="/tutorial/html/tag_link/"/>
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="html">
       <h1>HTML Tag link</h1>
         <p>A tag LINK é uma META TAG.</p>        

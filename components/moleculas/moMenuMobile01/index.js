@@ -28,7 +28,7 @@ const MenuMobile01 = props => {
                     <Icon type="close" color="#ffffff" />
                   </a>
                 </div>
-                <Janela estilo="luz">
+                <Janela estilo="neon">
                   <ListadeRotas/>
                 </Janela>
               </div>
@@ -94,7 +94,7 @@ const MenuMobile01 = props => {
       <div>
           <amp-lightbox id="PopupMenu" layout="nodisplay">
             <div className="lightboxMenu" >
-              <Janela estilo="luz">
+              <Janela estilo="neon">
                 <span className="closeMenu" on="tap:PopupMenu.close" role="button" tabindex="0">
                   <Icon type="close" color="#ffffff" />
                 </span>

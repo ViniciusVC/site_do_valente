@@ -16,7 +16,11 @@ const atendimentoOi = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="HTML hgrup" description="Tutorial HTML hgrup" canonical="/codigo/html/hgrup/"/>
+      <MoHead 
+        modo={modo} 
+        title="HTML hgrup" 
+        description="Tutorial HTML hgrup" 
+        canonical="/tutorial/html/hgrup/"/>
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="html">
         <h1>HTML hgrup</h1>
         <p>

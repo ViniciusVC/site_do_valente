@@ -14,7 +14,7 @@ export const atDivCodigo = (modo) => (
           <p>Texto qualquer.</p>
         </DivCodigo>
         <p className="p">
-            Codigo : {'<DivCodigo display="Html"></DivCodigo>'}<br/>
+            Codigo : {'<DivCodigo titulo="Html"><p>Texto qualquer.</p></DivCodigo>'}<br/>
             modo={modo}
         </p>
       </div>
@@ -27,7 +27,7 @@ export const atDivCodigo = (modo) => (
           <p>Texto qualquer.</p>
         </DivCodigo>
           <p className="p">
-            Codigo : {'<DivCodigo display="responsivo"></DivCodigo>'}<br/>
+            Codigo : {'<DivCodigo><p>Texto qualquer.</p></DivCodigo>'}<br/>
             modo={modo}
           </p>
       </div>

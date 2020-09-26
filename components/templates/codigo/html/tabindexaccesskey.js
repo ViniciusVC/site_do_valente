@@ -16,7 +16,11 @@ const atendimentoOi = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="HTML Tabindex Accesskey" description="Tutorial HTML Tabindex Accesskey" canonical="/codigo/html/tabindexaccesskey/"/>
+      <MoHead 
+        modo={modo} 
+        title="HTML Tabindex Accesskey" 
+        description="Tutorial HTML Tabindex Accesskey" 
+        canonical="/tutorial/html/tabindexaccesskey/"/>
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="html">
         <h1>HTML Tabindex Accesskey</h1>
         <p>

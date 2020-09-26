@@ -16,7 +16,11 @@ const templatesvg = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="HTML formulario_mark" description="Tutorial HTML formulario_mark" canonical="/codigo/html/formulario_mark/"/>
+      <MoHead 
+        modo={modo} 
+        title="HTML formulario_mark" 
+        description="Tutorial HTML formulario_mark" 
+        canonical="/tutorial/html/svg02/"/>
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="SVG">
         <h1>SVG Ellipse e Text</h1>
         <p>

@@ -17,7 +17,10 @@ const animaBut = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="Exemplos de CSS animação de butão" description="CSS_anima_but" canonical="/codigo/css/anima_but/"/> 
+      <MoHead modo={modo} 
+      title="Exemplos de CSS Butão" 
+      description="Exemplos de CSS animação de butão" 
+      canonical="/tutorial/css/anima_but/"/> 
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="CSS">
       <Div display="vertical">
           <div>
@@ -58,34 +61,28 @@ const animaBut = function (props) {
               
           <div>Exemplo 3</div>
           <Div display="responcivo">
-                
                   <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button3" data-text={JsonRegiao.timea}><span>{JsonRegiao.timea}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button3" data-text={JsonRegiao.timeb}><span>{JsonRegiao.timeb}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button3" data-text={JsonRegiao.capital}><span>{JsonRegiao.capital}</span></div></div>
           </Div>
               
           <div>Exemplo 4</div>
-
           <Div display="responcivo">
-                
                   <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button4" data-text={JsonRegiao.timea}><span>{JsonRegiao.timea}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button4" data-text={JsonRegiao.timeb}><span>{JsonRegiao.timeb}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button4" data-text={JsonRegiao.capital}><span>{JsonRegiao.capital}</span></div></div>
           </Div>
           
-
-              
-                <div>Exemplo 5</div>
-          <Div display="responcivo">
-                
+          <div>Exemplo 5</div>
+          <Div display="responcivo">      
                   <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button5"><span>{JsonRegiao.timea}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button5"><span>{JsonRegiao.timeb}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button5"><span>{JsonRegiao.capital}</span></div></div>
-                </Div>
+          </Div>
               
 
               
-                <div>Exemplo 6</div>
+          <div>Exemplo 6</div>
                 <Div display="responcivo">                
                   <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button6"><span>{JsonRegiao.timea}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button6"><span>{JsonRegiao.timeb}</span></div></div>
@@ -252,7 +249,6 @@ const animaBut = function (props) {
                   <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button26"><span>{JsonRegiao.timeb}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button26"><span>{JsonRegiao.capital}</span></div></div>
                 </Div>
-
               
                 <div>Exemplo 27</div>
                 <Div display="responcivo">
@@ -261,14 +257,12 @@ const animaBut = function (props) {
                   <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button27"><span>{JsonRegiao.capital}</span></div></div>
                 </Div>
 
-              
                 <div>Exemplo 28</div>
                 <Div display="responcivo">
                   <div className="wrapperInnerTab-backgrounds-first"><div className="sim-button button28"><span>{JsonRegiao.timea}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button28"><span>{JsonRegiao.timeb}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button28"><span>{JsonRegiao.capital}</span></div></div>
                 </Div>
-
               
                 <div>Exemplo 29</div>
                 <Div display="responcivo">
@@ -276,7 +270,6 @@ const animaBut = function (props) {
                   <div className="wrapperInnerTab-backgrounds-second"><div className="sim-button button29"><span>{JsonRegiao.timeb}</span></div></div>
                   <div className="wrapperInnerTab-backgrounds-third"><div className="sim-button button29"><span>{JsonRegiao.capital}</span></div></div>
                 </Div>
-
               
                 <div>Exemplo 30</div>
                 <Div display="responcivo">

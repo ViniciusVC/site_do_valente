@@ -8,7 +8,7 @@ import * as Util from '../../../controller/util.js';
 const codhtml5 = function (props) {
 
   console.log('╔═══════════════════════════════╗');
-  console.log('║        codigo   HTML5         ║');
+  console.log('║      tutorial - HTML5         ║');
   console.log('╚═══════════════════════════════╝');
 
   var regiao = Util.validaProps(props.regiao, "RJ");
@@ -16,8 +16,12 @@ const codhtml5 = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="HTML5" description="Código HTML5" canonical="/codigo/html5/"/>
-      <Layout regiao={regiao} modo={modo} titulo="Codigo" categoria="html">
+      <MoHead 
+        modo={modo} 
+        title="HTML5" 
+        description="Tutorial Código HTML5" 
+        canonical="/tutorial/html5/"/>
+      <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="html">
         <Div display="justificado">
           <div>
             <h1>HTML5</h1>

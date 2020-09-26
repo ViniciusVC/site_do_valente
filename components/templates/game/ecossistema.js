@@ -2,7 +2,7 @@ import React from 'react'
 //import Link from 'next/link'
 // import Head from 'next/head'
 // import FavIcon from '../../atoms/atFavIcon'
-import Layout from '../../moleculas/layout'
+import Layout from '../../moleculas/layout/cristalbot.js' // Esta pagina tem um layout diferente.
 import MoHead from '../../moleculas/moHead'
 import Ecossistema from '../../organisms/orgEcossistema'
 import * as Util from '../../../controller/util.js';
@@ -14,7 +14,7 @@ function retornaogame(modo,regiao){
   }else{ 
     return (
       <p>O jogo não pode ser visto no modo AMP.<br/>
-        <BtLink href={"/game/tanque?regiao="+regiao} value="Clique aqui para sair do modo AMP." estilo="cinza"/><br/>
+        <BtLink href={"/game/tanque?regiao="+regiao} value="Clique aqui para sair do modo AMP." estilo="neon"/><br/>
       </p>
       )
   }

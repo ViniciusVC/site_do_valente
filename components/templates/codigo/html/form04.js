@@ -16,7 +16,10 @@ const atendimentoOi = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="HTML Formulario Campos 01" canonical="/codigo/html/formulario_campos_01/"/>
+      <MoHead 
+        modo={modo} 
+        title="HTML Formulario Campos 01" 
+        canonical="/tutorial/html/formulario_campos_01/"/>
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="html">
       <h1>HTML Formulario Campos 01</h1>
           Segue um exemplo de um formulário simples.<br/>        

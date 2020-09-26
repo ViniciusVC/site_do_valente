@@ -18,7 +18,7 @@ const atendimentoOi = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="HTML - CANVAS" description="Tutorial de CANVAS HTML" canonical="/codigo/html/canvas/"/>
+      <MoHead modo={modo} title="HTML - CANVAS" description="Tutorial de CANVAS HTML" canonical="/tutorial/html/canvas/"/>
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="html">
       <h1>HTML - CANVAS</h1>
         <p>

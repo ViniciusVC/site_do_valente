@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from '../../../moleculas/layout'
 import MoHead from '../../../moleculas/moHead'
+import OQueERedirect from '../../../moleculas/moOQueERedirect'
 import DivCodigo from '../../../atoms/atDivCodigo'
 //import DivNaveg from '../../../atoms/atDivNaveg'
 import * as Util from '../../../../controller/util.js';
@@ -8,7 +9,7 @@ import * as Util from '../../../../controller/util.js';
 const codigoRubyRedirect = function (props) {
 
   console.log('╔════════════════════════════════╗');
-  console.log('║    Tutoriais - Ruby - Redirect    ║');
+  console.log('║  Tutoriais - Ruby - Redirect   ║');
   console.log('╚════════════════════════════════╝');
 
   var regiao = Util.validaProps(props.regiao , "RJ");
@@ -16,7 +17,7 @@ const codigoRubyRedirect = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="Ruby On Rails" description="Código Ruby On Rails" canonical="/codigo/rubyonrails/redirect/"/>
+      <MoHead modo={modo} title="Ruby On Rails" description="Tutorial Ruby On Rails" canonical="/tutorial/rubyonrails/redirect/"/>
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="Ruby on Rails">
           <div className="coluna404">
             <h1>redirect 301 em Ruby on Rails</h1>
@@ -27,6 +28,7 @@ const codigoRubyRedirect = function (props) {
                 End
             </DivCodigo>
           </div>
+          <OQueERedirect/>
       </Layout>
       <style jsx>{`
         .h1{

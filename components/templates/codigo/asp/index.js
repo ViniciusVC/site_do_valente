@@ -4,8 +4,8 @@ import Div from '../../../atoms/atDiv/index.js'
 import Layout from '../../../moleculas/layout'
 import MoHead from '../../..//moleculas/moHead'
 
-import Head from 'next/head'
-import FaviIcon from '../../../atoms/atFavIcon'
+//import Head from 'next/head'
+//import FaviIcon from '../../../atoms/atFavIcon'
 import * as Util from '../../../../controller/util.js';
 
 const codigoAsp = function (props) {

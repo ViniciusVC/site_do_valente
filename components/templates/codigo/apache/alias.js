@@ -1,8 +1,7 @@
-import React from 'react'
-import Head from 'next/head'
-import FaviIcon from '../../../atoms/atFavIcon'
-import Layout from '../../../moleculas/layout'
-import MoHead from '../../..//moleculas/moHead'
+import React from 'react';
+import Layout from '../../../moleculas/layout';
+import MoHead from '../../..//moleculas/moHead';
+import DivCodigo from '../../../atoms/atDivCodigo';
 import * as Util from '../../../../controller/util.js';
 
 const apacheAlias = function (props) {
@@ -17,7 +16,11 @@ const apacheAlias = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="ALIAS e REDIRECIONAMENTOS no APACHE" description="CRIANDO ALIAS E REDIRECIONAMENTOS NO APACHE" canonical="/codigo/apache/alias/"/>
+      <MoHead 
+        modo={modo} 
+        title="ALIAS e REDIRECIONAMENTOS no APACHE" 
+        description="CRIANDO ALIAS E REDIRECIONAMENTOS NO APACHE" 
+        canonical="/tutorial/apache/alias/"/>
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="Apache">
         <h1>CRIANDO ALIAS E REDIRECIONAMENTOS NO APACHE</h1>
           <p>
@@ -38,27 +41,25 @@ const apacheAlias = function (props) {
           <br/>#Centos/Redhat
           <br/>/etc/httpd/conf/httpd.conf
           <br/>
-          <br/>la dentro vou colocar um exemplo da Diretiva Alias
-          <br/>
-          <br/>Alias	/pub  /var/archives/pub
-          <br/>
+          <DivCodigo titulo="La dentro vou colocar um exemplo da Diretiva Alias">
+            Alias	/pub  /var/archives/pub
+          </DivCodigo>
           <br/>oque essa Diretiva faz?
           <br/>Quando um usuario requisitar o meu servidor , ou meu site especifico(VirtualHost), por 
           <br/>exemplo:
           <br/>http://{JsonRegiao.timea}.exemplo.com.br/pub/vinicius.pdf 	o arquivo que vai ser transferido para o usuário não vai ser oque esta dentro do DocumentRoot padrão, que neste case deveria ser /var/www/{JsonRegiao.timea}/pub   , ele vai transferir o arquivo que está dentro de /var/archives/pub/ que tem o nome de vinicius.pdf
           <br/>Quando eu desejo mapear a pagina de índice de um diretório, recomenda-se finalizar a URL com uma “/”
           <br/>
-          <br/>exemplo:
-          <br/>Alias   /documentos/  /var/www/documentos/
+          <DivCodigo titulo="exemplo:">Alias   /documentos/  /var/www/documentos/</DivCodigo>
           <br/>
           <br/>Ao requisitar http://{JsonRegiao.timea}.exemplos.com.br/documentos/ o arquivo que será entregue, é o índice do diretório /var/www/documentos
           <br/>
           <br/>Caso eu queira utilizar expressões regulares no alias, podemos utilizar diretiva AliasMatch.
           <br/>
-          <br/>Exemplo:
-          <br/>AliasMatch ^/([0-9]{'{2}'})  /var/www/srv$1
+          <DivCodigo titulo="exemplo:">AliasMatch ^/([0-9]{'{2}'})  /var/www/srv$1</DivCodigo>
           <br/>Ao requisitar por exemplo a URL  http://{JsonRegiao.timea}.exemplo.com.br/15/santosmelhortimedomundo.png será enviado o arquivo
           <br/>/var/www/srv15/santosmelhortimedomundo.png
+          <br/>
           <br/>
           </p>
         </Layout>

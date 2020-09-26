@@ -19,21 +19,21 @@ const apache = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="Apache" description="O que é o Apache" canonical="/codigo/apache/"/>
+      <MoHead
+        modo={modo} title="Apache" 
+        description="O que é o Apache" 
+        canonical="/tutorial/apache/"/>
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="Apache">
         <Div display="responsivo">
           <div className="coluna404">
             <h1>Apache</h1>
             <p>O Servidor HTTP Apache ou Servidor Apache ou HTTP Daemon Apache ou somente Apache, é o servidor web livre criado em 1995 por Rob McCool.</p>
-            <BtLink href={"/codigo/apache/alias?regiao="+regiao} value="Alias" estilo="cinza"/><br/>
-            <BtLink href={"/codigo/apache/instalubuntu?regiao="+regiao} value="Instalar Apache no Ubuntu" estilo="cinza"/><br/>
-            <BtLink href={"/codigo/apache/redirect?regiao="+regiao} value="Redirect" estilo="cinza"/><br/>
           </div>
           <div>
             <Img 
                 src="/static/assetsv5/img/codigo/logoapache.png"
-                width="323px"
-                height="136px"
+                width="300px"
+                height="127px"
                 alt="Logo Apache"
                 title="Logo Apache"
                 class="ClassLogoApache"
@@ -41,6 +41,9 @@ const apache = function (props) {
             </Img>
           </div>
         </Div>
+        <BtLink href={"/tutorial/apache/alias?regiao="+regiao} value="Alias" estilo="neon"/><br/>
+        <BtLink href={"/tutorial/apache/instalubuntu?regiao="+regiao} value="Instalar Apache no Ubuntu" estilo="neon"/><br/>
+        <BtLink href={"/tutorial/apache/redirect?regiao="+regiao} value="Redirect" estilo="neon"/><br/>
       </Layout >
       <style jsx>{`
         .h1{

@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../../moleculas/layout'
+import Layout from '../../moleculas/layout/cristalbot.js' // Esta pagina tem um layout diferente.
 import MoHead from '../../moleculas/moHead'
 import Controleogodzilla from '../../organisms/orgControleogodzilla'
 import * as Util from '../../../controller/util.js';
@@ -20,7 +20,7 @@ const controleogodzilla = function (props) {
     }else{ 
       return (
         <p>O jogo não pode ser visto no modo AMP.<br/>
-          <BtLink href={"/game/controleogodzilla/?regiao="+regiao} value="Clique aqui para sair do modo AMP." estilo="cinza"/><br/>
+          <BtLink href={"/game/controleogodzilla/?regiao="+regiao} value="Clique aqui para sair do modo AMP." estilo="neon"/><br/>
         </p>
         )
     }

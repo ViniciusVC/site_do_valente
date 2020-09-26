@@ -16,7 +16,7 @@ const atendimentoOi = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="HTML Semantica" description="Tutorial Semântica HTML" canonical="/codigo/html/semantica/"/>
+      <MoHead modo={modo} title="HTML Semantica" description="Tutorial Semântica HTML" canonical="/tutorial/html/semantica/"/>
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="html">
         <h1>HTML Semântica</h1>
         <p>

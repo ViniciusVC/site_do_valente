@@ -5,6 +5,7 @@ import DivCodigo from '../../../atoms/atDivCodigo'
 //import DivNaveg from '../../../atoms/atDivNaveg'
 import Layout from '../../../moleculas/layout'
 import MoHead from '../../../moleculas/moHead'
+import OQueERedirect from '../../../moleculas/moOQueERedirect'
 import * as Util from '../../../../controller/util.js';
 
 const atendimentoOi = function (props) {
@@ -30,7 +31,7 @@ const atendimentoOi = function (props) {
             <DivCodigo titulo="Exemplo de código ColdFusion:">
               >em construção
             </DivCodigo>  
-
+            <OQueERedirect/>
       </Layout>
       <style jsx>{`
         .h1{

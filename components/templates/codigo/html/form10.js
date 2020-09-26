@@ -16,7 +16,11 @@ const atendimentoOi = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="HTML Formulario Keygen" description="HTML Formulario Keygen" canonical="/codigo/html/formulario_Keygen/"/>
+      <MoHead 
+        modo={modo} 
+        title="HTML Formulario Keygen" 
+        description="HTML Formulario Keygen" 
+        canonical="/tutorial/html/formulario_Keygen/"/>
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="html">
       <h1>HTML Formulário com Keygen</h1>
         A tag {'<keygen>'} é utilizada para entrada de senhas.<br/>

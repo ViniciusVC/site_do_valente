@@ -16,7 +16,11 @@ const atendimentoOi = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="codigo HTMl MAP" description="Tutorial de MAP no HTML." canonical="/codigo/html/map"/>
+      <MoHead 
+        modo={modo} 
+        title="codigo HTMl MAP" 
+        description="Tutorial de MAP no HTML." 
+        canonical="/tutorial/html/map"/>
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="html">
         
       <h1>HTML MAP</h1>

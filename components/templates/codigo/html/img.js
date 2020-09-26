@@ -17,7 +17,11 @@ const TemplateIMG = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="HTML Figure e Legenda" description="Tutorial HTML Figure e Legenda" canonical="/codigo/html/img_figcaption//"/>
+      <MoHead 
+        modo={modo} 
+        title="HTML Figure e Legenda" 
+        description="Tutorial HTML Figure e Legenda" 
+        canonical="/tutorial/html/img/"/>
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="html">
       <h1>HTML Figura</h1>
       <p>

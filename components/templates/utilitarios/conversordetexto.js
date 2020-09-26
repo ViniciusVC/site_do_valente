@@ -3,6 +3,8 @@ import Layout from '../../moleculas/layout'
 import MoHead from '../../moleculas/moHead'
 import * as Util from '../../../controller/util.js';
 import Div from '../../atoms/atDiv'
+import BtLink from '../../atoms/atBtLink'
+
 
 const conversordetexto = function (props) {
 
@@ -63,12 +65,12 @@ const conversordetexto = function (props) {
               </div>
             </Div>
             <Div display="vertical"><br/>
-              <a id="btLinkConvertc" className="btCinza" onClick={() => {FuncConverter("c")}}>TUDO MAIUSCULA.</a><br/>
-              <a id="btLinkConvertd" className="btCinza" onClick={() => {FuncConverter("d")}}>tudo minuscula.</a><br/>            
-              <a id="btLinkConverta" className="btCinza" onClick={() => {FuncConverter("a")}}>Primeira letra da fraze maiuscula.</a><br/>
-              <a id="btLinkConverta" className="btCinza" onClick={() => {FuncConverter("f")}}>pRIMEIRA lETRA dA fRAZE mINUSCULA.</a><br/>
-              <a id="btLinkConvertb" className="btCinza" onClick={() => {FuncConverter("b")}}>Todas As Primeiras Letras Maiusculas.</a><br/>
-              <a id="btLinkConvertb" className="btCinza" onClick={() => {FuncConverter("e")}}>tODAS aS pRIMEIRAS lETRAS mINUSCULAS.</a><br/>
+              <a id="btLinkConvertc" className="btLinkNeon" onClick={() => {FuncConverter("c")}}>TUDO MAIUSCULA.</a><br/>
+              <a id="btLinkConvertd" className="btLinkNeon" onClick={() => {FuncConverter("d")}}>tudo minuscula.</a><br/>            
+              <a id="btLinkConverta" className="btLinkNeon" onClick={() => {FuncConverter("a")}}>Primeira letra da fraze maiuscula.</a><br/>
+              <a id="btLinkConverta" className="btLinkNeon" onClick={() => {FuncConverter("f")}}>pRIMEIRA lETRA dA fRAZE mINUSCULA.</a><br/>
+              <a id="btLinkConvertb" className="btLinkNeon" onClick={() => {FuncConverter("b")}}>Todas As Primeiras Letras Maiusculas.</a><br/>
+              <a id="btLinkConvertb" className="btLinkNeon" onClick={() => {FuncConverter("e")}}>tODAS aS pRIMEIRAS lETRAS mINUSCULAS.</a><br/>
             </Div>
           </Div>
         </Layout>
@@ -79,27 +81,37 @@ const conversordetexto = function (props) {
           .btLinkBranco {
             height: 3.42857143rem;
           }
-          .btCinza {
-              padding: 10px;
-              transition: all 0.8s;
-              font-family: oiTextRegular, sans-serif;
-              background-color: #26293c;
-              border-radius: 15px;
-              color: #ffffff;
-              display: block;
-              font-size: 1rem; /*16px*/
-              text-align: center;
-              text-decoration: none;
-              border: solid 2px #4a516b;
-              cursor: pointer;
-              outline: 0;
-              margin: 0;
-              box-sizing: border-box;
-              font-style: normal;
-              width: 100%;
-              max-width: 500px;
-            }
-            .btCinza:hover {
+          .btLinkNeon {
+
+            border: solid 2px #00ffea;
+            border-radius: 5px;
+            
+            padding: 5px;
+            
+            transition: all 0.8s;
+            font-family: oiTextRegular, sans-serif;
+            
+            background-color:#00ffea;
+            background: rgba(0, 255, 255, 0.2);
+
+            color: #00ffea;
+            display: block;
+            font-size: 1rem; /*16px*/
+            text-align: center;
+
+            text-decoration: none;
+            
+            cursor: pointer;
+            outline: 0;
+            margin-right: 5px;
+            margin-bottom: 5px; 
+            box-sizing: border-box;
+            font-style: normal;
+
+            width: 100%;
+            max-width: 500px;
+          }
+            .btLinkNeon:hover {
               transition: all 0.8s;
               -webkit-transition: all 0.8s;
               -moz-transition: all 0.8s;
@@ -145,10 +157,21 @@ const conversordetexto = function (props) {
         <MoHead modo={modo} title="Conversor de Textos" canonical="/utilitarios/conversordetexto/"/>
         <Layout regiao={regiao} modo={modo} titulo="Utilitarios" categoria="Utilitarios">
         <h1>Conversor de Texto</h1>
+          <Div display="responsivo">
             <Div display="vertical">
                 O utilitario para converter texto não funciona no modo AMP.<br/>
-                <a href="/utilitarios/conversordetexto/" >Sair do modo AMP.</a><br/>
+                <BtLink href="/utilitarios/conversordetexto/" value="Sair do modo AMP." estilo="neon"/>
+                <br/>
             </Div>
+            <Div display="vertical"><br/>
+              Converter para TUDO MAIUSCULA.<br/>
+              Converter para tudo minuscula.<br/>            
+              Converter para Primeira letra da fraze maiuscula.<br/>
+              Converter para pRIMEIRA lETRA dA fRAZE mINUSCULA.<br/>
+              Converter para Todas As Primeiras Letras Maiusculas.<br/>
+              Converter para tODAS aS pRIMEIRAS lETRAS mINUSCULAS.<br/>
+            </Div>
+          </Div>
         </Layout>
       </div>
     )
