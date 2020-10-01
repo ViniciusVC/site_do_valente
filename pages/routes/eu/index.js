@@ -4,11 +4,11 @@ import * as Util from '../../../controller/util.js';
 //import { withAmp } from 'next/amp';
 
 const RotaEuHtml = function(props){
-  var regiao = Util.validaProps(props.url.query.regiao,"RJ")
+  //var regiao = Util.validaProps(props.url.query.regiao,"RJ")
   return(
     <TemplateEu
       modo="html"
-      cidade={regiao}/>
+      regiao={Util.validaProps(props.url.query.regiao,"RJ")}/>
   )
 }
 //query={props.url.query}

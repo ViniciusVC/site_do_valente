@@ -11,6 +11,8 @@ const moHeaderSideDoValente = function (props) {
   const titulo = props.titulo;
   const regiao = props.regiao;
   const modo = props.modo;
+  const btestilo="neon";
+  const btestiloitem="neonItem";
   //const JsonRegiao = Util.regiao(regiao);
   var StringModo = "";
   if(modo=="AMP" || modo=="amp"){
@@ -23,7 +25,15 @@ const moHeaderSideDoValente = function (props) {
 
         <div className="logo headerpc">
           <a href={StringModo+"/?regiao="+regiao} >
-            <Img src="/static/assetsv5/img/logo_vvc.png" width="100px" height="100px" alt="Logo Site Valente" title="Logo Site Valente" class="LogoSiteValente" modo={modo} />
+            <Img 
+              src="/static/assetsv5/img/logo_vvc.png" 
+              width="100px" 
+              height="100px" 
+              alt="Logo Site Valente" 
+              title="Logo Site Valente" 
+              class="LogoSiteValente" 
+              modo={modo} 
+            />
           </a>
         </div>
 
@@ -32,13 +42,22 @@ const moHeaderSideDoValente = function (props) {
         </div>
 
         <div className="heaermob">
-            <MenuMobile01 modo={modo}/>
+            <MenuMobile01 
+              modo={modo} 
+              regiao={regiao}
+              titulo={titulo}
+              btestilo={btestilo} 
+              btestiloitem={btestiloitem}
+              janelaestilo="neon"
+            />
         </div>
 
         <div>
           <p></p>
-          <MoRegiao modo={modo} regiao={regiao} />
-         
+          <MoRegiao 
+            modo={modo} 
+            regiao={regiao} 
+          />
         </div>
         
       <style jsx>{`

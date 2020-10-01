@@ -11,6 +11,7 @@ import BtLink from '../../atoms/atBtLink'
 const moFooterSideDoValente = function (props) {
   const regiao = props.regiao;
   const modo = props.modo;
+  const btestilo = props.btestilo;
   //const JsonRegiao = Util.regiao(regiao);
   var StringModo = "";
   if(modo=="AMP" || modo=="amp"){
@@ -29,16 +30,16 @@ const moFooterSideDoValente = function (props) {
         <div>
           <Div display="responsivo">
             <div className="footerColuna">
-              <BtLink href={StringModo+"/?regiao="+regiao} value="Home" estilo="neon"/>
-              <BtLink href={StringModo+"/tutorial/?regiao="+regiao} value="Tutoriais" estilo="neon"/>
+              <BtLink href={StringModo+"/?regiao="+regiao} value="Home" estilo={btestilo}/>
+              <BtLink href={StringModo+"/tutorial/?regiao="+regiao} value="Tutoriais" estilo={btestilo}/>
             </div>
             <div className="footerColuna">
-              <BtLink href={StringModo+"/utilitarios/?regiao="+regiao} value="Utilitarios" estilo="neon"/>
-              <BtLink href={StringModo+"/game/?regiao="+regiao} value="Jogos" estilo="neon"/>                  
+              <BtLink href={StringModo+"/utilitarios/?regiao="+regiao} value="Utilitarios" estilo={btestilo}/>
+              <BtLink href={StringModo+"/game/?regiao="+regiao} value="Jogos" estilo={btestilo}/>                  
             </div>    
             <div className="footerColuna">
-              <BtLink href="https://sites.google.com/view/vvc-estudio/home" value="Design" estilo="neon"/>
-              <BtLink href={StringModo+"/eu/?regiao="+regiao} value="Autor" estilo="neon"/>       
+              <BtLink href="https://sites.google.com/view/vvc-estudio/home" value="Design" estilo={btestilo}/>
+              <BtLink href={StringModo+"/eu/?regiao="+regiao} value="Autor" estilo={btestilo}/>       
             </div>
           </Div>
           <Div display="horizontal">

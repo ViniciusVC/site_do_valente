@@ -1,6 +1,5 @@
 import React from 'react';
 import MoHead from '../moleculas/moHead'
-import ListadeRotas from '../moleculas/moListadeRotas/index.js';
 import Div from '../atoms/atDiv/index.js';
 import * as Atoms from '../index.js';
 import * as Util from '../../controller/util.js';
@@ -26,14 +25,14 @@ const componentes = function(props){
     return(
     <div>
       <MoHead modo={modo} title="Componentes" description="Componentes html do Portal da Oi (AMP)." canonical="/"/>
-      <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="Componentes"> 
+      <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="JavaScript"> 
       <dib><h1 className='title'>Componentes React deste Projeto.</h1></dib>
       <Div display="horizontal">
         <div className='coluna1'>
             <h4 className='CssTitleRotasProjeto'>Lista de componentes</h4>
               {Object.keys(Atoms).map((nomeAtoms, index) => {
                 return (<div>
-                  <a href={StringModo + "/componentes/?id="+nomeAtoms+"&regiao="+regiao}>
+                  <a className="linksComponentes" href={StringModo + "/componentes/?id="+nomeAtoms+"&regiao="+regiao}>
                   {index + " - "+ nomeAtoms}
                   </a>
                   </div>)
@@ -61,7 +60,10 @@ const componentes = function(props){
           width: 70%;
 
         }
-        .CssTitleListadeAtomos{
+        .linksComponentes{
+          background-color: #ffffff;
+        }
+        .CssTitleRotasProjeto{
           margin: 0;
           width: 100%;
           padding-top: 80px;

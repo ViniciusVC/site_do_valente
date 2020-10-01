@@ -9,7 +9,7 @@ import * as Util from '../../../controller/util.js';
 import GTM from '../../atoms/atGTM';
 
 const layout = props => {
-  console.log('Rodando /layout.js Luz Verde');
+  console.log('Rodando /layout/index.js (Tutorial)');
   var regiao = Util.validaProps(props.regiao , "RJ");
   var modo = Util.validaProps(props.modo, "html");
   var titulo = Util.validaProps(props.titulo, "Home");
@@ -23,7 +23,7 @@ const layout = props => {
           
           <div className="layoutManu esconder">
             <Janela estilo="neon">
-                <ListadeRotas regiao={regiao} modo={modo} titulo={titulo} categoria={categoria}/>
+              <ListadeRotas regiao={regiao} modo={modo} titulo={titulo} categoria={categoria} btestilo="neon" btestiloitem="neonItem"/>
             </Janela>
           </div>
 
@@ -38,7 +38,7 @@ const layout = props => {
                 </div>
               </Janela>
               <Janela estilo="neon">
-                <FooterSideDoValente regiao={regiao} modo={modo}/>
+                <FooterSideDoValente regiao={regiao} modo={modo} btestilo="neon"/>
               </Janela>
             </Div>
           </div>      
@@ -75,10 +75,6 @@ const layout = props => {
     `}</style>
       <style jsx global>{`
         ${Util.fontesCSS1()}
-        ${Util.fontesCSS2()}
-        ${Util.fontesCSS3()}
-        ${Util.fontesCSS4()}
-        ${Util.fontesCSS5()}
         body{
           margin: 0px;
           padding: 0px;
@@ -94,4 +90,8 @@ const layout = props => {
 
 export default layout
 
+// ${Util.fontesCSS2()}
+// ${Util.fontesCSS3()}
+// ${Util.fontesCSS4()}
+// ${Util.fontesCSS5()}
 //Não esqueça de do GTM do body.

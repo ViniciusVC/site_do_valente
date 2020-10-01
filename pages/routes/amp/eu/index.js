@@ -8,8 +8,8 @@ const RotaEuAMP = function(props){
   return(
     <TemplatePagina
       modo="amp"
-      regiao={Util.validaProps(props.url.query.regiao,"RJ")
-    }/>
+      regiao={Util.validaProps(props.url.query.regiao,"RJ")}
+    />
   )
 }
 

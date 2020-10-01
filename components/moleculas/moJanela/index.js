@@ -1,5 +1,6 @@
 import React from 'react';
 import JanelaEscuro from './JanelaEscuro.js';
+import JanelaClaro from './JanelaClaro.js';
 import JanelaLuz from './JanelaLuz.js';
 import JanelaNeon from './JanelaNeon.js';
 import JanelaNaveg from './JanelaNaveg.js';
@@ -27,12 +28,17 @@ const moJanela = props => {
     return (
       <JanelaEscuro>{props.children}</JanelaEscuro>
     )
-  }else if (varEstilo == "naveg") {
+  }else if (varEstilo == "claro"){
+    //Layout escuro
+    return (
+      <JanelaClaro>{props.children}</JanelaClaro>
+    )
+  } else if (varEstilo == "naveg") {
     //Navegador
     return (
       <JanelaNaveg>{props.children}</JanelaNaveg>
     )
-    } else if (varEstilo == "terminal") {
+  } else if (varEstilo == "terminal") {
       //Navegador
       return (
         <JanelaTerminal>{props.children}</JanelaTerminal>

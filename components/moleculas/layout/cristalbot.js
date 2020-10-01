@@ -7,6 +7,8 @@ import FooterSideDoValente from '../mofooterSideDoValente/index.js'
 import * as Util from '../../../controller/util.js';
 import GTM from '../../atoms/atGTM';
 
+import BtLink from '../../atoms/atBtLink'
+
 const layoutCristalBot = props => {
   console.log('Rodando /layout/cristalbot.js GAME');
   var regiao = Util.validaProps(props.regiao , "RJ");
@@ -22,7 +24,13 @@ const layoutCristalBot = props => {
           
           <div className="layoutManu esconder">
             <Janela estilo="terminal">
-                <ListadeRotas regiao={regiao} modo={modo} titulo={titulo} categoria={categoria}/>
+                <div>
+                  <BtLink href={"/game/cristalbot/?regiao="+regiao} value="Home Cristal Bot" estilo="neon"/>
+                  <BtLink href={"/game/cristalbotimgb2/?regiao="+regiao} value="Imagens" estilo="neonItem"/>
+                  <BtLink href={"/game/cristalbotvideob2/?regiao="+regiao} value="Videos" estilo="neonItem"/>
+                  <BtLink href={"/game/cristalbotb1/?regiao="+regiao} value="verção anterior Beta 0.1" estilo="neonItem"/>
+                </div>
+                <ListadeRotas regiao={regiao} modo={modo} titulo={titulo} categoria={categoria} btestilo="neon" btestiloitem="neonItem"/>
             </Janela>
           </div>
 
@@ -32,7 +40,7 @@ const layoutCristalBot = props => {
                 {props.children}
               </div>
               <Janela estilo="terminal">
-                <FooterSideDoValente regiao={regiao} modo={modo}/>
+                <FooterSideDoValente regiao={regiao} modo={modo} btestilo="neon"/>
               </Janela>
             </Div>
           </div>      

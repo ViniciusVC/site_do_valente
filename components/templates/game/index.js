@@ -2,7 +2,7 @@ import React from 'react'
 //import Link from 'next/link'
 //import Head from 'next/head'
 //import FaviIcon from '../../atoms/atFavIcon'
-import Layout from '../../moleculas/layout/cristalbot.js' // Esta pagina tem um layout diferente.
+import Layout from '../../moleculas/layout/games.js' // Esta pagina tem um layout diferente.
 import MoHead from '../../moleculas/moHead'
 import * as Util from '../../../controller/util.js';
 import BtLink from '../../atoms/atBtLink'

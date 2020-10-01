@@ -16,15 +16,15 @@ npm install
 ```
 npm run dev
 ```
-* inicia servidor local na porta 9000
+* inicia servidor local na porta 3000
 ```
-npm run dev -- -p 9000
+npm run dev -- -p 3000
 ```
 * Gera estáticos. Deve ser rodado antes do start.
 ```
 npm run build
 ```
-* Inicia servidor na porta  8081. Só irá funcionar apos o build rodar sem erro.
+* Inicia servidor na porta 3000. Só irá funcionar apos o build rodar sem erro.
 ```
 npm start
 npm run start
@@ -38,59 +38,28 @@ npm run export
 ```
 
 /
+/util/
+/games/
+/tutorial/
 /eu/
-/curriculo/
-/codigo/
-/codigo/html5/
-/codigo/css/
-/codigo/javascript/
-/codigo/knockout/
-/codigo/apache/
-/codigo/php/
-/codigo/ruby_on_rails/
-/codigo/coldfusion/
-/codigo/asp/
-/codigo/dotnet/
-/codigo/Java/
-/codigo/cgi_perl/
-/codigo/eu/
-/codigo/eu/curriculo/
 
 /amp/
+/amp/util/
+/amp/games/
+/amp/tutorial/
 /amp/eu/
-/amp/curriculo/
-/amp/codigo/
-/amp/codigo/html5/
-/amp/codigo/css/
-/amp/codigo/javascript/
-/amp/codigo/knockout/
-/amp/codigo/apache/
-/amp/codigo/php/
-/amp/codigo/ruby_on_rails/
-/amp/codigo/coldfusion/
-/amp/codigo/asp/
-/amp/codigo/dotnet/
-/amp/codigo/Java/
-/amp/codigo/cgi_perl/
-/amp/codigo/eu/curriculo/
-/amp/componentes/
 
-/api1/captcha/
-
-/componentes/
+/api1/
+/static/
 
 
 ```
-
-Commit dos arquivos locais
-Não esqueça de acessar o diretório da sua aplicação: "cd vvcestudio-com-br"
 
 git add .
 git commit -m "publish website"
 
 
-Publicar arquivos na Umbler
-git remote add umbler https://kamino.deploy.umbler.com/jg28zggk/vvcestudio-com-br.git
-git push umbler master
+A porta usada na Umbler é a 3000.
+
 
 ```

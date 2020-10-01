@@ -5,6 +5,7 @@ import React from 'react'
 import Layout from '../../moleculas/layout/cristalbot.js' // Esta pagina tem um layout diferente.
 import MoHead from '../../moleculas/moHead'
 import MenuMobile01 from '../../moleculas/moMenuMobile01/index.js'
+import HeaderCristalBot from '../../moleculas/moHeaderSideDoValente/cristalbot.js';
 import * as Util from '../../../controller/util.js';
 import BtLink from '../../atoms/atBtLink'
 import Img from '../../atoms/atImg'
@@ -22,16 +23,14 @@ const game = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="Cristal Bot" canonical="/cristalbot" icohref="/static/assetsv5/img/faviconcristal.ico"/>
+      <MoHead
+        modo={modo}
+        title="Cristal Bot Video Beta 0.1" 
+        canonical="/game/cristalbotvideob1/" 
+        icohref="/static/assetsv5/img/faviconcristal.ico"/>
       <Layout regiao={regiao} modo={modo} titulo="Games" categoria="Games">
-        <Div display="justificado">
-        <a href="/game/cristalbot/">
-              <h1><Img src="/static/assetsv5/img/cristalbot/logocistalbotmini.png" width="200px" height="100px" alt="Game Cristal Bot" title="Game Cristal Bot" class="CristalBotLogo" modo={modo} /></h1>
-            </a>
-          <div className="heaermob">
-            <MenuMobile01 modo={modo}/>
-          </div>
-        </Div>
+
+      <HeaderCristalBot regiao={regiao} modo={modo}/>
           
           <Div display="responcivo">
             <div>

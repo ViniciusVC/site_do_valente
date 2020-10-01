@@ -10,7 +10,17 @@ import Janela from '../moJanela/index.js'
 
 const MenuMobile01 = props => {
   var modo = Util.validaProps(props.modo,"html");
-  
+  var regiao = Util.validaProps(props.modo,"RJ");
+  const janelaEstilo = Util.validaProps(props.janelaestilo, "neon");
+  var cordoicone = "#ffffff";
+  if (janelaEstilo=="claro"){
+    cordoicone = "#000000";
+  }
+  const titulo = props.titulo;
+  const categoria = props.categoria;
+  const btestilo = props.btestilo; //"neon"
+  const btestiloitem = props.btestiloitem; //"neonItem"
+
   if(modo=="html"||modo=="HTML"){
     function fechalightboxMenu(){
       document.getElementById("contMenuMobiles").style.display = "none";
@@ -25,17 +35,23 @@ const MenuMobile01 = props => {
               <div id="lightboxMenu" className="lightboxMenu" >
                 <div className="close"  role="button" tabindex="0">
                   <a onClick={() => {fechalightboxMenu()}}>
-                    <Icon type="close" color="#ffffff" />
+                    <Icon type="close" color={cordoicone} />
                   </a>
                 </div>
-                <Janela estilo="neon">
-                  <ListadeRotas/>
+                <Janela estilo={janelaEstilo}>
+                  <ListadeRotas 
+                    regiao={regiao} 
+                    modo={modo} 
+                    titulo={titulo}
+                    categoria={categoria}
+                    btestilo={btestilo} 
+                    btestiloitem={btestiloitem}/>
                 </Janela>
               </div>
         </div>
         <div>
             <a onClick={() => {abrirlightboxMenu()}}>
-              <Icon type="menu" color="#ffffff" width="25px"/>MENU
+              <Icon type="menu" color="#ffffff" width="25px"/>
             </a>
         </div>
         <style jsx>{`
@@ -94,17 +110,23 @@ const MenuMobile01 = props => {
       <div>
           <amp-lightbox id="PopupMenu" layout="nodisplay">
             <div className="lightboxMenu" >
-              <Janela estilo="neon">
+              <Janela estilo={janelaEstilo}>
                 <span className="closeMenu" on="tap:PopupMenu.close" role="button" tabindex="0">
-                  <Icon type="close" color="#ffffff" />
+                  <Icon type="close" color={cordoicone} />
                 </span>
-                <ListadeRotas/>
+                <ListadeRotas 
+                    regiao={regiao} 
+                    modo={modo} 
+                    titulo={titulo}
+                    categoria={categoria}
+                    btestilo={btestilo} 
+                    btestiloitem={btestiloitem}/>
               </Janela>
             </div>
           </amp-lightbox>
           <div className="ampstart-btn caps m2" on="tap:PopupMenu" role="button" tabindex="0">
             <div>
-              <Icon type="menu" color="#ffffff" width="25px"/>MENU
+              <Icon type="menu" color="#ffffff" width="25px"/>
             </div>
           </div>
         <style jsx>{`

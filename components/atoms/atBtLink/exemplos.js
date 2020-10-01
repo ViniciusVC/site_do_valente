@@ -27,9 +27,14 @@ export const atBtLink = (modo) => {
         <p className="p">Codigo:{'<BtLink href="http://www.vvcestudio.com.br/" value="Neon Item" estilo="neonItem"/>'}</p>
       </div>
       <div>
-        Componente atBtLink Purple (site_do_valente):
+        Componente atBtLink Cinza (site_do_valente):
         <BtLink href="http://www.vvcestudio.com.br/" value="Link cinza" estilo="cinza"/>
         <p className="p">Codigo:{'<BtLink href="http://www.vvcestudio.com.br/" value="Link cinza" estilo="cinza"/>'}</p>
+      </div>
+      <div>
+        Componente atBtLink Azul (site_do_valente):
+        <BtLink href="http://www.vvcestudio.com.br/" value="Curriculo" estilo="azul"/>
+        <p className="p">Codigo:{'<BtLink href="http://www.vvcestudio.com.br/" value="curiculo" estilo="azul"/>'}</p>
       </div>
       <div>
         Componente atBtLink Purple (Portal Oi Home):

@@ -4,7 +4,7 @@ import BtLink from './btLink.js';
 import BtLinkAmarelo1 from './btLinkAmarelo1.js';
 import BtLinkAmarelo2 from './btLinkAmarelo2.js';
 import BtLinkAmarelo3 from './btLinkAmarelo3.js';
-
+import BtLinkAzul from './btLinkAzul.js';
 import BtLinklaranja from './btLinkLaranja.js';
 import BtLinkItemLuzVerde from './btLinkItemLuzVerde.js';
 import BtLinkLuz from './btLinkLuz.js';
@@ -31,8 +31,10 @@ const btSubmit = props => {
     return (<BtLinklaranja value={varValue} href={varHref}/>);
   } else if (varEstilo == "amarelo1") {
     return (<BtLinkAmarelo1 value={varValue} href={varHref}/>);
-  } else if (varEstilo == "amarelo2") {
+  } else if (varEstilo == "amarelo2") { 
     return (<BtLinkAmarelo2 value={varValue} href={varHref}/>);
+  } else if (varEstilo == "azul") {
+    return (<BtLinkAzul value={varValue} href={varHref}/>);
   } else if (varEstilo == "amarelo3") {
     return (<BtLinkAmarelo3 value={varValue} href={varHref}/>);
   } else if (varEstilo == "branco") {

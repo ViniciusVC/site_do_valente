@@ -16,7 +16,11 @@ const Knockout = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="KnockoutJS" description="Tutorial Knockout JS" canonical="/tutorial/knockout/"/>
+      <MoHead 
+        modo={modo} 
+        title="KnockoutJS" 
+        description="Tutorial Knockout JS" 
+        canonical="/tutorial/knockout/"/>
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="KnockoutJS">
       <Div display="responcivo">
           <div className="coluna404">

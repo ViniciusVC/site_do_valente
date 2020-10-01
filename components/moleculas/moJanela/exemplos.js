@@ -27,6 +27,13 @@ export const moJanela = (modo) => (
         modo="{modo}"<br/> <br/>
         </div>
         <div>
+        <Janela estilo="claro">
+          Conteudo
+        </Janela>
+        {'Codigo : <Janela estilo="claro">Conteudo</Janela>'}<br/>
+        modo="{modo}"<br/> <br/>
+        </div>
+        <div>
         <Janela estilo="naveg">
           Conteudo
         </Janela>

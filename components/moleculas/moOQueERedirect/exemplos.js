@@ -9,9 +9,9 @@ export const moOQueERedirect = (modo) => {
       <h2>moOQueERedirect</h2>
       <OQueERedirect/>      
       <p>
-        Exemplo do componente.
-        codigo: {'<OQueERedirect>'}<br/>
-        modo={modo}
+        
+        {"import OQueERedirect from '../moleculas/moOQueERedirect';"}<br/>
+        {'<OQueERedirect>'}<br/>
       </p>
     </div>
 )

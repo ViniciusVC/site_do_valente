@@ -19,7 +19,11 @@ const codigoAsp = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="ASP" description="O que é ASP" canonical="/codigo/asp/"/>
+      <MoHead 
+        modo={modo} 
+        title="ASP" 
+        description="O que é ASP" 
+        canonical="/codigo/asp/"/>
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="ASP">
       <Div display="responsivo">
           <div className="coluna404">

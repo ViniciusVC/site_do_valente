@@ -3,7 +3,7 @@ import React from 'react'
 import Img from '../../atoms/atImg'
 import BtLink from '../../atoms/atBtLink'
 import Div from '../../atoms/atDiv/index.js'
-import Layout from '../../moleculas/layout'
+import Layout from '../../moleculas/layout/eu.js'
 import MoHead from '../../moleculas/moHead'
 //import Janela from '../../moleculas/moJanela/index.js'
 import * as Util from '../../../controller/util.js';
@@ -12,29 +12,47 @@ const templateHome = function (props) {
   console.log('╔════════════════════════════════════════╗');
   console.log('║      Eu                                ║');
   console.log('╚════════════════════════════════════════╝');
-  var regiao = Util.validaProps(props.regiao, "MG");
+  var regiao = Util.validaProps(props.regiao , "RJ");
   var modo = Util.validaProps(props.modo, "html");
+
   return (
     <div>
       <MoHead modo={modo} title="Vinícius Valente Coutinh" canonical="/eu/"/>
       <Layout regiao={regiao} modo={modo} titulo="Eu" categoria="Eu">
+          
           <Div display="responsivo">
-            <div>
-              <Img src="/static/assetsv5/img/eu.png" width="128px" height="128px" alt="foto Vinicius Valente Coutinho" title="foto Vinicius Valente Coutinho" class="ClassImgNext" modo={modo} />
+            <div className="fotoEu">
+              <Img 
+                src="/static/assetsv5/img/eu.png" 
+                width="128px" 
+                height="128px"
+                alt="foto Vinicius Valente Coutinho" 
+                title="foto Vinicius Valente Coutinho" 
+                class="ClassImgNext" 
+                modo={modo} />
             </div>
             <div>
               <p>Meu nome é Vinícius Valente Coutinho, Analista de Sistemas fullstack,<br/> 
               com experiência em configuração de CDN, Apache, AMP, SEO, NodeJS, PHP, Hadoop.<br/> 
               Atualmente liderando equipe de desenvolvimento de projeto de BigData.<br/> 
               Atuei como líder de equipe em projeto AMP com foco em melhoria do SEO.</p>
-              <BtLink href={"/eu/curriculo/?regiao="+regiao} value="Veja meu currículo aqui." estilo="neon"/>
+              <BtLink href={"/eu/curriculo/?regiao="+regiao} value="Veja meu currículo aqui." estilo="azul"/>
               <br/>
             </div>
           </Div>
         </Layout>
       <style jsx>{`
+        .fotoEu{
+          border-radius: 90px;
+          display: block;
+          border: solid 1px #f0f0f0;
+          margin-top:-100px;
+          background-color: #ffffff;
+          width:130px; 
+          height:130px;
+        }
         .HomeListadeRotas{
-         width:25%;
+          width:25%;
         }
         .HomeIndex{
           width:75%;

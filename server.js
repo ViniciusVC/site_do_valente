@@ -74,11 +74,11 @@ app.prepare()
     //server.get('/', (req, res) => {app.render(req, res, '/', req.query);})
     server.get('/amp/',(req, res) => {app.render(req, res, '/routes/amp', req.query); })
     
-    server.get('/eu/', (req, res) => {app.render(req, res, '/routes/eu', req.query); }) 
-    server.get('/amp/eu/', (req, res) => {app.render(req, res, '/routes/amp/eu', req.query); }) 
+    server.get('/eu/',           (req, res) => {app.render(req, res, '/routes/eu',           req.query); }) 
+    server.get('/amp/eu/',       (req, res) => {app.render(req, res, '/routes/amp/eu',       req.query); }) 
     server.get('/eu/curriculo/', (req, res) => {app.render(req, res, '/routes/eu/curriculo', req.query); }) 
-    server.get('/curriculo/', (req, res) => {app.render(req, res, '/routes/eu/curriculo', req.query); }) 
-    server.get('/amp/curriculo/', (req, res) => {app.render(req, res, '/routes/amp/eu/curriculo', req.query); }) 
+    server.get('/curriculo/',    (req, res) => {app.render(req, res, '/routes/eu/curriculo', req.query); }) 
+    server.get('/amp/curriculo/',(req, res) => {app.render(req, res, '/routes/amp/eu/curriculo', req.query); }) 
     server.get('/amp/eu/curriculo/', (req, res) => {app.render(req, res, '/routes/amp/eu/curriculo', req.query); }) 
     //======================================================================
 
@@ -205,6 +205,7 @@ app.prepare()
     server.get('/amp/tutorial/python/numpy', (req, res) => { app.render(req, res, '/routes/amp/tutorial/python/numpy', req.query);})
     server.get('/tutorial/python/pandas', (req, res) => { app.render(req, res, '/routes/tutorial/python/pandas', req.query);})
     server.get('/amp/tutorial/python/pandas', (req, res) => { app.render(req, res, '/routes/amp/tutorial/python/pandas', req.query);})
+    
     server.get('/tutorial/python/matplotlib', (req, res) => { app.render(req, res, '/routes/tutorial/python/matplotlib', req.query);})
     server.get('/amp/tutorial/python/matplotlib', (req, res) => { app.render(req, res, '/routes/amp/tutorial/python/matplotlib', req.query);})
     server.get('/tutorial/python/seaborn', (req, res) => { app.render(req, res, '/routes/tutorial/python/seaborn', req.query);})
@@ -231,6 +232,13 @@ app.prepare()
     server.get('/tutorial/rubyonrails/redirect/', (req, res) => { app.render(req, res, '/routes/tutorial/rubyonrails/redirect', req.query);})
     server.get('/amp/tutorial/rubyonrails/redirect/', (req, res) => { app.render(req, res, '/routes/amp/tutorial/rubyonrails/redirect', req.query);})
 
+    server.get('/tutorial/bancodedados/', (req, res) => { app.render(req, res, '/routes/tutorial/bancodedados', req.query);})
+    server.get('/amp/tutorial/bancodedados/', (req, res) => { app.render(req, res, '/routes/amp/tutorial/rubyonrails', req.query);})
+    server.get('/tutorial/bancodedados/sql/', (req, res) => { app.render(req, res, '/routes/tutorial/bancodedados/sql', req.query);})
+    server.get('/amp/tutorial/bancodedados/sql/', (req, res) => { app.render(req, res, '/routes/amp/tutorial/rubyonrails/redirect', req.query);})
+    server.get('/tutorial/bancodedados/mysql/', (req, res) => { app.render(req, res, '/routes/tutorial/bancodedados/mysql', req.query);})
+    server.get('/amp/tutorial/bancodedados/mysql/', (req, res) => { app.render(req, res, '/routes/amp/tutorial/rubyonrails/redirect', req.query);})
+    
     
     //======================================================================
 

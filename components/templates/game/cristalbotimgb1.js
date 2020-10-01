@@ -5,6 +5,7 @@ import React from 'react'
 import Layout from '../../moleculas/layout/cristalbot.js' // Esta pagina tem um layout diferente.
 import MoHead from '../../moleculas/moHead'
 import MenuMobile01 from '../../moleculas/moMenuMobile01/index.js'
+import HeaderCristalBot from '../../moleculas/moHeaderSideDoValente/cristalbot.js';
 import * as Util from '../../../controller/util.js';
 import BtLink from '../../atoms/atBtLink'
 import Img from '../../atoms/atImg'
@@ -22,17 +23,13 @@ const game = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="Cristal Bot" canonical="/cristalbot" icohref="/static/assetsv5/img/faviconcristal.ico"/>
+      <MoHead 
+        modo={modo} 
+        title="Cristal Bot Beta 0.1" 
+        canonical="/game/cristalbotimgb1/" 
+        icohref="/static/assetsv5/img/faviconcristal.ico"/>
       <Layout regiao={regiao} modo={modo} titulo="Games" categoria="Games">
-        <Div display="justificado">
-        <a href="/game/cristalbot/">
-              <h1><Img src="/static/assetsv5/img/cristalbot/logocistalbotmini.png" width="200px" height="100px" alt="Game Cristal Bot" title="Game Cristal Bot" class="CristalBotLogo" modo={modo} /></h1>
-            </a>
-          <div className="heaermob">
-            <MenuMobile01 modo={modo}/>
-          </div>
-        </Div>
-          
+      <HeaderCristalBot regiao={regiao} modo={modo}/>
           <Div display="responcivo">
             <div>
               <br/><br/><br/>
@@ -44,28 +41,28 @@ const game = function (props) {
               Veja aqui imagens dos planetas em que o robo explorador irá procuar as pedras preciosas.
               </p>
             </div>
-            
-
           </Div>
-
-
 
           Uma imagem do game Cristal Bot planeta Plutao.
           <div>
               <Img src="/static/assetsv5/img/cristalbot/cristalbot003.jpg" width="786px" height="453px" alt="Cristal Bot planeta Plutao" title="Cristal Bot planeta Plutao" class="Cristal Bot planeta Plutao" modo={modo} />
           </div>
+          
           Uma imagem do game Cristal Bot planeta Lua.
           <div>
             <Img src="/static/assetsv5/img/cristalbot/cristalbot004.jpg" width="786px" height="453px" alt="Cristal Bot planeta Lua" title="Cristal Bot planeta Lua" class="Cristal Bot planeta Lua" modo={modo} />
           </div>
+          
           Uma imagem do game Cristal Bot planeta Venus.
           <div>
             <Img src="/static/assetsv5/img/cristalbot/cristalbot005.jpg" width="786px" height="453px" alt="Cristal Bot planeta Venus" title="Cristal Bot planeta Venus" class="Cristal Bot planeta Venus" modo={modo} />
           </div>
+          
           Uma imagem do game Cristal Bot planeta Mercurio.
           <div>
             <Img src="/static/assetsv5/img/cristalbot/cristalbot006.jpg" width="786px" height="453px" alt="Cristal Bot planeta Mercurio" title="Cristal Bot planeta Mercurio" class="Cristal Bot planeta Mercurio" modo={modo} />
           </div>
+          
           Uma imagem do game Cristal Bot planeta Marte.
           <div>
             <Img src="/static/assetsv5/img/cristalbot/cristalbot002.jpg" width="786px" height="453px" alt="Cristal Bot planeta Marte" title="Cristal Bot planeta Marte" class="Cristal Bot planeta Marte" modo={modo} />
@@ -75,22 +72,21 @@ const game = function (props) {
           <div>
             Imagem da modelagem 3D no Blender.
             <Img src="/static/assetsv5/img/cristalbot/cristalbot008.png" width="300px" height="300px" alt="Cristal Bot modelagem Blender" title="Cristal Bot modelagem Blender" class="Cristal Bot modelagem Blender" modo={modo} />
-              
-            </div>
-            <div>
+          </div>
+
+          <div>
             Uma foto do primeiro rascunho do jogo desenhado a mão.
             <Img src="/static/assetsv5/img/cristalbot/cristalbot007.jpeg" width="600px" height="350px" alt="Cristal Bot rascunho game" title="Cristal Bot rascunho game" class="Cristal Bot rascunho game" modo={modo} />
-              
-            </div>
+          </div>
 
           
           <div>
-          <p>
-                  Veja a página do Cristal Bot Beta 2.
-                  <BtLink href={"/game/cristalbot/"} value="Cristal Bot Beta 2" estilo="neon"/> 
-                </p> 
-            </div>
-           
+            <p>
+              Veja a página do Cristal Bot Beta 2.
+              <BtLink href={"/game/cristalbot/"} value="Cristal Bot Beta 2" estilo="neon"/> 
+            </p> 
+          </div>
+
       </Layout>
       <style jsx>{`
         .h1{
@@ -105,7 +101,6 @@ const game = function (props) {
           }
         }
       `}</style>
-
     </div>
   )
 }

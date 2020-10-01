@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../../moleculas/layout/cristalbot.js' // Esta pagina tem um layout diferente.
+import Layout from '../../moleculas/layout/games.js' // Esta pagina tem um layout diferente.
 import MoHead from '../../moleculas/moHead'
 import Controleogodzilla from '../../organisms/orgControleogodzilla'
 import * as Util from '../../../controller/util.js';

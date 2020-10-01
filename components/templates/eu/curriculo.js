@@ -1,19 +1,34 @@
 import React from 'react'
 import Link from 'next/link'
-import Layout from '../../moleculas/layout'
+import Layout from '../../moleculas/layout/eu.js'
 import MoHead from '../../moleculas/moHead'
 import * as Util from '../../../controller/util.js';
+import Img from '../../atoms/atImg'
 
 const templateHome = function (props) {
   console.log('╔════════════════════════════════════════╗');
   console.log('║      Curriculo                         ║');
   console.log('╚════════════════════════════════════════╝');
-  var regiao = Util.validaProps(props.regiao , "RJ");
+  var regiao = Util.validaProps(props.regiao, "RJ");
   var modo = Util.validaProps(props.modo, "html");
   return (
     <div>
-      <MoHead modo={modo} title="Vinícius Valente Coutinh" description="Curriculo Vinícius Valente Coutinho" canonical="/uticurriculo/"/>
+      <MoHead 
+        modo={modo} 
+        title="Vinícius Valente Coutinh" 
+        description="Curriculo de Vinícius Valente Coutinho autor deste projeto." 
+        canonical="/eu/curriculo/"/>
       <Layout regiao={regiao} modo={modo} titulo="Eu" categoria="curriculo">
+          <div className="fotoEu">
+              <Img 
+                src="/static/assetsv5/img/eu.png" 
+                width="128px" 
+                height="128px"
+                alt="foto Vinicius Valente Coutinho" 
+                title="foto Vinicius Valente Coutinho" 
+                class="ClassImgNext" 
+                modo={modo} />
+          </div>
           <h1>CURR&Iacute;CULO</h1>
           Vinicius Valente Coutinho
           <h2>CONTATO:</h2>
@@ -161,12 +176,15 @@ const templateHome = function (props) {
           </ul>
         </Layout>
       <style jsx>{`
-        .h2{
-         width:100%;
-        }
-        .li{
-          width:100%;
-        }
+          .fotoEu{
+            border-radius: 90px;
+            display: block;
+            border: solid 1px #f0f0f0;
+            margin-top:-100px;
+            background-color: #ffffff;
+            width:130px; 
+            height:130px;
+          }
       `}</style>
 
     </div>

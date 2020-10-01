@@ -8,7 +8,8 @@ const RotaCurriculoAMP = function(props){
   return(
     <TemplateCurriculo
       modo="amp"
-      regiao={Util.validaProps(props.url.query.regiao,"RJ")}/>
+      regiao={Util.validaProps(props.url.query.regiao,"RJ")}
+    />
   )
 }
 

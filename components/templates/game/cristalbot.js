@@ -4,12 +4,13 @@ import React from 'react'
 //import FaviIcon from '../../atoms/atFavIcon'
 import Layout from '../../moleculas/layout/cristalbot.js' // Esta pagina tem um layout diferente.
 import MoHead from '../../moleculas/moHead'
-import MenuMobile01 from '../../moleculas/moMenuMobile01/index.js'
+import HeaderCristalBot from '../../moleculas/moHeaderSideDoValente/cristalbot.js';
+//import MenuMobile01 from '../../moleculas/moMenuMobile01/index.js'
 import Janela from '../../moleculas/moJanela/index.js'
 import * as Util from '../../../controller/util.js';
 import BtLink from '../../atoms/atBtLink'
 import Img from '../../atoms/atImg'
-import DivNaveg from '../../atoms/atDivNaveg'
+//import DivNaveg from '../../atoms/atDivNaveg'
 import Div from '../../atoms/atDiv/index.js'
 
 
@@ -30,17 +31,10 @@ const game = function (props) {
         canonical="/game/cristalbot/" 
         icohref="/static/assetsv5/img/faviconcristal.ico"/>
       <Layout regiao={regiao} modo={modo} titulo="Games" categoria="Games">
-        
       <Div display="responcivo">
         <div>
-          <Div display="justificado">
-          <a href="/game/cristalbot/">
-              <h1><Img src="/static/assetsv5/img/cristalbot/logocistalbotmini.png" width="200px" height="100px" alt="Game Cristal Bot" title="Game Cristal Bot" class="CristalBotLogo" modo={modo} /></h1>
-            </a>
-            <div className="heaermob">
-              <MenuMobile01 modo={modo}/>
-            </div>
-          </Div>
+          <HeaderCristalBot regiao={regiao} modo={modo}/>
+            
           <div className="conteudo">
               <br/><br/><br/>
               <p>
@@ -71,7 +65,7 @@ const game = function (props) {
             <Janela estilo="terminal">
               Veja aqui imagens dos planetas em que o robo explorador irá procuar as pedras preciosas.
               <a href="/game/cristalbotimgb2/">
-                <Img src="/static/assetsv5/img/cristalbot/cristalbotimgsb1.jpg" width="200px" height="114px" alt="Cristal Bot planeta Marte" title="Cristal Bot Imagens 2" class="Cristal Bot imagens beta 2" modo={modo} />
+                <Img src="/static/assetsv5/img/cristalbot/cristalbotimgsb2.jpg" width="200px" height="114px" alt="Cristal Bot planeta Marte" title="Cristal Bot Imagens 2" class="Cristal Bot imagens beta 2" modo={modo} />
               </a>
             </Janela>
           </Div>
@@ -90,8 +84,8 @@ const game = function (props) {
                   E para o desenho da logo foi utilisado Inkscape, Blender e Gimp.<br/>
                 </p>
                 <p>
-                  Veja a página do Cristal Bot Beta 0.1.
-                  <BtLink href={"/game/cristalbotb1/"} value="Cristal Bot Beta 0.1" estilo="neon"/> 
+                   Veja a página do Cristal Bot Beta 0.1.
+                  <BtLink href={"/game/cristalbotb1/"} value="Versão anterior - Cristal Bot Beta 0.1" estilo="neon"/> 
                 </p> 
             </div>
         </div>  
@@ -109,11 +103,7 @@ const game = function (props) {
         .conteudo{
           padding:10px;
        }
-        @media(min-width: 1169px) {
-          .heaermob{
-            display : None;
-          }
-        }
+
       `}</style>
 
     </div>

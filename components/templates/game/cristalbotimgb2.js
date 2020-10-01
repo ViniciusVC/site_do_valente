@@ -5,6 +5,7 @@ import React from 'react'
 import Layout from '../../moleculas/layout/cristalbot.js' // Esta pagina tem um layout diferente.
 import MoHead from '../../moleculas/moHead'
 import MenuMobile01 from '../../moleculas/moMenuMobile01/index.js'
+import HeaderCristalBot from '../../moleculas/moHeaderSideDoValente/cristalbot.js';
 import * as Util from '../../../controller/util.js';
 import BtLink from '../../atoms/atBtLink'
 import Img from '../../atoms/atImg'
@@ -22,51 +23,49 @@ const game = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="Cristal Bot" canonical="/cristalbot" icohref="/static/assetsv5/img/faviconcristal.ico"/>
+      <MoHead 
+        modo={modo} 
+        title="Cristal Bot Imagens" 
+        canonical="/game/cristalbotimgb1/" 
+        icohref="/static/assetsv5/img/faviconcristal.ico"/>
       <Layout regiao={regiao} modo={modo} titulo="Games" categoria="Games">
-        <Div display="justificado">
-        <a href="/game/cristalbot/">
-              <h1><Img src="/static/assetsv5/img/cristalbot/logocistalbotmini.png" width="200px" height="100px" alt="Game Cristal Bot" title="Game Cristal Bot" class="CristalBotLogo" modo={modo} /></h1>
-            </a>
-          <div className="heaermob">
-            <MenuMobile01 modo={modo}/>
-          </div>
-        </Div>
+
+      <HeaderCristalBot regiao={regiao} modo={modo}/>
           
-          <Div display="responcivo">
-            <div>
-              <br/><br/><br/>
-              <p>Cristal Bot é um game independente brasileiro, está na sua versão beta, e é feito por uma única pessoa.<br/>
-              Foi desenvolvido na plataforma Unity com linguage de programação C# e modelagem 3D no Blender.<br/>
-              Desenvolvi tanto o código quanto a arte do jogo.</p>
+          <div>
               <p>
               Veja aqui imagens dos planetas em que o robo explorador irá procuar as pedras preciosas.
               </p>
-            </div>
-            
-
-          </Div>
-
-
-          Uma imagem do game Cristal Bot planeta Plutao.
-          <div>
-              <Img src="/static/assetsv5/img/cristalbot/cristalbot003.jpg" width="786px" height="453px" alt="Cristal Bot planeta Plutao" title="Cristal Bot planeta Plutao" class="Cristal Bot planeta Plutao" modo={modo} />
           </div>
-          Uma imagem do game Cristal Bot planeta Lua.
+          
+
+          Tela inicial.
           <div>
-            <Img src="/static/assetsv5/img/cristalbot/cristalbot004.jpg" width="786px" height="453px" alt="Cristal Bot planeta Lua" title="Cristal Bot planeta Lua" class="Cristal Bot planeta Lua" modo={modo} />
+              <Img src="/static/assetsv5/img/cristalbot/cristalbot201.jpg" width="784px" height="279px" alt="Cristal Bot planeta Plutao" title="Cristal Bot planeta Plutao" class="Cristal Bot planeta Plutao" modo={modo} />
           </div>
-          Uma imagem do game Cristal Bot planeta Venus.
+          Uma imagem do game Cristal Bot Lua.
           <div>
-            <Img src="/static/assetsv5/img/cristalbot/cristalbot005.jpg" width="786px" height="453px" alt="Cristal Bot planeta Venus" title="Cristal Bot planeta Venus" class="Cristal Bot planeta Venus" modo={modo} />
+            <Img src="/static/assetsv5/img/cristalbot/cristalbot202.jpg" width="784px" height="279px" alt="Cristal Bot planeta Lua" title="Cristal Bot planeta Lua" class="Cristal Bot planeta Lua" modo={modo} />
+          </div>
+          Uma imagem do game Cristal Bot planeta Marte.
+          <div>
+            <Img src="/static/assetsv5/img/cristalbot/cristalbot203.jpg" width="784px" height="279px" alt="Cristal Bot planeta Venus" title="Cristal Bot planeta Venus" class="Cristal Bot planeta Venus" modo={modo} />
           </div>
             Uma imagem do game Cristal Bot planeta Mercurio.
           <div>
-            <Img src="/static/assetsv5/img/cristalbot/cristalbot006.jpg" width="786px" height="453px" alt="Cristal Bot planeta Mercurio" title="Cristal Bot planeta Mercurio" class="Cristal Bot planeta Mercurio" modo={modo} />
+            <Img src="/static/assetsv5/img/cristalbot/cristalbot204.jpg" width="784px" height="279px" alt="Cristal Bot planeta Mercurio" title="Cristal Bot planeta Mercurio" class="Cristal Bot planeta Mercurio" modo={modo} />
           </div>
-            Uma imagem do game Cristal Bot planeta Marte.
+            Uma imagem do game Cristal Bot planeta Plutão.
           <div>
-            <Img src="/static/assetsv5/img/cristalbot/cristalbot002.jpg" width="786px" height="453px" alt="Cristal Bot planeta Marte" title="Cristal Bot planeta Marte" class="Cristal Bot planeta Marte" modo={modo} />
+            <Img src="/static/assetsv5/img/cristalbot/cristalbot205.jpg" width="784px" height="279px" alt="Cristal Bot planeta Marte" title="Cristal Bot planeta Marte" class="Cristal Bot planeta Marte" modo={modo} />
+          </div>  
+          <div>
+            Uma imagem do game Cristal Bot planeta Venus.
+            <Img src="/static/assetsv5/img/cristalbot/cristalbot206.jpg" width="784px" height="279px" alt="Cristal Bot planeta Marte" title="Cristal Bot planeta Marte" class="Cristal Bot planeta Marte" modo={modo} />
+          </div>  
+          <div>
+            Cabine de controle da Nave.
+            <Img src="/static/assetsv5/img/cristalbot/cristalbot207.jpg" width="784px" height="279px" alt="Cristal Bot planeta Marte" title="Cristal Bot planeta Marte" class="Cristal Bot planeta Marte" modo={modo} />
           </div>  
             <div>
               Imagem da modelagem 3D no Blender
@@ -80,10 +79,10 @@ const game = function (props) {
 
           
           <div>
-          <p>
-                  Veja a página do Cristal Bot Beta 2.
-                  <BtLink href={"/game/cristalbot/"} value="Cristal Bot Beta 2" estilo="neon"/> 
-                </p> 
+            <p>
+              Veja a página do Cristal Bot Beta 2.
+              <BtLink href={"/game/cristalbot/"} value="Cristal Bot Beta 2" estilo="neon"/> 
+            </p> 
           </div>
            
       </Layout>
