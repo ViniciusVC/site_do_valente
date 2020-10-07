@@ -30,11 +30,10 @@ const codigoJava = function (props) {
           <div>
             <h1>O que é Seaborn?</h1>
             <p>
-              É a biblioteca para análise de dados simples e uma das mais usadas.<br/>
-              Para criar gráficos mais complexos do que o Pandas dispõe.
-              e tabelas de resposta.
+              É a biblioteca para análise de dados.
+              É uma das mais usadas para criar(plotar) gráficos, 
+              Possue mais opções do que o Pandas dispõe.
             </p>
-
             <DivCodigo titulo="Exemplo de codigo Python com seaborn">
               # Importar seaborn <br/>
               import seaborn as sns <br/>

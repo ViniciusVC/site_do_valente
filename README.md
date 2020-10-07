@@ -1,5 +1,5 @@
 ## Projeto : site_do_valente
-## http://www.vvcestudio.com.br
+## Site : vvcestudio.com.br
 ### Renderização server-side de HTML e AMP (isomorfica ReactJS e NextJS)
 ```
 0 - Site pessoal
@@ -56,5 +56,6 @@ npm run export
 
 ```
 A porta usada na Umbler é a 3000.
+Deploy via GIT
 
 ```
