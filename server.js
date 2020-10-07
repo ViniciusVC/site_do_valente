@@ -210,10 +210,12 @@ app.prepare()
     server.get('/amp/tutorial/python/matplotlib', (req, res) => { app.render(req, res, '/routes/amp/tutorial/python/matplotlib', req.query);})
     server.get('/tutorial/python/seaborn', (req, res) => { app.render(req, res, '/routes/tutorial/python/seaborn', req.query);})
     server.get('/amp/tutorial/python/seaborn', (req, res) => { app.render(req, res, '/routes/amp/tutorial/python/seaborn', req.query);})
+    server.get('/tutorial/python/sklearn', (req, res) => { app.render(req, res, '/routes/tutorial/python/sklearn', req.query);})
+    server.get('/amp/tutorial/python/sklearn', (req, res) => { app.render(req, res, '/routes/amp/tutorial/python/sklearn', req.query);})
+    
 
-
-    server.get('/tutorial/dotnet/', (req, res) => { app.render(req, res, '/routes/tutorial/dotnet', req.query);})
-    server.get('/amp/tutorial/dotnet/', (req, res) => { app.render(req, res, '/routes/amp/tutorial/dotnet', req.query);})
+    // server.get('/tutorial/dotnet/', (req, res) => { app.render(req, res, '/routes/tutorial/dotnet', req.query);})
+    // server.get('/amp/tutorial/dotnet/', (req, res) => { app.render(req, res, '/routes/amp/tutorial/dotnet', req.query);})
 
     server.get('/tutorial/dotnet/', (req, res) => { app.render(req, res, '/routes/tutorial/dotnet', req.query);})
     server.get('/amp/tutorial/dotnet/', (req, res) => { app.render(req, res, '/routes/amp/tutorial/dotnet', req.query);})
@@ -233,11 +235,13 @@ app.prepare()
     server.get('/amp/tutorial/rubyonrails/redirect/', (req, res) => { app.render(req, res, '/routes/amp/tutorial/rubyonrails/redirect', req.query);})
 
     server.get('/tutorial/bancodedados/', (req, res) => { app.render(req, res, '/routes/tutorial/bancodedados', req.query);})
-    server.get('/amp/tutorial/bancodedados/', (req, res) => { app.render(req, res, '/routes/amp/tutorial/rubyonrails', req.query);})
+    server.get('/amp/tutorial/bancodedados/', (req, res) => { app.render(req, res, '/routes/amp/tutorial/bancodedados', req.query);})
     server.get('/tutorial/bancodedados/sql/', (req, res) => { app.render(req, res, '/routes/tutorial/bancodedados/sql', req.query);})
-    server.get('/amp/tutorial/bancodedados/sql/', (req, res) => { app.render(req, res, '/routes/amp/tutorial/rubyonrails/redirect', req.query);})
+    server.get('/amp/tutorial/bancodedados/sql/', (req, res) => { app.render(req, res, '/routes/amp/tutorial/bancodedados/sql', req.query);})
     server.get('/tutorial/bancodedados/mysql/', (req, res) => { app.render(req, res, '/routes/tutorial/bancodedados/mysql', req.query);})
-    server.get('/amp/tutorial/bancodedados/mysql/', (req, res) => { app.render(req, res, '/routes/amp/tutorial/rubyonrails/redirect', req.query);})
+    server.get('/amp/tutorial/bancodedados/mysql/', (req, res) => { app.render(req, res, '/routes/amp/tutorial/bancodedados/mysql', req.query);})
+    server.get('/tutorial/bancodedados/datascience/', (req, res) => { app.render(req, res, '/routes/tutorial/bancodedados/datascience', req.query);})
+    server.get('/amp/tutorial/bancodedados/datascience/', (req, res) => { app.render(req, res, '/routes/amp/tutorial/bancodedados/datascience', req.query);})
     
     
     //======================================================================

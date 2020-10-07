@@ -1,11 +1,10 @@
 import React from 'react'
-import Head from 'next/head'
 import Link from 'next/link'
-import FaviIcon from '../../../atoms/atFavIcon'
+import DivCodigo from '../../../atoms/atDivCodigo'
 import Layout from '../../../moleculas/layout'
+import MoHead from '../../../moleculas/moHead'
 import OQueERedirect from '../../../moleculas/moOQueERedirect'
 import * as Util from '../../../../controller/util.js';
-import DivCodigo from '../../../atoms/atDivCodigo'
 //import DivNaveg from '../../../atoms/atDivNaveg'
 
 const codigoAspRedirect = function (props) {
@@ -19,18 +18,16 @@ const codigoAspRedirect = function (props) {
 
   return (
     <div>
-      <Head>
-        <title>REDIRECT com CGI PERL</title>
-        <FaviIcon />
-        <meta name="description" content="REDIRECT com CGI PERL" />
-        <link rel="canonical" href="/codigo/cgi/redirect/" />
-        <link rel="amphtml" href="/amp/codigo/cgi/redirect/" />
-        <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
-        <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
-      </Head>
+      <MoHead 
+        modo={modo} 
+        title="REDIRECT CGI PERL" 
+        description="REDIRECT 301 com CGI PERL" 
+        canonical="/tutorial/cgi/redirect/"
+        keywords="CGI, PERL, Tutorial, REDIRECT, linguagem, programação, codigo, HTTP, protocolo"
+      />
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="CGI">
         <h1>REDIRECT com CGI PERL</h1>
-          <p>Como fazer redirect 301 no codigo com CGI PERL</p>
+          <p>Como fazer redirect 301 com CGI PERL?</p>
           <DivCodigo titulo="Codigo redirect CGI PERL">
             <xmp>
               {'$q = new CGI;'}<br/>
@@ -38,7 +35,7 @@ const codigoAspRedirect = function (props) {
             </xmp>
           </DivCodigo> 
           <OQueERedirect/>
-          <Link href={"/codigo/cgi?regiao="+regiao}>O que é CGI?</Link>
+          <Link href={"/tutorial/cgi?regiao="+regiao}>O que é CGI?</Link>
       </Layout>
       <style jsx>{`
         .h1{

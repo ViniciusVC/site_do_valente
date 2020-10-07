@@ -1,7 +1,7 @@
 import React from 'react';
 import { withAmp } from 'next/amp'; // Usado para páginas AMP
 //import { useAmp } from 'next/amp' //(Não neste projeto)
-import TemplatePython from '../../../../../components/templates/codigo/python';
+import TemplatePython from '../../../../../components/templates/codigo/python/index.js';
 import * as Util from '../../../../../controller/util.js';
 
 const RotaPython = function(props){

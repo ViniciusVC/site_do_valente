@@ -24,12 +24,10 @@ const atendimentoOi = function (props) {
             <h1>ColdFusion - Redirect</h1>
             <p>Pagina em cosntrução</p>
             <p>
-              ColdFusion é uma plataforma de desenvolvimento Web proprietária da Adobe Systems.<br/>
-              O ColdFusion utiliza da linguagem CFML para o desenvolvimento de aplicações e páginas dinâmicas.<br/>
-              A plataforma ColdFusion oferece integração nativa com plataforma Adobe Flash e seus derivados Flex e Adobe AIR.
+            em construção
             </p>
             <DivCodigo titulo="Exemplo de código ColdFusion:">
-              >em construção
+              em construção
             </DivCodigo>  
             <OQueERedirect/>
       </Layout>

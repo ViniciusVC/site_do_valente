@@ -1,10 +1,9 @@
-import React from 'react'
-//import Head from 'next/head'
-import Img from '../../../atoms/atImg/index.js'
-import Div from '../../../atoms/atDiv/index.js'
-import BtLink from '../../../atoms/atBtLink'
-import Layout from '../../../moleculas/layout'
-import MoHead from '../../..//moleculas/moHead'
+import React from 'react';
+import Img from '../../../atoms/atImg/index.js';
+import Div from '../../../atoms/atDiv/index.js';
+import BtLink from '../../../atoms/atBtLink';
+import Layout from '../../../moleculas/layout';
+import MoHead from '../../..//moleculas/moHead';
 import * as Util from '../../../../controller/util.js';
 
 const apache = function (props) {
@@ -20,9 +19,12 @@ const apache = function (props) {
   return (
     <div>
       <MoHead
-        modo={modo} title="Apache" 
+        modo={modo} 
+        title="Apache" 
         description="O que é o Apache" 
-        canonical="/tutorial/apache/"/>
+        canonical="/tutorial/apache/"
+        keywords="tutorial, apache, http, alias, redirect, instalar, vvc"
+      />
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="Apache">
         <Div display="responsivo">
           <div className="coluna404">
@@ -49,10 +51,7 @@ const apache = function (props) {
         .h1{
           color : #000000;
         }
-        .p{
-          color : #000000;
-        }
-    `}</style>
+      `}</style>
 
     </div>
   )

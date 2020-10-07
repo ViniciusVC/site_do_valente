@@ -1,8 +1,9 @@
-import React from 'react'
-import Img from '../../../atoms/atImg/index.js'
-import Div from '../../../atoms/atDiv/index.js'
-import Layout from '../../../moleculas/layout'
-import MoHead from '../../../moleculas/moHead'
+import React from 'react';
+import Img from '../../../atoms/atImg/index.js';
+import Div from '../../../atoms/atDiv/index.js';
+import DivCodigo from '../../../atoms/atDivCodigo';
+import Layout from '../../../moleculas/layout';
+import MoHead from '../../../moleculas/moHead';
 import * as Util from '../../../../controller/util.js';
 
 const atendimentoOi = function (props) {
@@ -16,7 +17,13 @@ const atendimentoOi = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="ColdFusion" description="O que é ColdFusion." canonical="/codigo/coldfusion/"/>
+      <MoHead 
+        modo={modo} 
+        title="ColdFusion" 
+        description="O que é ColdFusion" 
+        canonical="/codigo/coldfusion/"
+        keywords="ColdFusion, Script, plataforma, tutorial, desenvolvimento, Adobe, Ola Mundo"
+      />
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="ColdFusion">
         <Div display="responsivo">
           <div className="coluna404">
@@ -25,7 +32,15 @@ const atendimentoOi = function (props) {
               ColdFusion é uma plataforma de desenvolvimento Web proprietária da Adobe Systems.<br/>
               O ColdFusion utiliza da linguagem CFML para o desenvolvimento de aplicações e páginas dinâmicas.<br/>
               A plataforma ColdFusion oferece integração nativa com plataforma Adobe Flash e seus derivados Flex e Adobe AIR.
-            </p>  
+            </p>
+            <DivCodigo titulo="exemplo de Tag em ColdFusion:">
+              {'<cfoutput>Olá mundo!!</cfoutput>'}
+            </DivCodigo>
+            <DivCodigo titulo="exemplo de Script ColdFusion">
+              {'<cfscript>'}<br/>
+              {'writeOutput("Olá mundo!");'}<br/>
+              {'</cfscript>'}<br/>
+            </DivCodigo>
           </div>
           <div>
               <Img 

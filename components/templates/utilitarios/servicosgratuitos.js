@@ -1,7 +1,4 @@
 import React from 'react'
-//import Link from 'next/link'
-import Head from 'next/head'
-import FaviIcon from '../../atoms/atFavIcon'
 import Layout from '../../moleculas/layout'
 import MoHead from '../../moleculas/moHead'
 import * as Util from '../../../controller/util.js';
@@ -17,7 +14,13 @@ const conversordetexto = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="Serviços Gratuitos" canonical="/utilitarios/servicosgratuitos/"/>
+      <MoHead 
+        modo={modo} 
+        title="Serviços Gratuitos"
+        description="Util - Lista de Serviços Gratuitos" 
+        canonical="/utilitarios/servicosgratuitos/"
+        keywords="VVC, util, serviços gratuitos, hospedar, gratuito, servidor"
+      />
       <Layout regiao={regiao} modo={modo} titulo="Utilitarios" categoria="Utilitarios">
           <h1>Lista de Serviços Gratuitos</h1>
           <p>Os desenvolvedores e autores de código aberto agora têm uma quantidade enorme de serviços que oferecem camadas gratuitas, mas pode ser difícil encontrá-los todos para tomar decisões informadas.</p>

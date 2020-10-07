@@ -1,17 +1,12 @@
-import React from 'react'
-//import Link from 'next/link'
-//import Head from 'next/head'
-//import FaviIcon from '../../atoms/atFavIcon'
-import Layout from '../../moleculas/layout/cristalbot.js' // Esta pagina tem um layout diferente.
-import MoHead from '../../moleculas/moHead'
+import React from 'react';
+import Layout from '../../moleculas/layout/cristalbot.js'; // Esta pagina tem um layout diferente.
+import MoHead from '../../moleculas/moHead';
 import HeaderCristalBot from '../../moleculas/moHeaderSideDoValente/cristalbot.js';
-//import MenuMobile01 from '../../moleculas/moMenuMobile01/index.js'
-import Janela from '../../moleculas/moJanela/index.js'
+import Janela from '../../moleculas/moJanela/index.js';
 import * as Util from '../../../controller/util.js';
-import BtLink from '../../atoms/atBtLink'
-import Img from '../../atoms/atImg'
-//import DivNaveg from '../../atoms/atDivNaveg'
-import Div from '../../atoms/atDiv/index.js'
+import BtLink from '../../atoms/atBtLink';
+import Img from '../../atoms/atImg';
+import Div from '../../atoms/atDiv/index.js';
 
 
 const game = function (props) {
@@ -28,8 +23,11 @@ const game = function (props) {
       <MoHead 
         modo={modo} 
         title="Cristal Bot" 
+        description="Cristal Bot é um game independente brasileiro." 
         canonical="/game/cristalbot/" 
-        icohref="/static/assetsv5/img/faviconcristal.ico"/>
+        icohref="/static/assetsv5/img/faviconcristal.ico"
+        keywords="Jogo, game, cristalbot, cristal, bot, unity, 3d, blender, independente"
+        />
       <Layout regiao={regiao} modo={modo} titulo="Games" categoria="Games">
       <Div display="responcivo">
         <div>
@@ -46,10 +44,12 @@ const game = function (props) {
                 No futuro, a busca extração de pedras presiosas não será na Terra. Será feita por robos em outros planetas. 
               </p>
               <p>
-              {/*Baixe a primeira versão de teste do Cristal Bot beta 2 aqui. */}
-              {/*<BtLink href={"https://mega.nz/file/wHgSRCiB#ukPyQc493NQ3i8r6dXFN5KkkUS5xA44FsoowEY08M1I"} value="Baixar para Windows" estilo="neon"/>*/}
-              {/*<BtLink href={"https://mega.nz/file/wewRnTxA#GYSz1EGiCwHTeufaeyCofGNyYRiwAPeghCd_jM0FTgc"} value="Baixar para Linux" estilo="neon"/>*/}
-              <br/></p>
+                Baixe a primeira versão de teste do Cristal Bot beta 2 aqui.
+                <BtLink href={"https://mega.nz/file/kbwgQIqa#pNLJGvpBl85ywgcVuOKltsu1lA32yD4NKS1IbvQRn30"} value="Baixar para Linux" estilo="neon"/>
+                Ainda não disponivel para Windows ou celulares.
+                {/*<BtLink href={"https://mega.nz/file/wewRnTxA#GYSz1EGiCwHTeufaeyCofGNyYRiwAPeghCd_jM0FTgc"} value="Baixar para Windows" estilo="neon"/> */}
+                <br/>
+              </p>
           </div>
         </div>
         <div>

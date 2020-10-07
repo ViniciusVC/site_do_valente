@@ -1,15 +1,10 @@
 import React from 'react'
-//import Link from 'next/link'
-//import Head from 'next/head'
-//import FaviIcon from '../../atoms/atFavIcon'
 import Layout from '../../moleculas/layout/cristalbot.js' // Esta pagina tem um layout diferente.
 import MoHead from '../../moleculas/moHead'
-import MenuMobile01 from '../../moleculas/moMenuMobile01/index.js'
 import HeaderCristalBot from '../../moleculas/moHeaderSideDoValente/cristalbot.js';
 import * as Util from '../../../controller/util.js';
 import BtLink from '../../atoms/atBtLink'
 import Img from '../../atoms/atImg'
-import DivNaveg from '../../atoms/atDivNaveg'
 import Div from '../../atoms/atDiv/index.js'
 
 const game = function (props) {
@@ -26,8 +21,11 @@ const game = function (props) {
       <MoHead 
         modo={modo} 
         title="Cristal Bot Beta 0.1" 
+        description="Game independente Cristal Bot Beta 0.1" 
         canonical="/game/cristalbotimgb1/" 
-        icohref="/static/assetsv5/img/faviconcristal.ico"/>
+        icohref="/static/assetsv5/img/faviconcristal.ico"
+        keywords="Jogo, game, cristalbot, cristal, bot, unity, 3d, blender, independente"
+      />
       <Layout regiao={regiao} modo={modo} titulo="Games" categoria="Games">
       <HeaderCristalBot regiao={regiao} modo={modo}/>
           <Div display="responcivo">

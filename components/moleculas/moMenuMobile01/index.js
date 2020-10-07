@@ -1,10 +1,7 @@
 // layout de Documentoscopia - Projeto Piloto
 import React from 'react';
-//import Img from '../../atoms/atImg/index.js';
-//import BtLink from '../../atoms/atBtLink/index.js';
 import * as Util from '../../../controller/util.js';
 import Icon from '../../atoms/atIcon/index.js'
-//import MenuMobileItens from '../moMenuMobileItens.js'
 import ListadeRotas from '../moListadeRotas/index.js'
 import Janela from '../moJanela/index.js'
 

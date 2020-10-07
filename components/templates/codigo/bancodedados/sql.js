@@ -9,9 +9,9 @@ import * as Util from '../../../../controller/util.js';
 
 const codigoJava = function (props) {
 
-  console.log('╔═══════════════════════════╗');
-  console.log('║    Tutorial  sql       ║');
-  console.log('╚═══════════════════════════╝');
+  console.log('╔════════════════════════╗');
+  console.log('║    Tutorial  SQL       ║');
+  console.log('╚════════════════════════╝');
 
   var regiao = Util.validaProps(props.regiao , "RJ");
   var modo = Util.validaProps(props.modo, "html");
@@ -22,7 +22,9 @@ const codigoJava = function (props) {
         modo={modo} 
         title="SQL" 
         description="SQL" 
-        canonical="/tutorial/sql/"/>
+        canonical="/tutorial/sql/"
+        keywords="Banco de Dados, SQL, Select, Insert, Delete, Update, Group By"
+      />
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="Banco de Dados">
         <Div display="responcivo">
           <div className="coluna404">

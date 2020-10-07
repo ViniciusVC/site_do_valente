@@ -1,6 +1,7 @@
 import React from 'react'
 import Img from '../../../atoms/atImg/index.js'
 import Div from '../../../atoms/atDiv/index.js'
+import DivCodigo from '../../../atoms/atDivCodigo'
 import Layout from '../../../moleculas/layout'
 import MoHead from '../../../moleculas/moHead'
 import * as Util from '../../../../controller/util.js';
@@ -23,7 +24,14 @@ const codigoRuby = function (props) {
             <h1>Ruby on Rails</h1>
             <p>
             Ruby on Rails é um framework livre que promete aumentar velocidade e facilidade no desenvolvimento de sites orientados a banco de dados, uma vez que é possível criar aplicações com base em estruturas pré-definidas.
-            </p>            
+            </p>
+            <DivCodigo titulo="Exemplo de código Ruby On Rails">
+              {"class SalutationController < ApplicationController"}<br/>
+              def hello<br/>
+              @message = ‘Hello World!’<br/>
+              end<br/>
+              end<br/>       
+            </DivCodigo>
           </div>
           <div>
             <Img 

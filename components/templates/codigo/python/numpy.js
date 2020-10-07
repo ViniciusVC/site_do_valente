@@ -22,10 +22,12 @@ const codigoJava = function (props) {
         modo={modo} 
         title="NumPy" 
         description="O que é NumPy" 
-        canonical="/tutorial/python/numpy/"/>
+        canonical="/tutorial/python/numpy/"
+        keywords="Python, Tutorial, linguagem, programação, codigo, NumPy, biblioteca, pacote"
+      />
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="Python">
         <Div display="responcivo">
-          <div className="coluna404">
+          <div>
             <h1>O que é NumPy?</h1>
             <p>
               NumPy é um pacote para a linguagem Python que suporta arrays e matrizes multidimensionais, possuindo uma larga coleção de funções matemáticas para trabalhar com estas estruturas.<br/>
@@ -46,9 +48,6 @@ const codigoJava = function (props) {
       </Layout>
       <style jsx>{`
         .h1{
-          color : #000000;
-        }
-        .p{
           color : #000000;
         }
     `}</style>

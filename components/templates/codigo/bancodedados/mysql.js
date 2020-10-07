@@ -22,7 +22,9 @@ const codigoJava = function (props) {
         modo={modo} 
         title="MYSQL no Ubuntu" 
         description="INstalar MYSQL no Ubuntu" 
-        canonical="/tutorial/mysql/"/>
+        canonical="/tutorial/bancodedados/mysql/"
+        keywords="Banco de Dados, MYSQL, Ubuntu, usuário administrador, Reiniciar o MySQL"
+        />
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="Banco de Dados">
         <div className="coluna404">
           <h1>MySQL no Ubuntu</h1>

@@ -1,3 +1,7 @@
+// Rotas 
+// http://www.vvcestudio.com.br/tutorial/apache/alias/
+// http://www.vvcestudio.com.br/amp/tutorial/apache/alias/
+
 import React from 'react';
 import Layout from '../../../moleculas/layout';
 import MoHead from '../../..//moleculas/moHead';

@@ -1,9 +1,7 @@
 import React from 'react'
-import Head from 'next/head'
 import Link from 'next/link'
-import FaviIcon from '../../../atoms/atFavIcon'
 import DivCodigo from '../../../atoms/atDivCodigo'
-//import DivNaveg from '../../../atoms/atDivNaveg'
+import MoHead from '../../..//moleculas/moHead'
 import Layout from '../../../moleculas/layout'
 import OQueERedirect from '../../../moleculas/moOQueERedirect'
 import * as Util from '../../../../controller/util.js';
@@ -19,15 +17,13 @@ const codigoAspRedirect = function (props) {
 
   return (
     <div>
-      <Head>
-        <title>REDIRECT com ASP</title>
-        <FaviIcon />
-        <meta name="description" content="REDIRECT com ASP" />
-        <link rel="canonical" href="/codigo/asp/redirect/" />
-        <link rel="amphtml" href="/amp/codigo/asp/redirect/" />
-        <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
-        <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
-      </Head>
+      <MoHead 
+        modo={modo} 
+        title="REDIRECT com ASP" 
+        description="Codigo REDIRECT 301 com ASP" 
+        canonical="/tutorial/asp/redirect/"
+        keywords="asp,tutoriais,REDIRECT,linguagens,script,programação"
+      />
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="ASP">
         <h1>REDIRECT com ASP</h1>
           <DivCodigo titulo="REDIRECT com ASP">
@@ -50,7 +46,6 @@ const codigoAspRedirect = function (props) {
           color : #000000;
         }
     `}</style>
-
     </div>
   )
 }

@@ -17,7 +17,12 @@ const atendimentoOi = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="Encontrar arquivio no PHP" description="Encontrar arquivio no PHP" canonical="/tutorial/php/procuraarquivo/"/>
+      <MoHead 
+        modo={modo} 
+        title="Encontrar arquivio no PHP" 
+        description="Tutorial como encontrar um arquivio com PHP." 
+        canonical="/tutorial/php/procuraarquivo/"
+      />
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="PHP">
           <h1>Encontrar arquivio no PHP</h1>
           <DivCodigo titulo="Código PHP">

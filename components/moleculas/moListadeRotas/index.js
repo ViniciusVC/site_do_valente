@@ -111,39 +111,10 @@ const ListadeRotas = function (props) {
               </div>
             </Details>
 
-            <Details open={categoria=="Apache"}>
-              <summary><BtLink href="" value="Apache" estilo={btestilo}/></summary>
-              <div className="subitens">
-                <BtLink href={StringModo+"/tutorial/apache/?regiao="+regiao} value="Apache intro." estilo={btestiloitem}/>
-               <BtLink href={StringModo+"/tutorial/apache/instalubuntu?regiao="+regiao} value="Instalar no Ubuntu" estilo={btestiloitem}/>
-               <BtLink href={StringModo+"/tutorial/apache/alias?regiao="+regiao} value="Alias em Apache" estilo={btestiloitem}/>
-               <BtLink href={StringModo+"/tutorial/apache/redirect?regiao="+regiao} value="redirect 301" estilo={btestiloitem}/>
-              </div>
-            </Details>
 
-            <Details open={categoria=="ASP"}>
-              <summary><BtLink href="" value="ASP" estilo={btestilo}/></summary>
-              <div className="subitens">
-               <BtLink href={StringModo+"/tutorial/asp/?regiao="+regiao} value="ASP introdução" estilo={btestiloitem}/>
-               <BtLink href={StringModo+"/tutorial/asp/redirect?regiao="+regiao} value="redirect 301" estilo={btestiloitem}/>
-              </div>
-            </Details>
 
-            <Details open={categoria=="CGI"}>
-              <summary><BtLink href="" value="CGI PERL" estilo={btestilo}/></summary>
-              <div className="subitens">
-               <BtLink href={StringModo+"/tutorial/cgi/?regiao="+regiao} value="CGI introdução" estilo={btestiloitem}/>
-               <BtLink href={StringModo+"/tutorial/cgi/redirect?regiao="+regiao} value="redirect 301" estilo={btestiloitem}/>
-              </div>
-            </Details>
 
-            <Details open={categoria=="Coldfusion"}>
-              <summary><BtLink href="" value="coldfusion >" estilo={btestilo}/></summary>
-              <div className="subitens">
-                <BtLink href={StringModo+"/tutorial/coldfusion/?regiao="+regiao} value="coldfusion intro." estilo={btestiloitem}/>
-                <BtLink href={StringModo+"/tutorial/coldfusion/?regiao="+regiao} value="redirect coldfusion" estilo={btestiloitem}/>
-              </div>
-            </Details>
+                      
 
             <Details open={categoria=="JavaScript"}>
               <summary><BtLink href="" value="JavaScript >" estilo={btestilo}/></summary>
@@ -175,13 +146,21 @@ const ListadeRotas = function (props) {
               </div>
             </Details>
 
-            <Details open={categoria==".Net"}>
+            <Details open={categoria=="ASP"}>
+              <summary><BtLink href="" value="ASP" estilo={btestilo}/></summary>
+              <div className="subitens">
+               <BtLink href={StringModo+"/tutorial/asp/?regiao="+regiao} value="ASP introdução" estilo={btestiloitem}/>
+               <BtLink href={StringModo+"/tutorial/asp/redirect?regiao="+regiao} value="redirect 301" estilo={btestiloitem}/>
+              </div>
+            </Details>
+            
+            {/* <Details open={categoria==".Net"}>
               <summary><BtLink href="" value=".NET >" estilo={btestilo}/></summary>
               <div className="subitens">
                <BtLink href={StringModo+"/tutorial/dotnet/?regiao="+regiao} value=".NET" estilo={btestiloitem}/>
                <BtLink href={StringModo+"/tutorial/dotnet/?regiao="+regiao} value="redirect 301 em ASP.NET" estilo={btestiloitem}/>
               </div>
-            </Details>
+            </Details> */}
 
             <Details open={categoria=="PHP"}>
               <summary><BtLink href="" value="PHP >" estilo={btestilo}/></summary>
@@ -200,6 +179,25 @@ const ListadeRotas = function (props) {
                 <BtLink href={StringModo+"/tutorial/rubyonrails/redirect/?regiao="+regiao} value="redirect RubyonRails" estilo={btestiloitem}/>
               </div>
             </Details>
+            
+            <BtLink href={StringModo+"/tutorial/coldfusion/?regiao="+regiao} value="coldfusion intro." estilo={btestiloitem}/>
+
+            <Details open={categoria=="Apache"}>
+              <summary><BtLink href="" value="Apache" estilo={btestilo}/></summary>
+              <div className="subitens">
+                <BtLink href={StringModo+"/tutorial/apache/?regiao="+regiao} value="Apache intro." estilo={btestiloitem}/>
+               <BtLink href={StringModo+"/tutorial/apache/instalubuntu?regiao="+regiao} value="Instalar no Ubuntu" estilo={btestiloitem}/>
+               <BtLink href={StringModo+"/tutorial/apache/alias?regiao="+regiao} value="Alias em Apache" estilo={btestiloitem}/>
+               <BtLink href={StringModo+"/tutorial/apache/redirect?regiao="+regiao} value="redirect 301" estilo={btestiloitem}/>
+              </div>
+            </Details>
+            <Details open={categoria=="CGI"}>
+              <summary><BtLink href="" value="CGI PERL" estilo={btestilo}/></summary>
+              <div className="subitens">
+               <BtLink href={StringModo+"/tutorial/cgi/?regiao="+regiao} value="CGI introdução" estilo={btestiloitem}/>
+               <BtLink href={StringModo+"/tutorial/cgi/redirect?regiao="+regiao} value="redirect 301" estilo={btestiloitem}/>
+              </div>
+            </Details>
 
             <Details open={categoria=="Banco de Dados"}>
               <summary><BtLink href="" value="Banco de Dados >" estilo={btestilo}/></summary>
@@ -207,14 +205,11 @@ const ListadeRotas = function (props) {
                 <BtLink href={StringModo+"/tutorial/bancodedados/?regiao="+regiao} value="Banco de Dados" estilo={btestiloitem}/>
                 <BtLink href={StringModo+"/tutorial/bancodedados/sql/?regiao="+regiao} value="SQL" estilo={btestiloitem}/>
                 <BtLink href={StringModo+"/tutorial/bancodedados/mysql/?regiao="+regiao} value="MySQL" estilo={btestiloitem}/>
+                <BtLink href={StringModo+"/tutorial/bancodedados/datascience/?regiao="+regiao} value="Cientista de Dados" estilo={btestiloitem}/>
               </div>
             </Details>
             </div>
         </Details>
-
-
-
-
 
         <Details open={titulo=="Design"}>
           <summary><BtLink href="" value="Design >" estilo={btestilo}/></summary>
@@ -232,8 +227,6 @@ const ListadeRotas = function (props) {
           <summary><a href={StringModo+"/hub/?regiao="+regiao}>Hub de Contato</a></summary>
         </Details> */}
 
-
-
         <Details open={titulo=="Eu"}>
           <summary><BtLink href="" value="Autor" estilo={btestilo}/></summary>
           <div className="subitens">
@@ -243,16 +236,13 @@ const ListadeRotas = function (props) {
         </Details>
         
       </nav>
-
-      <style jsx>{`
-      
+    <style jsx>{`
       /*a {
         text-decoration: none;
         font-style: normal;
         cdivor: #ffffff;
           }
       */
-
       .subitens{
         margin-left : 10px;
         /*border-bottom : solid 1px #10ecf5;*/
@@ -266,18 +256,14 @@ const ListadeRotas = function (props) {
       .CssRotasProjeto {
         font-size: 17px;
       }
-
       summary::-webkit-details-marker{
         display: none;
       }
-
       summary {
         /*width: 100%;*/
         margin:0;
         padding:0;
       }
-
-
     `}</style>
     </div>
   )

@@ -22,7 +22,9 @@ const codigoJava = function (props) {
         modo={modo} 
         title="Banco de Dados" 
         description="O que é um Banco de Dados" 
-        canonical="/tutorial/bancodedados/"/>
+        canonical="/tutorial/bancodedados/"
+        keywords="Banco de Dados, bigdata, tutorial, Relacionais, JSON, Chave-Valor"
+        />
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="Banco de Dados">
         <Div display="responcivo">
           <div className="coluna404">
@@ -53,9 +55,6 @@ const codigoJava = function (props) {
               Os usos mais comuns são ​​para armazenamento de dados em cache. 
               Redis e DynanoDB são provavelmente os bancos mais populares desse tipo.
             </p>
-            <DivCodigo titulo="Exemplo de código bancodedados">
-              {''}<br/>
-            </DivCodigo>
           </div>
           <div>
             <Img 

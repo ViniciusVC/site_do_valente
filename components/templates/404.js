@@ -1,5 +1,4 @@
 import React from 'react'
-//import Link from 'next/link'
 import Img from '../atoms/atImg/index.js'
 import Icon from '../atoms/atIcon/index.js'
 import Div from '../atoms/atDiv/index.js'
@@ -8,8 +7,6 @@ import MoHead from '../moleculas/moHead'
 import BtLink from '../atoms/atBtLink'
 import * as Util from '../../controller/util.js';
 
-//import Head from 'next/head'
-//import FavIcon from '../atoms/atFavIcon'
 
 const templateHome = function (props) {
   console.log('╔════════════════════════════╗');
@@ -21,9 +18,11 @@ const templateHome = function (props) {
     <div>
       <MoHead 
         modo={modo} 
-        title="Página não encontrada" 
-        description="Página não encontrada" 
-        canonical="/404/"/>
+        title="VVC Estudio - Página não encontrada" 
+        description="VVC Estudio - Página não encontrada" 
+        canonical="/404/"
+        keywords="VVC, estudio, não encontrada, erro, 404"
+      />
       <Layout regiao={regiao} modo={modo} titulo="Erro" categoria="Erro">
         <Div display="responsivo">
           <div className="coluna404">
@@ -38,8 +37,7 @@ const templateHome = function (props) {
               </div>
               <div>
                 <p>
-                Você pode ver as opções do menu ao lado ou continuar
-                a navegação pela página inicial.
+                  Você pode ver as opções do menu ao lado ou continuar a navegação pela página inicial.
                 </p>
               </div>
             </Div>

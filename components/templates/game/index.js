@@ -1,7 +1,4 @@
 import React from 'react'
-//import Link from 'next/link'
-//import Head from 'next/head'
-//import FaviIcon from '../../atoms/atFavIcon'
 import Layout from '../../moleculas/layout/games.js' // Esta pagina tem um layout diferente.
 import MoHead from '../../moleculas/moHead'
 import * as Util from '../../../controller/util.js';
@@ -18,7 +15,13 @@ const game = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="Games do Valente" canonical="/game/"/>
+      <MoHead 
+        modo={modo} 
+        title="Games do Valente"
+        description="Alguns jogos desenvolvidos pelo Valente." 
+        canonical="/game/"
+        keywords="jogos, game, javascript, canvas, Unity, 3D, cristalbot, godzilla, tanque, cobrinha"
+      />
       <Layout regiao={regiao} modo={modo} titulo="Games" categoria="Games">
           <h1>Game</h1>
           <p>Alguns games de teste :)</p>

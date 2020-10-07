@@ -3,7 +3,7 @@ import Img from '../../../atoms/atImg/index.js'
 import Div from '../../../atoms/atDiv/index.js'
 import Layout from '../../../moleculas/layout'
 import MoHead from '../../../moleculas/moHead'
-//import DivCodigo from '../../../atoms/atDivCodigo'
+import DivCodigo from '../../../atoms/atDivCodigo'
 //import DivNaveg from '../../../atoms/atDivNaveg'
 import * as Util from '../../../../controller/util.js';
 
@@ -22,24 +22,34 @@ const codigoJava = function (props) {
         modo={modo} 
         title="Seaborn" 
         description="O que é Seaborn" 
-        canonical="/tutorial/python/seaborn/"/>
+        canonical="/tutorial/python/seaborn/"
+        keywords="Python, Tutorial, linguagem, programação, codigo, Seaborn, biblioteca, Dados"
+      />
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="Python">
         <Div display="responcivo">
-          <div className="coluna404">
+          <div>
             <h1>O que é Seaborn?</h1>
             <p>
               É a biblioteca para análise de dados simples e uma das mais usadas.<br/>
-              Para criar gráficos e tabelas de resposta.
+              Para criar gráficos mais complexos do que o Pandas dispõe.
+              e tabelas de resposta.
             </p>
+
+            <DivCodigo titulo="Exemplo de codigo Python com seaborn">
+              # Importar seaborn <br/>
+              import seaborn as sns <br/>
+              # Plotar grafico box <br/>
+              sns.boxplot(notas.nota) <br/>
+            </DivCodigo>
           </div>
           <div>
-            <Img 
-                  src="/static/assetsv5/img/codigo/logoseaborn.png"
-                  width="253px"
-                  height="188px"
-                  alt="Logo Seaborn"
-                  title="Logo Seaborn"
-                  class="ClassLogoSeaborn"
+          <Img 
+                  src="/static/assetsv5/img/codigo/logopython.svg"
+                  width="200px"
+                  height="200px"
+                  alt="Logo python"
+                  title="Logo Python"
+                  class="ClassLogoPython"
                   modo={modo}>
             </Img>
           </div>
@@ -56,9 +66,6 @@ const codigoJava = function (props) {
       </Layout>
       <style jsx>{`
         .h1{
-          color : #000000;
-        }
-        .p{
           color : #000000;
         }
     `}</style>

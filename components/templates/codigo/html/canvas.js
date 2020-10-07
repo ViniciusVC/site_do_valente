@@ -1,6 +1,4 @@
 import React from 'react'
-//import Head from 'next/head'
-//import FaviIcon from '../../../atoms/atFavIcon'
 import DivCodigo from '../../../atoms/atDivCodigo'
 import DivNaveg from '../../../atoms/atDivNaveg'
 import Layout from '../../../moleculas/layout'
@@ -10,7 +8,7 @@ import * as Util from '../../../../controller/util.js';
 const atendimentoOi = function (props) {
 
   console.log('╔════════════════════════════════════╗');
-  console.log('║    Tutorial  - HTML - div e span     ║');
+  console.log('║   Tutorial  - HTML - div e span    ║');
   console.log('╚════════════════════════════════════╝');
 
   var regiao = Util.validaProps(props.regiao , "RJ");
@@ -18,11 +16,18 @@ const atendimentoOi = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="HTML - CANVAS" description="Tutorial de CANVAS HTML" canonical="/tutorial/html/canvas/"/>
+      <MoHead 
+        modo={modo} 
+        title="HTML - CANVAS" 
+        description="Tutorial de CANVAS HTML" 
+        canonical="/tutorial/html/canvas/"
+        keywords="tutorial, html, canvas, html5, javascript, programação, vvc"
+      />
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="html">
       <h1>HTML - CANVAS</h1>
         <p>
-          Canvas é um elemento da HTML5 destinado a delimitar uma área para renderização dinâmica de gráficos. Todo o trabalho de criação e animação é realizado através de linguagens de programação dinâmica. O elemento foi originalmente introduzido pela Apple Inc. para o navegador Safari.
+          Canvas é um elemento da HTML5 destinado a delimitar uma área para renderização dinâmica de gráficos. Todo o trabalho de criação e animação é realizado através de linguagens de programação dinâmica.<br/>
+          O elemento foi originalmente introduzido pela Apple Inc. para o navegador Safari.
         </p>
         <p>Segue um exemplos das tags CANVAS:</p>
         <DivNaveg>
@@ -34,12 +39,6 @@ const atendimentoOi = function (props) {
         </DivCodigo>
       </Layout>
       <style jsx>{`
-        .h1{
-          color : #000000;
-        }
-        .p{
-          color : #000000;
-        }
         canvas {
           background-color: red;
           padding: 20px;

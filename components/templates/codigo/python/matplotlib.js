@@ -3,8 +3,6 @@ import Img from '../../../atoms/atImg/index.js'
 import Div from '../../../atoms/atDiv/index.js'
 import Layout from '../../../moleculas/layout'
 import MoHead from '../../../moleculas/moHead'
-//import DivCodigo from '../../../atoms/atDivCodigo'
-//import DivNaveg from '../../../atoms/atDivNaveg'
 import * as Util from '../../../../controller/util.js';
 
 const codigoJava = function (props) {
@@ -22,7 +20,9 @@ const codigoJava = function (props) {
         modo={modo} 
         title="Matplotlib" 
         description="O que é Matplotlib" 
-        canonical="/tutorial/python/matplotlib/"/>
+        canonical="/tutorial/python/matplotlib/"
+        keywords="Python, Tutorial, linguagem, programação, codigo, matplotlib, biblioteca"
+      />
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="Python">
         <Div display="responcivo">
           <div className="coluna404">

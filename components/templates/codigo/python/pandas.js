@@ -3,8 +3,7 @@ import Img from '../../../atoms/atImg/index.js'
 import Div from '../../../atoms/atDiv/index.js'
 import Layout from '../../../moleculas/layout'
 import MoHead from '../../../moleculas/moHead'
-//import DivCodigo from '../../../atoms/atDivCodigo'
-//import DivNaveg from '../../../atoms/atDivNaveg'
+import DivCodigo from '../../../atoms/atDivCodigo'
 import * as Util from '../../../../controller/util.js';
 
 const codigoJava = function (props) {
@@ -22,10 +21,12 @@ const codigoJava = function (props) {
         modo={modo} 
         title="Pandas" 
         description="O que é Pandas" 
-        canonical="/tutorial/python/pandas/"/>
+        canonical="/tutorial/python/pandas/"
+        keywords="Python, Tutorial, linguagem, programação, codigo, Pandas, biblioteca, Dados"
+      />
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="Python">
         <Div display="responcivo">
-          <div className="coluna404">
+          <div>
             <h1>O que é Pandas?</h1>
             <p>
               Pandas é uma biblioteca de software criada para a linguagem Python, para manipulação e análise de dados.<br/>
@@ -33,15 +34,31 @@ const codigoJava = function (props) {
               Oferece estruturas e operações para manipular tabelas numéricas e séries temporais.<br/>
               Pandas é um software livre, sob a licença BSD.<br/>
             </p>
+            <DivCodigo titulo="Exemplo de codigo Python com PANDAS">
+              import pandas as pd #Importando biblioteca Pandas.<br/>
+              uri = "dadosExemploGui.csv" # Instanciar caminho do arquivo csv.<br/>
+              dados = pd.read_csv(uri) # Ler o arquivo e atribuir os dados a uma variavel.<br/>
+              print(dados.head()) # Mostra conteudo da tabela.<br/>
+            </DivCodigo>
+            <DivCodigo titulo="Usando o Pandas para plotar graficos simples">
+              # Mostar um historiograma (Grafico de barras).<br/>
+              notas.nota.plot(kind='hist')<br/>
+            </DivCodigo>
+            <DivCodigo titulo="Para instalar o PANDAS para Python 2:">
+              $ sudo apt-get install python-pandas<br/>
+            </DivCodigo>
+            <DivCodigo titulo="Para instalar o PANDAS para Python 3:">
+              $ sudo apt install python3-pandas<br/>
+            </DivCodigo>
           </div>
           <div>
-            <Img 
-                  src="/static/assetsv5/img/codigo/logopandas.png"
-                  width="253px"
-                  height="188px"
-                  alt="Logo Pandas"
-                  title="Logo Pandas"
-                  class="ClassLogoPandas"
+          <Img 
+                  src="/static/assetsv5/img/codigo/logopython.svg"
+                  width="200px"
+                  height="200px"
+                  alt="Logo python"
+                  title="Logo Python"
+                  class="ClassLogoPython"
                   modo={modo}>
             </Img>
           </div>
@@ -58,9 +75,6 @@ const codigoJava = function (props) {
       </Layout>
       <style jsx>{`
         .h1{
-          color : #000000;
-        }
-        .p{
           color : #000000;
         }
     `}</style>

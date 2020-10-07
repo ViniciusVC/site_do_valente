@@ -1,7 +1,4 @@
 import React from 'react'
-//import Link from 'next/link'
-// import Head from 'next/head'
-// import FavIcon from '../../atoms/atFavIcon'
 import Layout from '../../moleculas/layout/games.js' // Esta pagina tem um layout diferente.
 import MoHead from '../../moleculas/moHead'
 import Ecossistema from '../../organisms/orgEcossistema'
@@ -20,7 +17,6 @@ function retornaogame(modo,regiao){
   }
 }
 
-
 const ecossistema = function (props) {
 
   console.log('╔══════════════════════════════════════╗');
@@ -29,11 +25,16 @@ const ecossistema = function (props) {
 
   var regiao = Util.validaProps(props.regiao , "RJ");
   var modo = Util.validaProps(props.modo, "html");   
-  
 
   return (
     <div>
-      <MoHead modo={modo} title="Teste Game Ecossistema" description="Desenvolvimento de Game com JS - Ecossistema." canonical="/game/ecossistema/"/>
+      <MoHead
+        modo={modo} 
+        title="Teste Game Ecossistema"
+        description="Desenvolvimento de Game com JS - Ecossistema." 
+        canonical="/game/ecossistema/"
+        keywords="game, jogo, javascrip, ecossistema, desenvolvimento, estudo, canvas"
+      />
       <Layout regiao={regiao} modo={modo} titulo="Games" categoria="Games">
           <h1>Simulador de Ecossistema</h1>
           {retornaogame(modo,regiao)}

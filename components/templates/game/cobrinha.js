@@ -1,7 +1,4 @@
 import React from 'react'
-//import Link from 'next/link'
-// import Head from 'next/head'
-// import FavIcon from '../../atoms/atFavIcon'
 import Layout from '../../moleculas/layout/games.js' // Esta pagina tem um layout diferente.
 import MoHead from '../../moleculas/moHead'
 import Cobrinha from '../../organisms/orgCobrinha'
@@ -37,7 +34,8 @@ const TemplateCobrinha = function (props) {
         modo={modo} 
         title="Game Cobrinha Classico" 
         description="Desenvolvimento de Game com JS - Cobrinha." 
-        canonical="/game/Cobrinha/"/>
+        canonical="/game/Cobrinha/"
+      />
       <Layout regiao={regiao} modo={modo} titulo="Games" categoria="Games">
         <h1>Jogo da Cobrinha</h1>
         {retornaogame(modo,regiao)}

@@ -10,6 +10,7 @@ const moHead = props => {
   const title = Util.validaProps(props.title, "Pagina sem titulo");
   const description = Util.validaProps(props.description, title);
   const canonical = Util.validaProps(props.canonical, "/");
+  const keywords = Util.validaProps(props.keywords, "vvc,"+title+","+modo+","+description);
   const amphtml = "/amp" + canonical;
   if(modo=="html"||modo=="HTML"){
     return (
@@ -17,8 +18,13 @@ const moHead = props => {
       <title>{title}</title>
       <FavIcon href={props.href}/>
       <meta name="description" content={description} />
-      <link rel="canonical" href={canonical} />
-      <link rel="amphtml" href={amphtml} />
+      <meta name="keywords" content={keywords} />
+      <link rel="canonical" href={"http://vvcestudio.com.br" +canonical} />
+      <link rel="amphtml" href={"http://vvcestudio.com.br" +amphtml} />
+      <link rel="alternate" href={canonical} hreflang="pt-br" /> {/*(OBS: indicando a versão em portugues)*/}
+      <link rel="alternate" href={canonical+"es/"} hreflang="es" /> {/*(OBS: indicando a versão em espanhol)*/}
+      <link rel="alternate" href={canonical+"en/"} hreflang="en" /> {/*(OBS: indicando a versão em inglês).*/}
+      <link rel="alternate" href={canonical} hreflang="x-default" /> {/*(OBS: indicando que, caso o usuário não tenha determinado idioma/região, essa é a página que deve ser apresentada)*/}
       <GTM position="head" modo={modo} codGTM="UA-177955684-1" />
       </Head>
     )
@@ -28,14 +34,13 @@ const moHead = props => {
       <title>{title}</title>
       <FavIcon href={props.icohref}/>
       <meta name="description" content={description} />
-      <link rel="canonical" href={canonical} />
-      <link rel="amphtml" href={amphtml} />
-      <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+      <meta name="keywords" content={keywords} />
+      <link rel="canonical" href={"http://vvcestudio.com.br" +canonical} />
+      <link rel="amphtml" href={"http://vvcestudio.com.br" +amphtml} />
+      {/*<script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>*/}
       <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
       <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
-
       <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-      
       <GTM position="head" modo={modo} codGTM="UA-177955684-1" />
       </Head>
     )
