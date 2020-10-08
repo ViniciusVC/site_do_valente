@@ -73,7 +73,6 @@ app.prepare()
     //index
     //server.get('/', (req, res) => {app.render(req, res, '/', req.query);})
     server.get('/amp/',(req, res) => {app.render(req, res, '/routes/amp', req.query); })
-    
     server.get('/eu/',           (req, res) => {app.render(req, res, '/routes/eu',           req.query); }) 
     server.get('/amp/eu/',       (req, res) => {app.render(req, res, '/routes/amp/eu',       req.query); }) 
     server.get('/eu/curriculo/', (req, res) => {app.render(req, res, '/routes/eu/curriculo', req.query); }) 
