@@ -21,23 +21,50 @@ const codigoJava = function (props) {
     <div>
       <MoHead 
         modo={modo} 
-        title="Sklearn Python" 
-        description="O que é Sklearn como instalar e usar" 
+        title="Scikit-learn Python" 
+        description="O que é Scikit-learn como instalar e usar." 
         canonical="/tutorial/python/sklearn/"
-        keywords="sklearn, python, tutorial, linguagem, programação, codigo, instalando, instalar, PIP3"
+        keywords="Scikit-learn, sklearn, python, tutorial, linguagem, programação, codigo, instalando, instalar, PIP3"
       />
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="Python">
         <Div display="responcivo">
           <div className="coluna404">
-            <h1>O que é SKLEARN?</h1>
+            <h1>Scikit-learn</h1>
+            <h3>que é Scikit-learn?</h3>
             <p>
-              Você pode usar a biblioteca SKLEARN para aplicar a Regressão Linear no Python.
-              SKLEARN é uma biblioteca pra Python. 
+              Scikit-learn é uma biblioteca de aprendisado de máquina para Python.<br/>
+              Já contem varios algoritimos de Machine Learn.<br/>
+              Não sendo necessário escrever os algoritimos de IA.<br/>
+              É totalmente integrado com Numpy e Pandas.<br/>
             </p>
-            <DivCodigo titulo="Exemplo de codigo SKLEARN:">
-              sklearn<br/>
+            <DivCodigo titulo="Exemplo de codigo Scikit-learn"> 
+              import numpy as np<br/>
+              import pandas as pd<br/>
+              <br/>
+              # Usando classificador KNN<br/>
+              from sklern.neighbors import KneighborsClassifier<br/>
+              knn = KneighborsClassifier(n_neighbors=3)<br/>
+              <br/>
+              #importando os dados para a classificação<br/>
+              df=pd.read_csv("valente.csv")<br/>
+              <br/>
+              # dados de treinamento<br/>
+              X = df.ix[:,0:4].values<br/>
+              <br/>
+              # classes alvo<br/>
+              y=df[['target']].values.ravel()<br/>
+              <br/>
+              # ensinando a maquina.<br/>
+              knn.fit(X,y)<br/>
+              <br/>
+              # Classificar um item<br/>
+              knn.predict([[6.5, 5.5, 4.5, 1.3]])<br/>
+              <br/>
+              # Classificar outro item<br/>
+              knn.predict([[1.5, 2.5, 2.0, 0.3]])<br/>            
             </DivCodigo>
-            Como instalando o SKLEARN no UBUNTU?
+
+            <h3>Como instalando o SKLEARN no UBUNTU?</h3>
             <DivCodigo titulo="Para instalar o SKLEARN no PIP3:">
               $ sudo pip3 install scikit-learn<br/>
               # ou<br/>
@@ -50,15 +77,18 @@ const codigoJava = function (props) {
               $ sudo pip install scikit-learn<br/>
             </DivCodigo>
             PIP é a linha de comando do Python 2.
-            <DivCodigo titulo="Para instalar o SKLEARN para Python 2:">
+            <DivCodigo titulo="Instalar SKLern no Python 2 no Linux:">
               $ sudo apt-get install python-sklearn<br/>
             </DivCodigo>
-            <DivCodigo titulo="Para instalar o SKLEARN para Python 3:">
+            <DivCodigo titulo="Instalar SKLern no Python 3 no Linux">
               $ sudo apt install python3-sklearn<br/>
             </DivCodigo>
-            <DivCodigo titulo="Para instalar o SKLEARN no Win use:">
+            <DivCodigo titulo="Para instalar o SKLern no Win use:">
               $ pip install -U scikit-learn<br/>
             </DivCodigo>
+            <p>
+              SKLern é uma abreviação para scikit-learn.
+            </p>
           </div>
           <div>
             <Img 
@@ -75,9 +105,6 @@ const codigoJava = function (props) {
       </Layout>
       <style jsx>{`
         .h1{
-          color : #000000;
-        }
-        .p{
           color : #000000;
         }
     `}</style>

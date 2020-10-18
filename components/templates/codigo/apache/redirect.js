@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../../../moleculas/layout'
 import MoHead from '../../../moleculas/moHead'
 import OQueERedirect from '../../../moleculas/moOQueERedirect'
+import BtLink from '../../../atoms/atBtLink';
 import DivCodigo from '../../../atoms/atDivCodigo'
 //import DivNaveg from '../../../atoms/atDivNaveg'
 import * as Util from '../../../../controller/util.js';
@@ -62,6 +63,7 @@ const apacheRedirect = function (props) {
           <br/>
         </p>
         <OQueERedirect/>
+        <BtLink href={"/tutorial/apache/?regiao="+regiao} value="O que é Apache" estilo="neon"/>
       </Layout>
       <style jsx>{`
         .h1{

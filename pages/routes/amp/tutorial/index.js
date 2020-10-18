@@ -3,7 +3,7 @@ import { withAmp } from 'next/amp';
 import * as Util from '../../../../controller/util.js';
 import TableteCodigo from '../../../../components/templates/codigo/index.js';
 
-const RotaCodigo = function(props){
+const RotaTutorial = function(props){
   return(
     <TableteCodigo
       modo="amp"
@@ -16,6 +16,6 @@ const RotaCodigo = function(props){
 //   amp: true
 // }
 
-export default withAmp(RotaCodigo);
+export default withAmp(RotaTutorial);
 //export default withAmp(RotaDocumentoscopiaAjuda, { hybrid: true }); // Usado para páginas hibridas
 //export default RotaDocumentoscopiaAjuda // Usado para páginas HTMP

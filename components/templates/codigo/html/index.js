@@ -25,13 +25,14 @@ const html = function (props) {
         <Div display="responsivo">
           <div className="coluna404">
             <h1>O que é HTML 5</h1>
-            <p>Linguagens de programação podem ser usadas para expressar algoritmos com precisão. <br/>
-              O conjunto de palavras (lexemas classificados em tokens), compostos de acordo com essas regras, constituem o código fonte de um software.<br/> 
-              Esse código fonte é depois traduzido para código de máquina, que é executado pelo microprocessador.</p>
-              <p>
-                Veja mais:
-              </p>
-              <ListadeRotasHTML modo={modo} regiao={regiao}/>
+            <p>
+              HTML5 é uma linguagem de marcação para a World Wide Web e é uma tecnologia chave da Internet, originalmente proposto por Opera Software.<br/>
+              É a quinta versão da linguagem HTML.
+            </p>
+            <p>
+              Veja mais:
+            </p>
+            <ListadeRotasHTML modo={modo} regiao={regiao} btestiloitem="neon"/>
           </div>
           <div>
               <Img 

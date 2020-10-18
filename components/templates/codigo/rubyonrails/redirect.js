@@ -1,8 +1,11 @@
 import React from 'react'
+import Img from '../../../atoms/atImg/index.js'
+import Div from '../../../atoms/atDiv/index.js'
 import Layout from '../../../moleculas/layout'
 import MoHead from '../../../moleculas/moHead'
 import OQueERedirect from '../../../moleculas/moOQueERedirect'
 import DivCodigo from '../../../atoms/atDivCodigo'
+import BtLink from '../../../atoms/atBtLink';
 //import DivNaveg from '../../../atoms/atDivNaveg'
 import * as Util from '../../../../controller/util.js';
 
@@ -19,7 +22,8 @@ const codigoRubyRedirect = function (props) {
     <div>
       <MoHead modo={modo} title="Ruby On Rails" description="Tutorial Ruby On Rails" canonical="/tutorial/rubyonrails/redirect/"/>
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="Ruby on Rails">
-          <div className="coluna404">
+        <Div display="responcivo">
+          <div>
             <h1>redirect 301 em Ruby on Rails</h1>
             <DivCodigo titulo="codigo">
                 def old_action<br/>
@@ -28,7 +32,20 @@ const codigoRubyRedirect = function (props) {
                 End
             </DivCodigo>
           </div>
-          <OQueERedirect/>
+          <div>
+            <Img 
+                src="/static/assetsv5/img/codigo/logorubyonrails.png"
+                width="200px"
+                height="249px"
+                alt="Logo Ruby On Rails"
+                title="Logo Ruby On Rails"
+                class="ClassLogoRuby"
+                modo={modo}>
+            </Img>
+          </div>
+        </Div>
+        <OQueERedirect/>
+        <BtLink href="/tutorial/rubyonrails/" value="O que é Ruby on Rails" estilo="neon"/>
       </Layout>
       <style jsx>{`
         .h1{

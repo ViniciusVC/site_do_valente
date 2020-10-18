@@ -36,18 +36,28 @@ const codigoJava = function (props) {
             </p>
             <DivCodigo titulo="Exemplo de codigo Python com PANDAS">
               import pandas as pd #Importando biblioteca Pandas.<br/>
-              uri = "dadosExemploGui.csv" # Instanciar caminho do arquivo csv.<br/>
-              dados = pd.read_csv(uri) # Ler o arquivo e atribuir os dados a uma variavel.<br/>
-              print(dados.head()) # Mostra conteudo da tabela.<br/>
+              dados01 = pd.read_csv("dadosExemploGui.csv") # Ler um arquivo CSV e atribuir os dados a uma variavel.<br/>
+              print(dados01.head()) # Mostra conteudo da tabela.<br/>
             </DivCodigo>
+            
+            <DivCodigo titulo="Ler um JSON com PANDAS">
+              # Ler o arquivo de Dados JSON e atribuir os dados a uma variavel.<br/>
+              dados02 = pd.read_json("valente.json)
+              print(dados02.head()) # Mostra conteudo da tabela.<br/>
+            </DivCodigo>
+            
+
+
+            
             <DivCodigo titulo="Usando o Pandas para plotar graficos simples">
               # Mostar um historiograma (Grafico de barras).<br/>
               notas.nota.plot(kind='hist')<br/>
             </DivCodigo>
-            <DivCodigo titulo="Para instalar o PANDAS para Python 2:">
+
+            <DivCodigo titulo="Instalar o PANDAS no Python2 no Linux:">
               $ sudo apt-get install python-pandas<br/>
             </DivCodigo>
-            <DivCodigo titulo="Para instalar o PANDAS para Python 3:">
+            <DivCodigo titulo="Instalar o PANDAS np Python3 no Linux:">
               $ sudo apt install python3-pandas<br/>
             </DivCodigo>
           </div>

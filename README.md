@@ -57,5 +57,6 @@ npm run export
 ```
 A porta usada na Umbler é a 3000.
 Deploy via GIT
+Para o Next funcionar na Umbler é preciso commitar todas as dependencias no GIT.
 
 ```

@@ -1,6 +1,7 @@
 import React from 'react'
 import Img from '../../../atoms/atImg/index.js'
 import Div from '../../../atoms/atDiv/index.js'
+import BtLink from '../../../atoms/atBtLink'
 import Layout from '../../../moleculas/layout'
 import MoHead from '../../../moleculas/moHead'
 import DivCodigo from '../../../atoms/atDivCodigo'
@@ -26,11 +27,13 @@ const codigoJava = function (props) {
         keywords="Banco de Dados, MYSQL, Ubuntu, usuário administrador, Reiniciar o MySQL"
         />
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="Banco de Dados">
-        <div className="coluna404">
+        <Div display="responcivo">
+        <div>
           <h1>MySQL no Ubuntu</h1>
           <h3>O que é MySQL</h3>
           <p>
-            O MySQL é um sistema de gerenciamento de banco de dados (SGBD), que utiliza a linguagem SQL (Linguagem de Consulta Estruturada, do inglês Structured Query Language) como interface. É atualmente um dos sistemas de gerenciamento de bancos de dados mais populares[2] da Oracle Corporation, com mais de 10 milhões de instalações pelo mundo.
+            O MySQL é um sistema de gerenciamento de <BtLink href={"/tutorial/bancodedados/?regiao="+regiao} value="banco de dados" estilo="neonLink"/> (SGBD), que utiliza a linguagem SQL (Linguagem de Consulta Estruturada, do inglês Structured Query Language) como interface.<br/>
+            É um dos sistemas de gerenciamento de bancos de dados mais populares da Oracle Corporation, com mais de 10 milhões de instalações pelo mundo.
           </p>
           <h3>Instalar MySQL no Ubuntu</h3>
           <DivCodigo titulo="Instalar MySQL.">
@@ -125,6 +128,7 @@ const codigoJava = function (props) {
                   modo={modo}>
             </Img>
           </div>
+          </Div>
       </Layout>
       <style jsx>{`
         .h1{

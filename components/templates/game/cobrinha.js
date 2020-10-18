@@ -4,6 +4,8 @@ import MoHead from '../../moleculas/moHead'
 import Cobrinha from '../../organisms/orgCobrinha'
 import * as Util from '../../../controller/util.js';
 import BtLink from '../../atoms/atBtLink'
+import Img from '../../atoms/atImg/index.js'
+import Div from '../../atoms/atDiv/index.js'
 
 function retornaogame(modo,regiao){
   if (modo=="html"){ 
@@ -37,14 +39,29 @@ const TemplateCobrinha = function (props) {
         canonical="/game/Cobrinha/"
       />
       <Layout regiao={regiao} modo={modo} titulo="Games" categoria="Games">
-        <h1>Jogo da Cobrinha</h1>
-        {retornaogame(modo,regiao)}
-        <br/>
-        <p>
-          Verção do clássico Blockade ou "Jogo da Cobrinha".<br/>
-          Blockadev foi um videogame de arcade lançado em outubro de 1976 desenvolvido por Gremlin.<br/>
-          Foi o primeiro do que seria conhecido como "jogos de cobra".<br/>
-        </p>
+        <Div display="responcivo">
+          <div>
+            <h1>Jogo da Cobrinha</h1>
+            {retornaogame(modo,regiao)}
+            <br/>
+            <p>
+              Verção do clássico Blockade ou "Jogo da Cobrinha".<br/>
+              Blockadev foi um videogame de arcade lançado em outubro de 1976 desenvolvido por Gremlin.<br/>
+              Foi o primeiro do que seria conhecido como "jogos de cobra".<br/>
+            </p>  
+          </div>
+          <div>
+            <Img 
+              src="/static/assetsv5/img/game/imgcobra.jpg"
+              width="200px"
+              height="200px"
+              alt="Logo SEO"
+              title="Logo SEO"
+              class="ClassLogoSEO"
+              modo={modo}>
+            </Img>
+          </div>
+        </Div>
       </Layout>
     </div>
   )

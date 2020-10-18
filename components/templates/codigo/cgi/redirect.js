@@ -10,7 +10,7 @@ import * as Util from '../../../../controller/util.js';
 const codigoAspRedirect = function (props) {
 
   console.log('╔════════════════════════════════╗');
-  console.log('║     Tutoriais - CGI - Redirect    ║');
+  console.log('║  Tutoriais - CGI - Redirect    ║');
   console.log('╚════════════════════════════════╝');
 
   var regiao = Util.validaProps(props.regiao , "RJ");

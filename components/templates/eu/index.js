@@ -17,7 +17,12 @@ const templateHome = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="Vinícius Valente Coutinh" canonical="/eu/"/>
+      <MoHead 
+        modo={modo} 
+        title="Vinícius Valente Coutinho"
+        description="Vinícius Valente Coutinho autor deste projeto."  
+        canonical="/eu/"
+      />
       <Layout regiao={regiao} modo={modo} titulo="Eu" categoria="Eu">
           
           <Div display="responsivo">
@@ -33,9 +38,9 @@ const templateHome = function (props) {
             </div>
             <div>
               <p>Meu nome é Vinícius Valente Coutinho, Analista de Sistemas fullstack,<br/> 
-              com experiência em configuração de CDN, Apache, AMP, SEO, NodeJS, PHP, Hadoop.<br/> 
-              Atualmente liderando equipe de desenvolvimento de projeto de BigData.<br/> 
-              Atuei como líder de equipe em projeto AMP com foco em melhoria do SEO.</p>
+              com experiência em configuração de CDN, <BtLink href={"/tutorial/apache/?regiao="+regiao} value="Apache" estilo="azulLink"/>, <BtLink href={"/tutorial/seo/amp/?regiao="+regiao} value="AMP" estilo="azulLink"/>, <BtLink href={"/tutorial/seo/?regiao="+regiao} value="SEO" estilo="azulLink"/>, <BtLink href={"/tutorial/javascript/nodejs/?regiao="+regiao} value="NodeJS" estilo="azulLink"/>, <BtLink href={"/tutorial/php/?regiao="+regiao} value="PHP" estilo="azulLink"/>, <BtLink href={"/tutorial/bancodedados/hadoop/?regiao="+regiao} value="Hadoop" estilo="azulLink"/>.<br/> 
+              Atualmente liderando equipe de desenvolvimento de projeto de <BtLink href={"/tutorial/bancodedados/hadoop/?regiao="+regiao} value="BigData" estilo="azulLink"/>.<br/> 
+              Atuei como líder de equipe em projeto <BtLink href={"/tutorial/seo/amp/?regiao="+regiao} value="AMP" estilo="azulLink"/> com foco em melhoria do <BtLink href={"/tutorial/seo/?regiao="+regiao} value="SEO" estilo="azulLink"/>.</p>
               <BtLink href={"/eu/curriculo/?regiao="+regiao} value="Veja meu currículo aqui." estilo="azul"/>
               <br/>
             </div>

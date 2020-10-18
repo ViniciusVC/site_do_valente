@@ -3,7 +3,8 @@ import Img from '../../../atoms/atImg/index.js'
 import Div from '../../../atoms/atDiv/index.js'
 import Layout from '../../../moleculas/layout'
 import MoHead from '../../../moleculas/moHead'
-import DivCodigo from '../../../atoms/atDivCodigo'
+import BtLink from '../../../atoms/atBtLink'
+//import DivCodigo from '../../../atoms/atDivCodigo'
 //import DivNaveg from '../../../atoms/atDivNaveg'
 import * as Util from '../../../../controller/util.js';
 
@@ -38,21 +39,22 @@ const codigoJava = function (props) {
             <p>
               Um cientista de dados precisa trabalhar com grande volume de dados.<br/>
               Com grande volume de dados o Excel não é mais suficiente.<br/>
-              Para consultas e extrações de dados o SQL é fundamental.<br/>
-              Para manipular os dados é necessária uma linguagem de programação como o Python.<br/>
+              Para consultas e extrações de dados o <BtLink href={"/tutorial/bancodedados/sql/?regiao="+regiao} value="SQL" estilo="neonLink"/> é fundamental.<br/>
+              Para manipular os dados é necessária uma linguagem de programação como o <BtLink href={"/tutorial/python/?regiao="+regiao} value="Python" estilo="neonLink"/>.<br/>
             </p>
             <h3>Modelos Machine Learning</h3>
             <p>
               Machine learning é projetado para resolver 3 problemas : Regreção, Classificação e Clusterização.<br/>
               <br/>
               Os Principais Algoritmos de Machine Learning são:<br/>
-              Regreção linear (Veja SKLEARN);<br/>  
+              Regreção linear;<br/>  
               Decision Tree;<br/>
               Random Forest;<br/>
               Extra trees;<br/>
               K-Means;<br/>
               Cluster Hierárquico;<br/> 
               ARIMA;<br/>
+              <BtLink href={"/tutorial/python/sklearn/?regiao="+regiao} value="Veja Scikit-learn" estilo="neonLink"/>
             </p>
             <h3>Estatistica</h3>
             <p> 
@@ -96,6 +98,7 @@ const codigoJava = function (props) {
             <p> 
               O que é Storytelling?<br/>
               Storytelling é a arte de contar histórias usando técnicas inspiradas em roteiristas e escritores para transmitir uma mensagem de forma inesquecível.<br/>
+              <BtLink href={"/tutorial/python/seaborn/?regiao="+regiao} value="Veja Seaborn" estilo="neonLink"/>
               <br/>
               Storytelling de Resultados. <br/>
               Apresentação dos Resultados. <br/>

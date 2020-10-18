@@ -21,12 +21,14 @@ const atendimentoOi = function (props) {
         modo={modo} 
         title="NextJS" 
         description="O que é NextJS" 
-        canonical="/codigo/javascript/nextjs/"/>
+        canonical="/tutorial/javascript/nextjs/"
+        keywords="Next, NextJS, tutorial, js, codigo, html5, javascript, programação, vvc estudio"
+        />
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="JavaScript">
         <Div display="responcivo">
           <div>
-            <h1>NextJS</h1>
-            <p>O que é NextJS?</p>
+            <h1>Next.JS</h1>
+            <p>O que é Next?</p>
             <p>NextJS é um framework amplamente utilizado pela comunidade do ReactJS.</p>
             <p>Pode ser usado para construir sites estáticos e dinâmicos e aplicativos da web.</p>
             <p>Possui muitos recursos integrados. Uma amostra deles são: Um sistema de roteamento baseado em página intuitivo (com suporte para rotas dinâmicas) ... Suporte embutido de CSS e Sass e suporte para qualquer biblioteca CSS-in-JS. Ambiente de desenvolvimento com suporte Fast Refresh.</p>
@@ -43,7 +45,11 @@ const atendimentoOi = function (props) {
               </Img>
           </div>
       </Div>
-
+      <div>
+        <p>
+          Este projeto utiliza Next.JS, para gerar paginas HTML e AMP estaticas, no servidor.
+        </p>
+      </div>
       </Layout>
       <style jsx>{`
         .h1{

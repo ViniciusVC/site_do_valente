@@ -2,6 +2,7 @@ import React from 'react'
 import Img from '../../../atoms/atImg/index.js'
 import Div from '../../../atoms/atDiv/index.js'
 import DivCodigo from '../../../atoms/atDivCodigo'
+import BtLink from '../../../atoms/atBtLink';
 import Layout from '../../../moleculas/layout'
 import MoHead from '../../../moleculas/moHead'
 import * as Util from '../../../../controller/util.js';
@@ -17,7 +18,12 @@ const codigoRuby = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="Ruby On Rails" description="Tutorial - Ruby On Rails" canonical="/tutorial/rubyonrails/"/>
+      <MoHead 
+        modo={modo} 
+        title="Ruby On Rails" 
+        description="Tutorial - Ruby On Rails" 
+        canonical="/tutorial/rubyonrails/"
+      />
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="Ruby on Rails">
         <Div display="responcivo">
           <div className="coluna404">
@@ -36,8 +42,8 @@ const codigoRuby = function (props) {
           <div>
             <Img 
                 src="/static/assetsv5/img/codigo/logorubyonrails.png"
-                width="323px"
-                height="436px"
+                width="200px"
+                height="249px"
                 alt="Logo Ruby On Rails"
                 title="Logo Ruby On Rails"
                 class="ClassLogoRuby"
@@ -45,7 +51,7 @@ const codigoRuby = function (props) {
             </Img>
           </div>
       </Div>
-
+      <BtLink href="/tutorial/rubyonrails/redirect/" value="Redirect com Ruby on Rails" estilo="neon"/>
       </Layout>
       <style jsx>{`
         .h1{

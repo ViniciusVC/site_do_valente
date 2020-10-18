@@ -21,12 +21,14 @@ const atendimentoOi = function (props) {
         modo={modo} 
         title="NodeJS" 
         description="O que é NodeJS" 
-        canonical="/codigo/javascript/nodejs/"/>
+        canonical="/tutorial/javascript/nodejs/"
+        keywords="Node, NodeJS, tutorial, js, codigo, html5, javascript, programação, vvc estudio"
+        />
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="JavaScript">
         <Div display="responcivo">
           <div className="coluna404">
-            <h1>NodeJS</h1>
-            <p>O que é NodeJS?</p>
+            <h1>Node.JS</h1>
+            <p>O que é Node?</p>
             <p>
               Node.js trata-se de um software open-source, cross-platform, e de um runtime de JavaScript que execute código de JavaScript a nível backend e frontend.<br/>
             </p>
@@ -56,7 +58,11 @@ const atendimentoOi = function (props) {
               </Img>
           </div>
       </Div>
-
+      <div>
+        <p>
+          Este site esta rodando em um Node.JS.
+        </p>
+      </div>
       </Layout>
       <style jsx>{`
         .h1{

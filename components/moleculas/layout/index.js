@@ -21,7 +21,7 @@ const layout = props => {
       <GTM position="body" modo={modo} codGTM="UA-143307429-1" />
       <Div display="justificado">
           
-          <div className="layoutManu esconder">
+          <div className="layoutManu">
             <Janela estilo="neon">
               <ListadeRotas regiao={regiao} modo={modo} titulo={titulo} categoria={categoria} btestilo="neon" btestiloitem="neonItem"/>
             </Janela>

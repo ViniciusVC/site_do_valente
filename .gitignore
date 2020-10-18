@@ -1,4 +1,5 @@
 // .gitnignore
+# Para funcionar na umbler é preciso commitar todas as dependencias.
 
 # next.js build output
 #.next

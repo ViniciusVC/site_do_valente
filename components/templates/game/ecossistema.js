@@ -11,7 +11,7 @@ function retornaogame(modo,regiao){
   }else{ 
     return (
       <p>O jogo não pode ser visto no modo AMP.<br/>
-        <BtLink href={"/game/tanque?regiao="+regiao} value="Clique aqui para sair do modo AMP." estilo="neon"/><br/>
+        <BtLink href={"/game/ecossistema/?regiao="+regiao} value="Clique aqui para sair do modo AMP." estilo="neon"/><br/>
       </p>
       )
   }

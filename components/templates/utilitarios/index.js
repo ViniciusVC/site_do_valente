@@ -16,8 +16,12 @@ const atendimentoOi = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="UTILITARIOS" canonical="/utilitarios/"/>
-
+      <MoHead 
+        modo={modo} 
+        title="UTILITARIOS" 
+        canonical="/utilitarios/"
+        keywords="vvc, util, serviços gratuitos, conversor de texto, gratuito, conversor de unidade"
+      />
       <Layout regiao={regiao} modo={modo} titulo="Utilitarios" categoria="Utilitarios">
           <h1>UTILITARIOS</h1>
           <p>Aplicações úteis.</p>

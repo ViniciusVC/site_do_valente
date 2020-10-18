@@ -31,7 +31,7 @@ const codigoJava = function (props) {
             <h1>Big Data Hadoop</h1>
             <h3>O que é Hadoop?</h3>
             <p>            
-              Hadoop é uma plataforma de software em Java de computação distribuída voltada para clusters e processamento de grandes volumes de dados, com atenção a tolerância a falhas. <br/>
+              Hadoop é uma plataforma de computação distribuída voltada para clusters e processamento de grandes volumes de dados, com atenção a tolerância a falhas. <br/>
               Foi inspirada no MapReduce e no GoogleFS. <br/>
               <br/>
             </p>
@@ -66,12 +66,12 @@ const codigoJava = function (props) {
           </div>
           <div>
             <Img 
-              src="/static/assetsv5/img/codigo/logobancodedados.svg"
+              src="/static/assetsv5/img/codigo/logohadoop.png"
               width="200px"
               height="200px"
-              alt="Logo bancodedados"
-              title="Logo bancodedados"
-              class="ClassLogobancodedados"
+              alt="Logo Hadoop"
+              title="Logo Hadoop"
+              class="ClassLogoHadoop"
               modo={modo}>
             </Img>
           </div>

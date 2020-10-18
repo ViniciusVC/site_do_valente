@@ -22,7 +22,9 @@ const codigoJava = function (props) {
         modo={modo} 
         title="O que é Java" 
         description="Tutorial - O que é Java." 
-        canonical="/tutorial/java/"/>
+        canonical="/tutorial/java/"
+        keywords="java, class, codigo, html5, Olá Mundo, programação, vvc estudio"
+        />
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="Java">
         <Div display="responcivo">
           <div className="coluna404">
@@ -41,8 +43,8 @@ const codigoJava = function (props) {
           <div>
                 <Img 
                   src="/static/assetsv5/img/codigo/logojava.svg"
-                  width="323px"
-                  height="436px"
+                  width="200px"
+                  height="400px"
                   alt="Logo Java"
                   title="Logo Java"
                   class="ClassLogoJava"

@@ -12,34 +12,34 @@ const moFooterSideDoValente = function (props) {
   const regiao = props.regiao;
   const modo = props.modo;
   const btestilo = props.btestilo;
-  //const JsonRegiao = Util.regiao(regiao);
-  var StringModo = "";
+  var ParamentroURL = "?regiao="+regiao;
   if(modo=="AMP" || modo=="amp"){
-    StringModo = "/amp";
+    ParamentroURL = "?amp=1";
   }
+
   console.log('* Header do Valente | modo='+modo+ ' | regiao='+regiao);
 
   return (
     <Div display="responsivo">
 
         <div className="logo">
-          <a href={StringModo+"/?regiao="+regiao} >
+          <a href={"/"+ParamentroURL} >
             <Img src="/static/assetsv5/img/logo_vvc.png" width="100px" height="100px" alt="Logo Site Valente" title="Logo Site Valente" class="LogoSiteValente" modo={modo} />
           </a>
         </div>
         <div>
           <Div display="responsivo">
             <div className="footerColuna">
-              <BtLink href={StringModo+"/?regiao="+regiao} value="Home" estilo={btestilo}/>
-              <BtLink href={StringModo+"/tutorial/?regiao="+regiao} value="Tutoriais" estilo={btestilo}/>
+              <BtLink href={"/"+ParamentroURL} value="Home" estilo={btestilo}/>
+              <BtLink href={"/tutorial/"+ParamentroURL} value="Tutoriais" estilo={btestilo}/>
             </div>
             <div className="footerColuna">
-              <BtLink href={StringModo+"/utilitarios/?regiao="+regiao} value="Utilitarios" estilo={btestilo}/>
-              <BtLink href={StringModo+"/game/?regiao="+regiao} value="Jogos" estilo={btestilo}/>                  
+              <BtLink href={"/utilitarios/"+ParamentroURL} value="Utilitarios" estilo={btestilo}/>
+              <BtLink href={"/game/"+ParamentroURL} value="Jogos" estilo={btestilo}/>                  
             </div>    
             <div className="footerColuna">
               <BtLink href="https://sites.google.com/view/vvc-estudio/home" value="Design" estilo={btestilo}/>
-              <BtLink href={StringModo+"/eu/?regiao="+regiao} value="Autor" estilo={btestilo}/>       
+              <BtLink href={"/eu/"+ParamentroURL} value="Autor" estilo={btestilo}/>       
             </div>
           </Div>
           <Div display="horizontal">

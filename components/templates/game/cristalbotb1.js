@@ -46,7 +46,7 @@ const game = function (props) {
                 No futuro, a busca extração de pedras presiosas não será na Terra. Será feita por robos em outros planetas. 
               </p>
               <p>
-              Baixe a primeira versão de teste do Cristal Bot beta 0.1 aqui. 
+              Baixe a primeira versão de teste do <strong>Cristal Bot beta 0.1</strong> aqui. 
               <BtLink href={"https://mega.nz/file/wHgSRCiB#ukPyQc493NQ3i8r6dXFN5KkkUS5xA44FsoowEY08M1I"} value="Baixar para Windows" estilo="neon"/>
               <BtLink href={"https://mega.nz/file/wewRnTxA#GYSz1EGiCwHTeufaeyCofGNyYRiwAPeghCd_jM0FTgc"} value="Baixar para Linux" estilo="neon"/>
               <br/></p>

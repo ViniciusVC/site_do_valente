@@ -51,7 +51,7 @@ const codigoJava = function (props) {
               Devido às suas características, ela é principalmente utilizada para processamento de textos, dados científicos e criação de CGIs para páginas dinâmicas para a web.<br/>
               Foi considerada pelo público a 3ª linguagem "mais amada", de acordo com uma pesquisa conduzida pelo site Stack Overflow em 2018, e está entre as 5 linguagens mais populares, de acordo com uma pesquisa conduzida pela RedMonk.<br/>
             </p>
-
+            <h3>Usando o Python</h3>
             <DivCodigo titulo="Entrar prompt de comandos do Python">
               $ python<br/>
             </DivCodigo>
@@ -111,7 +111,23 @@ const codigoJava = function (props) {
             <DivCodigo titulo="Para instalar o Python3 no Ubuntu">
               $ sudo apt install python3-pip
             </DivCodigo>
-            
+            <p>
+            Nota : O nome Python teve a sua origem no grupo humorístico britânico Monty Python. <br/>
+            <DivCodigo titulo="Algumas bibliotecas">
+              copy :
+              numpy :
+              scipy : 
+              math :
+              multiprocessing : 
+              functools : 
+              time :
+              sys : 
+              warnings :
+              collections :
+              datetime : 
+              itertools : 
+            </DivCodigo>
+          </p>
           </div>
           <div>
             <Img 
@@ -123,19 +139,20 @@ const codigoJava = function (props) {
                   class="ClassLogoPython"
                   modo={modo}>
             </Img>
+            <div>
+
+Veja tambe:
+  <BtLink href="/tutorial/python/matplotlib/" value="Matplotlib" estilo="neon"/>
+  <BtLink href="/tutorial/python/numpy/" value="Numpy" estilo="neon"/>
+  <BtLink href="/tutorial/python/pandas" value="Pandas" estilo="neon"/>
+  <BtLink href="/tutorial/python/seaborn" value="Seaborn" estilo="neon"/>
+  <BtLink href="/tutorial/python/sklearn" value="Sklearn" estilo="neon"/>
+  <BtLink href="/tutorial/python/jupyter" value="Jupyter" estilo="neon"/>
+  <BtLink href="/tutorial/python/anaconda" value="Anaconda" estilo="neon"/>
+</div>
           </div>
         </Div>
-        <div>
-          <p>
-              O nome Python teve a sua origem no grupo humorístico britânico Monty Python. <br/>
-          </p>
-          Veja tambe:
-            <BtLink href="/tutorial/python/matplotlib/" value="Matplotlib" estilo="neon"/>
-            <BtLink href="/tutorial/python/numpy/" value="Numpy" estilo="neon"/>
-            <BtLink href="/tutorial/python/pandas" value="pandas" estilo="neon"/>
-            <BtLink href="/tutorial/python/seaborn" value="seaborn" estilo="neon"/>
-            <BtLink href="/tutorial/python/sklearn" value="sklearn" estilo="neon"/>
-        </div>
+
       </Layout>
       <style jsx>{`
         .h1{

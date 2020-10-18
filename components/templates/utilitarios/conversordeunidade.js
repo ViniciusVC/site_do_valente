@@ -15,8 +15,13 @@ const conversordeunidade = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="Conversor de Unidade" description="Utilitario - Conversor de Unidade" canonical="/utilitarios/conversordeunidade/"/>
-
+      <MoHead 
+        modo={modo} 
+        title="Conversor de Unidade" 
+        description="Utilitario - Conversor de Unidade" 
+        canonical="/utilitarios/conversordeunidade/"
+      
+      />
       <Layout regiao={regiao} modo={modo} titulo="Utilitarios" categoria="Utilitarios">
       <Div display="responsivo">
           <div>

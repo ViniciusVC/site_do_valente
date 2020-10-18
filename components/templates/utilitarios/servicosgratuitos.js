@@ -19,7 +19,7 @@ const conversordetexto = function (props) {
         title="Serviços Gratuitos"
         description="Util - Lista de Serviços Gratuitos" 
         canonical="/utilitarios/servicosgratuitos/"
-        keywords="VVC, util, serviços gratuitos, hospedar, gratuito, servidor"
+        keywords="util, serviços gratuitos, hospedar, gratuito, servidor, algorithmia, apify, aws, Azure"
       />
       <Layout regiao={regiao} modo={modo} titulo="Utilitarios" categoria="Utilitarios">
           <h1>Lista de Serviços Gratuitos</h1>

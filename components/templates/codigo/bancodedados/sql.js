@@ -1,6 +1,7 @@
 import React from 'react'
 import Img from '../../../atoms/atImg/index.js'
 import Div from '../../../atoms/atDiv/index.js'
+import BtLink from '../../../atoms/atBtLink'
 import Layout from '../../../moleculas/layout'
 import MoHead from '../../../moleculas/moHead'
 import DivCodigo from '../../../atoms/atDivCodigo'
@@ -31,7 +32,8 @@ const codigoJava = function (props) {
             <h1>SQL</h1>
             <h3>O que é SQL?</h3>
               <p>
-                SQL, ou Structured Query Language, ou Linguagem de Consulta Estruturada, é a linguagem de pesquisa declarativa padrão para banco de dados relacional (base de dados relacional).
+                SQL, ou Structured Query Language, ou Linguagem de Consulta Estruturada.<br/>
+                é a linguagem de pesquisa declarativa padrão para <BtLink href={"/tutorial/bancodedados/?regiao="+regiao} value="banco de dados" estilo="neonLink"/> relacional (<BtLink href={"/tutorial/bancodedados/?regiao="+regiao} value="base de dados" estilo="neonLink"/> relacional).<br/>
                 As características originais do SQL foram inspiradas na álgebra relacional.
               </p>
             <h3>A linguagem:</h3>
@@ -144,7 +146,7 @@ const codigoJava = function (props) {
           </div>
           <div>
             <Img 
-                  src="/static/assetsv5/img/codigo/logosql.svg"
+                  src="/static/assetsv5/img/codigo/logosql.png"
                   width="200px"
                   height="200px"
                   alt="Logo sql"

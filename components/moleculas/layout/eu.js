@@ -33,12 +33,12 @@ const layout = props => {
               janelaestilo="claro"
             />
           </div>
-          <div>
+          <div className="esconder">
               vvcestudio.com.br
           </div>
           <div>
             <Div display="horizontal">
-              <div>
+              <div className="esconder">
                 Me visite em outros canais :
               </div>
               <div>
@@ -84,7 +84,7 @@ const layout = props => {
                 </div>
               </Janela>
           </div>      
-          <div className="layoutManu esconder">
+          <div className="layoutMenu esconder">
             <Janela estilo="claro">
                 <ListadeRotas regiao={regiao} modo={modo} titulo={titulo} categoria={categoria} btestilo="azul" btestiloitem="azul"/>
             </Janela>
@@ -131,7 +131,7 @@ const layout = props => {
         margin : 0px;
         padding : 0px;
       }
-      .layoutManu{
+      .layoutMenu{
         margin-top: 40px;
         width: 25%;
         /*padding-left:2%;*/
@@ -142,7 +142,10 @@ const layout = props => {
         padding-bottom:10px;
       }
       @media(max-width: 1169px) {
-        .layoutManu{
+        .layoutMenu{
+          display : None;
+        }
+        .esconder{
           display : None;
         }
         .layoutBody{

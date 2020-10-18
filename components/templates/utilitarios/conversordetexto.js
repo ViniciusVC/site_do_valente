@@ -50,7 +50,12 @@ const conversordetexto = function (props) {
 
     return (
       <div>
-        <MoHead modo={modo} title="Conversor de Textos" canonical="/utilitarios/conversordetexto/"/>
+        <MoHead 
+          modo={modo} 
+          title="Conversor de Textos"
+          description="Utilitario - Conversor de Textos (Maiuscula-Minuscula)."  
+          canonical="/utilitarios/conversordetexto/"
+        />
         <Layout regiao={regiao} modo={modo} titulo="Utilitarios" categoria="Utilitarios">
         <h1>Conversor de Texto</h1>
           <Div display="responsivo">

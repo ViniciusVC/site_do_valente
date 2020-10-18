@@ -27,13 +27,13 @@ const templateHome = function (props) {
           <h1>Bem vindo ao VVC Estudio</h1>
           <p>
             Melhor que jogo do {JsonRegiao.timea} com {JsonRegiao.timeb}.<br />
-            Renderização server-side de <a href="/tutorial/html/">HTML</a> e AMP (isomórfica ReactJS e NextJS)<br />
+            Renderização server-side de <BtLink href={"/tutorial/html/?regiao="+regiao} value="HTML" estilo="neonLink"/> e <BtLink href={"/tutorial/seo/amp/?regiao="+regiao} value="AMP" estilo="neonLink"/> (isomórfica <BtLink href="/tutorial/javascript/reactjs/" value="ReactJS" estilo="neonLink"/> e <BtLink href={"/tutorial/javascript/nextjs/?regiao="+regiao} value="NextJS" estilo="neonLink"/>)<br />
             0 - Site pessoal<br />
             1 - Objetivo de compartilhar conhecimento técnico.<br />
-            1 - Páginas em html (<a href="/tutorial/javascript/nextjs/">Next</a> + <a href="/tutorial/javascript/reactjs/">React</a>)<br />
-            2 - Páginas AMP (<a href="/tutorial/javascript/nextjs/">Next</a> + <a href="/tutorial/javascript/reactjs/">React</a> + AMP)<br />
+            1 - Páginas em <BtLink href={"/tutorial/html/?regiao="+regiao} value="html" estilo="neonLink"/> (<BtLink href={"/tutorial/javascript/nextjs/?regiao="+regiao} value="Next" estilo="neonLink"/> + <BtLink href="/tutorial/javascript/reactjs/" value="React" estilo="neonLink"/>)<br />
+            2 - Páginas AMP (<BtLink href={"/tutorial/javascript/nextjs/?regiao="+regiao} value="Next" estilo="neonLink"/> + <BtLink href="/tutorial/javascript/reactjs/" value="React" estilo="neonLink"/> + <BtLink href={"/tutorial/seo/amp/?regiao="+regiao} value="AMP" estilo="neonLink"/>)<br />
             4 - Gerador de captcha interno (Não funciona com balance).<br />
-            Repositório : <a href="https://github.com/ViniciusVC/">https://github.com/ViniciusVC/site_do_valente</a>
+            Repositório : <BtLink href={"https://github.com/ViniciusVC/?regiao="+regiao} value="https://github.com/ViniciusVC/site_do_valente" estilo="neonLink"/>
           </p>
           <BtLink href={"/eu/?regiao="+regiao} value="Quem sou eu." estilo="neon"/>
           <br />

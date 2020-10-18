@@ -5,6 +5,7 @@
 import React from 'react';
 import Layout from '../../../moleculas/layout';
 import MoHead from '../../..//moleculas/moHead';
+import BtLink from '../../../atoms/atBtLink';
 import DivCodigo from '../../../atoms/atDivCodigo';
 import * as Util from '../../../../controller/util.js';
 
@@ -66,6 +67,7 @@ const apacheAlias = function (props) {
           <br/>
           <br/>
           </p>
+          <BtLink href={"/tutorial/apache/?regiao="+regiao} value="O que é Apache" estilo="neon"/>
         </Layout>
       <style jsx>{`
         .h1{

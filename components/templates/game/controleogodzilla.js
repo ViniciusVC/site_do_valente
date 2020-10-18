@@ -28,7 +28,12 @@ const controleogodzilla = function (props) {
 
   return (
     <div>
-      <MoHead modo={modo} title="Controle o Godzilla" canonical="/game/controleogodzilla/"/>
+      <MoHead 
+        modo={modo} 
+        title="Controle o Godzilla" 
+        description="Brincadeira que fiz pro meu filho em um fim de dia." 
+        canonical="/game/controleogodzilla/"
+      />
       <Layout regiao={regiao} modo={modo} titulo="Games" categoria="gGameame">
           <h1>GAME Controle o Godzilla</h1>
           <p>Brincadeira que fiz pro meu filho em um fim de dia.</p>

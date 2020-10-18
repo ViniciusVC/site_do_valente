@@ -5,6 +5,7 @@ import BtLinkAmarelo1 from './btLinkAmarelo1.js';
 import BtLinkAmarelo2 from './btLinkAmarelo2.js';
 import BtLinkAmarelo3 from './btLinkAmarelo3.js';
 import BtLinkAzul from './btLinkAzul.js';
+import BtLinkAzulLink from './btLinkAzulLink.js';
 import BtLinklaranja from './btLinkLaranja.js';
 import BtLinkItemLuzVerde from './btLinkItemLuzVerde.js';
 import BtLinkLuz from './btLinkLuz.js';
@@ -15,6 +16,7 @@ import BtLinkRosaInvertidoCurto from './btLinkRosaInvertidoCurto.js';
 import BtLinkLaranjaDegrade from './btLinkLaranjaDegrade.js';    
 import BtLinkNeon from './btLinkNeon.js';
 import BtLinkNeonItem from './btLinkNeonItem.js';
+import BtLinkNeonLink from './btLinkNeonLink.js';
 import BtLinkPurple1 from './btLinkPurple1.js';
 import BtLinkPurple2 from './btLinkPurple2.js';
 import BtLinkBranco from './btLinkBranco.js';
@@ -35,6 +37,8 @@ const btSubmit = props => {
     return (<BtLinkAmarelo2 value={varValue} href={varHref}/>);
   } else if (varEstilo == "azul") {
     return (<BtLinkAzul value={varValue} href={varHref}/>);
+  } else if (varEstilo == "azulLink") {
+    return (<BtLinkAzulLink value={varValue} href={varHref}/>);
   } else if (varEstilo == "amarelo3") {
     return (<BtLinkAmarelo3 value={varValue} href={varHref}/>);
   } else if (varEstilo == "branco") {
@@ -49,6 +53,8 @@ const btSubmit = props => {
     return (<BtLinkNeon value={varValue} href={varHref}/>);
   } else if (varEstilo == "neonItem") {
     return (<BtLinkNeonItem value={varValue} href={varHref}/>);
+  } else if (varEstilo == "neonLink") {
+    return (<BtLinkNeonLink value={varValue} href={varHref}/>);
   } else if (varEstilo == "Purple1") {
     return (<BtLinkPurple1 value={varValue} href={varHref}/>);
   } else if (varEstilo == "Purple2") {

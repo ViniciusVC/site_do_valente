@@ -28,8 +28,8 @@ const codigoJava = function (props) {
           <div className="coluna404">
             <h1>O que é Matplotlib?</h1>
             <p>
-              É a biblioteca para análise de dados simples e uma das mais usadas.<br/>
-              Para criar gráficos e tabelas de resposta.
+              Matplotlib é uma biblioteca de Python para criação de gráficos e visualizações de dados. <br/>
+              É uma das mais usadas para criar gráficos no Python.
             </p>
           </div>
           <div>

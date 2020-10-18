@@ -17,7 +17,8 @@ const templateHome = function (props) {
         modo={modo} 
         title="Vinícius Valente Coutinh" 
         description="Curriculo de Vinícius Valente Coutinho autor deste projeto." 
-        canonical="/eu/curriculo/"/>
+        canonical="/eu/curriculo/"
+        />
       <Layout regiao={regiao} modo={modo} titulo="Eu" categoria="curriculo">
           <div className="fotoEu">
               <Img 
@@ -142,11 +143,6 @@ const templateHome = function (props) {
           <li>2004 - P&oacute;s-Graduado em Ergonomia e Usabilidade - PUC-RJ.</li>
           <li>2002 - Gradua&ccedil;&atilde;o em Design Gr&aacute;fico - UNESA.</li>
           <li>1998 - T&eacute;cnico em Processamento de Dados - Col&eacute;gio Santa M&ocirc;nica.</li>
-          </ul>
-
-          <h2>L&Iacute;NGUAS:</h2>
-          <ul>
-            <li>Ingl&ecirc;s Intermedi&aacute;rio t&eacute;cnico.</li>
           </ul>
 
           <h2>HABILIDADES:</h2>

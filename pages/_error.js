@@ -6,11 +6,11 @@ import * as Util from '../controller/util.js';
 const RotaIndex = function(props){
   console.log('+++++++++++++++++++++++++++++');
   console.log('Rota Erro 404');
-  console.log(props.url.query.regiao);
-  //var regiao = req.query.regiao
-  //var regiao = Util.validaProps(props.regiao, "SP")
+  console.log('query.regiao='+props.url.query.regiao);
+  console.log('query.amp='+props.url.query.amp);
+  
   var regiao = Util.validaProps(props.url.query.regiao,"RJ")
-  //var modo = Util.validaProps(props.modo,"html")
+  //var modo = Util.validaProps(props.url.query.amp,"html")
   return(
     <Templa404 
       modo="html" 

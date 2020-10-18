@@ -23,7 +23,9 @@ const codigoJavaRedirect = function (props) {
         modo={modo} 
         title="REDIRECT com Java" 
         description="Tutorial REDIRECT no Java" 
-        canonical="/tutorial/java/redirect/"/>
+        canonical="/tutorial/java/redirect/"
+        keywords="java, class, codigo, html5, redirect, programação, vvc estudio"
+      />
       <Layout regiao={regiao} modo={modo} titulo="Tutoriais" categoria="Java">
           <h1>Redirect Java</h1>
           <p>Java...</p>

@@ -27,6 +27,12 @@ export const atBtLink = (modo) => {
         <p className="p">Codigo:{'<BtLink href="http://www.vvcestudio.com.br/" value="Neon Item" estilo="neonItem"/>'}</p>
       </div>
       <div>
+        Componente atBtLink Neon Link de Menu (VVC Estudio):<br/>
+        <BtLink href="http://www.vvcestudio.com.br/" value="Neon Link" estilo="neonLink"/>
+        <p className="p">Codigo:{'<BtLink href="http://www.vvcestudio.com.br/" value="Neon Link" estilo="neonLink"/>'}</p>
+      </div>
+      
+      <div>
         Componente atBtLink Cinza (site_do_valente):
         <BtLink href="http://www.vvcestudio.com.br/" value="Link cinza" estilo="cinza"/>
         <p className="p">Codigo:{'<BtLink href="http://www.vvcestudio.com.br/" value="Link cinza" estilo="cinza"/>'}</p>
